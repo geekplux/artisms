@@ -46,7 +46,7 @@
       footDataTitle: "About the dates",
       footData: "Dates are conventional ranges. Styles overlap, and historians draw the boundaries in different places. Hatched bars mark living traditions that are still practised.",
       footProjTitle: "The project",
-      footProj: "A static site with no build step: HTML, CSS and plain JavaScript, with all content in one bilingual data file. Corrections are welcome on <a href=\"https://github.com/geekplux/art-isms\">GitHub</a>.",
+      footProj: "A static site with no build step: HTML, CSS and plain JavaScript, with all content in one bilingual data file. Corrections are welcome on <a href=\"https://github.com/geekplux/artisms\">GitHub</a>.",
       close: "Close", bce: "BCE", now: "now"
     },
     zh: {
@@ -79,7 +79,7 @@
       footDataTitle: "关于年代",
       footData: "年代均为约定俗成的范围。流派之间相互重叠，学者划定的边界也各不相同。斜纹色条表示至今仍在延续的活传统。",
       footProjTitle: "关于项目",
-      footProj: "一个无需构建的静态网站：HTML、CSS 与原生 JavaScript，全部内容集中在一个中英双语数据文件中。欢迎在 <a href=\"https://github.com/geekplux/art-isms\">GitHub</a> 上提出修订。",
+      footProj: "一个无需构建的静态网站：HTML、CSS 与原生 JavaScript，全部内容集中在一个中英双语数据文件中。欢迎在 <a href=\"https://github.com/geekplux/artisms\">GitHub</a> 上提出修订。",
       close: "关闭", bce: "前", now: "今"
     }
   };

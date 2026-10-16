@@ -14,7 +14,7 @@ import { readFileSync, writeFileSync, existsSync } from "node:fs";
 import { join } from "node:path";
 import { loadData, SITE, imagePath } from "./lib/data.mjs";
 
-const UA = "art-isms-verify/1.0 (https://github.com/geekplux/art-isms)";
+const UA = "art-isms-verify/1.0 (https://github.com/geekplux/artisms)";
 const CONCURRENCY = 4;
 
 const args = process.argv.slice(2);
