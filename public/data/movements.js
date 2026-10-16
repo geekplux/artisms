@@ -4186,30 +4186,37 @@ window.ARTISMS = {
     },
     {
      "t": {
-      "en": "The Funeral of the Anarchist Galli",
-      "zh": "无政府主义者加利的葬礼"
+      "en": "Dynamism of a Car",
+      "zh": "汽车的动态"
      },
      "a": {
-      "en": "Carlo Carrà",
-      "zh": "卡洛·卡拉"
+      "en": "Luigi Russolo",
+      "zh": "路易吉·鲁索洛"
      },
-     "y": "1910–1911",
+     "y": "1912–1913",
      "loc": {
-      "en": "Museum of Modern Art, New York",
-      "zh": "纽约现代艺术博物馆"
+      "en": "Centre Pompidou, Paris",
+      "zh": "巴黎蓬皮杜艺术中心"
      },
      "look": {
-      "en": "colliding diagonals turn conflict into force",
-      "zh": "碰撞的斜线把冲突化为力量"
+      "en": "nested chevrons turn speed into pure direction",
+      "zh": "层层叠叠的箭头形把速度化为纯粹的方向"
      },
      "n": {
-      "en": "A real 1904 clash between mourners and police in Milan, shattered into flags, fists and light.",
-      "zh": "1904年米兰送葬者与警察的真实冲突，被打碎成旗帜、拳头与光。"
+      "en": "A car dissolves into arrow-shaped waves of red and blue. Russolo also built noise machines and wrote The Art of Noises (1913).",
+      "zh": "一辆汽车化作红蓝相间的箭头状波纹。鲁索洛还制造过噪音乐器，并写下《噪音的艺术》（1913）。"
      },
-     "img": "https://thumb.wikimedia.org/wikipedia/en/thumb/7/7f/Funeraloftheanarchistgalli.jpg/960px-Funeraloftheanarchistgalli.jpg",
-     "src": "https://en.wikipedia.org/wiki/The_Funeral_of_the_Anarchist_Galli",
-     "restricted": true,
-     "wiki": "The Funeral of the Anarchist Galli"
+     "c": "5/55/Luigi_Russolo_dynamism-of-a-car-1913.jpg",
+     "wiki": "Dynamism of a Car",
+     "image": {
+      "w": 590,
+      "h": 443,
+      "v": "f304cd867c",
+      "author": "Luigi Russolo",
+      "license": "Public domain",
+      "licenseUrl": null,
+      "page": "https://commons.wikimedia.org/wiki/File:Luigi_Russolo_dynamism-of-a-car-1913.jpg"
+     }
     }
    ],
    "from": [
@@ -4481,31 +4488,38 @@ window.ARTISMS = {
     },
     {
      "t": {
-      "en": "Collage with Squares Arranged according to the Law of Chance",
-      "zh": "按偶然法则排列的方块拼贴"
+      "en": "L’Œil cacodylate (The Cacodylic Eye)",
+      "zh": "二甲胂酸盐之眼"
      },
      "a": {
-      "en": "Jean (Hans) Arp",
-      "zh": "让（汉斯）·阿尔普"
+      "en": "Francis Picabia",
+      "zh": "弗朗西斯·毕卡比亚"
      },
-     "y": "1916–1917",
+     "y": "1921",
      "loc": {
-      "en": "Museum of Modern Art, New York",
-      "zh": "纽约现代艺术博物馆"
+      "en": "Centre Pompidou, Paris",
+      "zh": "巴黎蓬皮杜艺术中心"
      },
      "look": {
-      "en": "chance challenges deliberate composition",
-      "zh": "以偶然挑战刻意的构图"
+      "en": "friends’ signatures and jokes replace the painter’s hand",
+      "zh": "朋友们的签名和玩笑取代了画家的笔触"
      },
      "n": {
-      "en": "Arp said he dropped paper squares and glued them where they fell, though the grid suggests some help.",
-      "zh": "阿尔普说他把纸片撒落，就地粘贴，不过规整的网格暗示他也做了些调整。"
+      "en": "Laid up with an eye infection, Picabia asked visiting friends to sign the canvas. He added one painted eye and called it finished.",
+      "zh": "毕卡比亚因眼疾卧床，请来访的朋友在画布上签名留言，自己只画了一只眼睛，便宣布作品完成。"
      },
-     "img": "https://www.moma.org/media/W1siZiIsIjIxMTQyMyJdLFsicCIsImNvbnZlcnQiLCItcXVhbGl0eSA5MCAtcmVzaXplIDUxMng1MTJcdTAwM2UiXV0.jpg?sha=20c4ec309467b645",
-     "src": "https://www.moma.org/collection/works/37013",
-     "restricted": true,
-     "wiki": "Jean Arp",
-     "zhwiki": "让·阿尔普"
+     "c": "3/37/Francis_Picabia%2C_1921_-_L%27%C5%92il_cacodylate.jpg",
+     "wiki": "Francis Picabia",
+     "zhwiki": "弗朗西斯·畢卡比亞",
+     "image": {
+      "w": 500,
+      "h": 644,
+      "v": "d6a77dc667",
+      "author": "Francis Picabia",
+      "license": "Public domain",
+      "licenseUrl": null,
+      "page": "https://commons.wikimedia.org/wiki/File:Francis_Picabia,_1921_-_L%27%C5%92il_cacodylate.jpg"
+     }
     }
    ],
    "from": [
@@ -5202,31 +5216,38 @@ window.ARTISMS = {
     },
     {
      "t": {
-      "en": "Two Children Are Threatened by a Nightingale",
-      "zh": "两个孩子受到夜莺的威胁"
+      "en": "Storm (Black Landscape)",
+      "zh": "风暴（黑色风景）"
      },
      "a": {
-      "en": "Max Ernst",
-      "zh": "马克斯·恩斯特"
+      "en": "Yves Tanguy",
+      "zh": "伊夫·唐吉"
      },
-     "y": "1924",
+     "y": "1926",
      "loc": {
-      "en": "Museum of Modern Art, New York",
-      "zh": "纽约现代艺术博物馆"
+      "en": "Philadelphia Museum of Art",
+      "zh": "费城艺术博物馆"
      },
      "look": {
-      "en": "painted dream breached by attached objects",
-      "zh": "附着的实物闯入绘制的梦境"
+      "en": "strange forms drift in a space with no horizon",
+      "zh": "奇异的形体漂浮在没有地平线的空间里"
      },
      "n": {
-      "en": "A real wooden gate and house are attached to the painted frame, so the nightmare spills out.",
-      "zh": "真实的木门和小屋被钉在画框上，噩梦仿佛溢出画面。"
+      "en": "Tanguy, a former merchant sailor, decided to paint after seeing a de Chirico in a gallery window. He joined the Surrealists in 1925.",
+      "zh": "唐吉曾是商船水手，在画廊橱窗里看到一幅德·基里科的画后决定学画，1925年加入超现实主义团体。"
      },
-     "img": "https://www.moma.org/media/W1siZiIsIjYwMTE2NSJdLFsicCIsImNvbnZlcnQiLCItcXVhbGl0eSA5MCAtcmVzaXplIDUxMng1MTJcdTAwM2UiXV0.jpg?sha=73b76f420f9860d2",
-     "src": "https://www.moma.org/collection/works/79293",
-     "restricted": true,
-     "wiki": "Max Ernst",
-     "zhwiki": "马克斯·恩斯特"
+     "c": "8/87/Yves_tanguy%2C_la_tempesta_%28paesaggio_nero%29%2C_1926.jpg",
+     "wiki": "Yves Tanguy",
+     "zhwiki": "伊夫·唐吉",
+     "image": {
+      "w": 998,
+      "h": 1200,
+      "v": "90292dfdbf",
+      "author": "Francesco Bini",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "page": "https://commons.wikimedia.org/wiki/File:Yves_tanguy,_la_tempesta_(paesaggio_nero),_1926.jpg"
+     }
     }
    ],
    "from": [
@@ -5334,30 +5355,37 @@ window.ARTISMS = {
     },
     {
      "t": {
-      "en": "Woman I",
-      "zh": "女人 I"
+      "en": "The Liver Is the Cock’s Comb",
+      "zh": "肝脏是公鸡的鸡冠"
      },
      "a": {
-      "en": "Willem de Kooning",
-      "zh": "威廉·德·库宁"
+      "en": "Arshile Gorky",
+      "zh": "阿希尔·戈尔基"
      },
-     "y": "1950–1952",
+     "y": "1944",
      "loc": {
-      "en": "Museum of Modern Art, New York",
-      "zh": "纽约现代艺术博物馆"
+      "en": "Buffalo AKG Art Museum",
+      "zh": "布法罗AKG艺术博物馆"
      },
      "look": {
-      "en": "figure and aggressive brushwork refuse resolution",
-      "zh": "人物与激烈笔触拒绝定型"
+      "en": "loose, glowing shapes half drawn and half dissolved",
+      "zh": "松散而明亮的形体，一半是线描，一半已溶解"
      },
      "n": {
-      "en": "Reworked for about two years: a ferocious figure torn out of slashing brushwork.",
-      "zh": "反复修改约两年：一个从激烈笔触中撕扯出来的凶猛形象。"
+      "en": "Gorky absorbed the Surrealists’ automatism and loosened it into open, painterly gesture: a bridge between the two movements.",
+      "zh": "戈尔基吸收了超现实主义的自动主义，并把它化为开放的绘画性笔势，成为连接两场运动的桥梁。"
      },
-     "img": "https://www.moma.org/media/W1siZiIsIjQ3NjYxNyJdLFsicCIsImNvbnZlcnQiLCItcXVhbGl0eSA5MCAtcmVzaXplIDUxMng1MTJcdTAwM2UiXV0.jpg?sha=bb31d9cff9cdff37",
-     "src": "https://www.moma.org/collection/works/79810",
-     "restricted": true,
-     "wiki": "Woman I"
+     "c": "8/86/The_Liver_is_the_Cock%27s_Comb_y_Arshile_Gorky%2C_1944.jpg",
+     "wiki": "The Liver Is the Cock's Comb",
+     "image": {
+      "w": 1200,
+      "h": 895,
+      "v": "d0c7719857",
+      "author": "Arshile Gorky",
+      "license": "Public domain",
+      "licenseUrl": null,
+      "page": "https://commons.wikimedia.org/wiki/File:The_Liver_is_the_Cock%27s_Comb_y_Arshile_Gorky,_1944.jpg"
+     }
     }
    ],
    "from": [
@@ -5441,29 +5469,37 @@ window.ARTISMS = {
     },
     {
      "t": {
-      "en": "Whaam!",
-      "zh": "《Whaam!》"
+      "en": "El Cap de Barcelona (Barcelona Head)",
+      "zh": "巴塞罗那之首"
      },
      "a": {
       "en": "Roy Lichtenstein",
       "zh": "罗伊·利希滕斯坦"
      },
-     "y": "1963",
+     "y": "1991–1992",
      "loc": {
-      "en": "Tate, London",
-      "zh": "伦敦泰特美术馆"
+      "en": "Port Vell, Barcelona",
+      "zh": "巴塞罗那旧港"
      },
      "look": {
-      "en": "comic printing enlarged into monumental painting",
-      "zh": "漫画印刷被放大为纪念碑式绘画"
+      "en": "comic-book brushstrokes and Ben-Day dots, built in three dimensions",
+      "zh": "漫画式笔触与本戴点被做成立体雕塑"
      },
      "n": {
-      "en": "A war-comic panel blown up to 4 m wide across two canvases, dots and all.",
-      "zh": "把一格战争漫画放大到两块画布、约4米宽，连网点也一并放大。"
+      "en": "Made for the 1992 Olympics and clad in ceramic tiles as a nod to Gaudí. Decades after Pop’s peak, its language still reads instantly.",
+      "zh": "为1992年奥运会而作，以陶瓷片覆面，向高迪致意。距波普艺术鼎盛已过数十年，它的语言依然一眼可辨。"
      },
-     "wiki": "Whaam!",
-     "restricted": true,
-     "zhwiki": "空中火力"
+     "c": "e/e1/Roy_lichtenstein%2C_el_cap_de_barcelona%2C_1991-1992%2C_01.jpg",
+     "wiki": "El Cap de Barcelona",
+     "image": {
+      "w": 819,
+      "h": 1200,
+      "v": "184614d340",
+      "author": "Francesco Bini",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "page": "https://commons.wikimedia.org/wiki/File:Roy_lichtenstein,_el_cap_de_barcelona,_1991-1992,_01.jpg"
+     }
     },
     {
      "t": {
@@ -5845,29 +5881,38 @@ window.ARTISMS = {
     },
     {
      "t": {
-      "en": "Balloon Dog",
-      "zh": "气球狗"
+      "en": "Puppy",
+      "zh": "小狗"
      },
      "a": {
       "en": "Jeff Koons",
       "zh": "杰夫·昆斯"
      },
-     "y": "1994–2000",
+     "y": "1992",
      "loc": {
-      "en": "Five versions, various collections",
-      "zh": "共五个版本，分藏各处"
+      "en": "Guggenheim Museum Bilbao (since 1997)",
+      "zh": "毕尔巴鄂古根海姆博物馆（1997年起）"
      },
      "look": {
-      "en": "spectacle and luxury magnify a disposable toy",
-      "zh": "以奇观与奢华放大一次性玩具"
+      "en": "a sentimental image made monumental and alive",
+      "zh": "一个甜腻的形象被放大成活生生的纪念碑"
      },
      "n": {
-      "en": "A party balloon rebuilt in 3 m of mirror-polished stainless steel. One sold for $58.4 million in 2013.",
-      "zh": "把派对气球重建为3米高的镜面不锈钢雕塑。其中一件于2013年以5840万美元售出。"
+      "en": "A West Highland terrier about 12 m tall, planted with tens of thousands of flowers on a steel frame. Kitsch as public spectacle.",
+      "zh": "一只约12米高的西高地白梗犬，钢架上种着数万株鲜花。媚俗成了公共奇观。"
      },
-     "wiki": "Balloon Dog",
-     "restricted": true,
-     "zhwiki": "气球狗"
+     "c": "7/7e/Puppy_Jeff_Koons.jpg",
+     "wiki": "Jeff Koons",
+     "zhwiki": "杰夫·昆斯",
+     "image": {
+      "w": 1200,
+      "h": 820,
+      "v": "301566dbe3",
+      "author": "kallerna",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "page": "https://commons.wikimedia.org/wiki/File:Puppy_Jeff_Koons.jpg"
+     }
     },
     {
      "t": {
@@ -5973,28 +6018,38 @@ window.ARTISMS = {
     },
     {
      "t": {
-      "en": "Sunflower Seeds",
-      "zh": "葵花籽"
+      "en": "Maman",
+      "zh": "妈妈"
      },
      "a": {
-      "en": "Ai Weiwei",
-      "zh": "艾未未"
+      "en": "Louise Bourgeois",
+      "zh": "路易丝·布尔乔亚"
      },
-     "y": "2010",
+     "y": "1999",
      "loc": {
-      "en": "Tate Modern Turbine Hall, London",
-      "zh": "伦敦泰特现代美术馆涡轮大厅"
+      "en": "This cast: Guggenheim Museum Bilbao; others worldwide",
+      "zh": "此件藏于毕尔巴鄂古根海姆博物馆；世界各地另有数件"
      },
      "look": {
-      "en": "handmade multiplicity examines labour and mass production",
-      "zh": "以手工的海量探讨劳动与批量生产"
+      "en": "a giant spider as protector, mother and threat",
+      "zh": "巨大的蜘蛛，既是守护者、母亲，也是威胁"
      },
      "n": {
-      "en": "About 100 million porcelain seeds, each hand-painted by craftspeople in Jingdezhen.",
-      "zh": "约一亿颗瓷制葵花籽，每一颗都由景德镇工匠手工绘制。"
+      "en": "A steel spider over 9 m tall carrying a sac of marble eggs: Bourgeois’s tribute to her mother, who repaired tapestries.",
+      "zh": "一只高逾9米的钢铁蜘蛛，腹下携着大理石卵：布尔乔亚献给修补挂毯的母亲。"
      },
-     "wiki": "Sunflower Seeds (artwork)",
-     "restricted": true
+     "c": "e/e5/Maman_de_Louise_Bourgeois_-_Bilbao.jpg",
+     "wiki": "Maman (sculpture)",
+     "zhwiki": "妈妈 (雕塑)",
+     "image": {
+      "w": 1200,
+      "h": 818,
+      "v": "f271686b13",
+      "author": "Didier Descouens",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "page": "https://commons.wikimedia.org/wiki/File:Maman_de_Louise_Bourgeois_-_Bilbao.jpg"
+     }
     },
     {
      "t": {

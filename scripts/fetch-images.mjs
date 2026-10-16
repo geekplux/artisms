@@ -100,7 +100,8 @@ try {
       const large = join(SITE, imagePath(m.id, n)), small = join(SITE, imagePath(m.id, n, true));
       const info = await commonsInfo(w.c, LARGE, w.a.en);
       const landscape = info.width >= info.height;
-      if (force || !existsSync(large) || !existsSync(small)) {
+      // Re-download when files are missing or the work now points at a different Commons file.
+      if (force || !existsSync(large) || !existsSync(small) || w.image?.page !== info.page) {
         mkdirSync(dirname(large), { recursive: true });
         const ext = (info.download.split("?")[0].match(/\.(\w+)$/) || [, "jpg"])[1];
         const src = join(tmp, `${m.id}-${n}.${ext}`);
