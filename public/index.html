@@ -29,7 +29,10 @@
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 26 26'%3E%3Crect width='26' height='26' fill='%23141414'/%3E%3Crect x='2' y='2' width='13' height='14' fill='%23d52b1e'/%3E%3Crect x='17' y='2' width='7' height='14' fill='%23fffdf7'/%3E%3Crect x='2' y='18' width='6' height='6' fill='%231d4ed8'/%3E%3Crect x='10' y='18' width='14' height='6' fill='%23f3c623'/%3E%3C/svg%3E">
 <script>
 /* Google Analytics 4 with Consent Mode v2, on the production domain only. Until the visitor accepts in
-   the consent bar (assets/app.js), analytics_storage stays "denied": GA sends cookieless pings, no IDs. */
+   the consent bar (assets/app.js), analytics_storage stays "denied": GA sends cookieless pings, no IDs.
+   Cookies are host-only (cookie_domain), so sibling sites on geekplux.org neither share a client id nor
+   touch each other's cookies. The page_view is sent by app.js after rendering, once the title and
+   language are final, so the automatic one is off. */
 (function () {
   var GA_ID = "G-V8MD23KS3G";
   if (location.hostname !== "artisms.geekplux.org") return;
@@ -39,7 +42,7 @@
   window.gtag = function () { window.dataLayer.push(arguments); };
   gtag("consent", "default", { ad_storage: "denied", ad_user_data: "denied", ad_personalization: "denied", analytics_storage: choice === "granted" ? "granted" : "denied" });
   gtag("js", new Date());
-  gtag("config", GA_ID);
+  gtag("config", GA_ID, { send_page_view: false, cookie_domain: location.hostname });
   var s = document.createElement("script");
   s.async = true;
   s.src = "https://www.googletagmanager.com/gtag/js?id=" + GA_ID;
@@ -427,6 +430,6 @@
 </dialog>
 
 <script src="data/movements.js"></script>
-<script src="assets/app.js?v=88c741fc6a"></script>
+<script src="assets/app.js?v=75d234c7c3"></script>
 </body>
 </html>
