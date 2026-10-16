@@ -42,10 +42,9 @@ for (const m of D.movements) {
   if (m.works.length !== 3) fail(at, `has ${m.works.length} works, expected 3`);
   m.works.forEach((w, i) => {
     const wat = `${at} work ${i + 1}`;
-    for (const f of ["t", "a", "look"]) bi(wat, w[f], f);
+    for (const f of ["t", "a", "y", "look"]) bi(wat, w[f], f);
     if (w.loc) bi(wat, w.loc, "loc");
     if (w.n) bi(wat, w.n, "n");
-    if (!w.y) fail(wat, "missing year (y)");
     if (!w.c && !w.restricted) fail(wat, "needs a Commons source (c) or restricted: true with img, wiki or src");
     if (w.c && w.restricted) fail(wat, "Commons files are hosted; do not mark them restricted");
     if (w.restricted && !w.img && !w.wiki && !w.src) fail(wat, "restricted works need a link: img + src, wiki or src");

@@ -19,6 +19,7 @@
     en: {
       brand: "Art-isms", brandSub: "", navTimeline: "Timeline", navStyles: "Styles", navWhy: "Why styles change", navStudy: "How to look",
       star: "Star", starTitle: "Star Art-isms on GitHub",
+      navLabel: "Sections", langLabel: "Language", mastLabel: "Five works from the atlas", jumpLabel: "Jump to a style",
       meta: "A visual atlas of 40 art styles: a 45,000-year timeline, how each style grew from the last, and three real works for every style. In English and Chinese.",
       kicker: "A visual atlas of art styles", h1a: "ART-", h1b: "ISMS",
       dek: "How art styles <strong>began</strong>, what they <strong>look like</strong>, and how each one grew out of the last, with three real works for every style.",
@@ -54,7 +55,8 @@
     },
     zh: {
       brand: "艺术流派志", brandSub: "Art-isms", navTimeline: "时间线", navStyles: "流派", navWhy: "风格为何改变", navStudy: "如何观看",
-      star: "Star", starTitle: "在 GitHub 上给艺术流派志点个 Star",
+      star: "星标", starTitle: "在 GitHub 上给艺术流派志加星标",
+      navLabel: "栏目", langLabel: "语言", mastLabel: "图谱中的五件作品", jumpLabel: "跳转到流派",
       meta: "收录40个艺术流派的图谱：一条四万五千年的时间线，每个流派如何从前一个流派中生长出来，并为每个流派配上三件真实作品。中英双语。",
       kicker: "艺术风格图谱", h1a: "艺术", h1b: "流派志",
       dek: "艺术风格如何<strong>开始</strong>、长什么<strong>样子</strong>，又如何一脉相承、彼此反叛；每个流派配有三件真实作品。",
@@ -108,6 +110,13 @@
       history.replaceState(null, "", u.pathname + u.search + u.hash);
     } catch (e) { /* sandboxed */ }
   }
+  /* Keep the address true to the language on screen: Chinese is /?lang=zh, English is plain /.
+     An explicit ?lang=en is left alone, so such a link keeps beating a saved Chinese preference. */
+  if (lang === "zh" && urlLang !== "zh") setParam("lang", "zh");
+  /* Analytics: a no-op off the production domain, where gtag is never defined. Never send free text. */
+  const track = (name, params) => { if (typeof window.gtag === "function") window.gtag("event", name, params); };
+  /* Sent after rendering, with the final title. No hash: it carries the style id, not a page. */
+  const pageView = () => track("page_view", { page_title: document.title, page_location: location.origin + location.pathname + location.search });
   /* Filters: sets of selected era and region ids; empty means "all". Kept in ?era=…&region=… */
   const listParam = (key, valid) => (new URLSearchParams(location.search).get(key) || "").split(",").filter((v) => valid.includes(v));
   const fEras = new Set(listParam("era", D.eras.map((e) => e.id)));
@@ -215,6 +224,7 @@
     $(".brand small").hidden = !t("brandSub");
     $$("[data-i18n]").forEach((el) => { el.textContent = t(el.dataset.i18n); });
     $$("[data-i18n-html]").forEach((el) => { el.innerHTML = t(el.dataset.i18nHtml); });
+    $$("[data-i18n-aria]").forEach((el) => { el.setAttribute("aria-label", t(el.dataset.i18nAria)); });
     $$(".lang button").forEach((b) => b.setAttribute("aria-pressed", String(b.dataset.lang === lang)));
     const star = $("#gh-star"); star.title = t("starTitle"); star.setAttribute("aria-label", t("starTitle"));
     $("#stats").textContent = UI[lang].stats(MV.length, WORKS);
@@ -326,7 +336,11 @@
     setParam("region", fRegions.size ? [...fRegions].join(",") : null);
   }
   function resetFilters() { fEras.clear(); fRegions.clear(); applyFilters(); }
-  const toggle = (set, id) => { if (set.has(id)) set.delete(id); else set.add(id); applyFilters(); };
+  const toggle = (set, id, type) => {
+    if (set.has(id)) set.delete(id);
+    else { set.add(id); track("select_content", { content_type: type, item_id: id }); }
+    applyFilters();
+  };
 
   /* ── Movement sections ─────────────────────── */
   const chip = (id) => `<button type="button" class="lk g-${BY[id].group}" data-go="${id}"><span class="sw"></span>${esc(p(BY[id].name))}</button>`;
@@ -354,7 +368,7 @@
             <div class="frame" data-work="${m.id}:${wi}"${arStyle(m.id, wi)}><span class="spin">${esc(t("loading"))}</span><button type="button" data-view="${m.id}:${wi}" aria-label="${esc(p(w.t))}"><img alt="${esc(p(w.t))}" decoding="async"></button></div>
             <div class="card-copy">
               <h3>${titleLink(w)}</h3>
-              <p class="by">${esc(p(w.a))} · <span class="mono">${esc(w.y)}</span></p>
+              <p class="by">${esc(p(w.a))} · <span class="mono">${esc(p(w.y))}</span></p>
               ${w.loc ? `<p class="where">${esc(p(w.loc))}</p>` : ""}
               <p class="look"><b>${esc(t("look"))}:</b> ${esc(p(w.look))}</p>
               ${w.n ? `<p class="note">${esc(p(w.n))}</p>` : ""}
@@ -381,7 +395,7 @@
     const m = BY[mid], w = m.works[+wi];
     $("#v-copy").innerHTML = `<button type="button" class="v-close" id="v-close" aria-label="${esc(t("close"))}">✕</button>
       <span class="kicker">${esc(p(m.name))}</span><h3 id="v-title">${titleLink(w)}</h3>
-      <p class="by"><b>${esc(p(w.a))}</b> · <span class="mono">${esc(w.y)}</span></p>${w.loc ? `<p class="mono" style="font-size:12px;color:var(--muted)">${esc(p(w.loc))}</p>` : ""}
+      <p class="by"><b>${esc(p(w.a))}</b> · <span class="mono">${esc(p(w.y))}</span></p>${w.loc ? `<p class="mono" style="font-size:12px;color:var(--muted)">${esc(p(w.loc))}</p>` : ""}
       <p><b>${esc(t("look"))}:</b> ${esc(p(w.look))}</p>${w.n ? `<p>${esc(p(w.n))}</p>` : ""}
       <p class="credit" style="display:flex;gap:12px;flex-wrap:wrap;font-size:13px"><a id="v-src" href="#" target="_blank" rel="noopener">${esc(t("source"))}</a></p>`;
     const box = $("#v-img");
@@ -410,23 +424,28 @@
     const g = e.target.closest("[data-go]");
     if (g) { e.preventDefault(); go(g.dataset.go); return; }
     const era = e.target.closest("[data-era]");
-    if (era) { toggle(fEras, era.dataset.era); return; }
+    if (era) { toggle(fEras, era.dataset.era, "era"); return; }
     const reg = e.target.closest("[data-region]");
-    if (reg) { toggle(fRegions, reg.dataset.region); return; }
+    if (reg) { toggle(fRegions, reg.dataset.region, "region"); return; }
     if (e.target.closest("#fb-reset, [data-reset]")) { resetFilters(); return; }
     if (e.target.closest("#fb-toggle")) { setPanel($("#fbar").dataset.open !== "true"); return; }
     const lb = e.target.closest(".lang button");
     const consent = e.target.closest("[data-consent]");
     if (consent) { setConsent(consent.dataset.consent); return; }
     if (e.target.closest("#consent-open")) { $("#consent").hidden = false; $("#consent [data-consent]").focus(); return; }
-    if (lb && lb.dataset.lang !== lang) { lang = lb.dataset.lang; store.set("art-isms-lang", lang); setParam("lang", lang); renderAll(); }
+    if (lb && lb.dataset.lang !== lang) {
+      lang = lb.dataset.lang; store.set("art-isms-lang", lang); setParam("lang", lang === "zh" ? "zh" : null); renderAll();
+      track("select_content", { content_type: "language", item_id: lang });
+      pageView();
+    }
   });
   /* Analytics consent (GA itself is set up in index.html, on the production domain only). */
   const CONSENT_KEY = "art-isms-consent";
   function setConsent(value) {
     store.set(CONSENT_KEY, value);
     if (typeof window.gtag === "function") window.gtag("consent", "update", { analytics_storage: value });
-    // Withdrawing consent also removes cookies GA set earlier (on this host and on the parent domain).
+    // Withdrawing consent also removes GA cookies: on this host, where GA now sets them (host-only, see
+    // index.html), and on the parent domain, to clean up legacy cookies set there before that change.
     if (value === "denied") {
       const parent = "." + location.hostname.split(".").slice(-2).join(".");
       document.cookie.split(";").map((c) => c.split("=")[0].trim()).filter((n) => /^_ga/.test(n)).forEach((n) => {
@@ -484,7 +503,7 @@
     renderWhy();
     if (renderAll.after) renderAll.after();
   }
-  renderAll();
+  try { renderAll(); } finally { pageView(); }
 
   const start = (location.hash || "").slice(1);
   if (BY[start]) requestAnimationFrame(() => document.getElementById(start)?.scrollIntoView());
