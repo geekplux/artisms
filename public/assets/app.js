@@ -30,7 +30,8 @@
       tlLede: "Each bar is a style’s conventional date range. Hover over a name to light up what it grew from and what it led to. Select it to jump to the style.",
       tlHint: "Scroll sideways to see the whole timeline →", tlHead: "Style",
       legRule: "Change of scale: older periods are compressed", legHatch: "Living tradition, still practised", legRel: "Related styles",
-      filterEra: "Era", filterGroup: "Region", contents: "Contents", all: "All", jump: "Jump to a style…", empty: "No style matches these filters.",
+      filterEra: "Era", filterGroup: "Region", filterBtn: "Filter", reset: "Reset", contents: "Contents", jump: "Jump to a style…", empty: "No style matches these filters.",
+      results: (n, total) => n === total ? `All ${total} styles` : `${n} of ${total} styles`, stylesUnit: "styles",
       traits: "Signature traits", from: "Grew out of", to: "Led to", noneFrom: "No direct predecessor in this atlas", noneTo: "Still unfolding, or no direct successor in this atlas",
       look: "Look for", source: "Image source", home: "Mondrian’s movement", article: "Wikipedia article, opens in a new tab", articleEn: "",
       loading: "Loading image…",
@@ -63,7 +64,8 @@
       tlLede: "每根色条代表一个流派约定俗成的年代范围。鼠标悬停在名称上可点亮它的来源与去向，点击即可跳转到该流派。",
       tlHint: "左右滑动查看完整时间线 →", tlHead: "流派",
       legRule: "比例尺变化：较早的时代被压缩", legHatch: "延续至今的活传统", legRel: "相关流派",
-      filterEra: "时代", filterGroup: "地区", contents: "目录", all: "全部", jump: "跳转到流派…", empty: "没有符合筛选条件的流派。",
+      filterEra: "时代", filterGroup: "地区", filterBtn: "筛选", reset: "重置", contents: "目录", jump: "跳转到流派…", empty: "没有符合筛选条件的流派。",
+      results: (n, total) => n === total ? `全部 ${total} 个流派` : `显示 ${n} / ${total} 个流派`, stylesUnit: "个流派",
       traits: "标志特征", from: "源自", to: "影响了", noneFrom: "本图谱中没有直接前身", noneTo: "仍在发展中，或本图谱中没有直接后继",
       look: "看点", source: "图片来源", home: "蒙德里安所属流派", article: "维基百科条目，在新标签页打开", articleEn: "英文维基百科条目，在新标签页打开",
       loading: "图片加载中…",
@@ -103,8 +105,10 @@
       history.replaceState(null, "", u.pathname + u.search + u.hash);
     } catch (e) { /* sandboxed */ }
   }
-  let fEra = "all";
-  let fGroup = "all";
+  /* Filters: sets of selected era and region ids; empty means "all". Kept in ?era=…&region=… */
+  const listParam = (key, valid) => (new URLSearchParams(location.search).get(key) || "").split(",").filter((v) => valid.includes(v));
+  const fEras = new Set(listParam("era", D.eras.map((e) => e.id)));
+  const fRegions = new Set(listParam("region", D.groups.map((g) => g.id)));
 
   const t = (k) => (UI[lang][k] ?? UI.en[k] ?? k);
   const p = (o) => (o ? (o[lang] ?? o.en) : "");
@@ -253,7 +257,7 @@
         <div class="tl-track"><button type="button" class="tl-bar${m.living ? " living" : ""}" data-go="${m.id}" style="left:${l}%;width:${w}%" title="${esc(label)}" aria-label="${esc(label)}"></button></div></div>`;
     });
     $("#tl").innerHTML = h;
-    $("#legend").innerHTML = D.groups.map((g) => `<span class="g-${g.id}"><i></i>${esc(p(g.name))}</span>`).join("") +
+    $("#legend").innerHTML = `<div class="regions" role="group" aria-label="${esc(t("filterGroup"))}">${D.groups.map(regionToggle).join("")}</div>` +
       `<span><i class="hatch"></i>${esc(t("legHatch"))}</span><span><i class="rule"></i>${esc(t("legRule"))}</span>`;
   }
   function highlight(id) {
@@ -269,12 +273,27 @@
   }
 
   /* ── Filters + contents ────────────────────── */
-  const visible = (m) => (fEra === "all" || m.era === fEra) && (fGroup === "all" || m.group === fGroup);
+  const inEra = (m) => !fEras.size || fEras.has(m.era);
+  const inRegion = (m) => !fRegions.size || fRegions.has(m.group);
+  const visible = (m) => inEra(m) && inRegion(m);
+  const countOf = (pred) => MV.filter(pred).length;
+  /* One component for region toggles: the filter bar and the timeline legend both use it. */
+  function regionToggle(g) {
+    return `<button type="button" class="rt g-${g.id}" data-region="${g.id}" aria-pressed="${fRegions.has(g.id)}">` +
+      `<i aria-hidden="true"></i><span class="rt-n">${esc(p(g.name))}</span><span class="ct">${countOf((m) => m.group === g.id && inEra(m))}<span class="vh"> ${esc(t("stylesUnit"))}</span></span></button>`;
+  }
+  /* Eras read left to right like the timeline: name, date span, matching styles. */
   function renderFilters() {
-    $("#f-era").innerHTML = `<button type="button" class="chip" data-era="all" aria-pressed="${fEra === "all"}">${esc(t("all"))}</button>` +
-      D.eras.map((e) => `<button type="button" class="chip" data-era="${e.id}" aria-pressed="${fEra === e.id}" title="${esc(p(e.span))}">${esc(p(e.name))}</button>`).join("");
-    $("#f-group").innerHTML = `<button type="button" class="chip" data-group="all" aria-pressed="${fGroup === "all"}">${esc(t("all"))}</button>` +
-      D.groups.map((g) => `<button type="button" class="chip g-${g.id}" data-group="${g.id}" aria-pressed="${fGroup === g.id}"><span class="sw"></span>${esc(p(g.name))}</button>`).join("");
+    $("#f-era").innerHTML = D.eras.map((e) => {
+      const n = countOf((m) => m.era === e.id && inRegion(m));
+      return `<button type="button" class="seg${n ? "" : " none"}" data-era="${e.id}" aria-pressed="${fEras.has(e.id)}">` +
+        `<span class="seg-n">${esc(p(e.name))}</span><span class="seg-s">${esc(p(e.span))}</span><span class="ct">${n}<span class="vh"> ${esc(t("stylesUnit"))}</span></span></button>`;
+    }).join("");
+    $("#f-group").innerHTML = D.groups.map(regionToggle).join("");
+    const shown = countOf(visible), active = fEras.size + fRegions.size;
+    $("#fb-count").textContent = UI[lang].results(shown, MV.length);
+    $("#fb-active").textContent = active ? ` · ${active}` : "";
+    $("#fb-reset").disabled = !active;
   }
   function renderToc() {
     $("#toc").innerHTML = MV.map((m, i) => `<li ${visible(m) ? "" : "hidden"}><a href="#${m.id}" data-toc="${m.id}"><span class="idx">${num(i)}</span><span><b>${esc(p(m.name))}</b><small>${esc(p(m.years))}</small></span></a></li>`).join("");
@@ -282,13 +301,22 @@
   }
   function applyFilters() {
     $$(".mv").forEach((s) => { s.hidden = !visible(BY[s.id]); });
+    $$(".tl-row[data-id]").forEach((r) => r.classList.toggle("out", !visible(BY[r.dataset.id])));
+    // Re-render the controls in place, keeping keyboard focus on the toggle that was used.
+    const focused = document.activeElement?.closest("[data-era], [data-region]");
+    const key = focused && (focused.dataset.era ? `[data-era="${focused.dataset.era}"]` : `[data-region="${focused.dataset.region}"]`);
+    const inLegend = focused && focused.closest("#legend");
+    renderFilters();
+    $("#legend .regions").innerHTML = D.groups.map(regionToggle).join("");
+    if (key) $((inLegend ? "#legend " : "#fbar ") + key)?.focus();
     renderToc();
-    const any = MV.some(visible);
     $("#movements .empty")?.remove();
-    if (!any) $("#movements").insertAdjacentHTML("beforeend", `<p class="empty">${esc(t("empty"))}</p>`);
-    $$("#f-era .chip").forEach((c) => c.setAttribute("aria-pressed", String(c.dataset.era === fEra)));
-    $$("#f-group .chip").forEach((c) => c.setAttribute("aria-pressed", String(c.dataset.group === fGroup)));
+    if (!MV.some(visible)) $("#movements").insertAdjacentHTML("beforeend", `<p class="empty">${esc(t("empty"))} <button type="button" class="lk" data-reset>${esc(t("reset"))}</button></p>`);
+    setParam("era", fEras.size ? [...fEras].join(",") : null);
+    setParam("region", fRegions.size ? [...fRegions].join(",") : null);
   }
+  function resetFilters() { fEras.clear(); fRegions.clear(); applyFilters(); }
+  const toggle = (set, id) => { if (set.has(id)) set.delete(id); else set.add(id); applyFilters(); };
 
   /* ── Movement sections ─────────────────────── */
   const chip = (id) => `<button type="button" class="lk g-${BY[id].group}" data-go="${id}"><span class="sw"></span>${esc(p(BY[id].name))}</button>`;
@@ -361,7 +389,7 @@
 
   /* ── Events ────────────────────────────────── */
   function go(id) {
-    if (!visible(BY[id])) { fEra = "all"; fGroup = "all"; applyFilters(); }
+    if (!visible(BY[id])) resetFilters();
     const el = document.getElementById(id);
     if (el) el.scrollIntoView({ behavior: matchMedia("(prefers-reduced-motion: reduce)").matches ? "auto" : "smooth" });
     try { history.replaceState(null, "", "#" + id); } catch (e) { /* sandboxed */ }
@@ -372,12 +400,24 @@
     const g = e.target.closest("[data-go]");
     if (g) { e.preventDefault(); go(g.dataset.go); return; }
     const era = e.target.closest("[data-era]");
-    if (era) { fEra = era.dataset.era; applyFilters(); return; }
-    const grp = e.target.closest("[data-group]");
-    if (grp) { fGroup = grp.dataset.group; applyFilters(); return; }
+    if (era) { toggle(fEras, era.dataset.era); return; }
+    const reg = e.target.closest("[data-region]");
+    if (reg) { toggle(fRegions, reg.dataset.region); return; }
+    if (e.target.closest("#fb-reset, [data-reset]")) { resetFilters(); return; }
+    if (e.target.closest("#fb-toggle")) { setPanel($("#fbar").dataset.open !== "true"); return; }
     const lb = e.target.closest(".lang button");
     if (lb && lb.dataset.lang !== lang) { lang = lb.dataset.lang; store.set("art-isms-lang", lang); setParam("lang", lang); renderAll(); }
   });
+  /* Phones: the bar is one row; the toggle opens the panel. Escape closes it. */
+  function setPanel(open) {
+    $("#fbar").dataset.open = String(open);
+    $("#fb-toggle").setAttribute("aria-expanded", String(open));
+  }
+  document.addEventListener("keydown", (e) => {
+    if (e.key === "Escape" && $("#fbar").dataset.open === "true") { setPanel(false); $("#fb-toggle").focus(); }
+  });
+  /* Sticky offsets below the bar: its height changes with width and when the panel opens. */
+  if ("ResizeObserver" in window) new ResizeObserver(([e]) => document.documentElement.style.setProperty("--fbar-h", `${Math.ceil(e.borderBoxSize?.[0]?.blockSize ?? e.target.offsetHeight)}px`)).observe($("#fbar"));
   $("#jump").addEventListener("change", (e) => { if (e.target.value) go(e.target.value); e.target.value = ""; });
   const tl = $("#tl");
   tl.addEventListener("mouseover", (e) => { const r = e.target.closest(".tl-row[data-id]"); if (r) highlight(r.dataset.id); });
@@ -408,6 +448,7 @@
     renderFilters();
     renderToc();
     renderMovements();
+    applyFilters();
     renderWhy();
     if (renderAll.after) renderAll.after();
   }
