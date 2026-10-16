@@ -18,6 +18,7 @@
   const UI = {
     en: {
       brand: "Art-isms", brandSub: "", navTimeline: "Timeline", navStyles: "Styles", navWhy: "Why styles change", navStudy: "How to look",
+      star: "Star", starTitle: "Star Art-isms on GitHub",
       meta: "A visual atlas of 40 art styles: a 45,000-year timeline, how each style grew from the last, and three real works for every style. In English and Chinese.",
       kicker: "A visual atlas of art styles", h1a: "ART-", h1b: "ISMS",
       dek: "How art styles <strong>began</strong>, what they <strong>look like</strong>, and how each one grew out of the last, with three real works for every style.",
@@ -53,6 +54,7 @@
     },
     zh: {
       brand: "艺术流派志", brandSub: "Art-isms", navTimeline: "时间线", navStyles: "流派", navWhy: "风格为何改变", navStudy: "如何观看",
+      star: "Star", starTitle: "在 GitHub 上给艺术流派志点个 Star",
       meta: "收录40个艺术流派的图谱：一条四万五千年的时间线，每个流派如何从前一个流派中生长出来，并为每个流派配上三件真实作品。中英双语。",
       kicker: "艺术风格图谱", h1a: "艺术", h1b: "流派志",
       dek: "艺术风格如何<strong>开始</strong>、长什么<strong>样子</strong>，又如何一脉相承、彼此反叛；每个流派配有三件真实作品。",
@@ -209,6 +211,7 @@
     $$("[data-i18n]").forEach((el) => { el.textContent = t(el.dataset.i18n); });
     $$("[data-i18n-html]").forEach((el) => { el.innerHTML = t(el.dataset.i18nHtml); });
     $$(".lang button").forEach((b) => b.setAttribute("aria-pressed", String(b.dataset.lang === lang)));
+    const star = $("#gh-star"); star.title = t("starTitle"); star.setAttribute("aria-label", t("starTitle"));
     $("#stats").textContent = UI[lang].stats(MV.length, WORKS);
   }
 
