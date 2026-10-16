@@ -55,7 +55,7 @@
     },
     zh: {
       brand: "艺术流派志", brandSub: "Art-isms", navTimeline: "时间线", navStyles: "流派", navWhy: "风格为何改变", navStudy: "如何观看",
-      star: "Star", starTitle: "在 GitHub 上给艺术流派志点个 Star",
+      star: "星标", starTitle: "在 GitHub 上给艺术流派志加星标",
       navLabel: "栏目", langLabel: "语言", mastLabel: "图谱中的五件作品", jumpLabel: "跳转到流派",
       meta: "收录40个艺术流派的图谱：一条四万五千年的时间线，每个流派如何从前一个流派中生长出来，并为每个流派配上三件真实作品。中英双语。",
       kicker: "艺术风格图谱", h1a: "艺术", h1b: "流派志",
