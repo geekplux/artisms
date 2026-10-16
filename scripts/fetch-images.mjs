@@ -15,7 +15,7 @@ import { loadData, saveData, SITE, ROOT, imagePath, commonsPage, contentHash } f
 import { creditsMarkdown } from "./lib/credits.mjs";
 
 const LARGE = 1200, SMALL = 480, QUALITY = "80";
-const UA = "art-isms-images/1.0 (https://github.com/geekplux/art-isms)";
+const UA = "art-isms-images/1.0 (https://github.com/geekplux/artisms)";
 const args = process.argv.slice(2);
 const force = args.includes("--force");
 const only = args.includes("--only") ? args[args.indexOf("--only") + 1] : null;
