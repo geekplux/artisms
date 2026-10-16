@@ -157,7 +157,10 @@ window.ARTISMS = {
       "en": "Unknown Aurignacian artists",
       "zh": "奥瑞纳文化时期的无名作者"
      },
-     "y": "c. 36,000 years ago",
+     "y": {
+      "en": "c. 36,000 years ago",
+      "zh": "约36000年前"
+     },
      "loc": {
       "en": "Ardèche, France. Photo shows a replica in the Anthropos Pavilion, Brno; the cave is closed to the public",
       "zh": "法国阿尔代什。图为布尔诺人类学馆中的复制品，岩洞本身不对公众开放"
@@ -192,7 +195,10 @@ window.ARTISMS = {
       "en": "Unknown Gravettian artist",
       "zh": "格拉维特文化时期的无名作者"
      },
-     "y": "c. 28,000–25,000 BCE",
+     "y": {
+      "en": "c. 28,000–25,000 BCE",
+      "zh": "约公元前28000–前25000年"
+     },
      "loc": {
       "en": "Natural History Museum, Vienna",
       "zh": "维也纳自然史博物馆"
@@ -227,7 +233,10 @@ window.ARTISMS = {
       "en": "Unknown Magdalenian artists",
       "zh": "马格德林文化时期的无名作者"
      },
-     "y": "c. 17,000 years ago",
+     "y": {
+      "en": "c. 17,000 years ago",
+      "zh": "约17000年前"
+     },
      "loc": {
       "en": "Dordogne, France",
       "zh": "法国多尔多涅"
@@ -309,7 +318,10 @@ window.ARTISMS = {
       "en": "Unknown",
       "zh": "无名作者"
      },
-     "y": "c. 3100 BCE",
+     "y": {
+      "en": "c. 3100 BCE",
+      "zh": "约公元前3100年"
+     },
      "loc": {
       "en": "Egyptian Museum, Cairo",
       "zh": "开罗埃及博物馆"
@@ -344,7 +356,10 @@ window.ARTISMS = {
       "en": "Thutmose (workshop)",
       "zh": "图特摩斯（工坊）"
      },
-     "y": "c. 1345 BCE",
+     "y": {
+      "en": "c. 1345 BCE",
+      "zh": "约公元前1345年"
+     },
      "loc": {
       "en": "Neues Museum, Berlin",
       "zh": "柏林新博物馆"
@@ -379,7 +394,10 @@ window.ARTISMS = {
       "en": "Unknown",
       "zh": "无名作者"
      },
-     "y": "c. 1350 BCE",
+     "y": {
+      "en": "c. 1350 BCE",
+      "zh": "约公元前1350年"
+     },
      "loc": {
       "en": "British Museum, London",
       "zh": "伦敦大英博物馆"
@@ -463,7 +481,10 @@ window.ARTISMS = {
       "en": "Charles Edenshaw (Haida)",
       "zh": "查尔斯·伊登肖（海达族）"
      },
-     "y": "19th century",
+     "y": {
+      "en": "19th century",
+      "zh": "19世纪"
+     },
      "look": {
       "en": "a moving mask makes transformation visible",
       "zh": "可开合的面具让变形清晰可见"
@@ -497,7 +518,10 @@ window.ARTISMS = {
       "en": "Hopi artist",
       "zh": "霍皮艺术家"
      },
-     "y": "late 19th century",
+     "y": {
+      "en": "late 19th century",
+      "zh": "19世纪晚期"
+     },
      "look": {
       "en": "a teaching object connected to ceremonial beings",
       "zh": "与仪式神灵相连的教学器物"
@@ -531,7 +555,10 @@ window.ARTISMS = {
       "en": "Clifford Possum Tjapaltjarri",
       "zh": "克利福德·波森·查帕尔贾里"
      },
-     "y": "1977",
+     "y": {
+      "en": "1977",
+      "zh": "1977年"
+     },
      "loc": {
       "en": "National Gallery of Australia, Canberra",
       "zh": "堪培拉澳大利亚国家美术馆"
@@ -606,7 +633,10 @@ window.ARTISMS = {
       "en": "Roman marble copy after Myron",
       "zh": "仿米隆原作的罗马大理石复制品"
      },
-     "y": "c. 140 CE copy of a c. 460–450 BCE bronze",
+     "y": {
+      "en": "c. 140 CE copy of a c. 460–450 BCE bronze",
+      "zh": "约公元140年的复制品，原作为约公元前460–前450年的青铜像"
+     },
      "loc": {
       "en": "Bronze original lost. Shown: the Lancellotti copy, Palazzo Massimo, Rome",
       "zh": "青铜原作已失传。图为兰切洛蒂仿作，藏于罗马马西莫宫"
@@ -641,7 +671,10 @@ window.ARTISMS = {
       "en": "Workshop of Phidias",
       "zh": "菲狄亚斯工坊"
      },
-     "y": "c. 443–437 BCE",
+     "y": {
+      "en": "c. 443–437 BCE",
+      "zh": "约公元前443–前437年"
+     },
      "loc": {
       "en": "British Museum, London",
       "zh": "伦敦大英博物馆"
@@ -675,7 +708,10 @@ window.ARTISMS = {
       "en": "Unknown Roman sculptor",
       "zh": "无名罗马雕塑家"
      },
-     "y": "early 1st century CE",
+     "y": {
+      "en": "early 1st century CE",
+      "zh": "公元1世纪初"
+     },
      "loc": {
       "en": "Vatican Museums",
       "zh": "梵蒂冈博物馆"
@@ -760,7 +796,10 @@ window.ARTISMS = {
       "en": "Yoruba artist",
       "zh": "约鲁巴艺术家"
      },
-     "y": "14th–early 15th century",
+     "y": {
+      "en": "14th–early 15th century",
+      "zh": "14世纪至15世纪初"
+     },
      "loc": {
       "en": "British Museum, London",
       "zh": "伦敦大英博物馆"
@@ -794,7 +833,10 @@ window.ARTISMS = {
       "en": "Edo artist",
       "zh": "埃多艺术家"
      },
-     "y": "c. 1540–1570",
+     "y": {
+      "en": "c. 1540–1570",
+      "zh": "约1540–1570年"
+     },
      "loc": {
       "en": "This plaque: Metropolitan Museum of Art, New York. Many others are in European museums",
       "zh": "此件藏于纽约大都会艺术博物馆；另有许多藏于欧洲博物馆"
@@ -829,7 +871,10 @@ window.ARTISMS = {
       "en": "Kongo artist",
       "zh": "刚果艺术家"
      },
-     "y": "c. 1880–1900",
+     "y": {
+      "en": "c. 1880–1900",
+      "zh": "约1880–1900年"
+     },
      "loc": {
       "en": "Metropolitan Museum of Art, New York",
       "zh": "纽约大都会艺术博物馆"
@@ -911,7 +956,10 @@ window.ARTISMS = {
       "en": "Unknown icon painter",
       "zh": "无名圣像画家"
      },
-     "y": "6th century",
+     "y": {
+      "en": "6th century",
+      "zh": "6世纪"
+     },
      "loc": {
       "en": "Saint Catherine’s Monastery, Sinai",
       "zh": "西奈半岛圣凯瑟琳修道院"
@@ -946,7 +994,10 @@ window.ARTISMS = {
       "en": "Unknown builders and mosaicists",
       "zh": "无名建筑师与马赛克工匠"
      },
-     "y": "consecrated 547",
+     "y": {
+      "en": "consecrated 547",
+      "zh": "547年祝圣"
+     },
      "loc": {
       "en": "Ravenna, Italy",
       "zh": "意大利拉文纳"
@@ -981,7 +1032,10 @@ window.ARTISMS = {
       "en": "Unknown",
       "zh": "无名作者"
      },
-     "y": "c. 1261",
+     "y": {
+      "en": "c. 1261",
+      "zh": "约1261年"
+     },
      "loc": {
       "en": "Hagia Sophia, Istanbul",
       "zh": "伊斯坦布尔圣索菲亚大教堂"
@@ -1066,7 +1120,10 @@ window.ARTISMS = {
       "en": "Unknown",
       "zh": "无名作者"
      },
-     "y": "9th–10th century",
+     "y": {
+      "en": "9th–10th century",
+      "zh": "9–10世纪"
+     },
      "loc": {
       "en": "Metropolitan Museum of Art, New York (this folio)",
       "zh": "纽约大都会艺术博物馆（此页）"
@@ -1101,7 +1158,10 @@ window.ARTISMS = {
       "en": "Maqsud of Kashan",
       "zh": "卡尚的马克苏德"
      },
-     "y": "1539–1540",
+     "y": {
+      "en": "1539–1540",
+      "zh": "1539–1540年"
+     },
      "loc": {
       "en": "Victoria and Albert Museum, London",
       "zh": "伦敦维多利亚与阿尔伯特博物馆"
@@ -1136,7 +1196,10 @@ window.ARTISMS = {
       "en": "Nasrid builders",
       "zh": "纳斯里德王朝工匠"
      },
-     "y": "14th century",
+     "y": {
+      "en": "14th century",
+      "zh": "14世纪"
+     },
      "loc": {
       "en": "Granada, Spain",
       "zh": "西班牙格拉纳达"
@@ -1221,7 +1284,10 @@ window.ARTISMS = {
       "en": "Fan Kuan",
       "zh": "范宽"
      },
-     "y": "c. 1000",
+     "y": {
+      "en": "c. 1000",
+      "zh": "约1000年"
+     },
      "loc": {
       "en": "National Palace Museum, Taipei",
       "zh": "台北故宫博物院"
@@ -1256,7 +1322,10 @@ window.ARTISMS = {
       "en": "Ni Zan",
       "zh": "倪瓒"
      },
-     "y": "1345",
+     "y": {
+      "en": "1345",
+      "zh": "1345年"
+     },
      "loc": {
       "en": "Shanghai Museum",
       "zh": "上海博物馆"
@@ -1291,7 +1360,10 @@ window.ARTISMS = {
       "en": "Bada Shanren (Zhu Da)",
       "zh": "八大山人（朱耷）"
      },
-     "y": "c. 1696",
+     "y": {
+      "en": "c. 1696",
+      "zh": "约1696年"
+     },
      "look": {
       "en": "eccentric brushwork makes inherited ink language intensely personal",
       "zh": "奇崛的笔墨让传统水墨语言变得极具个人性"
@@ -1373,7 +1445,10 @@ window.ARTISMS = {
       "en": "Unknown embroiderers",
       "zh": "无名刺绣者"
      },
-     "y": "c. 1070s",
+     "y": {
+      "en": "c. 1070s",
+      "zh": "约11世纪70年代"
+     },
      "loc": {
       "en": "Bayeux Museum, Normandy (on loan to the British Museum, London, until July 2027)",
       "zh": "诺曼底巴约博物馆（借展于伦敦大英博物馆，至2027年7月）"
@@ -1408,7 +1483,10 @@ window.ARTISMS = {
       "en": "Gislebertus",
       "zh": "吉斯勒贝尔图斯"
      },
-     "y": "c. 1130",
+     "y": {
+      "en": "c. 1130",
+      "zh": "约1130年"
+     },
      "loc": {
       "en": "Autun Cathedral, France",
       "zh": "法国欧坦大教堂"
@@ -1443,7 +1521,10 @@ window.ARTISMS = {
       "en": "Unknown",
       "zh": "无名作者"
      },
-     "y": "c. 1120–1132",
+     "y": {
+      "en": "c. 1120–1132",
+      "zh": "约1120–1132年"
+     },
      "loc": {
       "en": "Basilica of Sainte-Marie-Madeleine, Vézelay",
       "zh": "韦兹莱圣玛德莲大教堂"
@@ -1529,7 +1610,10 @@ window.ARTISMS = {
       "en": "Unknown",
       "zh": "无名作者"
      },
-     "y": "c. 1150–1220",
+     "y": {
+      "en": "c. 1150–1220",
+      "zh": "约1150–1220年"
+     },
      "loc": {
       "en": "Chartres Cathedral, France",
       "zh": "法国沙特尔主教座堂"
@@ -1563,7 +1647,10 @@ window.ARTISMS = {
       "en": "Unknown",
       "zh": "无名作者"
      },
-     "y": "c. 1230",
+     "y": {
+      "en": "c. 1230",
+      "zh": "约1230年"
+     },
      "loc": {
       "en": "Reims Cathedral, France",
       "zh": "法国兰斯大教堂"
@@ -1598,7 +1685,10 @@ window.ARTISMS = {
       "en": "Unknown",
       "zh": "无名作者"
      },
-     "y": "c. 1395–1399",
+     "y": {
+      "en": "c. 1395–1399",
+      "zh": "约1395–1399年"
+     },
      "loc": {
       "en": "National Gallery, London",
       "zh": "伦敦国家美术馆"
@@ -1681,7 +1771,10 @@ window.ARTISMS = {
       "en": "Sandro Botticelli",
       "zh": "桑德罗·波提切利"
      },
-     "y": "c. 1484–1486",
+     "y": {
+      "en": "c. 1484–1486",
+      "zh": "约1484–1486年"
+     },
      "loc": {
       "en": "Uffizi Gallery, Florence",
       "zh": "佛罗伦萨乌菲兹美术馆"
@@ -1716,7 +1809,10 @@ window.ARTISMS = {
       "en": "Leonardo da Vinci",
       "zh": "列奥纳多·达·芬奇"
      },
-     "y": "1495–1498",
+     "y": {
+      "en": "1495–1498",
+      "zh": "1495–1498年"
+     },
      "loc": {
       "en": "Santa Maria delle Grazie, Milan",
       "zh": "米兰圣母感恩修道院"
@@ -1751,7 +1847,10 @@ window.ARTISMS = {
       "en": "Raphael",
       "zh": "拉斐尔"
      },
-     "y": "1509–1511",
+     "y": {
+      "en": "1509–1511",
+      "zh": "1509–1511年"
+     },
      "loc": {
       "en": "Apostolic Palace, Vatican",
       "zh": "梵蒂冈使徒宫"
@@ -1836,7 +1935,10 @@ window.ARTISMS = {
       "en": "Jan van Eyck",
       "zh": "扬·凡·艾克"
      },
-     "y": "1434",
+     "y": {
+      "en": "1434",
+      "zh": "1434年"
+     },
      "loc": {
       "en": "National Gallery, London",
       "zh": "伦敦国家美术馆"
@@ -1871,7 +1973,10 @@ window.ARTISMS = {
       "en": "Hieronymus Bosch",
       "zh": "希罗尼穆斯·博斯"
      },
-     "y": "c. 1490–1500",
+     "y": {
+      "en": "c. 1490–1500",
+      "zh": "约1490–1500年"
+     },
      "loc": {
       "en": "Museo del Prado, Madrid",
       "zh": "马德里普拉多博物馆"
@@ -1906,7 +2011,10 @@ window.ARTISMS = {
       "en": "Pieter Bruegel the Elder",
       "zh": "老彼得·勃鲁盖尔"
      },
-     "y": "1565",
+     "y": {
+      "en": "1565",
+      "zh": "1565年"
+     },
      "loc": {
       "en": "Kunsthistorisches Museum, Vienna",
       "zh": "维也纳艺术史博物馆"
@@ -1988,7 +2096,10 @@ window.ARTISMS = {
       "en": "Tulsi the Elder and Jagjivan, Mughal imperial workshop",
       "zh": "老图尔西与贾吉万，莫卧儿宫廷画坊"
      },
-     "y": "c. 1590–1595",
+     "y": {
+      "en": "c. 1590–1595",
+      "zh": "约1590–1595年"
+     },
      "look": {
       "en": "crowded history made legible through detail",
       "zh": "以细节让拥挤的历史场面清晰可读"
@@ -2022,7 +2133,10 @@ window.ARTISMS = {
       "en": "Mewar painter",
       "zh": "梅瓦尔画家"
      },
-     "y": "1719",
+     "y": {
+      "en": "1719",
+      "zh": "1719年"
+     },
      "loc": {
       "en": "Art Institute of Chicago",
       "zh": "芝加哥艺术博物馆"
@@ -2056,7 +2170,10 @@ window.ARTISMS = {
       "en": "Attributed to Nihal Chand",
       "zh": "传为尼哈尔·昌德"
      },
-     "y": "c. 1760",
+     "y": {
+      "en": "c. 1760",
+      "zh": "约1760年"
+     },
      "loc": {
       "en": "Fine Arts Museums of San Francisco",
       "zh": "旧金山美术馆"
@@ -2139,7 +2256,10 @@ window.ARTISMS = {
       "en": "Parmigianino",
       "zh": "帕米贾尼诺"
      },
-     "y": "1534–1540",
+     "y": {
+      "en": "1534–1540",
+      "zh": "1534–1540年"
+     },
      "loc": {
       "en": "Uffizi Gallery, Florence",
       "zh": "佛罗伦萨乌菲兹美术馆"
@@ -2174,7 +2294,10 @@ window.ARTISMS = {
       "en": "Agnolo Bronzino",
       "zh": "阿尼奥洛·布龙齐诺"
      },
-     "y": "c. 1545",
+     "y": {
+      "en": "c. 1545",
+      "zh": "约1545年"
+     },
      "loc": {
       "en": "National Gallery, London",
       "zh": "伦敦国家美术馆"
@@ -2209,7 +2332,10 @@ window.ARTISMS = {
       "en": "El Greco",
       "zh": "埃尔·格列柯"
      },
-     "y": "1586–1588",
+     "y": {
+      "en": "1586–1588",
+      "zh": "1586–1588年"
+     },
      "loc": {
       "en": "Church of Santo Tomé, Toledo",
       "zh": "托莱多圣多美教堂"
@@ -2293,7 +2419,10 @@ window.ARTISMS = {
       "en": "Caravaggio",
       "zh": "卡拉瓦乔"
      },
-     "y": "1599–1600",
+     "y": {
+      "en": "1599–1600",
+      "zh": "1599–1600年"
+     },
      "loc": {
       "en": "San Luigi dei Francesi, Rome",
       "zh": "罗马圣王路易堂"
@@ -2328,7 +2457,10 @@ window.ARTISMS = {
       "en": "Gian Lorenzo Bernini",
       "zh": "吉安·洛伦佐·贝尼尼"
      },
-     "y": "1647–1652",
+     "y": {
+      "en": "1647–1652",
+      "zh": "1647–1652年"
+     },
      "loc": {
       "en": "Santa Maria della Vittoria, Rome",
       "zh": "罗马胜利之后圣母堂"
@@ -2363,7 +2495,10 @@ window.ARTISMS = {
       "en": "Diego Velázquez",
       "zh": "迭戈·委拉斯开兹"
      },
-     "y": "1656",
+     "y": {
+      "en": "1656",
+      "zh": "1656年"
+     },
      "loc": {
       "en": "Museo del Prado, Madrid",
       "zh": "马德里普拉多博物馆"
@@ -2450,7 +2585,10 @@ window.ARTISMS = {
       "en": "Katsushika Hokusai",
       "zh": "葛饰北斋"
      },
-     "y": "c. 1831",
+     "y": {
+      "en": "c. 1831",
+      "zh": "约1831年"
+     },
      "loc": {
       "en": "Many impressions; e.g. Metropolitan Museum, British Museum",
       "zh": "存世多版，如大都会艺术博物馆、大英博物馆"
@@ -2485,7 +2623,10 @@ window.ARTISMS = {
       "en": "Utagawa Hiroshige",
       "zh": "歌川广重"
      },
-     "y": "1857",
+     "y": {
+      "en": "1857",
+      "zh": "1857年"
+     },
      "loc": {
       "en": "Many impressions",
       "zh": "存世多版"
@@ -2520,7 +2661,10 @@ window.ARTISMS = {
       "en": "Kitagawa Utamaro",
       "zh": "喜多川歌麿"
      },
-     "y": "c. 1793",
+     "y": {
+      "en": "c. 1793",
+      "zh": "约1793年"
+     },
      "loc": {
       "en": "Many impressions; e.g. Museum of Fine Arts, Boston",
       "zh": "存世多版，如波士顿美术馆"
@@ -2604,7 +2748,10 @@ window.ARTISMS = {
       "en": "Jean-Honoré Fragonard",
       "zh": "让-奥诺雷·弗拉戈纳尔"
      },
-     "y": "c. 1767",
+     "y": {
+      "en": "c. 1767",
+      "zh": "约1767年"
+     },
      "loc": {
       "en": "Wallace Collection, London",
       "zh": "伦敦华莱士收藏馆"
@@ -2639,7 +2786,10 @@ window.ARTISMS = {
       "en": "Antoine Watteau",
       "zh": "安托万·华托"
      },
-     "y": "1717",
+     "y": {
+      "en": "1717",
+      "zh": "1717年"
+     },
      "loc": {
       "en": "Louvre, Paris",
       "zh": "巴黎卢浮宫"
@@ -2673,7 +2823,10 @@ window.ARTISMS = {
       "en": "François Boucher",
       "zh": "弗朗索瓦·布歇"
      },
-     "y": "1759",
+     "y": {
+      "en": "1759",
+      "zh": "1759年"
+     },
      "loc": {
       "en": "Wallace Collection, London",
       "zh": "伦敦华莱士收藏馆"
@@ -2757,7 +2910,10 @@ window.ARTISMS = {
       "en": "Jacques-Louis David",
       "zh": "雅克-路易·大卫"
      },
-     "y": "1784",
+     "y": {
+      "en": "1784",
+      "zh": "1784年"
+     },
      "loc": {
       "en": "Louvre, Paris",
       "zh": "巴黎卢浮宫"
@@ -2792,7 +2948,10 @@ window.ARTISMS = {
       "en": "Jacques-Louis David",
       "zh": "雅克-路易·大卫"
      },
-     "y": "1793",
+     "y": {
+      "en": "1793",
+      "zh": "1793年"
+     },
      "loc": {
       "en": "Royal Museums of Fine Arts, Brussels",
       "zh": "布鲁塞尔比利时皇家美术馆"
@@ -2827,7 +2986,10 @@ window.ARTISMS = {
       "en": "Jean-Auguste-Dominique Ingres",
       "zh": "让-奥古斯特-多米尼克·安格尔"
      },
-     "y": "1814",
+     "y": {
+      "en": "1814",
+      "zh": "1814年"
+     },
      "loc": {
       "en": "Louvre, Paris",
       "zh": "巴黎卢浮宫"
@@ -2912,7 +3074,10 @@ window.ARTISMS = {
       "en": "Eugène Delacroix",
       "zh": "欧仁·德拉克洛瓦"
      },
-     "y": "1830",
+     "y": {
+      "en": "1830",
+      "zh": "1830年"
+     },
      "loc": {
       "en": "Louvre, Paris",
       "zh": "巴黎卢浮宫"
@@ -2947,7 +3112,10 @@ window.ARTISMS = {
       "en": "J. M. W. Turner",
       "zh": "J·M·W·透纳"
      },
-     "y": "1840",
+     "y": {
+      "en": "1840",
+      "zh": "1840年"
+     },
      "loc": {
       "en": "Museum of Fine Arts, Boston",
       "zh": "波士顿美术馆"
@@ -2982,7 +3150,10 @@ window.ARTISMS = {
       "en": "Caspar David Friedrich",
       "zh": "卡斯帕·大卫·弗里德里希"
      },
-     "y": "c. 1818",
+     "y": {
+      "en": "c. 1818",
+      "zh": "约1818年"
+     },
      "loc": {
       "en": "Hamburger Kunsthalle",
       "zh": "汉堡美术馆"
@@ -3066,7 +3237,10 @@ window.ARTISMS = {
       "en": "Gustave Courbet",
       "zh": "古斯塔夫·库尔贝"
      },
-     "y": "1849",
+     "y": {
+      "en": "1849",
+      "zh": "1849年"
+     },
      "loc": {
       "en": "Destroyed in 1945",
       "zh": "毁于1945年"
@@ -3101,7 +3275,10 @@ window.ARTISMS = {
       "en": "Jean-François Millet",
       "zh": "让-弗朗索瓦·米勒"
      },
-     "y": "1857",
+     "y": {
+      "en": "1857",
+      "zh": "1857年"
+     },
      "loc": {
       "en": "Musée d’Orsay, Paris",
       "zh": "巴黎奥赛博物馆"
@@ -3136,7 +3313,10 @@ window.ARTISMS = {
       "en": "Honoré Daumier",
       "zh": "奥诺雷·杜米埃"
      },
-     "y": "c. 1862–1864",
+     "y": {
+      "en": "c. 1862–1864",
+      "zh": "约1862–1864年"
+     },
      "loc": {
       "en": "Metropolitan Museum of Art, New York",
       "zh": "纽约大都会艺术博物馆"
@@ -3219,7 +3399,10 @@ window.ARTISMS = {
       "en": "Claude Monet",
       "zh": "克劳德·莫奈"
      },
-     "y": "1872",
+     "y": {
+      "en": "1872",
+      "zh": "1872年"
+     },
      "loc": {
       "en": "Musée Marmottan Monet, Paris",
       "zh": "巴黎马摩丹莫奈美术馆"
@@ -3254,7 +3437,10 @@ window.ARTISMS = {
       "en": "Pierre-Auguste Renoir",
       "zh": "皮埃尔-奥古斯特·雷诺阿"
      },
-     "y": "1876",
+     "y": {
+      "en": "1876",
+      "zh": "1876年"
+     },
      "loc": {
       "en": "Musée d’Orsay, Paris",
       "zh": "巴黎奥赛博物馆"
@@ -3289,7 +3475,10 @@ window.ARTISMS = {
       "en": "Edgar Degas",
       "zh": "埃德加·德加"
      },
-     "y": "1873–1876",
+     "y": {
+      "en": "1873–1876",
+      "zh": "1873–1876年"
+     },
      "loc": {
       "en": "Musée d’Orsay, Paris",
       "zh": "巴黎奥赛博物馆"
@@ -3377,7 +3566,10 @@ window.ARTISMS = {
       "en": "Vincent van Gogh",
       "zh": "文森特·梵高"
      },
-     "y": "1889",
+     "y": {
+      "en": "1889",
+      "zh": "1889年"
+     },
      "loc": {
       "en": "Museum of Modern Art, New York",
       "zh": "纽约现代艺术博物馆"
@@ -3412,7 +3604,10 @@ window.ARTISMS = {
       "en": "Paul Cézanne",
       "zh": "保罗·塞尚"
      },
-     "y": "c. 1904–1906",
+     "y": {
+      "en": "c. 1904–1906",
+      "zh": "约1904–1906年"
+     },
      "loc": {
       "en": "Artizon Museum, Tokyo",
       "zh": "东京Artizon美术馆"
@@ -3447,7 +3642,10 @@ window.ARTISMS = {
       "en": "Paul Gauguin",
       "zh": "保罗·高更"
      },
-     "y": "1888",
+     "y": {
+      "en": "1888",
+      "zh": "1888年"
+     },
      "loc": {
       "en": "Scottish National Gallery, Edinburgh",
       "zh": "爱丁堡苏格兰国家美术馆"
@@ -3533,7 +3731,10 @@ window.ARTISMS = {
       "en": "Alphonse Mucha",
       "zh": "阿尔丰斯·穆夏"
      },
-     "y": "1896",
+     "y": {
+      "en": "1896",
+      "zh": "1896年"
+     },
      "loc": {
       "en": "Poster, many copies",
       "zh": "海报，存世多份"
@@ -3568,7 +3769,10 @@ window.ARTISMS = {
       "en": "Gustav Klimt",
       "zh": "古斯塔夫·克里姆特"
      },
-     "y": "c. 1907–1909",
+     "y": {
+      "en": "c. 1907–1909",
+      "zh": "约1907–1909年"
+     },
      "loc": {
       "en": "Belvedere, Vienna",
       "zh": "维也纳美景宫"
@@ -3603,7 +3807,10 @@ window.ARTISMS = {
       "en": "Hector Guimard",
       "zh": "埃克托尔·吉马尔"
      },
-     "y": "c. 1900",
+     "y": {
+      "en": "c. 1900",
+      "zh": "约1900年"
+     },
      "loc": {
       "en": "Paris",
       "zh": "巴黎"
@@ -3687,7 +3894,10 @@ window.ARTISMS = {
       "en": "Henri Matisse",
       "zh": "亨利·马蒂斯"
      },
-     "y": "1905",
+     "y": {
+      "en": "1905",
+      "zh": "1905年"
+     },
      "loc": {
       "en": "San Francisco Museum of Modern Art",
       "zh": "旧金山现代艺术博物馆"
@@ -3722,7 +3932,10 @@ window.ARTISMS = {
       "en": "André Derain",
       "zh": "安德烈·德兰"
      },
-     "y": "1906",
+     "y": {
+      "en": "1906",
+      "zh": "1906年"
+     },
      "loc": {
       "en": "Musée d’Orsay, Paris",
       "zh": "巴黎奥赛博物馆"
@@ -3757,7 +3970,10 @@ window.ARTISMS = {
       "en": "Henri Matisse",
       "zh": "亨利·马蒂斯"
      },
-     "y": "1905–1906",
+     "y": {
+      "en": "1905–1906",
+      "zh": "1905–1906年"
+     },
      "loc": {
       "en": "Barnes Foundation, Philadelphia",
       "zh": "费城巴恩斯基金会"
@@ -3840,7 +4056,10 @@ window.ARTISMS = {
       "en": "Edvard Munch",
       "zh": "爱德华·蒙克"
      },
-     "y": "1893",
+     "y": {
+      "en": "1893",
+      "zh": "1893年"
+     },
      "loc": {
       "en": "National Museum, Oslo",
       "zh": "奥斯陆国家博物馆"
@@ -3875,7 +4094,10 @@ window.ARTISMS = {
       "en": "Ernst Ludwig Kirchner",
       "zh": "恩斯特·路德维希·基希纳"
      },
-     "y": "1913",
+     "y": {
+      "en": "1913",
+      "zh": "1913年"
+     },
      "loc": {
       "en": "Museum of Modern Art, New York",
       "zh": "纽约现代艺术博物馆"
@@ -3909,7 +4131,10 @@ window.ARTISMS = {
       "en": "Egon Schiele",
       "zh": "埃贡·席勒"
      },
-     "y": "1912",
+     "y": {
+      "en": "1912",
+      "zh": "1912年"
+     },
      "loc": {
       "en": "Leopold Museum, Vienna",
       "zh": "维也纳利奥波德博物馆"
@@ -3998,7 +4223,10 @@ window.ARTISMS = {
       "en": "Juan Gris",
       "zh": "胡安·格里斯"
      },
-     "y": "1915",
+     "y": {
+      "en": "1915",
+      "zh": "1915年"
+     },
      "loc": {
       "en": "Philadelphia Museum of Art",
       "zh": "费城艺术博物馆"
@@ -4033,7 +4261,10 @@ window.ARTISMS = {
       "en": "Albert Gleizes",
       "zh": "阿尔贝·格莱兹"
      },
-     "y": "1912",
+     "y": {
+      "en": "1912",
+      "zh": "1912年"
+     },
      "loc": {
       "en": "Musée d’Art Moderne de Paris",
       "zh": "巴黎市立现代艺术博物馆"
@@ -4067,7 +4298,10 @@ window.ARTISMS = {
       "en": "Jean Metzinger",
       "zh": "让·梅青格尔"
      },
-     "y": "1913",
+     "y": {
+      "en": "1913",
+      "zh": "1913年"
+     },
      "loc": {
       "en": "Lost; seized by the Nazis in 1937",
       "zh": "已失踪；1937年遭纳粹没收"
@@ -4144,7 +4378,10 @@ window.ARTISMS = {
       "en": "Umberto Boccioni",
       "zh": "翁贝托·波丘尼"
      },
-     "y": "1913",
+     "y": {
+      "en": "1913",
+      "zh": "1913年"
+     },
      "loc": {
       "en": "Bronze casts, e.g. MoMA and Tate",
       "zh": "青铜铸件，如纽约现代艺术博物馆、泰特美术馆"
@@ -4178,7 +4415,10 @@ window.ARTISMS = {
       "en": "Giacomo Balla",
       "zh": "贾科莫·巴拉"
      },
-     "y": "1912",
+     "y": {
+      "en": "1912",
+      "zh": "1912年"
+     },
      "loc": {
       "en": "Buffalo AKG Art Museum",
       "zh": "布法罗AKG艺术博物馆"
@@ -4205,7 +4445,10 @@ window.ARTISMS = {
       "en": "Luigi Russolo",
       "zh": "路易吉·鲁索洛"
      },
-     "y": "1912–1913",
+     "y": {
+      "en": "1912–1913",
+      "zh": "1912–1913年"
+     },
      "loc": {
       "en": "Centre Pompidou, Paris",
       "zh": "巴黎蓬皮杜艺术中心"
@@ -4289,7 +4532,10 @@ window.ARTISMS = {
       "en": "Kazimir Malevich",
       "zh": "卡济米尔·马列维奇"
      },
-     "y": "1915",
+     "y": {
+      "en": "1915",
+      "zh": "1915年"
+     },
      "loc": {
       "en": "Tretyakov Gallery, Moscow",
       "zh": "莫斯科特列季亚科夫画廊"
@@ -4324,7 +4570,10 @@ window.ARTISMS = {
       "en": "Vladimir Tatlin",
       "zh": "弗拉基米尔·塔特林"
      },
-     "y": "1919–1920",
+     "y": {
+      "en": "1919–1920",
+      "zh": "1919–1920年"
+     },
      "loc": {
       "en": "Unbuilt; models and reconstructions",
       "zh": "未建成；仅存模型与复原"
@@ -4359,7 +4608,10 @@ window.ARTISMS = {
       "en": "El Lissitzky",
       "zh": "埃尔·利西茨基"
      },
-     "y": "1919–1920",
+     "y": {
+      "en": "1919–1920",
+      "zh": "1919–1920年"
+     },
      "loc": {
       "en": "Poster, Civil War era",
       "zh": "国内战争时期海报"
@@ -4446,7 +4698,10 @@ window.ARTISMS = {
       "en": "Marcel Duchamp; photo by Alfred Stieglitz",
       "zh": "马塞尔·杜尚；阿尔弗雷德·斯蒂格利茨摄"
      },
-     "y": "1917",
+     "y": {
+      "en": "1917",
+      "zh": "1917年"
+     },
      "loc": {
       "en": "Original lost; 1964 replicas in several museums",
       "zh": "原作遗失；1964年复制品藏于多家博物馆"
@@ -4481,7 +4736,10 @@ window.ARTISMS = {
       "en": "Hannah Höch",
       "zh": "汉娜·霍赫"
      },
-     "y": "1919–1920",
+     "y": {
+      "en": "1919–1920",
+      "zh": "1919–1920年"
+     },
      "loc": {
       "en": "Neue Nationalgalerie, Berlin",
       "zh": "柏林新国家美术馆"
@@ -4507,7 +4765,10 @@ window.ARTISMS = {
       "en": "Francis Picabia",
       "zh": "弗朗西斯·毕卡比亚"
      },
-     "y": "1921",
+     "y": {
+      "en": "1921",
+      "zh": "1921年"
+     },
      "loc": {
       "en": "Centre Pompidou, Paris",
       "zh": "巴黎蓬皮杜艺术中心"
@@ -4594,7 +4855,10 @@ window.ARTISMS = {
       "en": "Piet Mondrian",
       "zh": "皮特·蒙德里安"
      },
-     "y": "1930",
+     "y": {
+      "en": "1930",
+      "zh": "1930年"
+     },
      "loc": {
       "en": "Kunsthaus Zürich",
       "zh": "苏黎世美术馆"
@@ -4628,7 +4892,10 @@ window.ARTISMS = {
       "en": "Gerrit Rietveld",
       "zh": "赫里特·里特费尔德"
      },
-     "y": "1918–1923",
+     "y": {
+      "en": "1918–1923",
+      "zh": "1918–1923年"
+     },
      "loc": {
       "en": "Many examples (shown: NGV, Melbourne)",
       "zh": "多件藏品（图为墨尔本维多利亚国家美术馆）"
@@ -4663,7 +4930,10 @@ window.ARTISMS = {
       "en": "Theo van Doesburg",
       "zh": "提奥·凡·杜斯伯格"
      },
-     "y": "1925–1926",
+     "y": {
+      "en": "1925–1926",
+      "zh": "1925–1926年"
+     },
      "loc": {
       "en": "Peggy Guggenheim Collection, Venice",
       "zh": "威尼斯佩吉·古根海姆收藏馆"
@@ -4747,7 +5017,10 @@ window.ARTISMS = {
       "en": "Walter Gropius",
       "zh": "瓦尔特·格罗皮乌斯"
      },
-     "y": "1925–1926",
+     "y": {
+      "en": "1925–1926",
+      "zh": "1925–1926年"
+     },
      "loc": {
       "en": "Dessau, Germany",
       "zh": "德国德绍"
@@ -4781,7 +5054,10 @@ window.ARTISMS = {
       "en": "Marcel Breuer",
       "zh": "马塞尔·布劳耶"
      },
-     "y": "1925–1926",
+     "y": {
+      "en": "1925–1926",
+      "zh": "1925–1926年"
+     },
      "loc": {
       "en": "Still in production",
       "zh": "至今仍在生产"
@@ -4815,7 +5091,10 @@ window.ARTISMS = {
       "en": "Oskar Schlemmer",
       "zh": "奥斯卡·施莱默"
      },
-     "y": "1922",
+     "y": {
+      "en": "1922",
+      "zh": "1922年"
+     },
      "loc": {
       "en": "Premiered in Stuttgart; costumes now in the Staatsgalerie Stuttgart",
       "zh": "首演于斯图加特；服装现藏斯图加特国立美术馆"
@@ -4898,7 +5177,10 @@ window.ARTISMS = {
       "en": "William Van Alen",
       "zh": "威廉·凡·艾伦"
      },
-     "y": "1928–1930",
+     "y": {
+      "en": "1928–1930",
+      "zh": "1928–1930年"
+     },
      "loc": {
       "en": "New York",
       "zh": "纽约"
@@ -4933,7 +5215,10 @@ window.ARTISMS = {
       "en": "Paul Landowski, Heitor da Silva Costa, Albert Caquot, Gheorghe Leonida",
       "zh": "保罗·朗多夫斯基、埃托尔·达席尔瓦·科斯塔、阿尔伯特·卡科、格奥尔基·莱奥尼达"
      },
-     "y": "1922–1931",
+     "y": {
+      "en": "1922–1931",
+      "zh": "1922–1931年"
+     },
      "loc": {
       "en": "Rio de Janeiro, Brazil",
       "zh": "巴西里约热内卢"
@@ -4968,7 +5253,10 @@ window.ARTISMS = {
       "en": "Tamara de Lempicka",
       "zh": "塔玛拉·德·蓝碧嘉"
      },
-     "y": "1929",
+     "y": {
+      "en": "1929",
+      "zh": "1929年"
+     },
      "loc": {
       "en": "Private collection",
       "zh": "私人收藏"
@@ -5043,7 +5331,10 @@ window.ARTISMS = {
       "en": "Frida Kahlo",
       "zh": "弗里达·卡罗"
      },
-     "y": "1939",
+     "y": {
+      "en": "1939",
+      "zh": "1939年"
+     },
      "loc": {
       "en": "Museo de Arte Moderno, Mexico City",
       "zh": "墨西哥城现代艺术博物馆"
@@ -5070,7 +5361,10 @@ window.ARTISMS = {
       "en": "Diego Rivera",
       "zh": "迭戈·里维拉"
      },
-     "y": "1932–1933",
+     "y": {
+      "en": "1932–1933",
+      "zh": "1932–1933年"
+     },
      "loc": {
       "en": "Detroit Institute of Arts",
       "zh": "底特律美术馆"
@@ -5105,7 +5399,10 @@ window.ARTISMS = {
       "en": "Tarsila do Amaral",
       "zh": "塔尔西拉·杜·阿马拉尔"
      },
-     "y": "1928",
+     "y": {
+      "en": "1928",
+      "zh": "1928年"
+     },
      "loc": {
       "en": "MALBA, Buenos Aires",
       "zh": "布宜诺斯艾利斯拉美艺术博物馆"
@@ -5179,7 +5476,10 @@ window.ARTISMS = {
       "en": "René Magritte",
       "zh": "勒内·马格利特"
      },
-     "y": "1929",
+     "y": {
+      "en": "1929",
+      "zh": "1929年"
+     },
      "loc": {
       "en": "Los Angeles County Museum of Art",
       "zh": "洛杉矶郡艺术博物馆"
@@ -5207,7 +5507,10 @@ window.ARTISMS = {
       "en": "Salvador Dalí",
       "zh": "萨尔瓦多·达利"
      },
-     "y": "1931",
+     "y": {
+      "en": "1931",
+      "zh": "1931年"
+     },
      "loc": {
       "en": "Museum of Modern Art, New York",
       "zh": "纽约现代艺术博物馆"
@@ -5235,7 +5538,10 @@ window.ARTISMS = {
       "en": "Yves Tanguy",
       "zh": "伊夫·唐吉"
      },
-     "y": "1926",
+     "y": {
+      "en": "1926",
+      "zh": "1926年"
+     },
      "loc": {
       "en": "Philadelphia Museum of Art",
       "zh": "费城艺术博物馆"
@@ -5320,7 +5626,10 @@ window.ARTISMS = {
       "en": "Jackson Pollock",
       "zh": "杰克逊·波洛克"
      },
-     "y": "1950",
+     "y": {
+      "en": "1950",
+      "zh": "1950年"
+     },
      "loc": {
       "en": "Metropolitan Museum of Art, New York",
       "zh": "纽约大都会艺术博物馆"
@@ -5347,7 +5656,10 @@ window.ARTISMS = {
       "en": "Mark Rothko",
       "zh": "马克·罗斯科"
      },
-     "y": "1953",
+     "y": {
+      "en": "1953",
+      "zh": "1953年"
+     },
      "loc": {
       "en": "Museum of Contemporary Art, Los Angeles",
       "zh": "洛杉矶当代艺术博物馆"
@@ -5374,7 +5686,10 @@ window.ARTISMS = {
       "en": "Arshile Gorky",
       "zh": "阿希尔·戈尔基"
      },
-     "y": "1944",
+     "y": {
+      "en": "1944",
+      "zh": "1944年"
+     },
      "loc": {
       "en": "Buffalo AKG Art Museum",
       "zh": "布法罗AKG艺术博物馆"
@@ -5460,7 +5775,10 @@ window.ARTISMS = {
       "en": "Andy Warhol",
       "zh": "安迪·沃霍尔"
      },
-     "y": "1962",
+     "y": {
+      "en": "1962",
+      "zh": "1962年"
+     },
      "loc": {
       "en": "Tate, London",
       "zh": "伦敦泰特美术馆"
@@ -5488,7 +5806,10 @@ window.ARTISMS = {
       "en": "Roy Lichtenstein",
       "zh": "罗伊·利希滕斯坦"
      },
-     "y": "1992",
+     "y": {
+      "en": "1992",
+      "zh": "1992年"
+     },
      "loc": {
       "en": "Port Vell, Barcelona",
       "zh": "巴塞罗那旧港"
@@ -5522,7 +5843,10 @@ window.ARTISMS = {
       "en": "Richard Hamilton",
       "zh": "理查德·汉密尔顿"
      },
-     "y": "1956",
+     "y": {
+      "en": "1956",
+      "zh": "1956年"
+     },
      "loc": {
       "en": "Kunsthalle Tübingen",
       "zh": "图宾根美术馆"
@@ -5597,7 +5921,10 @@ window.ARTISMS = {
       "en": "Donald Judd",
       "zh": "唐纳德·贾德"
      },
-     "y": "1980 (stacks from 1965)",
+     "y": {
+      "en": "1980 (stacks from 1965)",
+      "zh": "1980年（堆叠系列始于1965年）"
+     },
      "loc": {
       "en": "Tate, London",
       "zh": "伦敦泰特美术馆"
@@ -5625,7 +5952,10 @@ window.ARTISMS = {
       "en": "Carl Andre",
       "zh": "卡尔·安德烈"
      },
-     "y": "1966",
+     "y": {
+      "en": "1966",
+      "zh": "1966年"
+     },
      "loc": {
       "en": "Tate, London",
       "zh": "伦敦泰特美术馆"
@@ -5652,7 +5982,10 @@ window.ARTISMS = {
       "en": "Dan Flavin",
       "zh": "丹·弗莱文"
      },
-     "y": "1964–1990 (this version 1969–1970)",
+     "y": {
+      "en": "1964–1990 (this version 1969–1970)",
+      "zh": "1964–1990年（此版本1969–1970年）"
+     },
      "loc": {
       "en": "This version: National Gallery of Art, Washington",
       "zh": "此件藏于华盛顿国家美术馆"
@@ -5739,7 +6072,10 @@ window.ARTISMS = {
       "en": "Joseph Kosuth",
       "zh": "约瑟夫·科苏斯"
      },
-     "y": "1965",
+     "y": {
+      "en": "1965",
+      "zh": "1965年"
+     },
      "loc": {
       "en": "Museum of Modern Art, New York",
       "zh": "纽约现代艺术博物馆"
@@ -5765,7 +6101,10 @@ window.ARTISMS = {
       "en": "Yoko Ono",
       "zh": "小野洋子"
      },
-     "y": "1964",
+     "y": {
+      "en": "1964",
+      "zh": "1964年"
+     },
      "loc": {
       "en": "Artist’s book, first published in Tokyo",
       "zh": "艺术家书，首版于东京"
@@ -5790,7 +6129,10 @@ window.ARTISMS = {
       "en": "On Kawara",
       "zh": "河原温"
      },
-     "y": "from 1966",
+     "y": {
+      "en": "from 1966",
+      "zh": "1966年起"
+     },
      "loc": {
       "en": "Many collections",
       "zh": "多家机构收藏"
@@ -5875,7 +6217,10 @@ window.ARTISMS = {
       "en": "Cindy Sherman",
       "zh": "辛迪·舍曼"
      },
-     "y": "1977–1980",
+     "y": {
+      "en": "1977–1980",
+      "zh": "1977–1980年"
+     },
      "loc": {
       "en": "Museum of Modern Art, New York",
       "zh": "纽约现代艺术博物馆"
@@ -5900,7 +6245,10 @@ window.ARTISMS = {
       "en": "Jeff Koons",
       "zh": "杰夫·昆斯"
      },
-     "y": "1992",
+     "y": {
+      "en": "1992",
+      "zh": "1992年"
+     },
      "loc": {
       "en": "Guggenheim Museum Bilbao (since 1997)",
       "zh": "毕尔巴鄂古根海姆博物馆（1997年起）"
@@ -5935,7 +6283,10 @@ window.ARTISMS = {
       "en": "Richard Prince",
       "zh": "理查德·普林斯"
      },
-     "y": "1989",
+     "y": {
+      "en": "1989",
+      "zh": "1989年"
+     },
      "loc": {
       "en": "Metropolitan Museum of Art, New York (one print)",
       "zh": "纽约大都会艺术博物馆（其中一版）"
@@ -6010,7 +6361,10 @@ window.ARTISMS = {
       "en": "Yayoi Kusama",
       "zh": "草间弥生"
      },
-     "y": "1965–present",
+     "y": {
+      "en": "1965–present",
+      "zh": "1965年至今"
+     },
      "loc": {
       "en": "Many versions worldwide",
       "zh": "全球多个版本"
@@ -6037,7 +6391,10 @@ window.ARTISMS = {
       "en": "Louise Bourgeois",
       "zh": "路易丝·布尔乔亚"
      },
-     "y": "1999 (this cast 2001)",
+     "y": {
+      "en": "1999 (this cast 2001)",
+      "zh": "1999年（此件铸于2001年）"
+     },
      "loc": {
       "en": "This cast: Guggenheim Museum Bilbao; others worldwide",
       "zh": "此件藏于毕尔巴鄂古根海姆博物馆；世界各地另有数件"
@@ -6072,7 +6429,10 @@ window.ARTISMS = {
       "en": "Kara Walker",
       "zh": "卡拉·沃克"
      },
-     "y": "2014",
+     "y": {
+      "en": "2014",
+      "zh": "2014年"
+     },
      "loc": {
       "en": "Domino Sugar Factory, Brooklyn (temporary)",
       "zh": "布鲁克林多米诺糖厂（临时展出）"

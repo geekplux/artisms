@@ -10,7 +10,7 @@ A sibling of [Worldlines](https://worldlines.geekplux.org/), a Mondrian-style at
 - **One timeline** for 45,000 years. The scale is compressed for older periods, and thick rules mark where it changes. Hover over a style to light up what it grew from and what it led to.
 - **Filters** by era and region in a bar that stays on screen while you browse the styles. They also dim the timeline, and a filtered view can be shared as a link, e.g. `?era=avant,post&region=west`.
 - **Real images**: 92 freely licensed files from Wikimedia Commons, hosted with the site and credited with author and licence ([CREDITS.md](CREDITS.md)). Works still in copyright are linked, not reproduced.
-- **English and Chinese** throughout, switchable on the page. The English view shows no Chinese, and the Chinese view keeps each style's English name beside it. English is the default; the choice is remembered, and `?lang=en` or `?lang=zh` in a link opens that language.
+- **English and Chinese** throughout, switchable on the page. The English view shows no Chinese, and the Chinese view keeps each style's English name beside it. English is the default; the choice is remembered, and `?lang=en` or `?lang=zh` in a link opens that language. The address always matches the language on screen: Chinese is `/?lang=zh`, English is plain `/`.
 - **No build step.** Plain HTML, CSS and JavaScript. All content lives in one data file.
 
 ## Run it locally
@@ -79,7 +79,7 @@ Each work is either **hosted** or a **placeholder**:
 | `wiki` | Required. English Wikipedia article the work's title links to: the work's own article, or the closest one (building, series, artist). |
 | `zhwiki` | Chinese Wikipedia article, from the English article's language links. Without it, the Chinese view links to the English article, marked EN. |
 
-Other work fields: `t` title, `a` artist, `y` year, `loc` where it is (optional), `look` what to look for, and `n` a one-sentence note (optional).
+Other work fields: `t` title, `a` artist, `y` date, `loc` where it is (optional), `look` what to look for, and `n` a one-sentence note (optional). All of them are `{ en, zh }` pairs, including `y`: `{ "en": "c. 1907–1909", "zh": "约1907–1909年" }`, using the same conventions as a style's `years` (约 for c., 公元前/公元 for BCE/CE, 世纪 for centuries, 年 after a year).
 
 ## Adding or correcting a style
 
@@ -105,6 +105,10 @@ The site is served at **https://artisms.geekplux.org/** (a custom domain on the 
 ## Analytics
 
 Google Analytics 4 (`G-V8MD23KS3G`) runs on **artisms.geekplux.org only**, never locally or on preview URLs. It uses Consent Mode v2: until a visitor accepts in the consent bar, `analytics_storage` is denied, so GA receives cookieless pings and sets no cookies. Accepting allows analytics cookies; "Cookie settings" in the footer reopens the choice, and declining deletes any `_ga` cookies. Ads features stay denied. The setup is the inline script in `public/index.html`; the bar is in `public/assets/app.js`.
+
+GA's cookies are host-only (`cookie_domain: "none"`, so they carry no `Domain` attribute; `location.hostname` would still give a domain cookie on `.artisms.geekplux.org`), so Art-isms and its sibling sites on `geekplux.org` do not share a client id or delete each other's cookies; declining still removes old `_ga` cookies from the parent domain, where earlier versions set them. The automatic page view is off (`send_page_view: false`): `app.js` sends `page_view` itself after rendering, with the final title and the address without its `#style` hash, and again after a language switch. It also sends `select_content` when a visitor switches language (`content_type: "language"`) or turns on an era or region filter (`"era"`, `"region"`, with the id as `item_id`). Events go through `track()`, a no-op wherever `gtag` is not defined, and never carry free text or personal data.
+
+In the GA4 property, **Admin → Data streams → (web stream) → Enhanced measurement → Page views → Show advanced settings → "Page changes based on browser history events" must be off.** The page uses `history.replaceState` to change the query (`?lang`, `?era`, `?region`), and with that setting on GA logs an extra page view for each change; `send_page_view: false` does not stop those. Hash-only changes (`#style`) do not create page views.
 
 ## Images and copyright
 

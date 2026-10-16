@@ -29,7 +29,10 @@
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 26 26'%3E%3Crect width='26' height='26' fill='%23141414'/%3E%3Crect x='2' y='2' width='13' height='14' fill='%23d52b1e'/%3E%3Crect x='17' y='2' width='7' height='14' fill='%23fffdf7'/%3E%3Crect x='2' y='18' width='6' height='6' fill='%231d4ed8'/%3E%3Crect x='10' y='18' width='14' height='6' fill='%23f3c623'/%3E%3C/svg%3E">
 <script>
 /* Google Analytics 4 with Consent Mode v2, on the production domain only. Until the visitor accepts in
-   the consent bar (assets/app.js), analytics_storage stays "denied": GA sends cookieless pings, no IDs. */
+   the consent bar (assets/app.js), analytics_storage stays "denied": GA sends cookieless pings, no IDs.
+   Cookies are host-only (cookie_domain "none": no Domain attribute, not even .artisms.geekplux.org), so
+   sibling sites on geekplux.org neither share a client id nor touch each other's cookies. The page_view is sent by app.js after rendering, once the title and
+   language are final, so the automatic one is off. */
 (function () {
   var GA_ID = "G-V8MD23KS3G";
   if (location.hostname !== "artisms.geekplux.org") return;
@@ -39,7 +42,7 @@
   window.gtag = function () { window.dataLayer.push(arguments); };
   gtag("consent", "default", { ad_storage: "denied", ad_user_data: "denied", ad_personalization: "denied", analytics_storage: choice === "granted" ? "granted" : "denied" });
   gtag("js", new Date());
-  gtag("config", GA_ID);
+  gtag("config", GA_ID, { send_page_view: false, cookie_domain: "none" });
   var s = document.createElement("script");
   s.async = true;
   s.src = "https://www.googletagmanager.com/gtag/js?id=" + GA_ID;
@@ -55,14 +58,14 @@
       <svg viewBox="0 0 26 26" aria-hidden="true"><rect width="26" height="26" fill="#141414"/><rect x="2" y="2" width="13" height="14" fill="#d52b1e"/><rect x="17" y="2" width="7" height="14" fill="#fffdf7"/><rect x="2" y="18" width="6" height="6" fill="#1d4ed8"/><rect x="10" y="18" width="14" height="6" fill="#f3c623"/></svg>
       <span data-i18n="brand">Art-isms</span> <small data-i18n="brandSub" hidden></small>
     </a>
-    <nav class="nav" aria-label="Sections">
+    <nav class="nav" aria-label="Sections" data-i18n-aria="navLabel">
       <a href="#timeline" data-i18n="navTimeline">Timeline</a>
       <a href="#styles" data-i18n="navStyles">Styles</a>
       <a href="#why" data-i18n="navWhy">Why styles change</a>
       <a href="#study" data-i18n="navStudy">How to look</a>
     </nav>
     <a class="gh-star" id="gh-star" href="https://github.com/geekplux/artisms" target="_blank" rel="noopener" aria-label="Star Art-isms on GitHub" title="Star Art-isms on GitHub"><svg viewBox="0 0 16 16" aria-hidden="true"><path fill="currentColor" d="M8 0c4.42 0 8 3.58 8 8a8.013 8.013 0 0 1-5.45 7.59c-.4.08-.55-.17-.55-.38 0-.27.01-1.13.01-2.2 0-.75-.25-1.23-.54-1.48 1.78-.2 3.65-.88 3.65-3.95 0-.88-.31-1.59-.82-2.15.08-.2.36-1.02-.08-2.12 0 0-.67-.22-2.2.82-.64-.18-1.32-.27-2-.27-.68 0-1.36.09-2 .27-1.53-1.03-2.2-.82-2.2-.82-.44 1.1-.16 1.92-.08 2.12-.51.56-.82 1.28-.82 2.15 0 3.06 1.86 3.75 3.64 3.95-.23.2-.44.55-.51 1.07-.46.21-1.61.55-2.33-.66-.15-.24-.6-.83-1.23-.82-.67.01-.27.38.01.53.34.19.73.9.82 1.13.16.45.68 1.31 2.69.94 0 .67.01 1.3.01 1.49 0 .21-.15.45-.55.38A7.995 7.995 0 0 1 0 8c0-4.42 3.58-8 8-8Z"/></svg><span data-i18n="star">Star</span></a>
-    <div class="lang" role="group" aria-label="Language">
+    <div class="lang" role="group" aria-label="Language" data-i18n-aria="langLabel">
       <button type="button" id="lang-en" data-lang="en" aria-pressed="true">EN</button>
       <button type="button" id="lang-zh" data-lang="zh" lang="zh-CN" aria-pressed="false">中文</button>
     </div>
@@ -82,7 +85,7 @@
         <a class="scroll-cue" href="#timeline" data-i18n="ctaTimeline">See the timeline</a>
       </div>
     </div>
-    <div class="mast-art" id="mast-art" aria-label="Five works from the atlas"></div>
+    <div class="mast-art" id="mast-art" aria-label="Five works from the atlas" data-i18n-aria="mastLabel"></div>
   </section>
 
   <aside class="answer">
@@ -120,8 +123,8 @@
       </div>
     </div>
     <div class="wrap pad">
-      <aside class="side" aria-label="Contents">
-        <select class="jump" id="jump" aria-label="Jump to a style"></select>
+      <aside class="side" aria-label="Contents" data-i18n-aria="contents">
+        <select class="jump" id="jump" aria-label="Jump to a style" data-i18n-aria="jumpLabel"></select>
         <h3 class="toc-h" data-i18n="contents">Contents</h3>
         <ol class="toc" id="toc">
 <!-- seo:toc -->
@@ -427,6 +430,6 @@
 </dialog>
 
 <script src="data/movements.js"></script>
-<script src="assets/app.js?v=6bd7dce0a8"></script>
+<script src="assets/app.js?v=0d04317d72"></script>
 </body>
 </html>
