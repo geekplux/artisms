@@ -8,7 +8,7 @@
 <meta name="description" content="A visual atlas of 40 art styles: a 45,000-year timeline, how each style grew from the last, and three real works for every style. In English and Chinese.">
 <meta name="theme-color" content="#fffdf7">
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 26 26'%3E%3Crect width='26' height='26' fill='%23141414'/%3E%3Crect x='2' y='2' width='13' height='14' fill='%23d52b1e'/%3E%3Crect x='17' y='2' width='7' height='14' fill='%23fffdf7'/%3E%3Crect x='2' y='18' width='6' height='6' fill='%231d4ed8'/%3E%3Crect x='10' y='18' width='14' height='6' fill='%23f3c623'/%3E%3C/svg%3E">
-<link rel="stylesheet" href="assets/styles.css?v=e0bf649f47">
+<link rel="stylesheet" href="assets/styles.css?v=45bc09ecc6">
 </head>
 <body>
 <header class="topbar">
@@ -70,12 +70,19 @@
   </section>
 
   <section class="block atlas" id="styles">
+    <div class="fbar" id="fbar" data-open="false">
+      <div class="wrap pad fbar-in">
+        <button type="button" class="fb-toggle" id="fb-toggle" aria-expanded="false" aria-controls="fb-panel"><span data-i18n="filterBtn">Filter</span><b id="fb-active"></b></button>
+        <p class="fb-count" id="fb-count" role="status"></p>
+        <button type="button" class="fb-reset" id="fb-reset" data-i18n="reset" disabled>Reset</button>
+        <div class="fb-panel" id="fb-panel">
+          <div class="fb-group fb-era" role="group" aria-labelledby="fb-era-h"><span class="fb-h" id="fb-era-h" data-i18n="filterEra">Era</span><div class="eras" id="f-era"></div></div>
+          <div class="fb-group fb-reg" role="group" aria-labelledby="fb-reg-h"><span class="fb-h" id="fb-reg-h" data-i18n="filterGroup">Region</span><div class="regions" id="f-group"></div></div>
+        </div>
+      </div>
+    </div>
     <div class="wrap pad">
       <aside class="side" aria-label="Contents">
-        <div class="filters">
-          <div><h3 data-i18n="filterEra">Era</h3><div class="chips" id="f-era"></div></div>
-          <div><h3 data-i18n="filterGroup">Region</h3><div class="chips" id="f-group"></div></div>
-        </div>
         <select class="jump" id="jump" aria-label="Jump to a style"></select>
         <h3 class="toc-h" data-i18n="contents">Contents</h3>
         <ol class="toc" id="toc"></ol>
@@ -129,6 +136,6 @@
 </dialog>
 
 <script src="data/movements.js"></script>
-<script src="assets/app.js?v=81068f38b9"></script>
+<script src="assets/app.js?v=18632f57a5"></script>
 </body>
 </html>
