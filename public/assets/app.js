@@ -365,7 +365,7 @@
             <div class="frame" data-work="${m.id}:${wi}"${arStyle(m.id, wi)}><span class="spin">${esc(t("loading"))}</span><button type="button" data-view="${m.id}:${wi}" aria-label="${esc(p(w.t))}"><img alt="${esc(p(w.t))}" decoding="async"></button></div>
             <div class="card-copy">
               <h3>${titleLink(w)}</h3>
-              <p class="by">${esc(p(w.a))} · <span class="mono">${esc(w.y)}</span></p>
+              <p class="by">${esc(p(w.a))} · <span class="mono">${esc(p(w.y))}</span></p>
               ${w.loc ? `<p class="where">${esc(p(w.loc))}</p>` : ""}
               <p class="look"><b>${esc(t("look"))}:</b> ${esc(p(w.look))}</p>
               ${w.n ? `<p class="note">${esc(p(w.n))}</p>` : ""}
@@ -392,7 +392,7 @@
     const m = BY[mid], w = m.works[+wi];
     $("#v-copy").innerHTML = `<button type="button" class="v-close" id="v-close" aria-label="${esc(t("close"))}">✕</button>
       <span class="kicker">${esc(p(m.name))}</span><h3 id="v-title">${titleLink(w)}</h3>
-      <p class="by"><b>${esc(p(w.a))}</b> · <span class="mono">${esc(w.y)}</span></p>${w.loc ? `<p class="mono" style="font-size:12px;color:var(--muted)">${esc(p(w.loc))}</p>` : ""}
+      <p class="by"><b>${esc(p(w.a))}</b> · <span class="mono">${esc(p(w.y))}</span></p>${w.loc ? `<p class="mono" style="font-size:12px;color:var(--muted)">${esc(p(w.loc))}</p>` : ""}
       <p><b>${esc(t("look"))}:</b> ${esc(p(w.look))}</p>${w.n ? `<p>${esc(p(w.n))}</p>` : ""}
       <p class="credit" style="display:flex;gap:12px;flex-wrap:wrap;font-size:13px"><a id="v-src" href="#" target="_blank" rel="noopener">${esc(t("source"))}</a></p>`;
     const box = $("#v-img");
