@@ -52,10 +52,10 @@ Read README.md for the data model and file layout. These are the rules that are 
 - Google Analytics loads only on `artisms.geekplux.org`, in Consent Mode v2 with everything denied until the
   visitor accepts. Don't add other trackers, third-party scripts or cookies without the owner's agreement,
   and never load GA before the consent defaults are set.
-- GA cookies are host-only (`cookie_domain: location.hostname`) and the automatic page view is off: `app.js` sends
+- GA cookies are host-only (`cookie_domain: "none"`; `location.hostname` would give a domain cookie) and the automatic page view is off: `app.js` sends
   `page_view` after rendering. Events go through `track()` in `app.js` (a no-op where `gtag` is undefined); never send
   free text or personal data in event parameters. The GA4 stream setting "Page changes based on browser history
-  events" must stay off (see README).
+  events" must stay off (see README): otherwise each ?lang/?era/?region change logs an extra page view.
 
 ## Caching and deployment
 
