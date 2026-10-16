@@ -159,8 +159,8 @@ window.ARTISMS = {
      },
      "y": "c. 36,000 years ago",
      "loc": {
-      "en": "Ardèche, France. Photo shows a museum replica; the cave is closed to the public",
-      "zh": "法国阿尔代什。图为博物馆复制品，岩洞本身不对公众开放"
+      "en": "Ardèche, France. Photo shows a replica in the Anthropos Pavilion, Brno; the cave is closed to the public",
+      "zh": "法国阿尔代什。图为布尔诺人类学馆中的复制品，岩洞本身不对公众开放"
      },
      "look": {
       "en": "shading and overlapping lines that suggest movement",
@@ -319,8 +319,8 @@ window.ARTISMS = {
       "zh": "等级、分栏、复合姿态"
      },
      "n": {
-      "en": "A ceremonial slate palette often read as marking the unification of Upper and Lower Egypt. The king towers over his enemy.",
-      "zh": "一块礼仪用石板调色板，常被解读为上下埃及统一的纪念。国王的身形远大于敌人。"
+      "en": "A ceremonial siltstone palette often read as marking the unification of Upper and Lower Egypt. The king towers over his enemy.",
+      "zh": "一块礼仪用粉砂岩调色板，常被解读为上下埃及统一的纪念。国王的身形远大于敌人。"
      },
      "c": "e/e3/Narmer_Palette_smiting_side.jpg",
      "image": {
@@ -460,8 +460,8 @@ window.ARTISMS = {
       "zh": "渡鸦变形面具"
      },
      "a": {
-      "en": "Haida artist",
-      "zh": "海达艺术家"
+      "en": "Charles Edenshaw (Haida)",
+      "zh": "查尔斯·伊登肖（海达族）"
      },
      "y": "19th century",
      "look": {
@@ -482,7 +482,11 @@ window.ARTISMS = {
       "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
       "page": "https://commons.wikimedia.org/wiki/File:Edenshaw%27s_Raven_Transformation_Mask.jpg"
      },
-     "wiki": "Transformation mask"
+     "wiki": "Transformation mask",
+     "loc": {
+      "en": "Pitt Rivers Museum, Oxford",
+      "zh": "牛津皮特·里弗斯博物馆"
+     }
     },
     {
      "t": {
@@ -524,8 +528,8 @@ window.ARTISMS = {
       "zh": "瓦卢古龙"
      },
      "a": {
-      "en": "Clifford Possum Tjapaltjarri with Tim Leura Tjapaltjarri",
-      "zh": "克利福德·波森·查帕尔贾里与蒂姆·勒拉·查帕尔贾里"
+      "en": "Clifford Possum Tjapaltjarri",
+      "zh": "克利福德·波森·查帕尔贾里"
      },
      "y": "1977",
      "loc": {
@@ -599,10 +603,10 @@ window.ARTISMS = {
       "zh": "掷铁饼者"
      },
      "a": {
-      "en": "Myron; Roman copy",
-      "zh": "米隆；罗马仿制品"
+      "en": "Roman marble copy after Myron",
+      "zh": "仿米隆原作的罗马大理石复制品"
      },
-     "y": "c. 460–450 BCE",
+     "y": "c. 140 CE copy of a c. 460–450 BCE bronze",
      "loc": {
       "en": "Bronze original lost. Shown: the Lancellotti copy, Palazzo Massimo, Rome",
       "zh": "青铜原作已失传。图为兰切洛蒂仿作，藏于罗马马西莫宫"
@@ -756,7 +760,7 @@ window.ARTISMS = {
       "en": "Yoruba artist",
       "zh": "约鲁巴艺术家"
      },
-     "y": "12th–15th century",
+     "y": "14th–early 15th century",
      "loc": {
       "en": "British Museum, London",
       "zh": "伦敦大英博物馆"
@@ -766,8 +770,8 @@ window.ARTISMS = {
       "zh": "理想化的写实与王者气度"
      },
      "n": {
-      "en": "Cast in brass with remarkable naturalism. Europeans first refused to believe West Africans had made it.",
-      "zh": "以黄铜铸成，写实程度惊人。欧洲人起初甚至不相信这出自西非工匠之手。"
+      "en": "Cast with remarkable naturalism. When Ife heads first reached Europe in the early 1900s, some refused to believe West Africans had made them.",
+      "zh": "铸造得极为写实。20世纪初伊费头像初到欧洲时，有人不肯相信它们出自西非工匠之手。"
      },
      "wiki": "Bronze Head from Ife",
      "c": "9/9a/Arte_yoruba%2C_nigeria%2C_testa_da_ife%2C_12-15mo_secolo.JPG",
@@ -790,7 +794,7 @@ window.ARTISMS = {
       "en": "Edo artist",
       "zh": "埃多艺术家"
      },
-     "y": "16th–17th century",
+     "y": "c. 1540–1570",
      "loc": {
       "en": "This plaque: Metropolitan Museum of Art, New York. Many others are in European museums",
       "zh": "此件藏于纽约大都会艺术博物馆；另有许多藏于欧洲博物馆"
@@ -825,7 +829,7 @@ window.ARTISMS = {
       "en": "Kongo artist",
       "zh": "刚果艺术家"
      },
-     "y": "19th century",
+     "y": "c. 1880–1900",
      "loc": {
       "en": "Metropolitan Museum of Art, New York",
       "zh": "纽约大都会艺术博物馆"
@@ -970,8 +974,8 @@ window.ARTISMS = {
     },
     {
      "t": {
-      "en": "Deësis mosaic, Hagia Sophia",
-      "zh": "圣索菲亚大教堂“祈求”马赛克"
+      "en": "Deësis mosaic, Hagia Sophia (detail: John the Baptist)",
+      "zh": "圣索菲亚大教堂“祈求”马赛克（局部：施洗约翰）"
      },
      "a": {
       "en": "Unknown",
@@ -1281,7 +1285,7 @@ window.ARTISMS = {
     {
      "t": {
       "en": "Lotus and Ducks",
-      "zh": "荷花水鸟图"
+      "zh": "荷花双凫图"
      },
      "a": {
       "en": "Bada Shanren (Zhu Da)",
@@ -1307,7 +1311,11 @@ window.ARTISMS = {
       "page": "https://commons.wikimedia.org/wiki/File:Bada_Shanren_-_Lotus_and_Ducks_-_Google_Art_Project.jpg"
      },
      "wiki": "Bada Shanren",
-     "zhwiki": "八大山人"
+     "zhwiki": "八大山人",
+     "loc": {
+      "en": "Freer Gallery of Art, Washington",
+      "zh": "华盛顿弗利尔美术馆"
+     }
     }
    ],
    "from": []
@@ -1367,8 +1375,8 @@ window.ARTISMS = {
      },
      "y": "c. 1070s",
      "loc": {
-      "en": "Bayeux Museum, Normandy",
-      "zh": "诺曼底巴约博物馆"
+      "en": "Bayeux Museum, Normandy (on loan to the British Museum, London, until July 2027)",
+      "zh": "诺曼底巴约博物馆（借展于伦敦大英博物馆，至2027年7月）"
      },
      "look": {
       "en": "continuous narrative and emphatic gesture",
@@ -1603,15 +1611,15 @@ window.ARTISMS = {
       "en": "King Richard II kneels before the Virgin and a host of angels in costly ultramarine blue.",
       "zh": "英王理查二世跪拜于圣母和身着昂贵群青蓝的天使们面前。"
      },
-     "c": "a/a2/The_Wilton_Diptych_%28left%29.jpg",
+     "c": "3/3c/The_Wilton_diptych%3B_stitched_panels.jpg",
      "image": {
-      "w": 634,
-      "h": 957,
-      "v": "71b2c42a5c",
-      "author": "Unknown Master, French (second half of 14th century)",
+      "w": 1200,
+      "h": 939,
+      "v": "b8600800cb",
+      "author": "Unknown (English or French)",
       "license": "Public domain",
       "licenseUrl": null,
-      "page": "https://commons.wikimedia.org/wiki/File:The_Wilton_Diptych_(left).jpg"
+      "page": "https://commons.wikimedia.org/wiki/File:The_Wilton_diptych;_stitched_panels.jpg"
      },
      "wiki": "Wilton Diptych"
     }
@@ -1863,7 +1871,7 @@ window.ARTISMS = {
       "en": "Hieronymus Bosch",
       "zh": "希罗尼穆斯·博斯"
      },
-     "y": "c. 1490–1510",
+     "y": "c. 1490–1500",
      "loc": {
       "en": "Museo del Prado, Madrid",
       "zh": "马德里普拉多博物馆"
@@ -1973,12 +1981,12 @@ window.ARTISMS = {
    "works": [
     {
      "t": {
-      "en": "Battle scene on the Ganges, from the Akbarnama",
-      "zh": "恒河战事图（《阿克巴本纪》插图）"
+      "en": "Shuja’at Khan pursuing Asaf Khan on the Ganges, from the Akbarnama",
+      "zh": "舒贾特汗在恒河追击阿萨夫汗（《阿克巴本纪》插图）"
      },
      "a": {
-      "en": "Mughal imperial workshop",
-      "zh": "莫卧儿宫廷画坊"
+      "en": "Tulsi the Elder and Jagjivan, Mughal imperial workshop",
+      "zh": "老图尔西与贾吉万，莫卧儿宫廷画坊"
      },
      "y": "c. 1590–1595",
      "look": {
@@ -1999,7 +2007,11 @@ window.ARTISMS = {
       "licenseUrl": null,
       "page": "https://commons.wikimedia.org/wiki/File:1565-Battle_Scene_with_Boats_on_the_Ganges-Akbarnama.jpg"
      },
-     "wiki": "Akbarnama"
+     "wiki": "Akbarnama",
+     "loc": {
+      "en": "Victoria and Albert Museum, London",
+      "zh": "伦敦维多利亚与阿尔伯特博物馆"
+     }
     },
     {
      "t": {
@@ -2007,21 +2019,21 @@ window.ARTISMS = {
       "zh": "亭中的黑天与罗陀"
      },
      "a": {
-      "en": "Pahari painter",
-      "zh": "帕哈里画家"
+      "en": "Mewar painter",
+      "zh": "梅瓦尔画家"
      },
-     "y": "c. 1760–1770",
+     "y": "1719",
      "loc": {
       "en": "Art Institute of Chicago",
       "zh": "芝加哥艺术博物馆"
      },
      "look": {
-      "en": "romance and nature create lyrical intimacy",
-      "zh": "爱情与自然营造出抒情的亲密感"
+      "en": "romance and architecture create lyrical intimacy",
+      "zh": "爱情与建筑营造出抒情的亲密感"
      },
      "n": {
-      "en": "A page illustrating a book of seven hundred love poems, with the divine lovers sheltering from the rain.",
-      "zh": "为一部七百首爱情诗集所绘的插页，神圣的恋人在亭中避雨。"
+      "en": "A page from Bihari’s Sat Sai, seven hundred Hindi love couplets: Krishna and Radha sit together in a palace pavilion while companions look on.",
+      "zh": "出自比哈里的《七百咏》（一部七百首印地语爱情对句集）：黑天与罗陀同坐宫中亭阁，侍女在旁观望。"
      },
      "c": "8/8c/Anonymous_-_Krishna_and_Radha_in_a_Pavilion%2C_page_from_a_copy_of_the_Sat_Sai_Seven_Hundred_Verses%29_-_1977.150_-_Art_Institute_of_Chicago.jpg",
      "image": {
@@ -2037,8 +2049,8 @@ window.ARTISMS = {
     },
     {
      "t": {
-      "en": "Savant Singh and Bani Thani as Krishna and Radha",
-      "zh": "萨万特·辛格与巴尼·塔尼化身黑天与罗陀"
+      "en": "Savant Singh and Bani Thani as Krishna and Radha in a Palace Garden",
+      "zh": "萨万特·辛格与巴尼·塔尼化身黑天与罗陀漫步宫苑"
      },
      "a": {
       "en": "Attributed to Nihal Chand",
@@ -2046,8 +2058,8 @@ window.ARTISMS = {
      },
      "y": "c. 1760",
      "loc": {
-      "en": "Kishangarh, Rajasthan",
-      "zh": "拉贾斯坦邦基申格尔"
+      "en": "Fine Arts Museums of San Francisco",
+      "zh": "旧金山美术馆"
      },
      "look": {
       "en": "stylised profile embodies courtly beauty",
@@ -2057,15 +2069,15 @@ window.ARTISMS = {
       "en": "Kishangarh painters gave faces long, arching eyes and sharp profiles, a look still copied today.",
       "zh": "基申格尔画派赋予人物修长上挑的眼睛与锐利的侧脸，这种造型至今仍被模仿。"
      },
-     "c": "0/04/2_Attributed_to_Nihal_Chand._Savant_Singh_and_Bani_Thani_as_Krishna_and_Radha_%28detail%29%2C_Kishangarh%2C_ca._1760._Madison_Avenue_gallery.jpg",
+     "c": "2/22/7_attrib_to_Nihal_Chand_Raja_Savant_Singh_and_Bani_Thani_as_Krishna_and_Radha_Artwork_ca_1760_Fine_Arts_Museums_of_San_Francisco.jpg",
      "image": {
-      "w": 1024,
-      "h": 655,
-      "v": "ada64b8866",
-      "author": "Nihal Chand",
+      "w": 476,
+      "h": 680,
+      "v": "7c31f1599a",
+      "author": "Attributed to Nihâl Chand",
       "license": "Public domain",
       "licenseUrl": null,
-      "page": "https://commons.wikimedia.org/wiki/File:2_Attributed_to_Nihal_Chand._Savant_Singh_and_Bani_Thani_as_Krishna_and_Radha_(detail),_Kishangarh,_ca._1760._Madison_Avenue_gallery.jpg"
+      "page": "https://commons.wikimedia.org/wiki/File:7_attrib_to_Nihal_Chand_Raja_Savant_Singh_and_Bani_Thani_as_Krishna_and_Radha_Artwork_ca_1760_Fine_Arts_Museums_of_San_Francisco.jpg"
      },
      "wiki": "Bani Thani"
     }
@@ -2155,8 +2167,8 @@ window.ARTISMS = {
     },
     {
      "t": {
-      "en": "Venus, Cupid, Folly and Time",
-      "zh": "维纳斯、丘比特、愚蠢与时间"
+      "en": "An Allegory with Venus and Cupid",
+      "zh": "维纳斯与丘比特的寓言"
      },
      "a": {
       "en": "Agnolo Bronzino",
@@ -2640,15 +2652,15 @@ window.ARTISMS = {
       "en": "So new that the French Academy created a category for it: the fête galante.",
       "zh": "风格之新，让法兰西学院专门为它设立了一个画种：“游乐画”。"
      },
-     "c": "1/1e/Antoine_Watteau_-_Pilgrimage_to_Cythera_-_WGA25454.jpg",
+     "c": "2/28/L%27Embarquement_pour_Cyth%C3%A8re%2C_by_Antoine_Watteau%2C_from_C2RMF_retouched.jpg",
      "image": {
-      "w": 829,
-      "h": 563,
-      "v": "76a5237c20",
+      "w": 1200,
+      "h": 787,
+      "v": "7ff281e8d1",
       "author": "Jean-Antoine Watteau",
       "license": "Public domain",
       "licenseUrl": null,
-      "page": "https://commons.wikimedia.org/wiki/File:Antoine_Watteau_-_Pilgrimage_to_Cythera_-_WGA25454.jpg"
+      "page": "https://commons.wikimedia.org/wiki/File:L%27Embarquement_pour_Cyth%C3%A8re,_by_Antoine_Watteau,_from_C2RMF_retouched.jpg"
      },
      "wiki": "The Embarkation for Cythera"
     },
@@ -2671,8 +2683,8 @@ window.ARTISMS = {
       "zh": "奢华、修养与粉彩的丰盈"
      },
      "n": {
-      "en": "The king’s favourite in silk and roses, posed in a garden as a woman of taste and learning.",
-      "zh": "国王的宠姬身着丝绸、点缀玫瑰，在花园中被塑造为有品味、有学识的女性。"
+      "en": "The king’s favourite in pink silk beside a statue of Friendship consoling Love, with her spaniel and roses as emblems of loyalty and love.",
+      "zh": "国王的宠姬身着粉色丝绸，倚在“友谊安慰爱情”的雕像旁，身边的小猎犬与玫瑰象征忠诚与爱情。"
      },
      "c": "9/97/Fran%C3%A7ois_Boucher_-_Madame_de_Pompadour%2C_1759.jpg",
      "image": {
@@ -2945,8 +2957,8 @@ window.ARTISMS = {
       "zh": "色彩与风暴吞没人类的残暴"
      },
      "n": {
-      "en": "Based on the real case of the Zong, where enslaved people were thrown overboard for insurance money.",
-      "zh": "取材于“宗”号真实事件：船员为骗取保险金把被奴役者抛入大海。"
+      "en": "Probably inspired by the Zong case of 1781, where enslaved people were thrown overboard for insurance money.",
+      "zh": "很可能取材于1781年的“宗”号事件：船员为骗取保险金把被奴役者抛入大海。"
      },
      "c": "e/e2/J.M.W._Turner_Slave_Ship_%28_Slavers_Throwing_Overboard_the_Dead_and_Dying%2C_Typhoon_Coming_On%29._1840.png",
      "image": {
@@ -3064,8 +3076,8 @@ window.ARTISMS = {
       "zh": "不加英雄化的繁重劳动"
      },
      "n": {
-      "en": "Two road-menders, faces hidden, one too old and one too young. The painting was destroyed in the bombing of Dresden.",
-      "zh": "两名修路工看不见面孔，一个太老，一个太小。此画在德累斯顿轰炸中被毁。"
+      "en": "Two road-menders, faces hidden, one too old and one too young. The painting was lost in 1945, in the bombing around Dresden.",
+      "zh": "两名修路工看不见面孔，一个太老，一个太小。此画于1945年德累斯顿一带的轰炸中遗失。"
      },
      "c": "4/46/Gustave_Courbet_-_The_Stonebreakers_-_WGA05457.jpg",
      "image": {
@@ -3277,7 +3289,7 @@ window.ARTISMS = {
       "en": "Edgar Degas",
       "zh": "埃德加·德加"
      },
-     "y": "c. 1871–1874",
+     "y": "1873–1876",
      "loc": {
       "en": "Musée d’Orsay, Paris",
       "zh": "巴黎奥赛博物馆"
@@ -3375,8 +3387,8 @@ window.ARTISMS = {
       "zh": "以节奏化笔触外化情感"
      },
      "n": {
-      "en": "Painted from memory and imagination while Van Gogh stayed at the asylum in Saint-Rémy.",
-      "zh": "梵高在圣雷米精神病院期间，凭记忆与想象画成。"
+      "en": "Based on the view from his asylum window at Saint-Rémy, but painted by day and freely reimagined.",
+      "zh": "取材于梵高在圣雷米精神病院窗外的景色，却是在白天画成，并经过自由的重新想象。"
      },
      "c": "e/ea/Van_Gogh_-_Starry_Night_-_Google_Art_Project.jpg",
      "image": {
@@ -3428,8 +3440,8 @@ window.ARTISMS = {
     },
     {
      "t": {
-      "en": "Vision After the Sermon",
-      "zh": "布道后的幻象"
+      "en": "Vision of the Sermon (Jacob Wrestling with the Angel)",
+      "zh": "布道的幻象（雅各与天使摔跤）"
      },
      "a": {
       "en": "Paul Gauguin",
@@ -3445,8 +3457,8 @@ window.ARTISMS = {
       "zh": "平涂色彩与象征性的非自然空间"
      },
      "n": {
-      "en": "Breton women imagine Jacob wrestling the angel on a field of pure red. Shown here via a postage-stamp reproduction.",
-      "zh": "布列塔尼妇女在纯红色的田野上想象雅各与天使摔跤。此处图片取自一枚邮票上的复制图。"
+      "en": "Breton women imagine Jacob wrestling the angel on a field of pure red.",
+      "zh": "布列塔尼妇女在纯红色的田野上想象雅各与天使摔跤。"
      },
      "c": "5/56/La_vision_apr%C3%A8s_le_sermon_%28Paul_Gauguin%29.jpg",
      "image": {
@@ -3556,7 +3568,7 @@ window.ARTISMS = {
       "en": "Gustav Klimt",
       "zh": "古斯塔夫·克里姆特"
      },
-     "y": "1907–1908",
+     "y": "c. 1907–1909",
      "loc": {
       "en": "Belvedere, Vienna",
       "zh": "维也纳美景宫"
@@ -3712,8 +3724,8 @@ window.ARTISMS = {
      },
      "y": "1906",
      "loc": {
-      "en": "National Gallery of Art, Washington",
-      "zh": "华盛顿国家美术馆"
+      "en": "Musée d’Orsay, Paris",
+      "zh": "巴黎奥赛博物馆"
      },
      "look": {
       "en": "London rebuilt in saturated oppositions",
@@ -3841,15 +3853,15 @@ window.ARTISMS = {
       "en": "A forerunner of the movement. Munch made several versions in paint, pastel and print.",
       "zh": "该运动的先驱之作。蒙克用油彩、色粉与版画创作了多个版本。"
      },
-     "c": "8/86/Edvard_Munch_-_The_Scream_-_Google_Art_Project.jpg",
+     "c": "b/b5/Edvard_Munch_-_The_Scream_-_NG.M.00939_-_National_Museum_of_Art%2C_Architecture_and_Design.jpg",
      "image": {
-      "w": 949,
+      "w": 967,
       "h": 1200,
-      "v": "5bfef46bc6",
+      "v": "b644aa24f4",
       "author": "Edvard Munch",
       "license": "Public domain",
       "licenseUrl": null,
-      "page": "https://commons.wikimedia.org/wiki/File:Edvard_Munch_-_The_Scream_-_Google_Art_Project.jpg"
+      "page": "https://commons.wikimedia.org/wiki/File:Edvard_Munch_-_The_Scream_-_NG.M.00939_-_National_Museum_of_Art,_Architecture_and_Design.jpg"
      },
      "wiki": "The Scream",
      "zhwiki": "吶喊 (繪畫)"
@@ -4505,8 +4517,8 @@ window.ARTISMS = {
       "zh": "朋友们的签名和玩笑取代了画家的笔触"
      },
      "n": {
-      "en": "Laid up with an eye infection, Picabia asked visiting friends to sign the canvas. He added one painted eye and called it finished.",
-      "zh": "毕卡比亚因眼疾卧床，请来访的朋友在画布上签名留言，自己只画了一只眼睛，便宣布作品完成。"
+      "en": "Ill with shingles in his eye, Picabia painted a single eye and asked visiting friends to write and sign around it. Man Ray, Duchamp and Cocteau were among them.",
+      "zh": "毕卡比亚患眼部带状疱疹期间只画了一只眼睛，再请来访的朋友在周围题字签名，曼·雷、杜尚和科克托都在其中。"
      },
      "c": "3/37/Francis_Picabia%2C_1921_-_L%27%C5%92il_cacodylate.jpg",
      "wiki": "Francis Picabia",
@@ -4575,8 +4587,8 @@ window.ARTISMS = {
    "works": [
     {
      "t": {
-      "en": "Composition II in Red, Blue and Yellow",
-      "zh": "红、蓝、黄的构成 II"
+      "en": "Composition with Red, Blue and Yellow",
+      "zh": "红、蓝、黄的构成"
      },
      "a": {
       "en": "Piet Mondrian",
@@ -4918,8 +4930,8 @@ window.ARTISMS = {
       "zh": "救世基督像"
      },
      "a": {
-      "en": "Paul Landowski, Heitor da Silva Costa, Gheorghe Leonida",
-      "zh": "保罗·朗多夫斯基、埃托尔·达席尔瓦·科斯塔、格奥尔基·莱奥尼达"
+      "en": "Paul Landowski, Heitor da Silva Costa, Albert Caquot, Gheorghe Leonida",
+      "zh": "保罗·朗多夫斯基、埃托尔·达席尔瓦·科斯塔、阿尔伯特·卡科、格奥尔基·莱奥尼达"
      },
      "y": "1922–1931",
      "loc": {
@@ -5068,8 +5080,8 @@ window.ARTISMS = {
       "zh": "工业化为宏大的社会系统"
      },
      "n": {
-      "en": "Twenty-seven fresco panels on the Ford River Rouge plant, workers and machines locked together.",
-      "zh": "二十七幅湿壁画描绘福特胭脂河工厂，工人与机器紧紧相连。"
+      "en": "Twenty-seven fresco panels around a museum courtyard, centred on Ford’s River Rouge plant: workers and machines locked together.",
+      "zh": "二十七幅湿壁画环绕博物馆庭院，以福特胭脂河工厂为中心：工人与机器紧紧相连。"
      },
      "c": "c/c1/Rivera_detroit_industry_north.jpg",
      "image": {
@@ -5216,7 +5228,7 @@ window.ARTISMS = {
     },
     {
      "t": {
-      "en": "Storm (Black Landscape)",
+      "en": "The Storm (Black Landscape)",
       "zh": "风暴（黑色风景）"
      },
      "a": {
@@ -5229,8 +5241,8 @@ window.ARTISMS = {
       "zh": "费城艺术博物馆"
      },
      "look": {
-      "en": "strange forms drift in a space with no horizon",
-      "zh": "奇异的形体漂浮在没有地平线的空间里"
+      "en": "strange forms drift above a faint, low horizon",
+      "zh": "奇异的形体漂浮在一条淡淡的低地平线之上"
      },
      "n": {
       "en": "Tanguy, a former merchant sailor, decided to paint after seeing a de Chirico in a gallery window. He joined the Surrealists in 1925.",
@@ -5476,7 +5488,7 @@ window.ARTISMS = {
       "en": "Roy Lichtenstein",
       "zh": "罗伊·利希滕斯坦"
      },
-     "y": "1991–1992",
+     "y": "1992",
      "loc": {
       "en": "Port Vell, Barcelona",
       "zh": "巴塞罗那旧港"
@@ -5585,10 +5597,10 @@ window.ARTISMS = {
       "en": "Donald Judd",
       "zh": "唐纳德·贾德"
      },
-     "y": "series from 1965",
+     "y": "1980 (stacks from 1965)",
      "loc": {
-      "en": "Tate, London (this example)",
-      "zh": "伦敦泰特美术馆（此件）"
+      "en": "Tate, London",
+      "zh": "伦敦泰特美术馆"
      },
      "look": {
       "en": "repetition makes intervals as important as objects",
@@ -5640,10 +5652,10 @@ window.ARTISMS = {
       "en": "Dan Flavin",
       "zh": "丹·弗莱文"
      },
-     "y": "1964",
+     "y": "1964–1990 (this version 1969–1970)",
      "loc": {
-      "en": "Series, various collections",
-      "zh": "系列作品，多家机构收藏"
+      "en": "This version: National Gallery of Art, Washington",
+      "zh": "此件藏于华盛顿国家美术馆"
      },
      "look": {
       "en": "commercial fluorescent light becomes sculpture",
@@ -6025,7 +6037,7 @@ window.ARTISMS = {
       "en": "Louise Bourgeois",
       "zh": "路易丝·布尔乔亚"
      },
-     "y": "1999",
+     "y": "1999 (this cast 2001)",
      "loc": {
       "en": "This cast: Guggenheim Museum Bilbao; others worldwide",
       "zh": "此件藏于毕尔巴鄂古根海姆博物馆；世界各地另有数件"
@@ -6035,8 +6047,8 @@ window.ARTISMS = {
       "zh": "巨大的蜘蛛，既是守护者、母亲，也是威胁"
      },
      "n": {
-      "en": "A steel spider over 9 m tall carrying a sac of marble eggs: Bourgeois’s tribute to her mother, who repaired tapestries.",
-      "zh": "一只高逾9米的钢铁蜘蛛，腹下携着大理石卵：布尔乔亚献给修补挂毯的母亲。"
+      "en": "A bronze spider over 9 m tall carrying a sac of marble eggs: Bourgeois’s tribute to her mother, who ran the family’s tapestry-restoration workshop.",
+      "zh": "一只高逾9米的青铜蜘蛛，腹下携着大理石卵：布尔乔亚献给母亲的作品，她母亲主持家中的挂毯修复工坊。"
      },
      "c": "e/e5/Maman_de_Louise_Bourgeois_-_Bilbao.jpg",
      "wiki": "Maman (sculpture)",
@@ -6070,8 +6082,8 @@ window.ARTISMS = {
       "zh": "以巨型装置直面糖、种族与工业"
      },
      "n": {
-      "en": "A 10 m sphinx coated in white sugar, built in a refinery about to be demolished.",
-      "zh": "一座10米高、覆满白糖的斯芬克斯，建在即将拆除的炼糖厂里。"
+      "en": "A sphinx nearly 11 m tall coated in white sugar, built in a refinery about to be demolished.",
+      "zh": "一座近11米高、覆满白糖的斯芬克斯，建在即将拆除的炼糖厂里。"
      },
      "wiki": "A Subtlety",
      "restricted": true

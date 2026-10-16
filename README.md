@@ -34,6 +34,7 @@ public/                     everything that is deployed, and nothing else
   _headers                  cache headers (Cloudflare reads it; it is not served)
 wrangler.jsonc              Cloudflare Workers Static Assets config
 CREDITS.md                  image credits, generated from the data
+docs/                       fact-check records
 scripts/check-data.mjs      validates data, image files, CREDITS.md and cache stamps (no network)
 scripts/fetch-images.mjs    downloads, resizes and credits Commons images (network, cwebp)
 scripts/stamp-assets.mjs    writes ?v=<hash> into index.html for files under assets/
@@ -98,6 +99,7 @@ The site is deployed on **Cloudflare Workers Static Assets** with Workers Builds
 - **Never host a copyrighted work.** A CC licence on a *photo* does not cover the artwork in it: a photo of a living artist's installation stays a placeholder even if Commons hosts it. Host only when the work itself is public domain (or Commons records why it is free, e.g. `PD-ineligible`, freedom of panorama for buildings).
 - Works still under copyright (many 20th-century pieces) are **not shown**. Their cards show a placeholder that links to the museum or article instead. `SHOW_RESTRICTED_IMAGES` in `assets/app.js` stays `false`.
 - Dates are conventional ranges. Styles overlap, and historians draw the boundaries in different places.
+- Facts were checked against the holding museums' records in October 2026. [docs/fact-check-2026-10.md](docs/fact-check-2026-10.md) lists what was corrected, with sources, and what could not be verified.
 
 ## Credits
 

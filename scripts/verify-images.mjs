@@ -99,7 +99,8 @@ const REVIEWED = new Set([
   "Edgar_Degas_-_La_Classe_de_danse.jpg", "Gustav_Klimt_-_Der_Kuss_(Liebespaar)_-_912_-_Österreichische_Galerie_Belvedere.jpg",
   "Klinom_Krasnym_Bej_Belych.JPG", "Triadisches_Ballett_by_Oskar_Schlemmer_-_Staatsgalerie_-_Stuttgart_-_Germany_2017_(cropped).jpg",
   "Arte_yoruba,_nigeria,_testa_da_ife,_12-15mo_secolo.JPG", "Paintings_from_the_Chauvet_cave_(museum_replica).jpg",
-  "Bonheur_Matisse.jpg", "Detroit_Institute_of_Arts_2025b.jpg"
+  "Bonheur_Matisse.jpg", "Detroit_Institute_of_Arts_2025b.jpg",
+  "L'Embarquement_pour_Cythère,_by_Antoine_Watteau,_from_C2RMF_retouched.jpg"
 ]);
 function nameCheck(fileName, w) {
   if (REVIEWED.has(fileName.replace(/ /g, "_"))) return null;

@@ -23,7 +23,7 @@ were read from the Commons API. Each file page has the full licence and source d
 | 05.3 | African Sculptural Traditions | Nkisi nkondi (power figure) | Wikipedia Loves Art participant "trish" | [CC BY 2.5](https://creativecommons.org/licenses/by/2.5) | [Commons](https://commons.wikimedia.org/wiki/File:WLA_metmuseum_Kongo_Power_Figure_Nkisi_NKondi_2.jpg) |
 | 06.1 | Byzantine Art | Christ Pantocrator (Sinai) | Unknown author | Public domain | [Commons](https://commons.wikimedia.org/wiki/File:CHRIST_PANTOCRATOR-SINAI(6th_Century).jpg) |
 | 06.2 | Byzantine Art | Basilica of San Vitale | Commonists | [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0) | [Commons](https://commons.wikimedia.org/wiki/File:Basilica_of_San_Vitale.jpg) |
-| 06.3 | Byzantine Art | Deësis mosaic, Hagia Sophia | Gryffindor | Public domain | [Commons](https://commons.wikimedia.org/wiki/File:Hagia_Sophia_Deesis_mosaic_(1).JPG) |
+| 06.3 | Byzantine Art | Deësis mosaic, Hagia Sophia (detail: John the Baptist) | Gryffindor | Public domain | [Commons](https://commons.wikimedia.org/wiki/File:Hagia_Sophia_Deesis_mosaic_(1).JPG) |
 | 07.1 | Islamic Art | Folio from the Blue Qur’an | Unknown author | [CC BY 2.5](https://creativecommons.org/licenses/by/2.5) | [Commons](https://commons.wikimedia.org/wiki/File:Folio_Blue_Quran_Met_2004.88.jpg) |
 | 07.2 | Islamic Art | Ardabil Carpet | Unknown | Public domain | [Commons](https://commons.wikimedia.org/wiki/File:The_Ardabil_Carpet_-_Google_Art_Project.jpg) |
 | 07.3 | Islamic Art | Court of the Lions, Alhambra | Liberaler Humanist | [CC BY-SA 3.0](https://creativecommons.org/licenses/by-sa/3.0) | [Commons](https://commons.wikimedia.org/wiki/File:Fountain_in_Patio_de_los_Leones,_Alhambra,_16.08.14.jpg) |
@@ -35,18 +35,18 @@ were read from the Commons API. Each file page has the full licence and source d
 | 09.3 | Romanesque | Central tympanum, Vézelay | Vassil | Public domain | [Commons](https://commons.wikimedia.org/wiki/File:V%C3%A9zelay_Narthex_Tympan_central_220608_01.jpg) |
 | 10.1 | Gothic | Notre-Dame de la Belle Verrière (Blue Virgin window) | Hans Bernhard (Schnobby) | [CC BY-SA 3.0](https://creativecommons.org/licenses/by-sa/3.0) | [Commons](https://commons.wikimedia.org/wiki/File:Blue_Virgin_of_Chartres.jpg) |
 | 10.2 | Gothic | Visitation, Reims Cathedral | Anne C. Richardson, Jim Womack | Public domain | [Commons](https://commons.wikimedia.org/wiki/File:Reims;_Visitation,_Virgin_Mary,_Elizabeth;_right_jamb_figures_of_the_central_portal,_west_facade_-_Vanderbilt_ACT_-_00000247.jpg) |
-| 10.3 | Gothic | Wilton Diptych | Unknown Master, French (second half of 14th century) | Public domain | [Commons](https://commons.wikimedia.org/wiki/File:The_Wilton_Diptych_(left).jpg) |
+| 10.3 | Gothic | Wilton Diptych | Unknown (English or French) | Public domain | [Commons](https://commons.wikimedia.org/wiki/File:The_Wilton_diptych;_stitched_panels.jpg) |
 | 11.1 | Italian Renaissance | The Birth of Venus | Sandro Botticelli | Public domain | [Commons](https://commons.wikimedia.org/wiki/File:Birth_of_Venus_Botticelli.jpg) |
 | 11.2 | Italian Renaissance | The Last Supper | Leonardo da Vinci | Public domain | [Commons](https://commons.wikimedia.org/wiki/File:Leonardo_da_Vinci_(1452-1519)_-_The_Last_Supper_(1495-1498).jpg) |
 | 11.3 | Italian Renaissance | The School of Athens | Raphael | Public domain | [Commons](https://commons.wikimedia.org/wiki/File:Raphael_School_of_Athens.jpg) |
 | 12.1 | Northern Renaissance | Arnolfini Portrait | Jan van Eyck | Public domain | [Commons](https://commons.wikimedia.org/wiki/File:The_Arnolfini_portrait_(1434).jpg) |
 | 12.2 | Northern Renaissance | The Garden of Earthly Delights | Hieronymus Bosch | Public domain | [Commons](https://commons.wikimedia.org/wiki/File:The_Garden_of_earthly_delights.jpg) |
 | 12.3 | Northern Renaissance | The Hunters in the Snow | Pieter Brueghel the Elder | Public domain | [Commons](https://commons.wikimedia.org/wiki/File:Pieter_Bruegel_the_Elder_-_Hunters_in_the_Snow_(Winter)_-_Google_Art_Project.jpg) |
-| 13.1 | Indian Miniature Painting | Battle scene on the Ganges, from the Akbarnama | Tulsi (the elder) (artist), Jagjivan (artist) | Public domain | [Commons](https://commons.wikimedia.org/wiki/File:1565-Battle_Scene_with_Boats_on_the_Ganges-Akbarnama.jpg) |
+| 13.1 | Indian Miniature Painting | Shuja’at Khan pursuing Asaf Khan on the Ganges, from the Akbarnama | Tulsi (the elder) (artist), Jagjivan (artist) | Public domain | [Commons](https://commons.wikimedia.org/wiki/File:1565-Battle_Scene_with_Boats_on_the_Ganges-Akbarnama.jpg) |
 | 13.2 | Indian Miniature Painting | Krishna and Radha in a Pavilion | anonymous | Public domain | [Commons](https://commons.wikimedia.org/wiki/File:Anonymous_-_Krishna_and_Radha_in_a_Pavilion,_page_from_a_copy_of_the_Sat_Sai_Seven_Hundred_Verses)_-_1977.150_-_Art_Institute_of_Chicago.jpg) |
-| 13.3 | Indian Miniature Painting | Savant Singh and Bani Thani as Krishna and Radha | Nihal Chand | Public domain | [Commons](https://commons.wikimedia.org/wiki/File:2_Attributed_to_Nihal_Chand._Savant_Singh_and_Bani_Thani_as_Krishna_and_Radha_(detail),_Kishangarh,_ca._1760._Madison_Avenue_gallery.jpg) |
+| 13.3 | Indian Miniature Painting | Savant Singh and Bani Thani as Krishna and Radha in a Palace Garden | Attributed to Nihâl Chand | Public domain | [Commons](https://commons.wikimedia.org/wiki/File:7_attrib_to_Nihal_Chand_Raja_Savant_Singh_and_Bani_Thani_as_Krishna_and_Radha_Artwork_ca_1760_Fine_Arts_Museums_of_San_Francisco.jpg) |
 | 14.1 | Mannerism | Madonna with the Long Neck | Parmigianino | Public domain | [Commons](https://commons.wikimedia.org/wiki/File:Parmigianino_-_Madonna_and_Child_with_Angels,_known_as_the_Madonna_with_the_Long_Neck.jpg) |
-| 14.2 | Mannerism | Venus, Cupid, Folly and Time | Bronzino | Public domain | [Commons](https://commons.wikimedia.org/wiki/File:Angelo_Bronzino_-_Venus,_Cupid,_Folly_and_Time_-_National_Gallery,_London.jpg) |
+| 14.2 | Mannerism | An Allegory with Venus and Cupid | Bronzino | Public domain | [Commons](https://commons.wikimedia.org/wiki/File:Angelo_Bronzino_-_Venus,_Cupid,_Folly_and_Time_-_National_Gallery,_London.jpg) |
 | 14.3 | Mannerism | The Burial of the Count of Orgaz | El Greco | Public domain | [Commons](https://commons.wikimedia.org/wiki/File:El_Greco_-_The_Burial_of_the_Count_of_Orgaz.JPG) |
 | 15.1 | Baroque | The Calling of Saint Matthew | Caravaggio | [CC0](http://creativecommons.org/publicdomain/zero/1.0/deed.en) | [Commons](https://commons.wikimedia.org/wiki/File:Caravaggio_%E2%80%94_The_Calling_of_Saint_Matthew.jpg) |
 | 15.2 | Baroque | Ecstasy of Saint Teresa | Sumselkawumsel | [CC BY-SA 3.0](https://creativecommons.org/licenses/by-sa/3.0) | [Commons](https://commons.wikimedia.org/wiki/File:Ecstasy_of_Saint_Teresa.JPG) |
@@ -55,7 +55,7 @@ were read from the Commons API. Each file page has the full licence and source d
 | 16.2 | Ukiyo-e | Sudden Shower over Shin-Ōhashi Bridge and Atake | Utagawa Hiroshige | Public domain | [Commons](https://commons.wikimedia.org/wiki/File:Utagawa_Hiroshige_-_Evening_Shower_at_Atake_and_the_Great_Bridge.jpg) |
 | 16.3 | Ukiyo-e | Three Beauties of the Present Day | Kitagawa Utamaro | Public domain | [Commons](https://commons.wikimedia.org/wiki/File:Utamaro_(1793)_Three_Beauties_of_the_Present_Time,_MFAB_21.6382.jpg) |
 | 17.1 | Rococo | The Swing | Jean-Honoré Fragonard | Public domain | [Commons](https://commons.wikimedia.org/wiki/File:Fragonard,_The_Swing.jpg) |
-| 17.2 | Rococo | Pilgrimage to Cythera | Jean-Antoine Watteau | Public domain | [Commons](https://commons.wikimedia.org/wiki/File:Antoine_Watteau_-_Pilgrimage_to_Cythera_-_WGA25454.jpg) |
+| 17.2 | Rococo | Pilgrimage to Cythera | Jean-Antoine Watteau | Public domain | [Commons](https://commons.wikimedia.org/wiki/File:L%27Embarquement_pour_Cyth%C3%A8re,_by_Antoine_Watteau,_from_C2RMF_retouched.jpg) |
 | 17.3 | Rococo | Madame de Pompadour | François Boucher | Public domain | [Commons](https://commons.wikimedia.org/wiki/File:Fran%C3%A7ois_Boucher_-_Madame_de_Pompadour,_1759.jpg) |
 | 18.1 | Neoclassicism | Oath of the Horatii | Jacques-Louis David | Public domain | [Commons](https://commons.wikimedia.org/wiki/File:Jacques-Louis_David_-_Oath_of_the_Horatii.jpg) |
 | 18.2 | Neoclassicism | The Death of Marat | Jacques-Louis David | Public domain | [Commons](https://commons.wikimedia.org/wiki/File:Death_of_Marat_by_David.jpg) |
@@ -71,14 +71,14 @@ were read from the Commons API. Each file page has the full licence and source d
 | 21.3 | Impressionism | The Ballet Class | Edgar Degas | Public domain | [Commons](https://commons.wikimedia.org/wiki/File:Edgar_Degas_-_La_Classe_de_danse.jpg) |
 | 22.1 | Post-Impressionism | The Starry Night | Vincent van Gogh | Public domain | [Commons](https://commons.wikimedia.org/wiki/File:Van_Gogh_-_Starry_Night_-_Google_Art_Project.jpg) |
 | 22.2 | Post-Impressionism | Mont Sainte-Victoire and Château Noir | Paul Cézanne | Public domain | [Commons](https://commons.wikimedia.org/wiki/File:Paul_Cezanne_-_Mont_Sainte-Victoire_and_Ch%C3%A2teau_Noir_-_Google_Art_Project.jpg) |
-| 22.3 | Post-Impressionism | Vision After the Sermon | Paul Gauguin | Public domain | [Commons](https://commons.wikimedia.org/wiki/File:La_vision_apr%C3%A8s_le_sermon_(Paul_Gauguin).jpg) |
+| 22.3 | Post-Impressionism | Vision of the Sermon (Jacob Wrestling with the Angel) | Paul Gauguin | Public domain | [Commons](https://commons.wikimedia.org/wiki/File:La_vision_apr%C3%A8s_le_sermon_(Paul_Gauguin).jpg) |
 | 23.1 | Art Nouveau | JOB cigarette paper poster | Alphonse Mucha | Public domain | [Commons](https://commons.wikimedia.org/wiki/File:Alphonse_Mucha_-_Job_Cigarettes_1.jpg) |
 | 23.2 | Art Nouveau | The Kiss | Gustav Klimt | Public domain | [Commons](https://commons.wikimedia.org/wiki/File:Gustav_Klimt_-_Der_Kuss_(Liebespaar)_-_912_-_%C3%96sterreichische_Galerie_Belvedere.jpg) |
 | 23.3 | Art Nouveau | Paris Métro entrance | Eugenia & Julian (Flickr) | [CC BY-SA 2.0](https://creativecommons.org/licenses/by-sa/2.0) | [Commons](https://commons.wikimedia.org/wiki/File:Hector_Guimard_Entrance_Pasteur_Paris_Metro.jpg) |
 | 24.1 | Fauvism | Woman with a Hat | Henri Matisse | Public domain | [Commons](https://commons.wikimedia.org/wiki/File:Matisse-Woman-with-a-Hat.jpg) |
 | 24.2 | Fauvism | Charing Cross Bridge | Adrian Scottow from London, England | Public domain | [Commons](https://commons.wikimedia.org/wiki/File:Charing_Cross_Bridge_by_Andre_Derain_(52259664204).jpg) |
 | 24.3 | Fauvism | Le Bonheur de vivre (The Joy of Life) | Henri Matisse | Public domain | [Commons](https://commons.wikimedia.org/wiki/File:Bonheur_Matisse.jpg) |
-| 25.1 | Expressionism | The Scream | Edvard Munch | Public domain | [Commons](https://commons.wikimedia.org/wiki/File:Edvard_Munch_-_The_Scream_-_Google_Art_Project.jpg) |
+| 25.1 | Expressionism | The Scream | Edvard Munch | Public domain | [Commons](https://commons.wikimedia.org/wiki/File:Edvard_Munch_-_The_Scream_-_NG.M.00939_-_National_Museum_of_Art,_Architecture_and_Design.jpg) |
 | 25.2 | Expressionism | Street, Berlin | Ernst Ludwig Kirchner | Public domain | [Commons](https://commons.wikimedia.org/wiki/File:Kirchner_1913_Street,_Berlin.jpg) |
 | 25.3 | Expressionism | Self-Portrait with Physalis | Egon Schiele | Public domain | [Commons](https://commons.wikimedia.org/wiki/File:Egon_Schiele_-_Self-Portrait_with_Physalis_-_Google_Art_Project.jpg) |
 | 26.1 | Cubism | Still Life before an Open Window, Place Ravignan | Juan Gris | Public domain | [Commons](https://commons.wikimedia.org/wiki/File:Juan_Gris_(Jos%C3%A9_Victoriano_Gonz%C3%A1lez_P%C3%A9rez),_Spanish_-_Still_Life_before_an_Open_Window,_Place_Ravignan_-_Google_Art_Project.jpg) |
@@ -90,7 +90,7 @@ were read from the Commons API. Each file page has the full licence and source d
 | 28.3 | Suprematism & Constructivism | Beat the Whites with the Red Wedge | El Lissitzky | Public domain | [Commons](https://commons.wikimedia.org/wiki/File:Klinom_Krasnym_Bej_Belych.JPG) |
 | 29.1 | Dada | Fountain | Marcel Duchamp / Alfred Stieglitz | Public domain | [Commons](https://commons.wikimedia.org/wiki/File:Marcel_Duchamp,_1917,_Fountain,_photograph_by_Alfred_Stieglitz.jpg) |
 | 29.3 | Dada | L’Œil cacodylate (The Cacodylic Eye) | Francis Picabia | Public domain | [Commons](https://commons.wikimedia.org/wiki/File:Francis_Picabia,_1921_-_L%27%C5%92il_cacodylate.jpg) |
-| 30.1 | De Stijl / Neoplasticism | Composition II in Red, Blue and Yellow | Piet Mondrian | Public domain | [Commons](https://commons.wikimedia.org/wiki/File:Piet_Mondriaan,_1930_-_Mondrian_Composition_II_in_Red,_Blue,_and_Yellow.jpg) |
+| 30.1 | De Stijl / Neoplasticism | Composition with Red, Blue and Yellow | Piet Mondrian | Public domain | [Commons](https://commons.wikimedia.org/wiki/File:Piet_Mondriaan,_1930_-_Mondrian_Composition_II_in_Red,_Blue,_and_Yellow.jpg) |
 | 30.2 | De Stijl / Neoplasticism | Red and Blue Chair | I, Sailko | [CC BY 2.5](https://creativecommons.org/licenses/by/2.5) | [Commons](https://commons.wikimedia.org/wiki/File:Ngv_design,_gerrit_rietveld,_red-blue_chair_1917_01.JPG) |
 | 30.3 | De Stijl / Neoplasticism | Counter-Composition XIII | Theo van Doesburg | Public domain | [Commons](https://commons.wikimedia.org/wiki/File:Counter-Composition_XIII_by_Theo_van_Doesburg.jpg) |
 | 31.1 | Bauhaus | Bauhaus Building, Dessau | Walter Gropius | Public domain | [Commons](https://commons.wikimedia.org/wiki/File:Bauhaus-Dessau_main_building.jpg) |
@@ -99,7 +99,7 @@ were read from the Commons API. Each file page has the full licence and source d
 | 32.1 | Art Deco | Chrysler Building | Overand derivative work: Overand (talk) | Public domain | [Commons](https://commons.wikimedia.org/wiki/File:Chrysler_Building_by_David_Shankbone_Retouched.jpg) |
 | 32.2 | Art Deco | Christ the Redeemer | Arne Müseler / www.arne-mueseler.com | [CC BY-SA 3.0 de](https://creativecommons.org/licenses/by-sa/3.0/de/deed.en) | [Commons](https://commons.wikimedia.org/wiki/File:Christ_the_Redeemer_-_Cristo_Redentor.jpg) |
 | 33.2 | Latin American Modernisms | Detroit Industry Murals | Cactus.man | Public domain | [Commons](https://commons.wikimedia.org/wiki/File:Rivera_detroit_industry_north.jpg) |
-| 34.3 | Surrealism | Storm (Black Landscape) | Francesco Bini | [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0) | [Commons](https://commons.wikimedia.org/wiki/File:Yves_tanguy,_la_tempesta_(paesaggio_nero),_1926.jpg) |
+| 34.3 | Surrealism | The Storm (Black Landscape) | Francesco Bini | [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0) | [Commons](https://commons.wikimedia.org/wiki/File:Yves_tanguy,_la_tempesta_(paesaggio_nero),_1926.jpg) |
 | 35.3 | Abstract Expressionism | The Liver Is the Cock’s Comb | Arshile Gorky | Public domain | [Commons](https://commons.wikimedia.org/wiki/File:The_Liver_is_the_Cock%27s_Comb_y_Arshile_Gorky,_1944.jpg) |
 | 36.2 | Pop Art | El Cap de Barcelona (Barcelona Head) | Francesco Bini | [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0) | [Commons](https://commons.wikimedia.org/wiki/File:Roy_lichtenstein,_el_cap_de_barcelona,_1991-1992,_01.jpg) |
 | 37.3 | Minimalism | “monument” for V. Tatlin | Dan Flavin | Public domain | [Commons](https://commons.wikimedia.org/wiki/File:%22monument%22_for_V._Tatlin,_CR_203.jpg) |
@@ -111,7 +111,7 @@ were read from the Commons API. Each file page has the full licence and source d
 
 21 works are still in copyright. The site shows a placeholder that links to the work instead of an image.
 
-- Warlugulong, Clifford Possum Tjapaltjarri with Tim Leura Tjapaltjarri (Indigenous Arts: Three Traditions)
+- Warlugulong, Clifford Possum Tjapaltjarri (Indigenous Arts: Three Traditions)
 - En Canot (In the Boat), Jean Metzinger (Cubism)
 - Dynamism of a Dog on a Leash, Giacomo Balla (Futurism)
 - Cut with the Kitchen Knife, Hannah Höch (Dada)
