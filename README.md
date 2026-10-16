@@ -2,6 +2,10 @@
 
 A bilingual (English / 中文) visual atlas of art styles: a 45,000-year timeline, how each style grew out of the last, and three real works for every style.
 
+**Live site: [artisms.geekplux.org](https://artisms.geekplux.org/)** · 中文版：[artisms.geekplux.org/?lang=zh](https://artisms.geekplux.org/?lang=zh)
+
+A sibling of [Worldlines](https://worldlines.geekplux.org/), a Mondrian-style atlas of world history.
+
 - **40 styles, 120 works**, from the Chauvet cave paintings to contemporary installation, including Chinese landscape painting, ukiyo-e, Islamic art, Indian miniatures, African sculpture, Indigenous arts and Latin American modernisms.
 - **One timeline** for 45,000 years. The scale is compressed for older periods, and thick rules mark where it changes. Hover over a style to light up what it grew from and what it led to.
 - **Filters** by era and region in a bar that stays on screen while you browse the styles. They also dim the timeline, and a filtered view can be shared as a link, e.g. `?era=avant,post&region=west`.
@@ -89,7 +93,7 @@ CI runs the same check on every push and pull request.
 
 ## Deployment
 
-The site is deployed on **Cloudflare Workers Static Assets** with Workers Builds (Git integration). Every push to `main` runs `npx wrangler deploy`, which uploads `public/` as configured in `wrangler.jsonc`. There is no build command. Pull requests get preview builds if they are enabled in the dashboard. Nothing outside `public/` (README, scripts, `.git`) is ever uploaded.
+The site is served at **https://artisms.geekplux.org/** (a custom domain on the `artisms` Worker) by **Cloudflare Workers Static Assets** with Workers Builds (Git integration). Every push to `main` runs `npx wrangler deploy`, which uploads `public/` as configured in `wrangler.jsonc`. There is no build command. Pull requests get preview builds if they are enabled in the dashboard. Nothing outside `public/` (README, scripts, `.git`) is ever uploaded.
 
 `public/_headers` caches `assets/` and `images/` for a year. That is safe because every reference to them carries a content hash (`?v=…`): `image.v` in the data for images, and `scripts/stamp-assets.mjs` for `index.html`. `index.html` and `data/` are revalidated on every visit.
 
