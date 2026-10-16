@@ -41,7 +41,8 @@ Read README.md for the data model and file layout. These are the rules that are 
 
 1. `node scripts/fetch-images.mjs` if any `c` path changed (needs network and `cwebp`). It also regenerates
    CREDITS.md.
-2. `node scripts/stamp-assets.mjs` if `public/assets/app.js` or `styles.css` changed.
+2. `node scripts/stamp-assets.mjs` if `public/assets/app.js` or `styles.css` changed, and `node scripts/seo.mjs` if the
+   data changed (it regenerates the static, crawlable HTML in index.html).
 3. `node scripts/check-data.mjs` (CI runs it too; it fails on stale CREDITS.md, image hashes or stamps).
 4. `node scripts/verify-images.mjs` (network): hosted files, Commons sources and every link.
 5. Open the page at desktop width and at 390px, in both languages: no horizontal scroll, no console errors.
