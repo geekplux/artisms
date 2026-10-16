@@ -10,7 +10,7 @@ A sibling of [Worldlines](https://worldlines.geekplux.org/), a Mondrian-style at
 - **One timeline** for 45,000 years. The scale is compressed for older periods, and thick rules mark where it changes. Hover over a style to light up what it grew from and what it led to.
 - **Filters** by era and region in a bar that stays on screen while you browse the styles. They also dim the timeline, and a filtered view can be shared as a link, e.g. `?era=avant,post&region=west`.
 - **Real images**: 92 freely licensed files from Wikimedia Commons, hosted with the site and credited with author and licence ([CREDITS.md](CREDITS.md)). Works still in copyright are linked, not reproduced.
-- **English and Chinese** throughout, switchable on the page. The English view shows no Chinese, and the Chinese view keeps each style's English name beside it. English is the default; the choice is remembered, and `?lang=en` or `?lang=zh` in a link opens that language.
+- **English and Chinese** throughout, switchable on the page. The English view shows no Chinese, and the Chinese view keeps each style's English name beside it. English is the default; the choice is remembered, and `?lang=en` or `?lang=zh` in a link opens that language. The address always matches the language on screen: Chinese is `/?lang=zh`, English is plain `/`.
 - **No build step.** Plain HTML, CSS and JavaScript. All content lives in one data file.
 
 ## Run it locally

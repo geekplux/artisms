@@ -108,6 +108,9 @@
       history.replaceState(null, "", u.pathname + u.search + u.hash);
     } catch (e) { /* sandboxed */ }
   }
+  /* Keep the address true to the language on screen: Chinese is /?lang=zh, English is plain /.
+     An explicit ?lang=en is left alone, so such a link keeps beating a saved Chinese preference. */
+  if (lang === "zh" && urlLang !== "zh") setParam("lang", "zh");
   /* Filters: sets of selected era and region ids; empty means "all". Kept in ?era=…&region=… */
   const listParam = (key, valid) => (new URLSearchParams(location.search).get(key) || "").split(",").filter((v) => valid.includes(v));
   const fEras = new Set(listParam("era", D.eras.map((e) => e.id)));
@@ -419,7 +422,7 @@
     const consent = e.target.closest("[data-consent]");
     if (consent) { setConsent(consent.dataset.consent); return; }
     if (e.target.closest("#consent-open")) { $("#consent").hidden = false; $("#consent [data-consent]").focus(); return; }
-    if (lb && lb.dataset.lang !== lang) { lang = lb.dataset.lang; store.set("art-isms-lang", lang); setParam("lang", lang); renderAll(); }
+    if (lb && lb.dataset.lang !== lang) { lang = lb.dataset.lang; store.set("art-isms-lang", lang); setParam("lang", lang === "zh" ? "zh" : null); renderAll(); }
   });
   /* Analytics consent (GA itself is set up in index.html, on the production domain only). */
   const CONSENT_KEY = "art-isms-consent";
