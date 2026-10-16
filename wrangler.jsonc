@@ -9,5 +9,8 @@
     // /index.html is served at /, and unknown paths return a plain 404.
     "html_handling": "auto-trailing-slash",
     "not_found_handling": "none"
-  }
+  },
+  // Pull-request builds run `npx wrangler preview`, which requires this block (it can stay empty).
+  // Previews live on workers.dev, so Google Analytics (production domain only) never runs there.
+  "previews": {}
 }
