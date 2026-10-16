@@ -27,7 +27,7 @@
   document.head.appendChild(s);
 })();
 </script>
-<link rel="stylesheet" href="assets/styles.css?v=e561446d08">
+<link rel="stylesheet" href="assets/styles.css?v=676979bb4c">
 </head>
 <body>
 <header class="topbar">
@@ -51,19 +51,18 @@
 
 <main id="top">
   <section class="masthead">
-    <div class="wrap pad">
-      <div class="mast-copy">
-        <p class="kicker" data-i18n="kicker">A visual atlas of art styles</p>
-        <h1><span class="t" data-i18n="title">Art-isms</span><span class="sub" data-i18n="titleSub">45,000 years of looking</span></h1>
+    <div class="mast-copy">
+      <p class="kicker" data-i18n="kicker">A visual atlas of art styles</p>
+      <div>
+        <h1><span data-i18n="h1a">ART-</span><span class="red" data-i18n="h1b">ISMS</span></h1>
         <p class="dek" data-i18n-html="dek">How art styles <strong>began</strong>, what they <strong>look like</strong>, and how each one grew out of the last, with three real works for every style.</p>
-        <p class="stats" id="stats"></p>
-        <div class="cta">
-          <a class="btn solid" href="#timeline" data-i18n="ctaTimeline">See the timeline</a>
-          <a class="btn" href="#styles" data-i18n="ctaStyles">Browse the styles</a>
-        </div>
       </div>
-      <div class="mast-art" id="mast-art" aria-label="Five works from the atlas"></div>
+      <div class="hero-meta">
+        <span id="stats"></span>
+        <a class="scroll-cue" href="#timeline" data-i18n="ctaTimeline">See the timeline</a>
+      </div>
     </div>
+    <div class="mast-art" id="mast-art" aria-label="Five works from the atlas"></div>
   </section>
 
   <aside class="answer">
@@ -120,13 +119,11 @@
     </div>
   </section>
 
-  <section class="block" id="study">
+  <section class="learning" id="study">
     <div class="wrap pad">
-      <div class="head">
-        <h2 data-i18n="studyTitle">How to look at any style</h2>
-        <p data-i18n="studyLede">Five steps that work in a museum, a book or this page.</p>
-      </div>
-      <ol class="steps" id="steps"></ol>
+      <h2 data-i18n="studyTitle">How to look at any style</h2>
+      <p class="learning-lede" data-i18n="studyLede">Five steps that work in a museum, a book or this page.</p>
+      <ol class="learning-grid" id="steps"></ol>
     </div>
   </section>
 </main>
@@ -144,7 +141,7 @@
     </div>
     <div>
       <h3 data-i18n="footProjTitle">The project</h3>
-      <p data-i18n-html="footProj">A static site with no build step: HTML, CSS and plain JavaScript, with all content in one bilingual data file. Corrections are welcome on <a href="https://github.com/geekplux/artisms">GitHub</a>.</p>
+      <p data-i18n-html="footProj">A static site with no build step: HTML, CSS and plain JavaScript, with all content in one bilingual data file. Corrections are welcome on <a href="https://github.com/geekplux/artisms">GitHub</a>. A sibling of <a href="https://worldlines.geekplux.org/">Worldlines</a>.</p>
       <p><button type="button" class="linkish" id="consent-open" data-i18n="cookieSettings" hidden>Cookie settings</button></p>
     </div>
   </div>
@@ -164,6 +161,6 @@
 </dialog>
 
 <script src="data/movements.js"></script>
-<script src="assets/app.js?v=ef6493f8e7"></script>
+<script src="assets/app.js?v=58383d7f83"></script>
 </body>
 </html>

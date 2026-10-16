@@ -19,10 +19,10 @@
     en: {
       brand: "Art-isms", brandSub: "", navTimeline: "Timeline", navStyles: "Styles", navWhy: "Why styles change", navStudy: "How to look",
       meta: "A visual atlas of 40 art styles: a 45,000-year timeline, how each style grew from the last, and three real works for every style. In English and Chinese.",
-      kicker: "A visual atlas of art styles", title: "Art-isms", titleSub: "45,000 years of looking",
+      kicker: "A visual atlas of art styles", h1a: "ART-", h1b: "ISMS",
       dek: "How art styles <strong>began</strong>, what they <strong>look like</strong>, and how each one grew out of the last, with three real works for every style.",
-      stats: (n, w) => `<span><b>45,000</b>years</span><span><b>${n}</b>styles</span><span><b>${w}</b>works</span><span><b>2</b>languages</span>`,
-      ctaTimeline: "See the timeline", ctaStyles: "Browse the styles",
+      stats: (n, w) => `45,000 years · ${n} styles · ${w} works · 2 languages`,
+      ctaTimeline: "See the timeline",
       howManyTitle: "How many art styles are there?",
       howMany1: "There is no official number. Lists of named movements run to several hundred, most of them offshoots, regional schools or short-lived groups, and historians disagree on where one ends and the next begins. This atlas maps 40 that changed how art is made.",
       howMany2: "Periods, movements, techniques and cultural traditions are different kinds of category. Broad labels such as “African”, “Indigenous” and “Islamic” cover many distinct peoples, places and histories, and are used here as entry points, not as single styles.",
@@ -47,17 +47,17 @@
       footDataTitle: "About the dates",
       footData: "Dates are conventional ranges. Styles overlap, and historians draw the boundaries in different places. Hatched bars mark living traditions that are still practised.",
       footProjTitle: "The project",
-      footProj: "A static site with no build step: HTML, CSS and plain JavaScript, with all content in one bilingual data file. Corrections are welcome on <a href=\"https://github.com/geekplux/artisms\">GitHub</a>.",
+      footProj: "A static site with no build step: HTML, CSS and plain JavaScript, with all content in one bilingual data file. Corrections are welcome on <a href=\"https://github.com/geekplux/artisms\">GitHub</a>. A sibling of <a href=\"https://worldlines.geekplux.org/\">Worldlines</a>.",
       consentText: "This site uses Google Analytics to count visits. Allow it to set analytics cookies?", consentYes: "Accept", consentNo: "Decline", cookieSettings: "Cookie settings",
       close: "Close", bce: "BCE", now: "now"
     },
     zh: {
       brand: "艺术流派志", brandSub: "Art-isms", navTimeline: "时间线", navStyles: "流派", navWhy: "风格为何改变", navStudy: "如何观看",
       meta: "收录40个艺术流派的图谱：一条四万五千年的时间线，每个流派如何从前一个流派中生长出来，并为每个流派配上三件真实作品。中英双语。",
-      kicker: "艺术风格图谱", title: "艺术流派志", titleSub: "四万五千年的观看",
+      kicker: "艺术风格图谱", h1a: "艺术", h1b: "流派志",
       dek: "艺术风格如何<strong>开始</strong>、长什么<strong>样子</strong>，又如何一脉相承、彼此反叛；每个流派配有三件真实作品。",
-      stats: (n, w) => `<span><b>45,000</b>年</span><span><b>${n}</b>个流派</span><span><b>${w}</b>件作品</span><span><b>2</b>种语言</span>`,
-      ctaTimeline: "查看时间线", ctaStyles: "浏览流派",
+      stats: (n, w) => `45,000 年 · ${n} 个流派 · ${w} 件作品 · 2 种语言`,
+      ctaTimeline: "查看时间线",
       howManyTitle: "艺术风格到底有多少种？",
       howMany1: "没有官方数字。有名可查的艺术流派多达数百个，其中大部分是分支、地方画派或昙花一现的团体；对于一种风格在哪里结束、下一种从哪里开始，学者也常有分歧。本图谱收录了40个改变艺术创作方式的流派。",
       howMany2: "时期、运动、技法与文化传统是不同类型的分类。“非洲”“原住民”“伊斯兰”等宽泛标签涵盖了许多不同的民族、地域与历史，本站把它们作为入门的切入点，而非单一风格。",
@@ -82,7 +82,7 @@
       footDataTitle: "关于年代",
       footData: "年代均为约定俗成的范围。流派之间相互重叠，学者划定的边界也各不相同。斜纹色条表示至今仍在延续的活传统。",
       footProjTitle: "关于项目",
-      footProj: "一个无需构建的静态网站：HTML、CSS 与原生 JavaScript，全部内容集中在一个中英双语数据文件中。欢迎在 <a href=\"https://github.com/geekplux/artisms\">GitHub</a> 上提出修订。",
+      footProj: "一个无需构建的静态网站：HTML、CSS 与原生 JavaScript，全部内容集中在一个中英双语数据文件中。欢迎在 <a href=\"https://github.com/geekplux/artisms\">GitHub</a> 上提出修订。它是 <a href=\"https://worldlines.geekplux.org/\">世界线</a> 的姊妹项目。",
       consentText: "本站使用 Google Analytics 统计访问量。是否允许设置统计 Cookie？", consentYes: "接受", consentNo: "拒绝", cookieSettings: "Cookie 设置",
       close: "关闭", bce: "前", now: "今"
     }
@@ -209,7 +209,7 @@
     $$("[data-i18n]").forEach((el) => { el.textContent = t(el.dataset.i18n); });
     $$("[data-i18n-html]").forEach((el) => { el.innerHTML = t(el.dataset.i18nHtml); });
     $$(".lang button").forEach((b) => b.setAttribute("aria-pressed", String(b.dataset.lang === lang)));
-    $("#stats").innerHTML = UI[lang].stats(MV.length, WORKS);
+    $("#stats").textContent = UI[lang].stats(MV.length, WORKS);
   }
 
   /* ── Masthead composition ──────────────────── */
@@ -363,7 +363,7 @@
       <div class="eng ${e.color}"><h3>${esc(p(e.title))}</h3><p>${esc(p(e.body))}</p><div class="links">${e.ex.map((id) => `<button type="button" class="lk" data-go="${id}">${esc(p(BY[id].name))}</button>`).join("")}</div></div>`).join("") +
       `<p class="caveat"><b>${esc(t("caveatTag"))}</b>${esc(t("caveat"))}</p>` +
       `<div class="names">` + D.nicknames.map((n, i) => `<div>${i === 0 ? `<span class="kicker">${esc(t("namesTitle"))}</span>` : ""}<button type="button" class="lk" data-go="${n.id}">${esc(p(BY[n.id].name))}</button><span>${esc(p(n.text))}</span></div>`).join("") + `</div>`;
-    $("#steps").innerHTML = D.howto.map((s, i) => `<li><span class="idx">${num(i)}</span><b>${esc(p(s.t))}</b><span>${esc(p(s.d))}</span></li>`).join("");
+    $("#steps").innerHTML = D.howto.map((s, i) => `<li><span class="n">${num(i)} / ${num(D.howto.length - 1)}</span><b>${esc(p(s.t))}</b><p>${esc(p(s.d))}</p></li>`).join("");
   }
 
   /* ── Viewer ────────────────────────────────── */
