@@ -65,7 +65,8 @@ Each work is either **hosted** or a **placeholder**:
 | `c` | Wikimedia Commons path of a freely licensed file, e.g. `"e/ea/Van_Gogh_-_Starry_Night_-_Google_Art_Project.jpg"` (the part after `/wikipedia/commons/`). `scripts/fetch-images.mjs` downloads it to `images/<style>/<n>.webp` and fills in `image`. |
 | `image` | Written by the script, never by hand: `w`, `h` of the hosted file, and `author`, `license`, `licenseUrl`, `page` read from the Commons API. |
 | `restricted: true` | A work still in copyright. The card shows a placeholder linking to `src` or the `wiki` article. With `img` (an image URL elsewhere), the image is shown only if `SHOW_RESTRICTED_IMAGES` is turned on. |
-| `wiki` | English Wikipedia article title, used for links. |
+| `wiki` | Required. English Wikipedia article the work's title links to: the work's own article, or the closest one (building, series, artist). |
+| `zhwiki` | Chinese Wikipedia article, from the English article's language links. Without it, the Chinese view links to the English article, marked EN. |
 
 Other work fields: `t` title, `a` artist, `y` year, `loc` where it is (optional), `look` what to look for, and `n` a one-sentence note (optional).
 

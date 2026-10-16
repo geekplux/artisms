@@ -49,6 +49,8 @@ for (const m of D.movements) {
     if (w.img && !w.restricted) fail(wat, "non-Commons img URLs must be marked restricted: true");
     if (w.c && !/^[0-9a-f]\/[0-9a-f]{2}\/[^/]+$/.test(w.c)) fail(wat, `malformed Commons path "${w.c}"`);
     if (w.src && !/^https:\/\//.test(w.src)) fail(wat, "src must be an https URL");
+    if (!w.wiki) fail(wat, "needs wiki: the English Wikipedia article its title links to");
+    if (w.zhwiki !== undefined && (typeof w.zhwiki !== "string" || !w.zhwiki.trim())) fail(wat, "zhwiki must be a Chinese Wikipedia article title");
     if (w.c) {
       const im = w.image;
       if (!im) fail(wat, "Commons work has no image metadata: run node scripts/fetch-images.mjs");

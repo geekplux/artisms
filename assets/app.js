@@ -31,7 +31,7 @@
       legRule: "Change of scale: older periods are compressed", legHatch: "Living tradition, still practised", legRel: "Related styles",
       filterEra: "Era", filterGroup: "Region", contents: "Contents", all: "All", jump: "Jump to a style…", empty: "No style matches these filters.",
       traits: "Signature traits", from: "Grew out of", to: "Led to", noneFrom: "No direct predecessor in this atlas", noneTo: "Still unfolding, or no direct successor in this atlas",
-      look: "Look for", read: "Read more", source: "Image source", home: "Mondrian’s movement",
+      look: "Look for", source: "Image source", home: "Mondrian’s movement", article: "Wikipedia article, opens in a new tab", articleEn: "",
       loading: "Loading image…",
       restrictedTitle: "In copyright", restrictedBody: "This work is not reproduced here.", restrictedLink: "See it at the source ↗",
       failedTitle: "Image unavailable", failedBody: "It could not be loaded (offline, or blocked by this viewer).", failedLink: "Open the source ↗",
@@ -63,7 +63,7 @@
       legRule: "比例尺变化：较早的时代被压缩", legHatch: "延续至今的活传统", legRel: "相关流派",
       filterEra: "时代", filterGroup: "地区", contents: "目录", all: "全部", jump: "跳转到流派…", empty: "没有符合筛选条件的流派。",
       traits: "标志特征", from: "源自", to: "影响了", noneFrom: "本图谱中没有直接前身", noneTo: "仍在发展中，或本图谱中没有直接后继",
-      look: "看点", read: "延伸阅读", source: "图片来源", home: "蒙德里安所属流派",
+      look: "看点", source: "图片来源", home: "蒙德里安所属流派", article: "维基百科条目，在新标签页打开", articleEn: "英文维基百科条目，在新标签页打开",
       loading: "图片加载中…",
       restrictedTitle: "版权保护中", restrictedBody: "本站不复制此作品图片。", restrictedLink: "前往来源查看 ↗",
       failedTitle: "图片无法显示", failedBody: "图片未能加载（可能离线，或被当前浏览环境拦截）。", failedLink: "打开来源 ↗",
@@ -104,13 +104,18 @@
   /* ── Image sources ─────────────────────────── */
   /* Freely licensed works are hosted with the site (scripts/fetch-images.mjs):
      images/<movement>/<n>.webp, long edge ≤ 1200px, plus <n>-480.webp. */
-  const wikiUrl = (title) => `https://en.wikipedia.org/wiki/${encodeURIComponent(title.replace(/ /g, "_"))}`;
-  function readMoreUrl(w) {
-    if (lang === "zh") {
-      const q = p(w.t).replace(/[《》]/g, "").split("（")[0];
-      return `https://zh.wikipedia.org/wiki/Special:Search?search=${encodeURIComponent(q)}&go=Go`;
-    }
-    return w.wiki ? wikiUrl(w.wiki) : `https://en.wikipedia.org/wiki/Special:Search?search=${encodeURIComponent(w.t.en)}&go=Go`;
+  const wikiUrl = (title, site = "en") =>
+    `https://${site === "zh" ? "zh.wikipedia.org/zh-cn" : "en.wikipedia.org/wiki"}/${encodeURIComponent(title.replace(/ /g, "_"))}`;
+  /* A work's Wikipedia article: the Chinese one in the Chinese view when it exists, otherwise English. */
+  function article(w) {
+    if (lang === "zh" && w.zhwiki) return { href: wikiUrl(w.zhwiki, "zh"), english: false };
+    return { href: wikiUrl(w.wiki), english: lang === "zh" };
+  }
+  /* The work's title as a link to its article, with a ↗ that appears on hover (always shown on touch). */
+  function titleLink(w) {
+    const a = article(w);
+    return `<a class="wl" href="${esc(a.href)}" target="_blank" rel="noopener"${a.english ? ' hreflang="en"' : ""}>${esc(p(w.t))}` +
+      `<span class="go" aria-hidden="true">&nbsp;↗${a.english ? "<small>EN</small>" : ""}</span><span class="vh"> (${esc(t(a.english ? "articleEn" : "article"))})</span></a>`;
   }
   const host = (url) => new URL(url).hostname.replace(/^www\./, "");
 
@@ -125,7 +130,7 @@
       };
     }
     if (w.img) return { src: w.img, page: w.src || w.img, credit: host(w.src || w.img), restricted: true };
-    const page = w.src || wikiUrl(w.wiki);
+    const page = w.src || article(w).href;
     return { page, credit: host(page), restricted: true };
   }
   function setImg(img, r, sizes) {
@@ -159,10 +164,10 @@
     const w = BY[mid].works[wi], r = resolveImage(mid, wi);
     const credit = frame.closest(".card")?.querySelector(".credit .src");
     if (credit) { credit.textContent = r.credit; credit.href = r.page; }
-    if (!r.src || (r.restricted && !SHOW_RESTRICTED_IMAGES)) { showPlate(frame, w, "restricted", r.page || readMoreUrl(w)); return; }
+    if (!r.src || (r.restricted && !SHOW_RESTRICTED_IMAGES)) { showPlate(frame, w, "restricted", r.page || article(w).href); return; }
     const img = frame.querySelector("img");
     img.onload = () => { img.classList.add("ok"); frame.classList.add("ready"); };
-    img.onerror = () => showPlate(frame, w, "failed", r.page || readMoreUrl(w));
+    img.onerror = () => showPlate(frame, w, "failed", r.page || article(w).href);
     /* Rendered width ≈ the narrower of the column and the frame height × aspect ratio. */
     setImg(img, r, sizes || (r.w ? `min(${Math.round(FRAME_H * r.w / r.h)}px, calc(100vw - 60px))` : ""));
   }
@@ -295,12 +300,12 @@
           <article class="card">
             <div class="frame" data-work="${m.id}:${wi}"><span class="spin">${esc(t("loading"))}</span><button type="button" data-view="${m.id}:${wi}" aria-label="${esc(p(w.t))}"><img alt="${esc(p(w.t))}" decoding="async"></button></div>
             <div class="card-copy">
-              <h3>${esc(p(w.t))}</h3>
+              <h3>${titleLink(w)}</h3>
               <p class="by">${esc(p(w.a))} · <span class="mono">${esc(w.y)}</span></p>
               ${w.loc ? `<p class="where">${esc(p(w.loc))}</p>` : ""}
               <p class="look"><b>${esc(t("look"))}:</b> ${esc(p(w.look))}</p>
               ${w.n ? `<p class="note">${esc(p(w.n))}</p>` : ""}
-              <p class="credit"><a class="src" href="#" target="_blank" rel="noopener">${esc(t("source"))}</a><a href="${esc(readMoreUrl(w))}" target="_blank" rel="noopener">${esc(t("read"))} ↗</a></p>
+              <p class="credit"><a class="src" href="#" target="_blank" rel="noopener">${esc(t("source"))}</a></p>
             </div>
           </article>`).join("")}</div>
       </section>`).join("");
@@ -322,15 +327,15 @@
     const [mid, wi] = key.split(":");
     const m = BY[mid], w = m.works[+wi];
     $("#v-copy").innerHTML = `<button type="button" class="v-close" id="v-close" aria-label="${esc(t("close"))}">✕</button>
-      <span class="kicker">${esc(p(m.name))}</span><h3 id="v-title">${esc(p(w.t))}</h3>
+      <span class="kicker">${esc(p(m.name))}</span><h3 id="v-title">${titleLink(w)}</h3>
       <p class="by"><b>${esc(p(w.a))}</b> · <span class="mono">${esc(w.y)}</span></p>${w.loc ? `<p class="mono" style="font-size:12px;color:var(--muted)">${esc(p(w.loc))}</p>` : ""}
       <p><b>${esc(t("look"))}:</b> ${esc(p(w.look))}</p>${w.n ? `<p>${esc(p(w.n))}</p>` : ""}
-      <p class="credit" style="display:flex;gap:12px;flex-wrap:wrap;font-size:13px"><a id="v-src" href="#" target="_blank" rel="noopener">${esc(t("source"))}</a><a href="${esc(readMoreUrl(w))}" target="_blank" rel="noopener">${esc(t("read"))} ↗</a></p>`;
+      <p class="credit" style="display:flex;gap:12px;flex-wrap:wrap;font-size:13px"><a id="v-src" href="#" target="_blank" rel="noopener">${esc(t("source"))}</a></p>`;
     const box = $("#v-img");
     box.className = "v-img";
     box.innerHTML = `<div class="frame" style="height:min(70dvh,720px);width:100%;border:0"><span class="spin">${esc(t("loading"))}</span><img alt="${esc(p(w.t))}"></div>`;
     loadInto($(".frame", box), mid, +wi, "min(1200px, 100vw)");
-    $("#v-src").href = resolveImage(mid, +wi).page || readMoreUrl(w);
+    $("#v-src").href = resolveImage(mid, +wi).page || article(w).href;
     if (typeof viewer.showModal === "function") viewer.showModal(); else viewer.setAttribute("open", "");
     document.documentElement.classList.add("modal-open");
   }
