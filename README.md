@@ -79,7 +79,7 @@ Each work is either **hosted** or a **placeholder**:
 | `wiki` | Required. English Wikipedia article the work's title links to: the work's own article, or the closest one (building, series, artist). |
 | `zhwiki` | Chinese Wikipedia article, from the English article's language links. Without it, the Chinese view links to the English article, marked EN. |
 
-Other work fields: `t` title, `a` artist, `y` year, `loc` where it is (optional), `look` what to look for, and `n` a one-sentence note (optional).
+Other work fields: `t` title, `a` artist, `y` date, `loc` where it is (optional), `look` what to look for, and `n` a one-sentence note (optional). All of them are `{ en, zh }` pairs, including `y`: `{ "en": "c. 1907–1909", "zh": "约1907–1909年" }`, using the same conventions as a style's `years` (约 for c., 公元前/公元 for BCE/CE, 世纪 for centuries, 年 after a year).
 
 ## Adding or correcting a style
 

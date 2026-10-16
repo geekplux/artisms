@@ -38,7 +38,7 @@ function blocks(D) {
   const movements = D.movements.map((m, i) => `<section class="mv" id="${m.id}">
   <div class="mv-head"><p class="idx">${num(i)}</p><div><h2>${esc(m.name.en)}</h2><p class="meta-row"><span class="yrs">${esc(m.years.en)}</span> <span>${esc(m.region.en)}</span></p><p class="idea">${esc(m.idea.en)}</p></div></div>
   <div class="mv-body"><p class="summary">${esc(m.summary.en)}</p></div>
-  <ul class="seo-works">${m.works.map((w) => `<li><b>${esc(w.t.en)}</b>, ${esc(w.a.en)}, ${esc(w.y)}${w.loc ? `. ${esc(w.loc.en)}` : ""}</li>`).join("")}</ul>
+  <ul class="seo-works">${m.works.map((w) => `<li><b>${esc(w.t.en)}</b>, ${esc(w.a.en)}, ${esc(w.y.en)}${w.loc ? `. ${esc(w.loc.en)}` : ""}</li>`).join("")}</ul>
 </section>`).join("\n");
   return { jsonld, toc, movements };
 }
