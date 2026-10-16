@@ -2,7 +2,7 @@
 // Workers Builds deploys it with `npx wrangler deploy` on every push to main.
 // Local preview: `npx wrangler dev` (or `python3 -m http.server 8000 --directory public`).
 {
-  "name": "art-isms",
+  "name": "artisms",
   "compatibility_date": "2026-10-01",
   "assets": {
     "directory": "./public",

@@ -49,7 +49,7 @@ Read README.md for the data model and file layout. These are the rules that are 
 ## Caching and deployment
 
 - Cloudflare Workers Static Assets, configured in `wrangler.jsonc`; Workers Builds deploys `main` on push.
-  The Worker name `art-isms` must match the Worker in the Cloudflare dashboard.
+  The Worker name `artisms` must match the Worker in the Cloudflare dashboard.
 - `public/_headers` caches `assets/` and `images/` for a year. That is only safe because every reference has
   a `?v=<content hash>`: never reference those files without one, and never rename the hashing away.
 - One commit per logical change, with a message that says why.
