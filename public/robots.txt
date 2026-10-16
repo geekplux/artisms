@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://artisms.geekplux.org/sitemap.xml
