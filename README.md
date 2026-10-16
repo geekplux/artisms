@@ -97,6 +97,10 @@ The site is served at **https://artisms.geekplux.org/** (a custom domain on the 
 
 `public/_headers` caches `assets/` and `images/` for a year. That is safe because every reference to them carries a content hash (`?v=…`): `image.v` in the data for images, and `scripts/stamp-assets.mjs` for `index.html`. `index.html` and `data/` are revalidated on every visit.
 
+## Analytics
+
+Google Analytics 4 (`G-V8MD23KS3G`) runs on **artisms.geekplux.org only**, never locally or on preview URLs. It uses Consent Mode v2: until a visitor accepts in the consent bar, `analytics_storage` is denied, so GA receives cookieless pings and sets no cookies. Accepting allows analytics cookies; "Cookie settings" in the footer reopens the choice, and declining deletes any `_ga` cookies. Ads features stay denied. The setup is the inline script in `public/index.html`; the bar is in `public/assets/app.js`.
+
 ## Images and copyright
 
 - Hosted images are public-domain or Creative Commons files from Wikimedia Commons, resized to WebP. Each card shows the author and licence and links to the Commons file page; [CREDITS.md](CREDITS.md) lists them all. Check the file page before reusing an image.

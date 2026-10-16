@@ -48,6 +48,7 @@
       footData: "Dates are conventional ranges. Styles overlap, and historians draw the boundaries in different places. Hatched bars mark living traditions that are still practised.",
       footProjTitle: "The project",
       footProj: "A static site with no build step: HTML, CSS and plain JavaScript, with all content in one bilingual data file. Corrections are welcome on <a href=\"https://github.com/geekplux/artisms\">GitHub</a>.",
+      consentText: "This site uses Google Analytics to count visits. Allow it to set analytics cookies?", consentYes: "Accept", consentNo: "Decline", cookieSettings: "Cookie settings",
       close: "Close", bce: "BCE", now: "now"
     },
     zh: {
@@ -82,6 +83,7 @@
       footData: "年代均为约定俗成的范围。流派之间相互重叠，学者划定的边界也各不相同。斜纹色条表示至今仍在延续的活传统。",
       footProjTitle: "关于项目",
       footProj: "一个无需构建的静态网站：HTML、CSS 与原生 JavaScript，全部内容集中在一个中英双语数据文件中。欢迎在 <a href=\"https://github.com/geekplux/artisms\">GitHub</a> 上提出修订。",
+      consentText: "本站使用 Google Analytics 统计访问量。是否允许设置统计 Cookie？", consentYes: "接受", consentNo: "拒绝", cookieSettings: "Cookie 设置",
       close: "关闭", bce: "前", now: "今"
     }
   };
@@ -406,8 +408,30 @@
     if (e.target.closest("#fb-reset, [data-reset]")) { resetFilters(); return; }
     if (e.target.closest("#fb-toggle")) { setPanel($("#fbar").dataset.open !== "true"); return; }
     const lb = e.target.closest(".lang button");
+    const consent = e.target.closest("[data-consent]");
+    if (consent) { setConsent(consent.dataset.consent); return; }
+    if (e.target.closest("#consent-open")) { $("#consent").hidden = false; $("#consent [data-consent]").focus(); return; }
     if (lb && lb.dataset.lang !== lang) { lang = lb.dataset.lang; store.set("art-isms-lang", lang); setParam("lang", lang); renderAll(); }
   });
+  /* Analytics consent (GA itself is set up in index.html, on the production domain only). */
+  const CONSENT_KEY = "art-isms-consent";
+  function setConsent(value) {
+    store.set(CONSENT_KEY, value);
+    if (typeof window.gtag === "function") window.gtag("consent", "update", { analytics_storage: value });
+    // Withdrawing consent also removes cookies GA set earlier (on this host and on the parent domain).
+    if (value === "denied") {
+      const parent = "." + location.hostname.split(".").slice(-2).join(".");
+      document.cookie.split(";").map((c) => c.split("=")[0].trim()).filter((n) => /^_ga/.test(n)).forEach((n) => {
+        for (const domain of ["", `; domain=${location.hostname}`, `; domain=${parent}`]) document.cookie = `${n}=; Max-Age=0; path=/${domain}`;
+      });
+    }
+    $("#consent").hidden = true;
+  }
+  if (typeof window.gtag === "function") {
+    $("#consent-open").hidden = false;
+    if (!store.get(CONSENT_KEY)) $("#consent").hidden = false;
+  }
+
   /* Phones: the bar is one row; the toggle opens the panel. Escape closes it. */
   function setPanel(open) {
     $("#fbar").dataset.open = String(open);

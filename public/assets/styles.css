@@ -73,6 +73,14 @@ img { max-width: 100%; }
 .cta { display: flex; flex-wrap: wrap; gap: 10px; }
 .btn { display: inline-flex; align-items: center; gap: 8px; padding: 10px 16px; border: 2px solid var(--ink); background: var(--white); font-weight: 700; font-size: 15px; text-decoration: none; cursor: pointer; }
 .btn.solid { background: var(--ink); color: var(--white); }
+.linkish { border: 0; padding: 0; background: none; text-decoration: underline; text-decoration-thickness: 1px; text-underline-offset: 3px; cursor: pointer; }
+.linkish:hover { color: var(--red); }
+
+/* Analytics consent bar: a card pinned to the bottom, offset shadow like a printed block */
+.consent { position: fixed; z-index: 50; left: var(--gutter); right: var(--gutter-r); bottom: max(12px, env(safe-area-inset-bottom, 0px)); max-width: 720px; margin: 0 auto; display: flex; flex-wrap: wrap; align-items: center; gap: 12px 18px; padding: 14px 16px; background: var(--white); border: 3px solid var(--ink); box-shadow: 6px 6px 0 var(--ink); font-size: 14px; }
+.consent p { flex: 1 1 260px; }
+.consent-actions { display: flex; gap: 8px; }
+.consent .btn { padding: 7px 14px; font-size: 14px; }
 .btn:hover { background: var(--yellow); color: var(--ink); }
 
 /* Masthead composition: Mondrian grid whose cells hold real works */

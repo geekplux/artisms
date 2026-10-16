@@ -8,7 +8,26 @@
 <meta name="description" content="A visual atlas of 40 art styles: a 45,000-year timeline, how each style grew from the last, and three real works for every style. In English and Chinese.">
 <meta name="theme-color" content="#fffdf7">
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 26 26'%3E%3Crect width='26' height='26' fill='%23141414'/%3E%3Crect x='2' y='2' width='13' height='14' fill='%23d52b1e'/%3E%3Crect x='17' y='2' width='7' height='14' fill='%23fffdf7'/%3E%3Crect x='2' y='18' width='6' height='6' fill='%231d4ed8'/%3E%3Crect x='10' y='18' width='14' height='6' fill='%23f3c623'/%3E%3C/svg%3E">
-<link rel="stylesheet" href="assets/styles.css?v=45bc09ecc6">
+<script>
+/* Google Analytics 4 with Consent Mode v2, on the production domain only. Until the visitor accepts in
+   the consent bar (assets/app.js), analytics_storage stays "denied": GA sends cookieless pings, no IDs. */
+(function () {
+  var GA_ID = "G-V8MD23KS3G";
+  if (location.hostname !== "artisms.geekplux.org") return;
+  var choice = null;
+  try { choice = localStorage.getItem("art-isms-consent"); } catch (e) { /* storage blocked */ }
+  window.dataLayer = window.dataLayer || [];
+  window.gtag = function () { window.dataLayer.push(arguments); };
+  gtag("consent", "default", { ad_storage: "denied", ad_user_data: "denied", ad_personalization: "denied", analytics_storage: choice === "granted" ? "granted" : "denied" });
+  gtag("js", new Date());
+  gtag("config", GA_ID);
+  var s = document.createElement("script");
+  s.async = true;
+  s.src = "https://www.googletagmanager.com/gtag/js?id=" + GA_ID;
+  document.head.appendChild(s);
+})();
+</script>
+<link rel="stylesheet" href="assets/styles.css?v=e561446d08">
 </head>
 <body>
 <header class="topbar">
@@ -126,9 +145,18 @@
     <div>
       <h3 data-i18n="footProjTitle">The project</h3>
       <p data-i18n-html="footProj">A static site with no build step: HTML, CSS and plain JavaScript, with all content in one bilingual data file. Corrections are welcome on <a href="https://github.com/geekplux/artisms">GitHub</a>.</p>
+      <p><button type="button" class="linkish" id="consent-open" data-i18n="cookieSettings" hidden>Cookie settings</button></p>
     </div>
   </div>
 </footer>
+
+<div class="consent" id="consent" role="region" aria-labelledby="consent-text" hidden>
+  <p id="consent-text" data-i18n="consentText">This site uses Google Analytics to count visits. Allow it to set analytics cookies?</p>
+  <div class="consent-actions">
+    <button type="button" class="btn solid" data-consent="granted" data-i18n="consentYes">Accept</button>
+    <button type="button" class="btn" data-consent="denied" data-i18n="consentNo">Decline</button>
+  </div>
+</div>
 
 <dialog id="viewer" aria-labelledby="v-title">
   <div class="v-img" id="v-img"></div>
@@ -136,6 +164,6 @@
 </dialog>
 
 <script src="data/movements.js"></script>
-<script src="assets/app.js?v=18632f57a5"></script>
+<script src="assets/app.js?v=ef6493f8e7"></script>
 </body>
 </html>
