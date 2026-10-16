@@ -159,8 +159,8 @@ window.ARTISMS = {
      },
      "y": "c. 36,000 years ago",
      "loc": {
-      "en": "Ardèche, France",
-      "zh": "法国阿尔代什"
+      "en": "Ardèche, France. Photo shows a museum replica; the cave is closed to the public",
+      "zh": "法国阿尔代什。图为博物馆复制品，岩洞本身不对公众开放"
      },
      "look": {
       "en": "shading and overlapping lines that suggest movement",
@@ -314,7 +314,7 @@ window.ARTISMS = {
       "en": "Found in 1912 in the sculptor Thutmose’s workshop at Amarna. One eye was never inlaid.",
       "zh": "1912年发现于阿马尔奈雕刻家图特摩斯的工坊。一只眼睛从未镶嵌。"
      },
-     "c": "3/33/Nefertiti_bust_%28back%29.jpg",
+     "c": "1/1f/Nofretete_Neues_Museum.jpg",
      "lic": "CC BY-SA 3.0"
     },
     {
@@ -421,7 +421,7 @@ window.ARTISMS = {
       "en": "Hopi artist",
       "zh": "霍皮艺术家"
      },
-     "y": "19th–20th century",
+     "y": "late 19th century",
      "look": {
       "en": "a teaching object connected to ceremonial beings",
       "zh": "与仪式神灵相连的教学器物"
@@ -430,7 +430,12 @@ window.ARTISMS = {
       "en": "Carved from cottonwood root and given to children to learn about the katsinam, the spirit beings of Hopi ceremony.",
       "zh": "以杨木根雕成，送给孩子们，用来认识霍皮仪式中的卡奇纳神灵。"
      },
-     "wiki": "Kachina"
+     "c": "8/81/Hopi_Pueblo_%28Native_American%29._Kachina_Doll_%28Pahlikmana%29%2C_late_19th_century.jpg",
+     "lic": "No restrictions",
+     "loc": {
+      "en": "Brooklyn Museum, New York",
+      "zh": "纽约布鲁克林博物馆"
+     }
     },
     {
      "t": {
@@ -454,7 +459,8 @@ window.ARTISMS = {
       "en": "A map of Dreaming stories across a vast country, painted in the Papunya Tula dot style.",
       "zh": "以帕普尼亚·图拉点画风格描绘的“梦创”故事地图，跨越广阔的土地。"
      },
-     "wiki": "Warlugulong"
+     "wiki": "Warlugulong",
+     "restricted": true
     }
    ],
    "from": []
@@ -517,8 +523,8 @@ window.ARTISMS = {
      },
      "y": "c. 460–450 BCE",
      "loc": {
-      "en": "Bronze original lost; Roman marble copies",
-      "zh": "青铜原作已失传；存世为罗马大理石仿作"
+      "en": "Bronze original lost. Shown: the Lancellotti copy, Palazzo Massimo, Rome",
+      "zh": "青铜原作已失传。图为兰切洛蒂仿作，藏于罗马马西莫宫"
      },
      "look": {
       "en": "controlled athletic motion",
@@ -528,8 +534,8 @@ window.ARTISMS = {
       "en": "An athlete frozen at the instant before release, coiled like a spring.",
       "zh": "定格运动员出手前一瞬，身体如弹簧般蓄力。"
      },
-     "c": "b/ba/Discobolus_of_Myron_and_Discophoros_of_Naucydes.jpg",
-     "lic": "Public domain"
+     "c": "9/93/Discobolus_in_National_Roman_Museum_Palazzo_Massimo_alle_Terme.JPG",
+     "lic": "CC BY-SA 4.0"
     },
     {
      "t": {
@@ -566,8 +572,8 @@ window.ARTISMS = {
      },
      "y": "early 1st century CE",
      "loc": {
-      "en": "Original: Vatican Museums",
-      "zh": "原作：梵蒂冈博物馆"
+      "en": "Vatican Museums",
+      "zh": "梵蒂冈博物馆"
      },
      "look": {
       "en": "political symbolism joined to classical idealisation",
@@ -577,8 +583,8 @@ window.ARTISMS = {
       "en": "The emperor as an ageless general in Greek proportions, with propaganda carved on his breastplate.",
       "zh": "皇帝被塑造成希腊比例的不老将军，胸甲上刻着政治宣传。"
      },
-     "c": "0/04/Augustus_Prima_Porta_Louvre_Ma1247.jpg",
-     "lic": "CC BY 2.5"
+     "c": "e/eb/Statue-Augustus.jpg",
+     "lic": "Public domain"
     }
    ],
    "from": [
@@ -652,7 +658,7 @@ window.ARTISMS = {
       "en": "Cast in brass with remarkable naturalism. Europeans first refused to believe West Africans had made it.",
       "zh": "以黄铜铸成，写实程度惊人。欧洲人起初甚至不相信这出自西非工匠之手。"
      },
-     "wiki": "Ife Head"
+     "wiki": "Bronze Head from Ife"
     },
     {
      "t": {
@@ -665,8 +671,8 @@ window.ARTISMS = {
      },
      "y": "16th–17th century",
      "loc": {
-      "en": "Many now in European museums",
-      "zh": "现多藏于欧洲博物馆"
+      "en": "This plaque: Metropolitan Museum of Art, New York. Many others are in European museums",
+      "zh": "此件藏于纽约大都会艺术博物馆；另有许多藏于欧洲博物馆"
      },
      "look": {
       "en": "court hierarchy cast in brass relief",
@@ -676,8 +682,8 @@ window.ARTISMS = {
       "en": "Plaques like this once covered palace pillars in Benin City. British forces looted thousands in 1897; restitution is ongoing.",
       "zh": "这类饰板曾覆盖贝宁城宫殿的柱子。1897年英军掠走数千件，归还工作仍在进行。"
      },
-     "c": "7/79/Antique_Works_of_Art_from_Benin_01.jpg",
-     "lic": "Public domain"
+     "c": "6/61/WLA_metmuseum_Plaque_Warrior_and_Attendants_Edo_Court_of_Benin.jpg",
+     "lic": "CC BY 2.5"
     },
     {
      "t": {
@@ -1020,7 +1026,8 @@ window.ARTISMS = {
       "en": "A cliff fills two-thirds of the scroll; a mule train crawls along the bottom. The painter’s signature was found hidden in the foliage in 1958.",
       "zh": "巨峰占据画面三分之二，驮队在底部缓缓前行。画家的签名藏在树叶间，直到1958年才被发现。"
      },
-     "wiki": "Travelers Among Mountains and Streams"
+     "c": "c/c2/Fan_Kuan_-_Travelers_Among_Mountains_and_Streams_-_Google_Art_Project.jpg",
+     "lic": "Public domain"
     },
     {
      "t": {
@@ -2784,7 +2791,7 @@ window.ARTISMS = {
       "en": "Breton women imagine Jacob wrestling the angel on a field of pure red. Shown here via a postage-stamp reproduction.",
       "zh": "布列塔尼妇女在纯红色的田野上想象雅各与天使摔跤。此处图片取自一枚邮票上的复制图。"
      },
-     "c": "3/37/Stamp_of_Albania_-_1998_-_Colnect_186200_-_Vision_After_the_Sermon_1888_oil_painting_by_Paul_Gauguin.jpeg",
+     "c": "5/56/La_vision_apr%C3%A8s_le_sermon_%28Paul_Gauguin%29.jpg",
      "lic": "Public domain"
     }
    ],
@@ -2885,8 +2892,8 @@ window.ARTISMS = {
       "en": "Two lovers merged in a cloak of gold leaf, from Klimt’s Golden Period.",
       "zh": "一对恋人融于金箔织就的长袍之中，属克里姆特“黄金时期”作品。"
      },
-     "c": "5/59/The_Kiss_by_Gustav_Klimt.jpg",
-     "lic": "CC BY-SA 3.0"
+     "c": "6/60/Gustav_Klimt_-_Der_Kuss_%28Liebespaar%29_-_912_-_%C3%96sterreichische_Galerie_Belvedere.jpg",
+     "lic": "Public domain"
     },
     {
      "t": {
@@ -3035,7 +3042,7 @@ window.ARTISMS = {
       "en": "A pastoral dream that prompted Picasso to answer with Les Demoiselles d’Avignon.",
       "zh": "一幅田园梦境，促使毕加索以《亚威农少女》回应。"
      },
-     "wiki": "Le Bonheur de Vivre"
+     "wiki": "Le bonheur de vivre"
     }
    ],
    "from": [
@@ -3485,7 +3492,7 @@ window.ARTISMS = {
       "en": "Hung high in a corner at the 0,10 exhibition, the place where Russian homes kept an icon.",
       "zh": "在“0,10”展览上被挂在墙角高处，那是俄罗斯家庭摆放圣像的位置。"
      },
-     "wiki": "Black Square (painting)"
+     "wiki": "Black Square"
     },
     {
      "t": {
@@ -3634,7 +3641,8 @@ window.ARTISMS = {
       "en": "Weimar politicians, machines and the New Woman, sliced from magazines and reassembled.",
       "zh": "魏玛政客、机器与“新女性”，从杂志上剪下又重新拼合。"
      },
-     "wiki": "Cut with the Kitchen Knife"
+     "src": "https://en.wikipedia.org/wiki/Hannah_H%C3%B6ch",
+     "restricted": true
     },
     {
      "t": {
@@ -3885,7 +3893,8 @@ window.ARTISMS = {
       "en": "Bent steel tube and taut fabric, reportedly inspired by bicycle handlebars.",
       "zh": "弯曲钢管加紧绷的帆布，据说灵感来自自行车车把。"
      },
-     "c": "1/19/Bauhaus_Chair_Breuer.png"
+     "c": "d/de/Marcel_Breuer_-_Wassily_Chair.jpg",
+     "lic": "CC BY-SA 4.0"
     },
     {
      "t": {
@@ -3898,8 +3907,8 @@ window.ARTISMS = {
      },
      "y": "1922",
      "loc": {
-      "en": "Premiered in Stuttgart",
-      "zh": "首演于斯图加特"
+      "en": "Premiered in Stuttgart; costumes now in the Staatsgalerie Stuttgart",
+      "zh": "首演于斯图加特；服装现藏斯图加特国立美术馆"
      },
      "look": {
       "en": "the human body redesigned as geometry in motion",
@@ -3909,7 +3918,8 @@ window.ARTISMS = {
       "en": "Dancers in padded, geometric costumes turn ballet into moving sculpture.",
       "zh": "舞者身着填充的几何服装，把芭蕾变成移动的雕塑。"
      },
-     "wiki": "Triadic Ballet"
+     "c": "3/31/Triadisches_Ballett_by_Oskar_Schlemmer_-_Staatsgalerie_-_Stuttgart_-_Germany_2017_%28cropped%29.jpg",
+     "lic": "CC BY-SA 4.0"
     }
    ],
    "from": [
@@ -3982,7 +3992,8 @@ window.ARTISMS = {
       "en": "Its crown briefly made it the world’s tallest building, until the Empire State Building opened in 1931.",
       "zh": "它的塔冠一度使其成为世界最高建筑，直到1931年帝国大厦落成。"
      },
-     "wiki": "Chrysler Building"
+     "c": "7/76/Chrysler_Building_by_David_Shankbone_Retouched.jpg",
+     "lic": "Public domain"
     },
     {
      "t": {
@@ -4030,7 +4041,8 @@ window.ARTISMS = {
       "en": "Painted for the cover of the German magazine Die Dame: the independent woman at the wheel.",
       "zh": "为德国杂志《女士》封面而作：手握方向盘的独立女性。"
      },
-     "wiki": "Autoportrait (Tamara in the Green Bugatti)"
+     "wiki": "Autoportrait (Tamara in a Green Bugatti)",
+     "restricted": true
     }
    ],
    "from": [
@@ -4130,7 +4142,8 @@ window.ARTISMS = {
       "en": "Twenty-seven fresco panels on the Ford River Rouge plant, workers and machines locked together.",
       "zh": "二十七幅湿壁画描绘福特胭脂河工厂，工人与机器紧紧相连。"
      },
-     "wiki": "Detroit Industry Murals"
+     "c": "c/c1/Rivera_detroit_industry_north.jpg",
+     "lic": "Public domain"
     },
     {
      "t": {
@@ -4154,7 +4167,8 @@ window.ARTISMS = {
       "en": "A huge foot, tiny head and a cactus: it inspired Oswald de Andrade’s 1928 Cannibalist Manifesto.",
       "zh": "巨大的脚、微小的头和一株仙人掌：它启发了奥斯瓦尔德·德·安德拉德1928年的《食人宣言》。"
      },
-     "wiki": "Abaporu"
+     "wiki": "Abaporu",
+     "restricted": true
     }
    ],
    "from": [
@@ -4511,7 +4525,8 @@ window.ARTISMS = {
       "en": "A war-comic panel blown up to 4 m wide across two canvases, dots and all.",
       "zh": "把一格战争漫画放大到两块画布、约4米宽，连网点也一并放大。"
      },
-     "wiki": "Whaam!"
+     "wiki": "Whaam!",
+     "restricted": true
     },
     {
      "t": {
@@ -4535,7 +4550,8 @@ window.ARTISMS = {
       "en": "A bodybuilder holds a giant lollipop marked “POP”. Often called the first Pop artwork.",
       "zh": "健美先生手持写着“POP”的巨型棒棒糖。常被称为第一件波普艺术作品。"
      },
-     "wiki": "Just what is it that makes today's homes so different, so appealing?"
+     "wiki": "Just what is it that makes today's homes so different, so appealing?",
+     "restricted": true
     }
    ],
    "from": [
@@ -4764,7 +4780,8 @@ window.ARTISMS = {
       "en": "A book of instruction pieces such as “Imagine the clouds dripping.” The reader performs the work.",
       "zh": "一本指令作品集，例如“想象云在滴落”。读者亲自完成作品。"
      },
-     "wiki": "Grapefruit (book)"
+     "wiki": "Grapefruit (book)",
+     "restricted": true
     },
     {
      "t": {
@@ -4863,7 +4880,8 @@ window.ARTISMS = {
       "en": "Seventy photos of Sherman posing as heroines from films that never existed.",
       "zh": "七十张照片，舍曼扮演从未存在过的电影中的女主角。"
      },
-     "wiki": "Untitled Film Stills"
+     "wiki": "Untitled Film Stills",
+     "restricted": true
     },
     {
      "t": {
@@ -4887,7 +4905,8 @@ window.ARTISMS = {
       "en": "A party balloon rebuilt in 3 m of mirror-polished stainless steel. One sold for $58.4 million in 2013.",
       "zh": "把派对气球重建为3米高的镜面不锈钢雕塑。其中一件于2013年以5840万美元售出。"
      },
-     "wiki": "Balloon Dog"
+     "wiki": "Balloon Dog",
+     "restricted": true
     },
     {
      "t": {
@@ -4911,7 +4930,8 @@ window.ARTISMS = {
       "en": "A re-photographed Marlboro advert: the cowboy myth, owned by no one and everyone.",
       "zh": "翻拍的万宝路广告：牛仔神话既不属于任何人，又属于所有人。"
      },
-     "wiki": "Untitled (Cowboy)"
+     "src": "https://www.metmuseum.org/art/collection/search/283742",
+     "restricted": true
     }
    ],
    "from": [
@@ -4984,7 +5004,8 @@ window.ARTISMS = {
       "en": "Mirrors and lights multiply a small room into endless space; visitors often get under a minute inside.",
       "zh": "镜子与灯光把小房间变成无尽空间；每位观众往往只能停留不到一分钟。"
      },
-     "wiki": "Infinity Mirror Room"
+     "src": "https://en.wikipedia.org/wiki/Yayoi_Kusama",
+     "restricted": true
     },
     {
      "t": {

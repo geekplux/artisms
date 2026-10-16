@@ -46,9 +46,11 @@ for (const m of D.movements) {
     if (w.n) bi(wat, w.n, "n");
     if (!w.y) fail(wat, "missing year (y)");
     const sources = ["c", "img", "wiki"].filter((k) => w[k]);
-    if (!sources.length) fail(wat, "needs an image source: c (Commons path), img (URL) or wiki (article title)");
+    if (!sources.length && !(w.restricted && w.src)) fail(wat, "needs an image source: c (Commons path), img (URL), wiki (article title), or restricted: true with src (link)");
     if (w.c && !/^[0-9a-f]\/[0-9a-f]{2}\/[^/]+$/.test(w.c)) fail(wat, `malformed Commons path "${w.c}"`);
+    if (w.c && w.restricted) fail(wat, "Commons files are free; do not mark them restricted");
     if (w.img && !w.restricted) fail(wat, "non-Commons img URLs must be marked restricted: true");
+    if (w.src && !/^https:\/\//.test(w.src)) fail(wat, `src must be an https URL`);
   });
 }
 for (const e of D.engines) for (const r of e.ex) if (!ids.has(r)) fail("engines", `unknown movement "${r}"`);

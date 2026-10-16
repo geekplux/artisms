@@ -28,7 +28,8 @@ index.html           page skeleton and static copy
 assets/styles.css    all styles (paper, ink and a little De Stijl)
 assets/app.js        rendering, language switch, timeline, image loading
 data/movements.js    all content: 40 styles × 3 works, English + Chinese
-scripts/check-data.mjs   validates the data file (no dependencies)
+scripts/check-data.mjs      validates the data file (no dependencies)
+scripts/verify-images.mjs   checks every image against Wikimedia (network)
 ```
 
 ## Content model
@@ -61,6 +62,7 @@ Each work names **one image source**:
 | `c` | Wikimedia Commons path, e.g. `"e/ea/Van_Gogh_-_Starry_Night_-_Google_Art_Project.jpg"` (the part after `/wikipedia/commons/`). Preferred. Add `lic` with the licence shown on the file page. |
 | `wiki` | English Wikipedia article title. The page uses that article's lead image, fetched in the browser from the Wikipedia REST API. |
 | `img` + `src` | Any other image URL plus its source page. Must be marked `"restricted": true`. |
+| `restricted: true` + `wiki` or `src` | A work still in copyright with no image at all. The card shows a placeholder linking to the article or museum page. Nothing is fetched. |
 
 Other work fields: `t` title, `a` artist, `y` year, `loc` where it is (optional), `look` what to look for, and `n` a one-sentence note (optional).
 
@@ -68,7 +70,8 @@ Other work fields: `t` title, `a` artist, `y` year, `loc` where it is (optional)
 
 1. Edit `data/movements.js`. Keep movements sorted by `start`.
 2. Run `node scripts/check-data.mjs`. It checks ids, cross-links, the three works per style, both languages and the image fields.
-3. Open the page and check that both languages render.
+3. Run `node scripts/verify-images.mjs` (needs network). It loads every image URL the page would use, checks `wiki` titles and lead images, and flags file names that may not show the work. Add `--only <movement-id>` to check one style.
+4. Open the page and check that both languages render.
 
 CI runs the same check on every push and pull request.
 

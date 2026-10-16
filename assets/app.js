@@ -158,6 +158,10 @@
     if (w.img) {
       return Promise.resolve({ src: w.img, page: w.src || w.img, credit: new URL(w.src || w.img).hostname.replace(/^www\./, ""), restricted: true });
     }
+    if (w.restricted) {
+      const page = w.src || wikiUrl(w.wiki);
+      return Promise.resolve({ page, restricted: true, credit: new URL(page).hostname.replace(/^www\./, "") });
+    }
     return lookup(w.wiki).then((r) => {
       if (!r.src) return { page: r.page, restricted: true, credit: t("viaWiki") };
       const free = isFree(r.src);
