@@ -153,6 +153,11 @@
     const page = w.src || article(w).href;
     return { page, credit: host(page), restricted: true };
   }
+  /* Frames size themselves to the work's shape where the layout allows (viewer, single-column cards). */
+  function arStyle(mid, wi) {
+    const im = BY[mid].works[wi].image;
+    return im && im.w ? ` style="--ar:${im.w}/${im.h}"` : "";
+  }
   function setImg(img, r, sizes) {
     if (r.srcset) { img.srcset = r.srcset; img.sizes = sizes; img.width = r.w; img.height = r.h; }
     img.src = r.src;
@@ -346,7 +351,7 @@
         </div>
         <div class="cards">${m.works.map((w, wi) => `
           <article class="card">
-            <div class="frame" data-work="${m.id}:${wi}"><span class="spin">${esc(t("loading"))}</span><button type="button" data-view="${m.id}:${wi}" aria-label="${esc(p(w.t))}"><img alt="${esc(p(w.t))}" decoding="async"></button></div>
+            <div class="frame" data-work="${m.id}:${wi}"${arStyle(m.id, wi)}><span class="spin">${esc(t("loading"))}</span><button type="button" data-view="${m.id}:${wi}" aria-label="${esc(p(w.t))}"><img alt="${esc(p(w.t))}" decoding="async"></button></div>
             <div class="card-copy">
               <h3>${titleLink(w)}</h3>
               <p class="by">${esc(p(w.a))} · <span class="mono">${esc(w.y)}</span></p>
@@ -381,7 +386,7 @@
       <p class="credit" style="display:flex;gap:12px;flex-wrap:wrap;font-size:13px"><a id="v-src" href="#" target="_blank" rel="noopener">${esc(t("source"))}</a></p>`;
     const box = $("#v-img");
     box.className = "v-img";
-    box.innerHTML = `<div class="frame" style="height:min(70dvh,720px);width:100%;border:0"><span class="spin">${esc(t("loading"))}</span><img alt="${esc(p(w.t))}"></div>`;
+    box.innerHTML = `<div class="frame"${arStyle(mid, +wi)}><span class="spin">${esc(t("loading"))}</span><img alt="${esc(p(w.t))}"></div>`;
     loadInto($(".frame", box), mid, +wi, "min(1200px, 100vw)");
     $("#v-src").href = resolveImage(mid, +wi).page || article(w).href;
     if (typeof viewer.showModal === "function") viewer.showModal(); else viewer.setAttribute("open", "");
