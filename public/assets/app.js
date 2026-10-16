@@ -17,7 +17,8 @@
 
   const UI = {
     en: {
-      brand: "Art-isms", brandSub: "艺术流派志", navTimeline: "Timeline", navStyles: "Styles", navWhy: "Why styles change", navStudy: "How to look",
+      brand: "Art-isms", brandSub: "", navTimeline: "Timeline", navStyles: "Styles", navWhy: "Why styles change", navStudy: "How to look",
+      meta: "A visual atlas of 40 art styles: a 45,000-year timeline, how each style grew from the last, and three real works for every style. In English and Chinese.",
       kicker: "A visual atlas of art styles", title: "Art-isms", titleSub: "45,000 years of looking",
       dek: "How art styles <strong>began</strong>, what they <strong>look like</strong>, and how each one grew out of the last, with three real works for every style.",
       stats: (n, w) => `<span><b>45,000</b>years</span><span><b>${n}</b>styles</span><span><b>${w}</b>works</span><span><b>2</b>languages</span>`,
@@ -50,6 +51,7 @@
     },
     zh: {
       brand: "艺术流派志", brandSub: "Art-isms", navTimeline: "时间线", navStyles: "流派", navWhy: "风格为何改变", navStudy: "如何观看",
+      meta: "收录40个艺术流派的图谱：一条四万五千年的时间线，每个流派如何从前一个流派中生长出来，并为每个流派配上三件真实作品。中英双语。",
       kicker: "艺术风格图谱", title: "艺术流派志", titleSub: "四万五千年的观看",
       dek: "艺术风格如何<strong>开始</strong>、长什么<strong>样子</strong>，又如何一脉相承、彼此反叛；每个流派配有三件真实作品。",
       stats: (n, w) => `<span><b>45,000</b>年</span><span><b>${n}</b>个流派</span><span><b>${w}</b>件作品</span><span><b>2</b>种语言</span>`,
@@ -87,15 +89,25 @@
     get(k) { try { return localStorage.getItem(k); } catch (e) { return null; } },
     set(k, v) { try { localStorage.setItem(k, v); } catch (e) { /* storage blocked */ } }
   };
+  /* Language: ?lang=en|zh (shareable links) wins, then the saved choice, then the browser's language. */
+  const LANGS = ["en", "zh"];
   const browserZh = (navigator.language || "").toLowerCase().startsWith("zh");
-  let lang = store.get("art-isms-lang") || (browserZh ? "zh" : "en");
-  if (lang !== "en" && lang !== "zh") lang = "en";
+  const urlLang = new URLSearchParams(location.search).get("lang");
+  let lang = LANGS.includes(urlLang) ? urlLang : store.get("art-isms-lang") || (browserZh ? "zh" : "en");
+  if (!LANGS.includes(lang)) lang = "en";
+  /* Update one query parameter without reloading or touching the hash. */
+  function setParam(key, value) {
+    try {
+      const u = new URL(location.href);
+      if (value == null) u.searchParams.delete(key); else u.searchParams.set(key, value);
+      history.replaceState(null, "", u.pathname + u.search + u.hash);
+    } catch (e) { /* sandboxed */ }
+  }
   let fEra = "all";
   let fGroup = "all";
 
   const t = (k) => (UI[lang][k] ?? UI.en[k] ?? k);
   const p = (o) => (o ? (o[lang] ?? o.en) : "");
-  const other = (o) => (o ? o[lang === "en" ? "zh" : "en"] : "");
   const esc = (s) => String(s).replace(/[&<>"']/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c]));
   const $ = (s, r = document) => r.querySelector(s);
   const $$ = (s, r = document) => Array.from(r.querySelectorAll(s));
@@ -186,6 +198,8 @@
   function applyStatic() {
     document.documentElement.lang = lang === "zh" ? "zh-CN" : "en";
     document.title = lang === "zh" ? "艺术流派志 · Art-isms" : "Art-isms";
+    $('meta[name="description"]').setAttribute("content", t("meta"));
+    $(".brand small").hidden = !t("brandSub");
     $$("[data-i18n]").forEach((el) => { el.textContent = t(el.dataset.i18n); });
     $$("[data-i18n-html]").forEach((el) => { el.innerHTML = t(el.dataset.i18nHtml); });
     $$(".lang button").forEach((b) => b.setAttribute("aria-pressed", String(b.dataset.lang === lang)));
@@ -284,7 +298,7 @@
         <div class="mv-head">
           <p class="idx">${num(i)}</p>
           <div>
-            <h2 id="h-${m.id}">${esc(p(m.name))}<span class="alt" lang="${lang === "en" ? "zh-CN" : "en"}">${esc(other(m.name))}</span></h2>
+            <h2 id="h-${m.id}">${esc(p(m.name))}${lang === "zh" ? `<span class="alt" lang="en">${esc(m.name.en)}</span>` : ""}</h2>
             <div class="meta-row"><span class="yrs">${esc(p(m.years))}</span><span>${esc(p(m.region))}</span><span class="grp"><span class="sw"></span>${esc(p(GROUP[m.group].name))}</span>${m.home ? `<span class="home">${esc(t("home"))}</span>` : ""}</div>
             <p class="idea">${esc(p(m.idea))}</p>
           </div>
@@ -362,7 +376,7 @@
     const grp = e.target.closest("[data-group]");
     if (grp) { fGroup = grp.dataset.group; applyFilters(); return; }
     const lb = e.target.closest(".lang button");
-    if (lb && lb.dataset.lang !== lang) { lang = lb.dataset.lang; store.set("art-isms-lang", lang); renderAll(); }
+    if (lb && lb.dataset.lang !== lang) { lang = lb.dataset.lang; store.set("art-isms-lang", lang); setParam("lang", lang); renderAll(); }
   });
   $("#jump").addEventListener("change", (e) => { if (e.target.value) go(e.target.value); e.target.value = ""; });
   const tl = $("#tl");
