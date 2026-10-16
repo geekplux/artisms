@@ -46,6 +46,12 @@ Read README.md for the data model and file layout. These are the rules that are 
 4. `node scripts/verify-images.mjs` (network): hosted files, Commons sources and every link.
 5. Open the page at desktop width and at 390px, in both languages: no horizontal scroll, no console errors.
 
+## Analytics and privacy
+
+- Google Analytics loads only on `artisms.geekplux.org`, in Consent Mode v2 with everything denied until the
+  visitor accepts. Don't add other trackers, third-party scripts or cookies without the owner's agreement,
+  and never load GA before the consent defaults are set.
+
 ## Caching and deployment
 
 - Cloudflare Workers Static Assets, configured in `wrangler.jsonc`; Workers Builds deploys `main` on push.
