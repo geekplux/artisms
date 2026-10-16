@@ -231,6 +231,7 @@ img { max-width: 100%; }
 .toc a[aria-current="true"] b { color: var(--red); }
 .jump { display: none; }
 .empty { padding: 32px 0; color: var(--muted); }
+.seo-works { margin: 0 0 0 80px; padding-left: 18px; font-size: 14px; } /* static fallback only; app.js replaces it */
 @media (max-width: 1000px) {
   .atlas > .wrap { grid-template-columns: minmax(0, 1fr); }
   .side { position: static; max-height: none; overflow: visible; border-right: 0; padding: 0 0 8px; }

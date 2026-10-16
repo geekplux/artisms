@@ -203,7 +203,8 @@
   /* ── Static copy ───────────────────────────── */
   function applyStatic() {
     document.documentElement.lang = lang === "zh" ? "zh-CN" : "en";
-    document.title = lang === "zh" ? "艺术流派志 · Art-isms" : "Art-isms";
+    document.title = lang === "zh" ? "艺术流派志 · 40个艺术流派图谱 · Art-isms" : "Art-isms · A visual atlas of 40 art styles";
+    $('link[rel="canonical"]').href = lang === "zh" ? "https://artisms.geekplux.org/?lang=zh" : "https://artisms.geekplux.org/";
     $('meta[name="description"]').setAttribute("content", t("meta"));
     $(".brand small").hidden = !t("brandSub");
     $$("[data-i18n]").forEach((el) => { el.textContent = t(el.dataset.i18n); });

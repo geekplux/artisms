@@ -42,6 +42,7 @@ docs/                       fact-check records
 scripts/check-data.mjs      validates data, image files, CREDITS.md and cache stamps (no network)
 scripts/fetch-images.mjs    downloads, resizes and credits Commons images (network, cwebp)
 scripts/stamp-assets.mjs    writes ?v=<hash> into index.html for files under assets/
+scripts/seo.mjs             writes static, crawlable HTML (JSON-LD, contents, styles) into index.html
 scripts/verify-images.mjs   checks hosted files, Commons sources and links (network)
 ```
 
@@ -86,7 +87,7 @@ Other work fields: `t` title, `a` artist, `y` year, `loc` where it is (optional)
 2. If you added or changed a `c` path, run `node scripts/fetch-images.mjs` (needs network and `cwebp`: `brew install webp`). It downloads only missing files (`--force` to redo all, `--only <style-id>` for one style), refreshes licences and authors, and rewrites `CREDITS.md`. Look at the new image before committing.
 3. Run `node scripts/check-data.mjs`. It checks ids, cross-links, the three works per style, both languages, the image files and that `CREDITS.md` is current.
 4. Run `node scripts/verify-images.mjs` (needs network). It checks the hosted files, that each Commons source still exists with the same licence, every link, and flags file names that may not show the work.
-5. If you changed `public/assets/app.js` or `styles.css`, run `node scripts/stamp-assets.mjs` (check-data fails until you do).
+5. If you changed `public/assets/app.js` or `styles.css`, run `node scripts/stamp-assets.mjs`; if you changed the data, run `node scripts/seo.mjs` (check-data fails until you do).
 6. Open the page and check that both languages render, on a desktop and at phone width.
 
 CI runs the same check on every push and pull request.
@@ -96,6 +97,10 @@ CI runs the same check on every push and pull request.
 The site is served at **https://artisms.geekplux.org/** (a custom domain on the `artisms` Worker) by **Cloudflare Workers Static Assets** with Workers Builds (Git integration). Every push to `main` runs `npx wrangler deploy`, which uploads `public/` as configured in `wrangler.jsonc`. There is no build command. Pull requests get preview builds if they are enabled in the dashboard. Nothing outside `public/` (README, scripts, `.git`) is ever uploaded.
 
 `public/_headers` caches `assets/` and `images/` for a year. That is safe because every reference to them carries a content hash (`?v=…`): `image.v` in the data for images, and `scripts/stamp-assets.mjs` for `index.html`. `index.html` and `data/` are revalidated on every visit.
+
+## SEO
+
+`public/index.html` carries the canonical URL, hreflang links for English and Chinese (`?lang=zh`), Open Graph and Twitter cards (`public/og.jpg`, 1200×630) and JSON-LD. `scripts/seo.mjs` writes a static copy of the contents and every style's text into the page, so crawlers and link previews that don't run JavaScript still see the content; `app.js` replaces it on load. `public/robots.txt` and `public/sitemap.xml` point search engines at both language versions.
 
 ## Analytics
 
