@@ -111,6 +111,10 @@
   /* Keep the address true to the language on screen: Chinese is /?lang=zh, English is plain /.
      An explicit ?lang=en is left alone, so such a link keeps beating a saved Chinese preference. */
   if (lang === "zh" && urlLang !== "zh") setParam("lang", "zh");
+  /* Analytics: a no-op off the production domain, where gtag is never defined. Never send free text. */
+  const track = (name, params) => { if (typeof window.gtag === "function") window.gtag("event", name, params); };
+  /* Sent after rendering, with the final title. No hash: it carries the style id, not a page. */
+  const pageView = () => track("page_view", { page_title: document.title, page_location: location.origin + location.pathname + location.search });
   /* Filters: sets of selected era and region ids; empty means "all". Kept in ?era=…&region=… */
   const listParam = (key, valid) => (new URLSearchParams(location.search).get(key) || "").split(",").filter((v) => valid.includes(v));
   const fEras = new Set(listParam("era", D.eras.map((e) => e.id)));
@@ -329,7 +333,11 @@
     setParam("region", fRegions.size ? [...fRegions].join(",") : null);
   }
   function resetFilters() { fEras.clear(); fRegions.clear(); applyFilters(); }
-  const toggle = (set, id) => { if (set.has(id)) set.delete(id); else set.add(id); applyFilters(); };
+  const toggle = (set, id, type) => {
+    if (set.has(id)) set.delete(id);
+    else { set.add(id); track("select_content", { content_type: type, item_id: id }); }
+    applyFilters();
+  };
 
   /* ── Movement sections ─────────────────────── */
   const chip = (id) => `<button type="button" class="lk g-${BY[id].group}" data-go="${id}"><span class="sw"></span>${esc(p(BY[id].name))}</button>`;
@@ -413,23 +421,28 @@
     const g = e.target.closest("[data-go]");
     if (g) { e.preventDefault(); go(g.dataset.go); return; }
     const era = e.target.closest("[data-era]");
-    if (era) { toggle(fEras, era.dataset.era); return; }
+    if (era) { toggle(fEras, era.dataset.era, "era"); return; }
     const reg = e.target.closest("[data-region]");
-    if (reg) { toggle(fRegions, reg.dataset.region); return; }
+    if (reg) { toggle(fRegions, reg.dataset.region, "region"); return; }
     if (e.target.closest("#fb-reset, [data-reset]")) { resetFilters(); return; }
     if (e.target.closest("#fb-toggle")) { setPanel($("#fbar").dataset.open !== "true"); return; }
     const lb = e.target.closest(".lang button");
     const consent = e.target.closest("[data-consent]");
     if (consent) { setConsent(consent.dataset.consent); return; }
     if (e.target.closest("#consent-open")) { $("#consent").hidden = false; $("#consent [data-consent]").focus(); return; }
-    if (lb && lb.dataset.lang !== lang) { lang = lb.dataset.lang; store.set("art-isms-lang", lang); setParam("lang", lang === "zh" ? "zh" : null); renderAll(); }
+    if (lb && lb.dataset.lang !== lang) {
+      lang = lb.dataset.lang; store.set("art-isms-lang", lang); setParam("lang", lang === "zh" ? "zh" : null); renderAll();
+      track("select_content", { content_type: "language", item_id: lang });
+      pageView();
+    }
   });
   /* Analytics consent (GA itself is set up in index.html, on the production domain only). */
   const CONSENT_KEY = "art-isms-consent";
   function setConsent(value) {
     store.set(CONSENT_KEY, value);
     if (typeof window.gtag === "function") window.gtag("consent", "update", { analytics_storage: value });
-    // Withdrawing consent also removes cookies GA set earlier (on this host and on the parent domain).
+    // Withdrawing consent also removes GA cookies: on this host, where GA now sets them (host-only, see
+    // index.html), and on the parent domain, to clean up legacy cookies set there before that change.
     if (value === "denied") {
       const parent = "." + location.hostname.split(".").slice(-2).join(".");
       document.cookie.split(";").map((c) => c.split("=")[0].trim()).filter((n) => /^_ga/.test(n)).forEach((n) => {
@@ -487,7 +500,7 @@
     renderWhy();
     if (renderAll.after) renderAll.after();
   }
-  renderAll();
+  try { renderAll(); } finally { pageView(); }
 
   const start = (location.hash || "").slice(1);
   if (BY[start]) requestAnimationFrame(() => document.getElementById(start)?.scrollIntoView());
