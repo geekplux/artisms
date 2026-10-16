@@ -1,0 +1,13 @@
+// Cloudflare Workers Static Assets: the site is plain files in ./public, no build step and no Worker script.
+// Workers Builds deploys it with `npx wrangler deploy` on every push to main.
+// Local preview: `npx wrangler dev` (or `python3 -m http.server 8000 --directory public`).
+{
+  "name": "artisms",
+  "compatibility_date": "2026-10-01",
+  "assets": {
+    "directory": "./public",
+    // /index.html is served at /, and unknown paths return a plain 404.
+    "html_handling": "auto-trailing-slash",
+    "not_found_handling": "none"
+  }
+}
