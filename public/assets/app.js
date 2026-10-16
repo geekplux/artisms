@@ -93,11 +93,10 @@
     get(k) { try { return localStorage.getItem(k); } catch (e) { return null; } },
     set(k, v) { try { localStorage.setItem(k, v); } catch (e) { /* storage blocked */ } }
   };
-  /* Language: ?lang=en|zh (shareable links) wins, then the saved choice, then the browser's language. */
+  /* Language: ?lang=en|zh (shareable links) wins, then the visitor's saved choice; otherwise English. */
   const LANGS = ["en", "zh"];
-  const browserZh = (navigator.language || "").toLowerCase().startsWith("zh");
   const urlLang = new URLSearchParams(location.search).get("lang");
-  let lang = LANGS.includes(urlLang) ? urlLang : store.get("art-isms-lang") || (browserZh ? "zh" : "en");
+  let lang = LANGS.includes(urlLang) ? urlLang : store.get("art-isms-lang") || "en";
   if (!LANGS.includes(lang)) lang = "en";
   /* Update one query parameter without reloading or touching the hash. */
   function setParam(key, value) {
