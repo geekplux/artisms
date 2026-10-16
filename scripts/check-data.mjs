@@ -1,10 +1,12 @@
 #!/usr/bin/env node
-// Validates data/movements.js: ids, links, bilingual fields, image sources, hosted files and CREDITS.md.
+// Validates public/data/movements.js: ids, links, bilingual fields, image sources, hosted files,
+// CREDITS.md and the ?v= cache stamps in public/index.html.
 // Usage: node scripts/check-data.mjs   (no dependencies, no network)
 import { existsSync, readFileSync } from "node:fs";
 import { join } from "node:path";
-import { loadData, SITE, ROOT, imagePath } from "./lib/data.mjs";
+import { loadData, SITE, ROOT, imagePath, contentHash } from "./lib/data.mjs";
 import { creditsMarkdown } from "./lib/credits.mjs";
+import { staleStamps } from "./stamp-assets.mjs";
 
 const D = loadData();
 
@@ -58,7 +60,10 @@ for (const m of D.movements) {
         for (const k of ["author", "license", "page"]) if (!im[k]) fail(wat, `image.${k} is missing`);
         if (!(im.w > 0 && im.h > 0)) fail(wat, "image.w and image.h must be positive");
       }
-      for (const small of [false, true]) if (!existsSync(join(SITE, imagePath(m.id, i + 1, small)))) fail(wat, `missing ${imagePath(m.id, i + 1, small)}: run node scripts/fetch-images.mjs`);
+      const files = [false, true].map((small) => join(SITE, imagePath(m.id, i + 1, small)));
+      const missing = files.filter((f) => !existsSync(f));
+      for (const f of missing) fail(wat, `missing ${f.slice(SITE.length)}: run node scripts/fetch-images.mjs`);
+      if (im && !missing.length && im.v !== contentHash(...files.map((f) => readFileSync(f)))) fail(wat, "image.v does not match the files: run node scripts/fetch-images.mjs");
     } else if (w.image) fail(wat, "only Commons works may have image metadata");
   });
 }
@@ -67,6 +72,8 @@ for (const n of D.nicknames) if (!ids.has(n.id)) fail("nicknames", `unknown move
 
 const creditsFile = join(ROOT, "CREDITS.md");
 if (!existsSync(creditsFile) || readFileSync(creditsFile, "utf8") !== creditsMarkdown(D)) fail("CREDITS.md", "out of date: run node scripts/fetch-images.mjs");
+
+for (const s of staleStamps()) fail("public/index.html", `${s} has a stale ?v= stamp: run node scripts/stamp-assets.mjs`);
 
 const works = D.movements.reduce((n, m) => n + m.works.length, 0);
 const hosted = D.movements.reduce((n, m) => n + m.works.filter((w) => w.image).length, 0);

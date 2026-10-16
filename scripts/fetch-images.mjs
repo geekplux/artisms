@@ -1,17 +1,17 @@
 #!/usr/bin/env node
 // Downloads every Commons image (works with a `c` path), resizes it and saves it as WebP:
-//   images/<movement-id>/<n>.webp       long edge ≤ 1200px
-//   images/<movement-id>/<n>-480.webp   long edge ≤ 480px
+//   public/images/<movement-id>/<n>.webp       long edge ≤ 1200px
+//   public/images/<movement-id>/<n>-480.webp   long edge ≤ 480px
 // Reads licence, author and file page from the Commons API (extmetadata) into each work's
 // `image` field, then regenerates CREDITS.md. Works marked `restricted` are never downloaded.
 //
 // Usage: node scripts/fetch-images.mjs [--force] [--only movement-id]
 // Needs network access, Node 22+ and `cwebp` (brew install webp / apt install webp).
-import { existsSync, mkdirSync, writeFileSync, rmSync, mkdtempSync } from "node:fs";
+import { existsSync, mkdirSync, writeFileSync, readFileSync, rmSync, mkdtempSync } from "node:fs";
 import { execFileSync } from "node:child_process";
 import { tmpdir } from "node:os";
 import { join, dirname } from "node:path";
-import { loadData, saveData, SITE, ROOT, imagePath, commonsPage } from "./lib/data.mjs";
+import { loadData, saveData, SITE, ROOT, imagePath, commonsPage, contentHash } from "./lib/data.mjs";
 import { creditsMarkdown } from "./lib/credits.mjs";
 
 const LARGE = 1200, SMALL = 480, QUALITY = "80";
@@ -113,7 +113,7 @@ try {
         process.stdout.write(`  ✓ ${m.id}#${n}  ${info.license}\n`);
       } else skipped++;
       const [iw, ih] = dims(large);
-      w.image = { w: iw, h: ih, author: info.author, license: info.license, licenseUrl: info.licenseUrl, page: info.page };
+      w.image = { w: iw, h: ih, v: contentHash(readFileSync(large), readFileSync(small)), author: info.author, license: info.license, licenseUrl: info.licenseUrl, page: info.page };
     }
   }
 } finally {
@@ -121,4 +121,4 @@ try {
 }
 saveData(D);
 writeFileSync(join(ROOT, "CREDITS.md"), creditsMarkdown(D));
-console.log(`${fetched} downloaded, ${skipped} already present. Updated data/movements.js and CREDITS.md.`);
+console.log(`${fetched} downloaded, ${skipped} already present. Updated public/data/movements.js and CREDITS.md.`);

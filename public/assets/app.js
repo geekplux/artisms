@@ -123,9 +123,10 @@
   function resolveImage(mid, wi) {
     const w = BY[mid].works[wi];
     if (w.image) {
-      const base = `images/${mid}/${wi + 1}`, im = w.image;
+      /* ?v= is a content hash, so public/_headers can cache images for a year. */
+      const base = `images/${mid}/${wi + 1}`, im = w.image, v = `?v=${im.v}`;
       return {
-        src: `${base}.webp`, srcset: `${base}-480.webp ${Math.round(480 * im.w / Math.max(im.w, im.h))}w, ${base}.webp ${im.w}w`,
+        src: `${base}.webp${v}`, srcset: `${base}-480.webp${v} ${Math.round(480 * im.w / Math.max(im.w, im.h))}w, ${base}.webp${v} ${im.w}w`,
         w: im.w, h: im.h, page: im.page, credit: `${im.author} · ${im.license}`
       };
     }
