@@ -179,7 +179,8 @@ window.ARTISMS = {
       "license": "Public domain",
       "licenseUrl": null,
       "page": "https://commons.wikimedia.org/wiki/File:Paintings_from_the_Chauvet_cave_(museum_replica).jpg"
-     }
+     },
+     "zhwiki": "肖维岩洞"
     },
     {
      "t": {
@@ -212,7 +213,8 @@ window.ARTISMS = {
       "license": "CC BY 2.5",
       "licenseUrl": "https://creativecommons.org/licenses/by/2.5",
       "page": "https://commons.wikimedia.org/wiki/File:Venus_von_Willendorf_01.jpg"
-     }
+     },
+     "zhwiki": "维伦多夫的维纳斯"
     },
     {
      "t": {
@@ -245,7 +247,8 @@ window.ARTISMS = {
       "license": "Public domain",
       "licenseUrl": null,
       "page": "https://commons.wikimedia.org/wiki/File:Lascaux_painting.jpg"
-     }
+     },
+     "zhwiki": "拉斯科洞窟壁画"
     }
    ],
    "from": []
@@ -324,7 +327,9 @@ window.ARTISMS = {
       "license": "Public domain",
       "licenseUrl": null,
       "page": "https://commons.wikimedia.org/wiki/File:Narmer_Palette_smiting_side.jpg"
-     }
+     },
+     "wiki": "Narmer Palette",
+     "zhwiki": "那尔迈调色板"
     },
     {
      "t": {
@@ -356,7 +361,9 @@ window.ARTISMS = {
       "license": "CC BY-SA 3.0",
       "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
       "page": "https://commons.wikimedia.org/wiki/File:Nofretete_Neues_Museum.jpg"
-     }
+     },
+     "wiki": "Nefertiti Bust",
+     "zhwiki": "娜芙蒂蒂胸像"
     },
     {
      "t": {
@@ -388,7 +395,8 @@ window.ARTISMS = {
       "license": "Public domain",
       "licenseUrl": null,
       "page": "https://commons.wikimedia.org/wiki/File:Nebamun-Detail.JPG"
-     }
+     },
+     "wiki": "Tomb of Nebamun"
     }
    ],
    "from": [
@@ -466,7 +474,8 @@ window.ARTISMS = {
       "license": "CC BY-SA 4.0",
       "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
       "page": "https://commons.wikimedia.org/wiki/File:Edenshaw%27s_Raven_Transformation_Mask.jpg"
-     }
+     },
+     "wiki": "Transformation mask"
     },
     {
      "t": {
@@ -498,7 +507,8 @@ window.ARTISMS = {
       "license": "No restrictions",
       "licenseUrl": null,
       "page": "https://commons.wikimedia.org/wiki/File:Hopi_Pueblo_(Native_American)._Kachina_Doll_(Pahlikmana),_late_19th_century.jpg"
-     }
+     },
+     "wiki": "Hopi Kachina figure"
     },
     {
      "t": {
@@ -605,7 +615,9 @@ window.ARTISMS = {
       "license": "CC BY-SA 4.0",
       "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
       "page": "https://commons.wikimedia.org/wiki/File:Discobolus_in_National_Roman_Museum_Palazzo_Massimo_alle_Terme.JPG"
-     }
+     },
+     "wiki": "Discobolus",
+     "zhwiki": "掷铁饼者"
     },
     {
      "t": {
@@ -637,7 +649,8 @@ window.ARTISMS = {
       "license": "Public domain",
       "licenseUrl": null,
       "page": "https://commons.wikimedia.org/wiki/File:Cavalcade_west_frieze_Parthenon_BM.jpg"
-     }
+     },
+     "wiki": "Parthenon Frieze"
     },
     {
      "t": {
@@ -669,7 +682,9 @@ window.ARTISMS = {
       "license": "Public domain",
       "licenseUrl": null,
       "page": "https://commons.wikimedia.org/wiki/File:Statue-Augustus.jpg"
-     }
+     },
+     "wiki": "Augustus of Prima Porta",
+     "zhwiki": "第一门的奥古斯都像"
     }
    ],
    "from": [
@@ -784,7 +799,9 @@ window.ARTISMS = {
       "license": "CC BY 2.5",
       "licenseUrl": "https://creativecommons.org/licenses/by/2.5",
       "page": "https://commons.wikimedia.org/wiki/File:WLA_metmuseum_Plaque_Warrior_and_Attendants_Edo_Court_of_Benin.jpg"
-     }
+     },
+     "wiki": "Benin Bronzes",
+     "zhwiki": "贝宁青铜器"
     },
     {
      "t": {
@@ -816,7 +833,8 @@ window.ARTISMS = {
       "license": "CC BY 2.5",
       "licenseUrl": "https://creativecommons.org/licenses/by/2.5",
       "page": "https://commons.wikimedia.org/wiki/File:WLA_metmuseum_Kongo_Power_Figure_Nkisi_NKondi_2.jpg"
-     }
+     },
+     "wiki": "Nkondi"
     }
    ],
    "from": []
@@ -896,7 +914,9 @@ window.ARTISMS = {
       "license": "Public domain",
       "licenseUrl": null,
       "page": "https://commons.wikimedia.org/wiki/File:CHRIST_PANTOCRATOR-SINAI(6th_Century).jpg"
-     }
+     },
+     "wiki": "Christ Pantocrator (Sinai)",
+     "zhwiki": "基督普世君王聖像"
     },
     {
      "t": {
@@ -928,7 +948,9 @@ window.ARTISMS = {
       "license": "CC BY-SA 4.0",
       "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
       "page": "https://commons.wikimedia.org/wiki/File:Basilica_of_San_Vitale.jpg"
-     }
+     },
+     "wiki": "Basilica of San Vitale",
+     "zhwiki": "聖維塔堂"
     },
     {
      "t": {
@@ -960,7 +982,9 @@ window.ARTISMS = {
       "license": "Public domain",
       "licenseUrl": null,
       "page": "https://commons.wikimedia.org/wiki/File:Hagia_Sophia_Deesis_mosaic_(1).JPG"
-     }
+     },
+     "wiki": "Hagia Sophia",
+     "zhwiki": "阿亚索菲亚"
     }
    ],
    "from": [
@@ -1042,7 +1066,9 @@ window.ARTISMS = {
       "license": "CC BY 2.5",
       "licenseUrl": "https://creativecommons.org/licenses/by/2.5",
       "page": "https://commons.wikimedia.org/wiki/File:Folio_Blue_Quran_Met_2004.88.jpg"
-     }
+     },
+     "wiki": "Blue Quran",
+     "zhwiki": "蓝色古兰经"
     },
     {
      "t": {
@@ -1074,7 +1100,9 @@ window.ARTISMS = {
       "license": "Public domain",
       "licenseUrl": null,
       "page": "https://commons.wikimedia.org/wiki/File:The_Ardabil_Carpet_-_Google_Art_Project.jpg"
-     }
+     },
+     "wiki": "Ardabil Carpet",
+     "zhwiki": "阿尔达比勒地毯"
     },
     {
      "t": {
@@ -1106,7 +1134,9 @@ window.ARTISMS = {
       "license": "CC BY-SA 3.0",
       "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
       "page": "https://commons.wikimedia.org/wiki/File:Fountain_in_Patio_de_los_Leones,_Alhambra,_16.08.14.jpg"
-     }
+     },
+     "wiki": "Court of the Lions",
+     "zhwiki": "狮子庭院"
     }
    ],
    "from": [
@@ -1188,7 +1218,9 @@ window.ARTISMS = {
       "license": "Public domain",
       "licenseUrl": null,
       "page": "https://commons.wikimedia.org/wiki/File:Fan_Kuan_-_Travelers_Among_Mountains_and_Streams_-_Google_Art_Project.jpg"
-     }
+     },
+     "wiki": "Fan Kuan",
+     "zhwiki": "范寬"
     },
     {
      "t": {
@@ -1220,7 +1252,9 @@ window.ARTISMS = {
       "license": "Public domain",
       "licenseUrl": null,
       "page": "https://commons.wikimedia.org/wiki/File:Ni_Zan_-_Six_Gentlemen.jpg"
-     }
+     },
+     "wiki": "Six Gentlemen (painting)",
+     "zhwiki": "六君子图"
     },
     {
      "t": {
@@ -1248,7 +1282,9 @@ window.ARTISMS = {
       "license": "Public domain",
       "licenseUrl": null,
       "page": "https://commons.wikimedia.org/wiki/File:Bada_Shanren_-_Lotus_and_Ducks_-_Google_Art_Project.jpg"
-     }
+     },
+     "wiki": "Bada Shanren",
+     "zhwiki": "八大山人"
     }
    ],
    "from": []
@@ -1327,7 +1363,9 @@ window.ARTISMS = {
       "license": "Public domain",
       "licenseUrl": null,
       "page": "https://commons.wikimedia.org/wiki/File:Bayeux_Tapestry_Horses_in_Battle_of_Hastings.jpg"
-     }
+     },
+     "wiki": "Bayeux Tapestry",
+     "zhwiki": "贝叶挂毯"
     },
     {
      "t": {
@@ -1359,7 +1397,9 @@ window.ARTISMS = {
       "license": "CC BY-SA 3.0",
       "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
       "page": "https://commons.wikimedia.org/wiki/File:Autun_St_Lazare_Tympanon.jpg"
-     }
+     },
+     "wiki": "Autun Cathedral",
+     "zhwiki": "歐坦主教座堂"
     },
     {
      "t": {
@@ -1391,7 +1431,9 @@ window.ARTISMS = {
       "license": "Public domain",
       "licenseUrl": null,
       "page": "https://commons.wikimedia.org/wiki/File:V%C3%A9zelay_Narthex_Tympan_central_220608_01.jpg"
-     }
+     },
+     "wiki": "Vézelay Abbey",
+     "zhwiki": "韦兹莱隐修院"
     }
    ],
    "from": [
@@ -1474,7 +1516,8 @@ window.ARTISMS = {
       "license": "CC BY-SA 3.0",
       "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
       "page": "https://commons.wikimedia.org/wiki/File:Blue_Virgin_of_Chartres.jpg"
-     }
+     },
+     "wiki": "Stained glass windows of Chartres Cathedral"
     },
     {
      "t": {
@@ -1506,7 +1549,9 @@ window.ARTISMS = {
       "license": "Public domain",
       "licenseUrl": null,
       "page": "https://commons.wikimedia.org/wiki/File:Reims;_Visitation,_Virgin_Mary,_Elizabeth;_right_jamb_figures_of_the_central_portal,_west_facade_-_Vanderbilt_ACT_-_00000247.jpg"
-     }
+     },
+     "wiki": "Reims Cathedral",
+     "zhwiki": "兰斯主教座堂"
     },
     {
      "t": {
@@ -1538,7 +1583,8 @@ window.ARTISMS = {
       "license": "Public domain",
       "licenseUrl": null,
       "page": "https://commons.wikimedia.org/wiki/File:The_Wilton_Diptych_(left).jpg"
-     }
+     },
+     "wiki": "Wilton Diptych"
     }
    ],
    "from": [
@@ -1619,7 +1665,9 @@ window.ARTISMS = {
       "license": "Public domain",
       "licenseUrl": null,
       "page": "https://commons.wikimedia.org/wiki/File:Birth_of_Venus_Botticelli.jpg"
-     }
+     },
+     "wiki": "The Birth of Venus",
+     "zhwiki": "維納斯的誕生"
     },
     {
      "t": {
@@ -1651,7 +1699,9 @@ window.ARTISMS = {
       "license": "Public domain",
       "licenseUrl": null,
       "page": "https://commons.wikimedia.org/wiki/File:Leonardo_da_Vinci_(1452-1519)_-_The_Last_Supper_(1495-1498).jpg"
-     }
+     },
+     "wiki": "The Last Supper (Leonardo)",
+     "zhwiki": "最后的晚餐 (达芬奇)"
     },
     {
      "t": {
@@ -1683,7 +1733,9 @@ window.ARTISMS = {
       "license": "Public domain",
       "licenseUrl": null,
       "page": "https://commons.wikimedia.org/wiki/File:Raphael_School_of_Athens.jpg"
-     }
+     },
+     "wiki": "The School of Athens",
+     "zhwiki": "雅典學院 (畫作)"
     }
    ],
    "from": [
@@ -1766,7 +1818,8 @@ window.ARTISMS = {
       "license": "Public domain",
       "licenseUrl": null,
       "page": "https://commons.wikimedia.org/wiki/File:The_Arnolfini_portrait_(1434).jpg"
-     }
+     },
+     "zhwiki": "阿诺菲尼的婚礼"
     },
     {
      "t": {
@@ -1799,7 +1852,8 @@ window.ARTISMS = {
       "license": "Public domain",
       "licenseUrl": null,
       "page": "https://commons.wikimedia.org/wiki/File:The_Garden_of_earthly_delights.jpg"
-     }
+     },
+     "zhwiki": "人间乐园"
     },
     {
      "t": {
@@ -1832,7 +1886,8 @@ window.ARTISMS = {
       "license": "Public domain",
       "licenseUrl": null,
       "page": "https://commons.wikimedia.org/wiki/File:Pieter_Bruegel_the_Elder_-_Hunters_in_the_Snow_(Winter)_-_Google_Art_Project.jpg"
-     }
+     },
+     "zhwiki": "雪中獵人"
     }
    ],
    "from": [
@@ -1907,7 +1962,8 @@ window.ARTISMS = {
       "license": "Public domain",
       "licenseUrl": null,
       "page": "https://commons.wikimedia.org/wiki/File:1565-Battle_Scene_with_Boats_on_the_Ganges-Akbarnama.jpg"
-     }
+     },
+     "wiki": "Akbarnama"
     },
     {
      "t": {
@@ -1939,7 +1995,8 @@ window.ARTISMS = {
       "license": "Public domain",
       "licenseUrl": null,
       "page": "https://commons.wikimedia.org/wiki/File:Anonymous_-_Krishna_and_Radha_in_a_Pavilion,_page_from_a_copy_of_the_Sat_Sai_Seven_Hundred_Verses)_-_1977.150_-_Art_Institute_of_Chicago.jpg"
-     }
+     },
+     "wiki": "Pahari painting"
     },
     {
      "t": {
@@ -1971,7 +2028,8 @@ window.ARTISMS = {
       "license": "Public domain",
       "licenseUrl": null,
       "page": "https://commons.wikimedia.org/wiki/File:2_Attributed_to_Nihal_Chand._Savant_Singh_and_Bani_Thani_as_Krishna_and_Radha_(detail),_Kishangarh,_ca._1760._Madison_Avenue_gallery.jpg"
-     }
+     },
+     "wiki": "Bani Thani"
     }
    ],
    "from": [
@@ -2052,7 +2110,9 @@ window.ARTISMS = {
       "license": "Public domain",
       "licenseUrl": null,
       "page": "https://commons.wikimedia.org/wiki/File:Parmigianino_-_Madonna_and_Child_with_Angels,_known_as_the_Madonna_with_the_Long_Neck.jpg"
-     }
+     },
+     "wiki": "Madonna with the Long Neck",
+     "zhwiki": "长颈圣母"
     },
     {
      "t": {
@@ -2084,7 +2144,9 @@ window.ARTISMS = {
       "license": "Public domain",
       "licenseUrl": null,
       "page": "https://commons.wikimedia.org/wiki/File:Angelo_Bronzino_-_Venus,_Cupid,_Folly_and_Time_-_National_Gallery,_London.jpg"
-     }
+     },
+     "wiki": "Venus, Cupid, Folly and Time",
+     "zhwiki": "维纳斯、丘比特、愚蠢与时间"
     },
     {
      "t": {
@@ -2116,7 +2178,9 @@ window.ARTISMS = {
       "license": "Public domain",
       "licenseUrl": null,
       "page": "https://commons.wikimedia.org/wiki/File:El_Greco_-_The_Burial_of_the_Count_of_Orgaz.JPG"
-     }
+     },
+     "wiki": "The Burial of the Count of Orgaz",
+     "zhwiki": "歐貴茲伯爵的葬禮"
     }
    ],
    "from": [
@@ -2197,7 +2261,9 @@ window.ARTISMS = {
       "license": "CC0",
       "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
       "page": "https://commons.wikimedia.org/wiki/File:Caravaggio_%E2%80%94_The_Calling_of_Saint_Matthew.jpg"
-     }
+     },
+     "wiki": "The Calling of Saint Matthew",
+     "zhwiki": "圣玛窦蒙召"
     },
     {
      "t": {
@@ -2229,7 +2295,9 @@ window.ARTISMS = {
       "license": "CC BY-SA 3.0",
       "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
       "page": "https://commons.wikimedia.org/wiki/File:Ecstasy_of_Saint_Teresa.JPG"
-     }
+     },
+     "wiki": "Ecstasy of Saint Teresa",
+     "zhwiki": "圣女大德兰的神魂超拔"
     },
     {
      "t": {
@@ -2261,7 +2329,9 @@ window.ARTISMS = {
       "license": "Public domain",
       "licenseUrl": null,
       "page": "https://commons.wikimedia.org/wiki/File:Las_Meninas,_by_Diego_Vel%C3%A1zquez,_from_Prado_in_Google_Earth.jpg"
-     }
+     },
+     "wiki": "Las Meninas",
+     "zhwiki": "宮女 (委拉斯開茲)"
     }
    ],
    "from": [
@@ -2345,7 +2415,9 @@ window.ARTISMS = {
       "license": "Public domain",
       "licenseUrl": null,
       "page": "https://commons.wikimedia.org/wiki/File:Tsunami_by_hokusai_19th_century.jpg"
-     }
+     },
+     "wiki": "The Great Wave off Kanagawa",
+     "zhwiki": "神奈川沖浪裏"
     },
     {
      "t": {
@@ -2377,7 +2449,9 @@ window.ARTISMS = {
       "license": "Public domain",
       "licenseUrl": null,
       "page": "https://commons.wikimedia.org/wiki/File:Utagawa_Hiroshige_-_Evening_Shower_at_Atake_and_the_Great_Bridge.jpg"
-     }
+     },
+     "wiki": "Sudden Shower over Shin-Ōhashi Bridge and Atake",
+     "zhwiki": "大橋安宅驟雨"
     },
     {
      "t": {
@@ -2409,7 +2483,9 @@ window.ARTISMS = {
       "license": "Public domain",
       "licenseUrl": null,
       "page": "https://commons.wikimedia.org/wiki/File:Utamaro_(1793)_Three_Beauties_of_the_Present_Time,_MFAB_21.6382.jpg"
-     }
+     },
+     "wiki": "Three Beauties of the Present Day",
+     "zhwiki": "寬政三美人"
     }
    ],
    "from": [
@@ -2490,7 +2566,9 @@ window.ARTISMS = {
       "license": "Public domain",
       "licenseUrl": null,
       "page": "https://commons.wikimedia.org/wiki/File:Fragonard,_The_Swing.jpg"
-     }
+     },
+     "wiki": "The Swing (Fragonard)",
+     "zhwiki": "鞦韆 (畫)"
     },
     {
      "t": {
@@ -2522,7 +2600,8 @@ window.ARTISMS = {
       "license": "Public domain",
       "licenseUrl": null,
       "page": "https://commons.wikimedia.org/wiki/File:Antoine_Watteau_-_Pilgrimage_to_Cythera_-_WGA25454.jpg"
-     }
+     },
+     "wiki": "The Embarkation for Cythera"
     },
     {
      "t": {
@@ -2554,7 +2633,9 @@ window.ARTISMS = {
       "license": "Public domain",
       "licenseUrl": null,
       "page": "https://commons.wikimedia.org/wiki/File:Fran%C3%A7ois_Boucher_-_Madame_de_Pompadour,_1759.jpg"
-     }
+     },
+     "wiki": "Madame de Pompadour",
+     "zhwiki": "龐巴度夫人"
     }
    ],
    "from": [
@@ -2635,7 +2716,9 @@ window.ARTISMS = {
       "license": "Public domain",
       "licenseUrl": null,
       "page": "https://commons.wikimedia.org/wiki/File:Jacques-Louis_David_-_Oath_of_the_Horatii.jpg"
-     }
+     },
+     "wiki": "Oath of the Horatii",
+     "zhwiki": "荷拉斯兄弟之誓"
     },
     {
      "t": {
@@ -2667,7 +2750,9 @@ window.ARTISMS = {
       "license": "Public domain",
       "licenseUrl": null,
       "page": "https://commons.wikimedia.org/wiki/File:Death_of_Marat_by_David.jpg"
-     }
+     },
+     "wiki": "The Death of Marat",
+     "zhwiki": "馬拉之死"
     },
     {
      "t": {
@@ -2699,7 +2784,9 @@ window.ARTISMS = {
       "license": "Public domain",
       "licenseUrl": null,
       "page": "https://commons.wikimedia.org/wiki/File:Jean_Auguste_Dominique_Ingres,_La_Grande_Odalisque,_1814.jpg"
-     }
+     },
+     "wiki": "Grande Odalisque",
+     "zhwiki": "大宫女"
     }
    ],
    "from": [
@@ -2781,7 +2868,9 @@ window.ARTISMS = {
       "license": "Public domain",
       "licenseUrl": null,
       "page": "https://commons.wikimedia.org/wiki/File:Eug%C3%A8ne_Delacroix_-_Liberty_Leading_the_People_(28th_July_1830)_-_WGA6177.jpg"
-     }
+     },
+     "wiki": "Liberty Leading the People",
+     "zhwiki": "自由引导人民"
     },
     {
      "t": {
@@ -2813,7 +2902,9 @@ window.ARTISMS = {
       "license": "CC0",
       "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
       "page": "https://commons.wikimedia.org/wiki/File:J.M.W._Turner_Slave_Ship_(_Slavers_Throwing_Overboard_the_Dead_and_Dying,_Typhoon_Coming_On)._1840.png"
-     }
+     },
+     "wiki": "The Slave Ship",
+     "zhwiki": "奴隸船"
     },
     {
      "t": {
@@ -2845,7 +2936,9 @@ window.ARTISMS = {
       "license": "Public domain",
       "licenseUrl": null,
       "page": "https://commons.wikimedia.org/wiki/File:Caspar_David_Friedrich_-_Wanderer_above_the_sea_of_fog.jpg"
-     }
+     },
+     "wiki": "Wanderer Above the Sea of Fog",
+     "zhwiki": "雾海上的旅人"
     }
    ],
    "from": [
@@ -2926,7 +3019,9 @@ window.ARTISMS = {
       "license": "Public domain",
       "licenseUrl": null,
       "page": "https://commons.wikimedia.org/wiki/File:Gustave_Courbet_-_The_Stonebreakers_-_WGA05457.jpg"
-     }
+     },
+     "wiki": "The Stone Breakers",
+     "zhwiki": "採石工人"
     },
     {
      "t": {
@@ -2959,7 +3054,8 @@ window.ARTISMS = {
       "license": "Public domain",
       "licenseUrl": null,
       "page": "https://commons.wikimedia.org/wiki/File:Jean-Fran%C3%A7ois_Millet_-_Gleaners_-_Google_Art_Project_2.jpg"
-     }
+     },
+     "zhwiki": "拾穗"
     },
     {
      "t": {
@@ -2991,7 +3087,8 @@ window.ARTISMS = {
       "license": "Public domain",
       "licenseUrl": null,
       "page": "https://commons.wikimedia.org/wiki/File:Honor%C3%A9_Daumier,_The_Third-Class_Carriage_-_The_Metropolitan_Museum_of_Art.jpg"
-     }
+     },
+     "wiki": "The Third-Class Carriage"
     }
    ],
    "from": [
@@ -3072,7 +3169,9 @@ window.ARTISMS = {
       "license": "Public domain",
       "licenseUrl": null,
       "page": "https://commons.wikimedia.org/wiki/File:Monet_-_Impression,_Sunrise.jpg"
-     }
+     },
+     "wiki": "Impression, Sunrise",
+     "zhwiki": "印象·日出"
     },
     {
      "t": {
@@ -3105,7 +3204,8 @@ window.ARTISMS = {
       "license": "Public domain",
       "licenseUrl": null,
       "page": "https://commons.wikimedia.org/wiki/File:Renoir,_Pierre-Auguste_-_Dance_at_Le_Moulin_de_la_Galette,_1876.jpg"
-     }
+     },
+     "zhwiki": "煎餅磨坊的舞會"
     },
     {
      "t": {
@@ -3137,7 +3237,9 @@ window.ARTISMS = {
       "license": "Public domain",
       "licenseUrl": null,
       "page": "https://commons.wikimedia.org/wiki/File:Edgar_Degas_-_La_Classe_de_danse.jpg"
-     }
+     },
+     "wiki": "The Ballet Class (Degas, Musée d'Orsay)",
+     "zhwiki": "舞蹈课 (油画)"
     }
    ],
    "from": [
@@ -3222,7 +3324,9 @@ window.ARTISMS = {
       "license": "Public domain",
       "licenseUrl": null,
       "page": "https://commons.wikimedia.org/wiki/File:Van_Gogh_-_Starry_Night_-_Google_Art_Project.jpg"
-     }
+     },
+     "wiki": "The Starry Night",
+     "zhwiki": "星夜"
     },
     {
      "t": {
@@ -3254,7 +3358,9 @@ window.ARTISMS = {
       "license": "Public domain",
       "licenseUrl": null,
       "page": "https://commons.wikimedia.org/wiki/File:Paul_Cezanne_-_Mont_Sainte-Victoire_and_Ch%C3%A2teau_Noir_-_Google_Art_Project.jpg"
-     }
+     },
+     "wiki": "Mont Sainte-Victoire (Cézanne)",
+     "zhwiki": "聖維克多山 (塞尚)"
     },
     {
      "t": {
@@ -3286,7 +3392,9 @@ window.ARTISMS = {
       "license": "Public domain",
       "licenseUrl": null,
       "page": "https://commons.wikimedia.org/wiki/File:La_vision_apr%C3%A8s_le_sermon_(Paul_Gauguin).jpg"
-     }
+     },
+     "wiki": "Vision After the Sermon",
+     "zhwiki": "布道后的幻象"
     }
    ],
    "from": [
@@ -3369,7 +3477,9 @@ window.ARTISMS = {
       "license": "Public domain",
       "licenseUrl": null,
       "page": "https://commons.wikimedia.org/wiki/File:Alphonse_Mucha_-_Job_Cigarettes_1.jpg"
-     }
+     },
+     "wiki": "Alphonse Mucha",
+     "zhwiki": "阿爾豐斯·慕夏"
     },
     {
      "t": {
@@ -3401,7 +3511,9 @@ window.ARTISMS = {
       "license": "Public domain",
       "licenseUrl": null,
       "page": "https://commons.wikimedia.org/wiki/File:Gustav_Klimt_-_Der_Kuss_(Liebespaar)_-_912_-_%C3%96sterreichische_Galerie_Belvedere.jpg"
-     }
+     },
+     "wiki": "The Kiss (Klimt)",
+     "zhwiki": "吻 (古斯塔夫·克里姆特)"
     },
     {
      "t": {
@@ -3433,7 +3545,8 @@ window.ARTISMS = {
       "license": "CC BY-SA 2.0",
       "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
       "page": "https://commons.wikimedia.org/wiki/File:Hector_Guimard_Entrance_Pasteur_Paris_Metro.jpg"
-     }
+     },
+     "wiki": "Paris Metro entrances by Hector Guimard"
     }
    ],
    "from": [
@@ -3515,7 +3628,9 @@ window.ARTISMS = {
       "license": "Public domain",
       "licenseUrl": null,
       "page": "https://commons.wikimedia.org/wiki/File:Matisse-Woman-with-a-Hat.jpg"
-     }
+     },
+     "wiki": "Woman with a Hat",
+     "zhwiki": "戴帽子的女人"
     },
     {
      "t": {
@@ -3547,7 +3662,9 @@ window.ARTISMS = {
       "license": "Public domain",
       "licenseUrl": null,
       "page": "https://commons.wikimedia.org/wiki/File:Charing_Cross_Bridge_by_Andre_Derain_(52259664204).jpg"
-     }
+     },
+     "wiki": "André Derain",
+     "zhwiki": "安德烈·德兰"
     },
     {
      "t": {
@@ -3661,7 +3778,9 @@ window.ARTISMS = {
       "license": "Public domain",
       "licenseUrl": null,
       "page": "https://commons.wikimedia.org/wiki/File:Edvard_Munch_-_The_Scream_-_Google_Art_Project.jpg"
-     }
+     },
+     "wiki": "The Scream",
+     "zhwiki": "吶喊 (繪畫)"
     },
     {
      "t": {
@@ -3693,7 +3812,8 @@ window.ARTISMS = {
       "license": "Public domain",
       "licenseUrl": null,
       "page": "https://commons.wikimedia.org/wiki/File:Kirchner_1913_Street,_Berlin.jpg"
-     }
+     },
+     "wiki": "Street, Berlin (Kirchner)"
     },
     {
      "t": {
@@ -3725,7 +3845,9 @@ window.ARTISMS = {
       "license": "Public domain",
       "licenseUrl": null,
       "page": "https://commons.wikimedia.org/wiki/File:Egon_Schiele_-_Self-Portrait_with_Physalis_-_Google_Art_Project.jpg"
-     }
+     },
+     "wiki": "Egon Schiele",
+     "zhwiki": "埃貢·席勒"
     }
    ],
    "from": [
@@ -3811,7 +3933,9 @@ window.ARTISMS = {
       "license": "Public domain",
       "licenseUrl": null,
       "page": "https://commons.wikimedia.org/wiki/File:Juan_Gris_(Jos%C3%A9_Victoriano_Gonz%C3%A1lez_P%C3%A9rez),_Spanish_-_Still_Life_before_an_Open_Window,_Place_Ravignan_-_Google_Art_Project.jpg"
-     }
+     },
+     "wiki": "Juan Gris",
+     "zhwiki": "胡安·格里斯"
     },
     {
      "t": {
@@ -3843,7 +3967,8 @@ window.ARTISMS = {
       "license": "Public domain",
       "licenseUrl": null,
       "page": "https://commons.wikimedia.org/wiki/File:Albert_Gleizes,_1912,_Les_Baigneuses,_oil_on_canvas,_105_x_171_cm,_Paris,_Mus%C3%A9e_d%27Art_Moderne_de_la_Ville_de_Paris.jpg"
-     }
+     },
+     "wiki": "The Bathers (Gleizes)"
     },
     {
      "t": {
@@ -3952,7 +4077,8 @@ window.ARTISMS = {
       "license": "Public domain",
       "licenseUrl": null,
       "page": "https://commons.wikimedia.org/wiki/File:%27Unique_Forms_of_Continuity_in_Space%27,_1913_bronze_by_Umberto_Boccioni.jpg"
-     }
+     },
+     "wiki": "Unique Forms of Continuity in Space"
     },
     {
      "t": {
@@ -3978,7 +4104,8 @@ window.ARTISMS = {
      },
      "img": "https://thumb.wikimedia.org/wikipedia/en/thumb/3/36/Giacomo_Balla%2C_1912%2C_Dynamism_of_a_Dog_on_a_Leash%2C_oil_on_canvas%2C_89.8_x_109.8_cm%2C_Albright-Knox_Art_Gallery.jpg/960px-Giacomo_Balla%2C_1912%2C_Dynamism_of_a_Dog_on_a_Leash%2C_oil_on_canvas%2C_89.8_x_109.8_cm%2C_Albright-Knox_Art_Gallery.jpg",
      "src": "https://en.wikipedia.org/wiki/Dynamism_of_a_Dog_on_a_Leash",
-     "restricted": true
+     "restricted": true,
+     "wiki": "Dynamism of a Dog on a Leash"
     },
     {
      "t": {
@@ -4004,7 +4131,8 @@ window.ARTISMS = {
      },
      "img": "https://thumb.wikimedia.org/wikipedia/en/thumb/7/7f/Funeraloftheanarchistgalli.jpg/960px-Funeraloftheanarchistgalli.jpg",
      "src": "https://en.wikipedia.org/wiki/The_Funeral_of_the_Anarchist_Galli",
-     "restricted": true
+     "restricted": true,
+     "wiki": "The Funeral of the Anarchist Galli"
     }
    ],
    "from": [
@@ -4087,7 +4215,8 @@ window.ARTISMS = {
       "license": "Public domain",
       "licenseUrl": null,
       "page": "https://commons.wikimedia.org/wiki/File:Kazimir_Malevich,_1915,_Black_Suprematic_Square,_oil_on_linen_canvas,_79.5_x_79.5_cm,_Tretyakov_Gallery,_Moscow.jpg"
-     }
+     },
+     "zhwiki": "黑方塊"
     },
     {
      "t": {
@@ -4120,7 +4249,8 @@ window.ARTISMS = {
       "license": "Public domain",
       "licenseUrl": null,
       "page": "https://commons.wikimedia.org/wiki/File:Tatlin%27s_Tower_maket_1919_year.jpg"
-     }
+     },
+     "zhwiki": "塔特林塔"
     },
     {
      "t": {
@@ -4153,7 +4283,8 @@ window.ARTISMS = {
       "license": "Public domain",
       "licenseUrl": null,
       "page": "https://commons.wikimedia.org/wiki/File:Klinom_Krasnym_Bej_Belych.JPG"
-     }
+     },
+     "zhwiki": "用红楔子打败白人"
     }
    ],
    "from": [
@@ -4237,7 +4368,9 @@ window.ARTISMS = {
       "license": "Public domain",
       "licenseUrl": null,
       "page": "https://commons.wikimedia.org/wiki/File:Marcel_Duchamp,_1917,_Fountain,_photograph_by_Alfred_Stieglitz.jpg"
-     }
+     },
+     "wiki": "Fountain (Duchamp)",
+     "zhwiki": "噴泉 (杜象)"
     },
     {
      "t": {
@@ -4262,7 +4395,8 @@ window.ARTISMS = {
       "zh": "魏玛政客、机器与“新女性”，从杂志上剪下又重新拼合。"
      },
      "src": "https://en.wikipedia.org/wiki/Hannah_H%C3%B6ch",
-     "restricted": true
+     "restricted": true,
+     "wiki": "Hannah Höch"
     },
     {
      "t": {
@@ -4288,7 +4422,9 @@ window.ARTISMS = {
      },
      "img": "https://www.moma.org/media/W1siZiIsIjIxMTQyMyJdLFsicCIsImNvbnZlcnQiLCItcXVhbGl0eSA5MCAtcmVzaXplIDUxMng1MTJcdTAwM2UiXV0.jpg?sha=20c4ec309467b645",
      "src": "https://www.moma.org/collection/works/37013",
-     "restricted": true
+     "restricted": true,
+     "wiki": "Jean Arp",
+     "zhwiki": "让·阿尔普"
     }
    ],
    "from": [
@@ -4372,7 +4508,8 @@ window.ARTISMS = {
       "license": "Public domain",
       "licenseUrl": null,
       "page": "https://commons.wikimedia.org/wiki/File:Piet_Mondriaan,_1930_-_Mondrian_Composition_II_in_Red,_Blue,_and_Yellow.jpg"
-     }
+     },
+     "wiki": "Composition with Red, Blue and Yellow"
     },
     {
      "t": {
@@ -4404,7 +4541,9 @@ window.ARTISMS = {
       "license": "CC BY 2.5",
       "licenseUrl": "https://creativecommons.org/licenses/by/2.5",
       "page": "https://commons.wikimedia.org/wiki/File:Ngv_design,_gerrit_rietveld,_red-blue_chair_1917_01.JPG"
-     }
+     },
+     "wiki": "Red and Blue Chair",
+     "zhwiki": "红蓝椅"
     },
     {
      "t": {
@@ -4436,7 +4575,9 @@ window.ARTISMS = {
       "license": "Public domain",
       "licenseUrl": null,
       "page": "https://commons.wikimedia.org/wiki/File:Counter-Composition_XIII_by_Theo_van_Doesburg.jpg"
-     }
+     },
+     "wiki": "Theo van Doesburg",
+     "zhwiki": "特奥·范杜斯堡"
     }
    ],
    "from": [
@@ -4517,7 +4658,8 @@ window.ARTISMS = {
       "license": "Public domain",
       "licenseUrl": null,
       "page": "https://commons.wikimedia.org/wiki/File:Bauhaus-Dessau_main_building.jpg"
-     }
+     },
+     "wiki": "Bauhaus Dessau"
     },
     {
      "t": {
@@ -4549,7 +4691,8 @@ window.ARTISMS = {
       "license": "CC BY-SA 4.0",
       "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
       "page": "https://commons.wikimedia.org/wiki/File:Marcel_Breuer_-_Wassily_Chair.jpg"
-     }
+     },
+     "wiki": "Wassily chair"
     },
     {
      "t": {
@@ -4581,7 +4724,8 @@ window.ARTISMS = {
       "license": "CC BY-SA 4.0",
       "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
       "page": "https://commons.wikimedia.org/wiki/File:Triadisches_Ballett_by_Oskar_Schlemmer_-_Staatsgalerie_-_Stuttgart_-_Germany_2017_(cropped).jpg"
-     }
+     },
+     "wiki": "Triadisches Ballett"
     }
    ],
    "from": [
@@ -4662,7 +4806,9 @@ window.ARTISMS = {
       "license": "Public domain",
       "licenseUrl": null,
       "page": "https://commons.wikimedia.org/wiki/File:Chrysler_Building_by_David_Shankbone_Retouched.jpg"
-     }
+     },
+     "wiki": "Chrysler Building",
+     "zhwiki": "克萊斯勒大廈"
     },
     {
      "t": {
@@ -4695,7 +4841,8 @@ window.ARTISMS = {
       "license": "CC BY-SA 3.0 de",
       "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/de/deed.en",
       "page": "https://commons.wikimedia.org/wiki/File:Christ_the_Redeemer_-_Cristo_Redentor.jpg"
-     }
+     },
+     "zhwiki": "救世基督像"
     },
     {
      "t": {
@@ -4796,7 +4943,8 @@ window.ARTISMS = {
      },
      "img": "https://upload.wikimedia.org/wikipedia/en/f/f9/The_Two_Fridas.jpg",
      "src": "https://en.wikipedia.org/wiki/The_Two_Fridas",
-     "restricted": true
+     "restricted": true,
+     "wiki": "The Two Fridas"
     },
     {
      "t": {
@@ -4828,7 +4976,9 @@ window.ARTISMS = {
       "license": "Public domain",
       "licenseUrl": null,
       "page": "https://commons.wikimedia.org/wiki/File:Rivera_detroit_industry_north.jpg"
-     }
+     },
+     "wiki": "Detroit Industry Murals",
+     "zhwiki": "底特律工业壁画"
     },
     {
      "t": {
@@ -4928,7 +5078,9 @@ window.ARTISMS = {
      },
      "img": "https://thumb.wikimedia.org/wikipedia/en/thumb/b/b9/MagrittePipe.jpg/330px-MagrittePipe.jpg",
      "src": "https://en.wikipedia.org/wiki/The_Treachery_of_Images",
-     "restricted": true
+     "restricted": true,
+     "wiki": "The Treachery of Images",
+     "zhwiki": "形象的叛逆"
     },
     {
      "t": {
@@ -4954,7 +5106,9 @@ window.ARTISMS = {
      },
      "img": "https://www.moma.org/media/W1siZiIsIjYxOTY1OSJdLFsicCIsImNvbnZlcnQiLCItcXVhbGl0eSA5MCAtcmVzaXplIDUxMng1MTJcdTAwM2UiXV0.jpg?sha=ac840f67662c0240",
      "src": "https://www.moma.org/collection/works/79018",
-     "restricted": true
+     "restricted": true,
+     "wiki": "The Persistence of Memory",
+     "zhwiki": "記憶的堅持"
     },
     {
      "t": {
@@ -4980,7 +5134,9 @@ window.ARTISMS = {
      },
      "img": "https://www.moma.org/media/W1siZiIsIjYwMTE2NSJdLFsicCIsImNvbnZlcnQiLCItcXVhbGl0eSA5MCAtcmVzaXplIDUxMng1MTJcdTAwM2UiXV0.jpg?sha=73b76f420f9860d2",
      "src": "https://www.moma.org/collection/works/79293",
-     "restricted": true
+     "restricted": true,
+     "wiki": "Max Ernst",
+     "zhwiki": "马克斯·恩斯特"
     }
    ],
    "from": [
@@ -5056,7 +5212,8 @@ window.ARTISMS = {
      },
      "img": "https://thumb.wikimedia.org/wikipedia/en/thumb/f/fa/Autumn_Rhythm.jpg/330px-Autumn_Rhythm.jpg",
      "src": "https://en.wikipedia.org/wiki/Autumn_Rhythm_(Number_30)",
-     "restricted": true
+     "restricted": true,
+     "wiki": "Autumn Rhythm (Number 30)"
     },
     {
      "t": {
@@ -5082,7 +5239,8 @@ window.ARTISMS = {
      },
      "img": "https://upload.wikimedia.org/wikipedia/en/5/5f/No_61_Mark_Rothko.jpg",
      "src": "https://en.wikipedia.org/wiki/No._61_(Rust_and_Blue)",
-     "restricted": true
+     "restricted": true,
+     "wiki": "No. 61 (Rust and Blue)"
     },
     {
      "t": {
@@ -5108,7 +5266,8 @@ window.ARTISMS = {
      },
      "img": "https://www.moma.org/media/W1siZiIsIjQ3NjYxNyJdLFsicCIsImNvbnZlcnQiLCItcXVhbGl0eSA5MCAtcmVzaXplIDUxMng1MTJcdTAwM2UiXV0.jpg?sha=bb31d9cff9cdff37",
      "src": "https://www.moma.org/collection/works/79810",
-     "restricted": true
+     "restricted": true,
+     "wiki": "Woman I"
     }
    ],
    "from": [
@@ -5186,7 +5345,9 @@ window.ARTISMS = {
      },
      "img": "https://thumb.wikimedia.org/wikipedia/en/thumb/8/87/Marilyndiptych.jpg/330px-Marilyndiptych.jpg",
      "src": "https://en.wikipedia.org/wiki/Marilyn_Diptych",
-     "restricted": true
+     "restricted": true,
+     "wiki": "Marilyn Diptych",
+     "zhwiki": "瑪麗蓮雙聯畫"
     },
     {
      "t": {
@@ -5211,7 +5372,8 @@ window.ARTISMS = {
       "zh": "把一格战争漫画放大到两块画布、约4米宽，连网点也一并放大。"
      },
      "wiki": "Whaam!",
-     "restricted": true
+     "restricted": true,
+     "zhwiki": "空中火力"
     },
     {
      "t": {
@@ -5312,7 +5474,9 @@ window.ARTISMS = {
      },
      "img": "https://media.tate.org.uk/aztate-prd-ew-dg-wgtail-st1-ctr-data/images/.width-600_t0BriHK.jpg",
      "src": "https://www.tate.org.uk/art/artworks/judd-untitled-t03087",
-     "restricted": true
+     "restricted": true,
+     "wiki": "Donald Judd",
+     "zhwiki": "唐纳德·贾德"
     },
     {
      "t": {
@@ -5338,7 +5502,8 @@ window.ARTISMS = {
      },
      "img": "https://media.tate.org.uk/aztate-prd-ew-dg-wgtail-st1-ctr-data/images/.width-600_bAqaV8U.jpg",
      "src": "https://www.tate.org.uk/art/artworks/andre-equivalent-viii-t01534",
-     "restricted": true
+     "restricted": true,
+     "wiki": "Equivalent VIII"
     },
     {
      "t": {
@@ -5370,7 +5535,8 @@ window.ARTISMS = {
       "license": "Public domain",
       "licenseUrl": null,
       "page": "https://commons.wikimedia.org/wiki/File:%22monument%22_for_V._Tatlin,_CR_203.jpg"
-     }
+     },
+     "wiki": "Dan Flavin"
     }
    ],
    "from": [
@@ -5448,7 +5614,8 @@ window.ARTISMS = {
       "zh": "一把真椅子、这把椅子的照片，以及“椅子”的词典释义。哪一个才是椅子？"
      },
      "wiki": "One and Three Chairs",
-     "restricted": true
+     "restricted": true,
+     "zhwiki": "一把和三把椅子"
     },
     {
      "t": {
@@ -5505,7 +5672,9 @@ window.ARTISMS = {
       "license": "Public domain",
       "licenseUrl": null,
       "page": "https://commons.wikimedia.org/wiki/File:On_Kawara,_June_19,_1967_from_Today_Series,_No._108,_1966_-_Black_Power_in_the_United_States_,_1967_(3785168562).jpg"
-     }
+     },
+     "wiki": "On Kawara",
+     "zhwiki": "河原温"
     }
    ],
    "from": [
@@ -5605,7 +5774,8 @@ window.ARTISMS = {
       "zh": "把派对气球重建为3米高的镜面不锈钢雕塑。其中一件于2013年以5840万美元售出。"
      },
      "wiki": "Balloon Dog",
-     "restricted": true
+     "restricted": true,
+     "zhwiki": "气球狗"
     },
     {
      "t": {
@@ -5630,7 +5800,8 @@ window.ARTISMS = {
       "zh": "翻拍的万宝路广告：牛仔神话既不属于任何人，又属于所有人。"
      },
      "src": "https://www.metmuseum.org/art/collection/search/283742",
-     "restricted": true
+     "restricted": true,
+     "wiki": "Richard Prince"
     }
    ],
    "from": [
@@ -5704,7 +5875,9 @@ window.ARTISMS = {
       "zh": "镜子与灯光把小房间变成无尽空间；每位观众往往只能停留不到一分钟。"
      },
      "src": "https://en.wikipedia.org/wiki/Yayoi_Kusama",
-     "restricted": true
+     "restricted": true,
+     "wiki": "Yayoi Kusama",
+     "zhwiki": "草間彌生"
     },
     {
      "t": {
