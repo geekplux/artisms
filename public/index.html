@@ -30,8 +30,8 @@
 <script>
 /* Google Analytics 4 with Consent Mode v2, on the production domain only. Until the visitor accepts in
    the consent bar (assets/app.js), analytics_storage stays "denied": GA sends cookieless pings, no IDs.
-   Cookies are host-only (cookie_domain), so sibling sites on geekplux.org neither share a client id nor
-   touch each other's cookies. The page_view is sent by app.js after rendering, once the title and
+   Cookies are host-only (cookie_domain "none": no Domain attribute, not even .artisms.geekplux.org), so
+   sibling sites on geekplux.org neither share a client id nor touch each other's cookies. The page_view is sent by app.js after rendering, once the title and
    language are final, so the automatic one is off. */
 (function () {
   var GA_ID = "G-V8MD23KS3G";
@@ -42,7 +42,7 @@
   window.gtag = function () { window.dataLayer.push(arguments); };
   gtag("consent", "default", { ad_storage: "denied", ad_user_data: "denied", ad_personalization: "denied", analytics_storage: choice === "granted" ? "granted" : "denied" });
   gtag("js", new Date());
-  gtag("config", GA_ID, { send_page_view: false, cookie_domain: location.hostname });
+  gtag("config", GA_ID, { send_page_view: false, cookie_domain: "none" });
   var s = document.createElement("script");
   s.async = true;
   s.src = "https://www.googletagmanager.com/gtag/js?id=" + GA_ID;
