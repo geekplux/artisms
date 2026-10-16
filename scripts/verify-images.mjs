@@ -1,21 +1,19 @@
 #!/usr/bin/env node
-// Checks every work's image against the live Wikimedia servers, building URLs the way
-// assets/app.js does. Needs network access. Node 22+, no dependencies.
+// Checks every work's image and links. Needs network access. Node 22+, no dependencies.
 //
 // Usage: node scripts/verify-images.mjs [--json report.json] [--only movement-id]
 //
-// Reports:
-//   broken      URLs that do not return an image (Commons thumb and original both fail)
-//   wiki        `wiki` titles that are missing, disambiguation pages, or have no lead image
-//   non-free    `wiki` lead images hosted on en.wikipedia (fair use): shown as a placeholder
-//               (mark such works `restricted: true` so the page stops looking them up)
-//   suspicious  file names that share no words with the work's title (e.g. a photo of the artist)
+// Hosted works (`c` + `image`):
+//   - both WebP files exist, are valid, and the large one matches image.w × image.h
+//   - the Commons source file still exists and its licence still matches the data
+//   - the file name plausibly shows the work (flags e.g. a photo of the artist; check by eye)
+// Placeholders (`restricted`): the article or museum link they point to exists.
+// `wiki` titles: the article exists and is not a disambiguation page.
 // Exit code 1 if anything is broken or missing.
-import { readFileSync, writeFileSync } from "node:fs";
-import { fileURLToPath } from "node:url";
-import vm from "node:vm";
+import { readFileSync, writeFileSync, existsSync } from "node:fs";
+import { join } from "node:path";
+import { loadData, SITE, imagePath } from "./lib/data.mjs";
 
-const THUMB_WIDTH = 960; // keep in sync with assets/app.js
 const UA = "art-isms-verify/1.0 (https://github.com/geekplux/art-isms)";
 const CONCURRENCY = 4;
 
@@ -23,60 +21,30 @@ const args = process.argv.slice(2);
 const opt = (name) => { const i = args.indexOf(name); return i >= 0 ? args[i + 1] : null; };
 const jsonOut = opt("--json");
 const only = opt("--only");
-
-const file = fileURLToPath(new URL("../data/movements.js", import.meta.url));
-const sandbox = { window: {} };
-vm.runInNewContext(readFileSync(file, "utf8"), sandbox, { filename: file });
-const D = sandbox.window.ARTISMS;
-
-/* ── URL builders (mirror assets/app.js) ─────── */
-function commons(path) {
-  const name = path.split("/").pop();
-  const ext = name.split(".").pop().toLowerCase();
-  const thumbName = `${THUMB_WIDTH}px-${name}${ext === "svg" ? ".png" : ext === "tif" || ext === "tiff" ? ".jpg" : ""}`;
-  return {
-    thumb: `https://upload.wikimedia.org/wikipedia/commons/thumb/${path}/${thumbName}`,
-    orig: `https://upload.wikimedia.org/wikipedia/commons/${path}`,
-    name: decodeURIComponent(name)
-  };
-}
-const summaryUrl = (title) => `https://en.wikipedia.org/api/rest_v1/page/summary/${encodeURIComponent(title.replace(/ /g, "_"))}`;
-function leadImage(j) {
-  const o = j.originalimage, th = j.thumbnail;
-  if (o && o.width <= 1400) return o.source;
-  if (th) return th.source.replace(/\/\d+px-/, `/${THUMB_WIDTH}px-`);
-  return null;
-}
-const fileNameOf = (url) => decodeURIComponent((url.match(/\/(?:thumb\/)?[0-9a-f]\/[0-9a-f]{2}\/([^/?#]+)/) || [])[1] || url.split("/").pop());
+const D = loadData();
 
 /* ── HTTP ────────────────────────────────────── */
 const sleep = (ms) => new Promise((r) => setTimeout(r, ms));
-async function request(url, { method = "GET", json = false } = {}) {
+async function request(url, { json = false } = {}) {
   for (let attempt = 0; attempt < 5; attempt++) {
     let res;
     try {
-      res = await fetch(url, { method, headers: { "User-Agent": UA, "Api-User-Agent": UA }, redirect: "follow" });
+      res = await fetch(url, { headers: { "User-Agent": UA, "Api-User-Agent": UA }, redirect: "follow" });
     } catch (e) {
       if (attempt === 4) return { ok: false, status: 0, error: e.cause?.code || e.message };
       await sleep(1000 * (attempt + 1));
       continue;
     }
-    if (res.status === 429 || res.status >= 500) {
+    if ((res.status === 429 || res.status >= 500) && attempt < 4) {
       const wait = Number(res.headers.get("retry-after")) * 1000 || 2000 * (attempt + 1);
       await res.body?.cancel();
       await sleep(wait);
       continue;
     }
-    const type = res.headers.get("content-type") || "";
     const body = json && res.ok ? await res.json() : (await res.body?.cancel(), null);
-    return { ok: res.ok, status: res.status, type, body, url: res.url };
+    return { ok: res.ok, status: res.status, body };
   }
   return { ok: false, status: 429, error: "rate limited" };
-}
-async function imageOk(url) {
-  let r = await request(url, { method: "HEAD" });
-  if (r.status === 405) r = await request(url);
-  return { ...r, ok: r.ok && r.type.startsWith("image/") };
 }
 async function pool(items, fn) {
   const out = new Array(items.length);
@@ -86,13 +54,25 @@ async function pool(items, fn) {
   }));
   return out;
 }
+const summaryUrl = (title, wiki = "en") => `https://${wiki}.wikipedia.org/api/rest_v1/page/summary/${encodeURIComponent(title.replace(/ /g, "_"))}`;
 
-/* ── Commons file info (size, existence), 50 titles per request ── */
+/* ── WebP header: width × height (VP8, VP8L or VP8X) ── */
+function webpSize(file) {
+  const b = readFileSync(file);
+  if (b.toString("ascii", 0, 4) !== "RIFF" || b.toString("ascii", 8, 12) !== "WEBP") return null;
+  const chunk = b.toString("ascii", 12, 16);
+  if (chunk === "VP8X") return [1 + b.readUIntLE(24, 3), 1 + b.readUIntLE(27, 3)];
+  if (chunk === "VP8 ") return [b.readUInt16LE(26) & 0x3fff, b.readUInt16LE(28) & 0x3fff];
+  if (chunk === "VP8L") { const v = b.readUInt32LE(21); return [1 + (v & 0x3fff), 1 + ((v >> 14) & 0x3fff)]; }
+  return null;
+}
+
+/* ── Commons file info, 50 titles per request ── */
 async function commonsInfo(names) {
   const info = new Map();
   for (let i = 0; i < names.length; i += 50) {
     const titles = names.slice(i, i + 50).map((n) => "File:" + n).join("|");
-    const r = await request(`https://commons.wikimedia.org/w/api.php?action=query&format=json&formatversion=2&redirects=1&prop=imageinfo&iiprop=size|mime&titles=${encodeURIComponent(titles)}`, { json: true });
+    const r = await request(`https://commons.wikimedia.org/w/api.php?action=query&format=json&formatversion=2&redirects=1&prop=imageinfo&iiprop=size|extmetadata&iiextmetadatafilter=LicenseShortName&titles=${encodeURIComponent(titles)}`, { json: true });
     if (!r.ok) continue;
     const q = r.body.query || {};
     const alias = new Map();
@@ -100,7 +80,8 @@ async function commonsInfo(names) {
     for (const rd of q.redirects || []) alias.set(rd.to, alias.get(rd.from) || rd.from);
     for (const p of q.pages || []) {
       const asked = (alias.get(p.title) || p.title).replace(/^File:/, "");
-      info.set(asked, p.missing ? { missing: true } : { ...(p.imageinfo?.[0] || {}), canonical: p.title.replace(/^File:/, "") });
+      const ii = p.imageinfo?.[0] || {};
+      info.set(asked, p.missing ? { missing: true } : { license: ii.extmetadata?.LicenseShortName?.value, canonical: p.title.replace(/^File:/, "") });
     }
   }
   return info;
@@ -116,7 +97,9 @@ const REVIEWED = new Set([
   "Nofretete_Neues_Museum.jpg", "Hopi_Pueblo_(Native_American)._Kachina_Doll_(Pahlikmana),_late_19th_century.jpg",
   "Tsunami_by_hokusai_19th_century.jpg", "Gustave_Courbet_-_The_Stonebreakers_-_WGA05457.jpg",
   "Edgar_Degas_-_La_Classe_de_danse.jpg", "Gustav_Klimt_-_Der_Kuss_(Liebespaar)_-_912_-_Österreichische_Galerie_Belvedere.jpg",
-  "Klinom_Krasnym_Bej_Belych.JPG", "Triadisches_Ballett_by_Oskar_Schlemmer_-_Staatsgalerie_-_Stuttgart_-_Germany_2017_(cropped).jpg"
+  "Klinom_Krasnym_Bej_Belych.JPG", "Triadisches_Ballett_by_Oskar_Schlemmer_-_Staatsgalerie_-_Stuttgart_-_Germany_2017_(cropped).jpg",
+  "Arte_yoruba,_nigeria,_testa_da_ife,_12-15mo_secolo.JPG", "Paintings_from_the_Chauvet_cave_(museum_replica).jpg",
+  "Bonheur_Matisse.jpg", "Detroit_Institute_of_Arts_2025b.jpg"
 ]);
 function nameCheck(fileName, w) {
   if (REVIEWED.has(fileName.replace(/ /g, "_"))) return null;
@@ -134,69 +117,44 @@ function nameCheck(fileName, w) {
 }
 
 /* ── Run ─────────────────────────────────────── */
-const works = D.movements.flatMap((m) => m.works.map((w, i) => ({ id: `${m.id}#${i + 1}`, m, w })))
+const works = D.movements.flatMap((m) => m.works.map((w, i) => ({ id: `${m.id}#${i + 1}`, m, w, n: i + 1 })))
   .filter((x) => !only || x.m.id === only);
-
-const commonsNames = works.filter((x) => x.w.c).map((x) => commons(x.w.c).name);
-const info = await commonsInfo(commonsNames);
+const fileName = (c) => decodeURIComponent(c.split("/").pop());
+const info = await commonsInfo(works.filter((x) => x.w.c).map((x) => fileName(x.w.c)));
 
 let done = 0;
-const results = await pool(works, async ({ id, w }) => {
-  const r = { id, title: w.t.en, artist: w.a.en, kind: w.c ? "c" : w.img ? "img" : "wiki", issues: [], notes: [] };
+async function checkWiki(r, title, wiki) {
+  const s = await request(summaryUrl(title, wiki), { json: true });
+  if (!s.ok) r.issues.push(`${wiki}.wikipedia "${title}": no article (HTTP ${s.status || s.error})`);
+  else if (s.body?.type === "disambiguation") r.issues.push(`${wiki}.wikipedia "${title}" is a disambiguation page`);
+  else if (s.body?.titles?.canonical && s.body.titles.canonical.replace(/_/g, " ") !== title) r.notes.push(`${wiki}.wikipedia "${title}" redirects to "${s.body.titles.canonical.replace(/_/g, " ")}"`);
+}
+const results = await pool(works, async ({ id, m, w, n }) => {
+  const r = { id, title: w.t.en, artist: w.a.en, kind: w.c ? "hosted" : "placeholder", issues: [], notes: [] };
   if (w.c) {
-    const u = commons(w.c);
-    const fi = info.get(u.name);
-    r.file = u.name;
-    if (fi?.missing) r.issues.push("Commons file does not exist");
-    if (fi?.width) r.size = `${fi.width}×${fi.height}`;
-    if (fi?.canonical && fi.canonical !== u.name.replace(/_/g, " ")) r.notes.push(`Commons redirects to File:${fi.canonical}`);
-    const th = await imageOk(u.thumb);
-    if (th.ok) r.loads = "thumb";
-    else {
-      const or = await imageOk(u.orig);
-      if (or.ok) { r.loads = "original"; r.notes.push(`thumb ${th.status}${fi?.width && fi.width < THUMB_WIDTH ? ` (file is only ${fi.width}px wide)` : ""}, original OK`); }
-      else r.issues.push(`broken: thumb ${th.status || th.error}, original ${or.status || or.error}`);
+    const name = fileName(w.c);
+    r.file = name;
+    const fi = info.get(name);
+    if (!fi) r.notes.push("could not reach the Commons API for this file");
+    else if (fi.missing) r.issues.push(`Commons file no longer exists: ${name}`);
+    else if (w.image && fi.license && fi.license !== w.image.license) r.issues.push(`licence on Commons is now "${fi.license}", data says "${w.image.license}": re-run fetch-images`);
+    for (const small of [false, true]) {
+      const path = imagePath(m.id, n, small), abs = join(SITE, path);
+      if (!existsSync(abs)) { r.issues.push(`missing ${path}`); continue; }
+      const size = webpSize(abs);
+      if (!size) r.issues.push(`${path} is not a valid WebP`);
+      else if (!small && w.image && (size[0] !== w.image.w || size[1] !== w.image.h)) r.issues.push(`${path} is ${size.join("×")}, data says ${w.image.w}×${w.image.h}`);
     }
-    const n = nameCheck(u.name, w);
-    if (n) r.suspicious = n;
-  } else if (w.img) {
-    r.file = w.img;
-    const im = await imageOk(w.img);
-    r.loads = im.ok ? "restricted-img" : null;
-    if (!im.ok) r.notes.push(`restricted img URL returns ${im.status || im.error} (not shown anyway: SHOW_RESTRICTED_IMAGES=false)`);
-  } else if (w.restricted) {
-    // Placeholder only: the link it points to must exist.
-    r.kind = "placeholder";
-    const link = w.src || `https://en.wikipedia.org/wiki/${encodeURIComponent(w.wiki.replace(/ /g, "_"))}`;
-    const s = w.wiki ? await request(summaryUrl(w.wiki), { json: true }) : await request(link);
-    r.file = link;
-    r.loads = s.ok || [401, 403, 429].includes(s.status) ? "placeholder" : null;
-    if (!s.ok && [401, 403, 429].includes(s.status) && !w.wiki) r.notes.push(`could not check ${link}: host refuses scripts (HTTP ${s.status}); open it in a browser`);
-    else if (!s.ok) r.issues.push(`placeholder link broken (HTTP ${s.status || s.error}): ${link}`);
-    else if (w.wiki && s.body?.type === "disambiguation") r.issues.push(`wiki "${w.wiki}" is a disambiguation page`);
-  } else {
-    const s = await request(summaryUrl(w.wiki), { json: true });
-    if (!s.ok) { r.issues.push(`wiki "${w.wiki}": no article (HTTP ${s.status || s.error})`); }
-    else {
-      const j = s.body;
-      if (j.type === "disambiguation") r.issues.push(`wiki "${w.wiki}" is a disambiguation page`);
-      if (j.titles?.canonical && j.titles.canonical.replace(/_/g, " ") !== w.wiki) r.notes.push(`wiki redirects to "${j.titles.canonical.replace(/_/g, " ")}"`);
-      const src = leadImage(j);
-      if (!src) r.issues.push(`wiki "${w.wiki}" has no lead image`);
-      else {
-        r.file = fileNameOf(src);
-        if (j.originalimage) r.size = `${j.originalimage.width}×${j.originalimage.height}`;
-        const free = /\/wikipedia\/commons\//.test(src);
-        if (!free) { r.nonFree = true; r.notes.push("lead image is a non-free en.wikipedia file: page shows a placeholder"); }
-        const im = await imageOk(src);
-        if (im.ok) r.loads = free ? "wiki-commons" : "wiki-nonfree";
-        else if (j.originalimage && (await imageOk(j.originalimage.source)).ok) { r.loads = "wiki-original"; r.notes.push(`lead thumb ${im.status}, original OK`); }
-        else r.issues.push(`lead image broken (${im.status || im.error}): ${src}`);
-        const n = nameCheck(r.file, w);
-        if (n) r.suspicious = n;
-      }
-    }
+    const nc = nameCheck(name, w);
+    if (nc) r.suspicious = nc;
+  } else if (w.src) {
+    const s = await request(w.src);
+    r.file = w.src;
+    if (!s.ok && [401, 403, 429].includes(s.status)) r.notes.push(`could not check ${w.src}: host refuses scripts (HTTP ${s.status}); open it in a browser`);
+    else if (!s.ok) r.issues.push(`placeholder link broken (HTTP ${s.status || s.error}): ${w.src}`);
   }
+  if (w.wiki) await checkWiki(r, w.wiki, "en");
+  if (w.zhwiki) await checkWiki(r, w.zhwiki, "zh");
   if (process.stderr.isTTY) process.stderr.write(`\r${++done}/${works.length}`);
   return r;
 });
@@ -205,24 +163,18 @@ if (process.stderr.isTTY) process.stderr.write("\n");
 /* ── Report ──────────────────────────────────── */
 const line = (r, extra) => `  ${r.id.padEnd(20)} ${r.title}${extra ? `\n  ${"".padEnd(20)} ${extra}` : ""}`;
 const broken = results.filter((r) => r.issues.length);
-const nonFree = results.filter((r) => r.nonFree);
 const suspicious = results.filter((r) => r.suspicious);
-const notes = results.filter((r) => r.notes.length && !r.nonFree);
-
+const notes = results.filter((r) => r.notes.length);
 const section = (title, list, fmt) => {
   console.log(`\n${title} (${list.length})`);
   if (!list.length) console.log("  none");
   list.forEach((r) => console.log(fmt(r)));
 };
 section("✗ Broken or missing", broken, (r) => line(r, r.issues.join("; ")));
-section("◐ wiki lead image is non-free (placeholder shown)", nonFree, (r) => line(r, r.file));
 section("? File name may not show the work (check by eye)", suspicious, (r) => line(r, `${r.suspicious}: ${r.file}`));
 section("· Notes", notes, (r) => line(r, r.notes.join("; ")));
-
-const count = (k) => results.filter((r) => r.loads === k).length;
-console.log(`\n${results.length} works: ${count("thumb")} Commons thumb, ${count("original")} Commons original only, ` +
-  `${count("wiki-commons") + count("wiki-original")} via Wikipedia (free), ${nonFree.length} via Wikipedia (non-free), ` +
-  `${results.filter((r) => r.kind === "img").length} restricted img, ${count("placeholder")} placeholder link, ${broken.length} broken.`);
+console.log(`\n${results.length} works: ${results.filter((r) => r.kind === "hosted").length} hosted, ` +
+  `${results.filter((r) => r.kind === "placeholder").length} placeholders, ${broken.length} with problems.`);
 
 if (jsonOut) writeFileSync(jsonOut, JSON.stringify(results, null, 1));
 process.exit(broken.length ? 1 : 0);

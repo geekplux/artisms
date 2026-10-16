@@ -1,14 +1,12 @@
 #!/usr/bin/env node
-// Validates data/movements.js: ids, links, bilingual fields and image sources.
-// Usage: node scripts/check-data.mjs   (no dependencies)
-import { readFileSync } from "node:fs";
-import { fileURLToPath } from "node:url";
-import vm from "node:vm";
+// Validates data/movements.js: ids, links, bilingual fields, image sources, hosted files and CREDITS.md.
+// Usage: node scripts/check-data.mjs   (no dependencies, no network)
+import { existsSync, readFileSync } from "node:fs";
+import { join } from "node:path";
+import { loadData, SITE, ROOT, imagePath } from "./lib/data.mjs";
+import { creditsMarkdown } from "./lib/credits.mjs";
 
-const file = fileURLToPath(new URL("../data/movements.js", import.meta.url));
-const sandbox = { window: {} };
-vm.runInNewContext(readFileSync(file, "utf8"), sandbox, { filename: file });
-const D = sandbox.window.ARTISMS;
+const D = loadData();
 
 const errors = [];
 const fail = (where, msg) => errors.push(`${where}: ${msg}`);
@@ -45,21 +43,34 @@ for (const m of D.movements) {
     if (w.loc) bi(wat, w.loc, "loc");
     if (w.n) bi(wat, w.n, "n");
     if (!w.y) fail(wat, "missing year (y)");
-    const sources = ["c", "img", "wiki"].filter((k) => w[k]);
-    if (!sources.length && !(w.restricted && w.src)) fail(wat, "needs an image source: c (Commons path), img (URL), wiki (article title), or restricted: true with src (link)");
-    if (w.c && !/^[0-9a-f]\/[0-9a-f]{2}\/[^/]+$/.test(w.c)) fail(wat, `malformed Commons path "${w.c}"`);
-    if (w.c && w.restricted) fail(wat, "Commons files are free; do not mark them restricted");
+    if (!w.c && !w.restricted) fail(wat, "needs a Commons source (c) or restricted: true with img, wiki or src");
+    if (w.c && w.restricted) fail(wat, "Commons files are hosted; do not mark them restricted");
+    if (w.restricted && !w.img && !w.wiki && !w.src) fail(wat, "restricted works need a link: img + src, wiki or src");
     if (w.img && !w.restricted) fail(wat, "non-Commons img URLs must be marked restricted: true");
-    if (w.src && !/^https:\/\//.test(w.src)) fail(wat, `src must be an https URL`);
+    if (w.c && !/^[0-9a-f]\/[0-9a-f]{2}\/[^/]+$/.test(w.c)) fail(wat, `malformed Commons path "${w.c}"`);
+    if (w.src && !/^https:\/\//.test(w.src)) fail(wat, "src must be an https URL");
+    if (w.c) {
+      const im = w.image;
+      if (!im) fail(wat, "Commons work has no image metadata: run node scripts/fetch-images.mjs");
+      else {
+        for (const k of ["author", "license", "page"]) if (!im[k]) fail(wat, `image.${k} is missing`);
+        if (!(im.w > 0 && im.h > 0)) fail(wat, "image.w and image.h must be positive");
+      }
+      for (const small of [false, true]) if (!existsSync(join(SITE, imagePath(m.id, i + 1, small)))) fail(wat, `missing ${imagePath(m.id, i + 1, small)}: run node scripts/fetch-images.mjs`);
+    } else if (w.image) fail(wat, "only Commons works may have image metadata");
   });
 }
 for (const e of D.engines) for (const r of e.ex) if (!ids.has(r)) fail("engines", `unknown movement "${r}"`);
 for (const n of D.nicknames) if (!ids.has(n.id)) fail("nicknames", `unknown movement "${n.id}"`);
 
+const creditsFile = join(ROOT, "CREDITS.md");
+if (!existsSync(creditsFile) || readFileSync(creditsFile, "utf8") !== creditsMarkdown(D)) fail("CREDITS.md", "out of date: run node scripts/fetch-images.mjs");
+
 const works = D.movements.reduce((n, m) => n + m.works.length, 0);
+const hosted = D.movements.reduce((n, m) => n + m.works.filter((w) => w.image).length, 0);
 if (errors.length) {
   console.error(errors.map((e) => "✗ " + e).join("\n"));
   console.error(`\n${errors.length} problem(s) found.`);
   process.exit(1);
 }
-console.log(`✓ ${D.movements.length} movements, ${works} works, all checks passed.`);
+console.log(`✓ ${D.movements.length} movements, ${works} works (${hosted} images hosted), all checks passed.`);

@@ -5,7 +5,8 @@
   /* Works still under copyright (museum images, non-free Wikipedia files) are replaced by a
      placeholder that links to the source. Set to true only if you have the right to show them. */
   const SHOW_RESTRICTED_IMAGES = false;
-  const THUMB_WIDTH = 960;
+  /* Card frames are 300px tall with 14px padding; images are fitted inside with object-fit: contain. */
+  const FRAME_H = 272;
 
   const D = window.ARTISMS;
   const MV = D.movements;
@@ -34,13 +35,12 @@
       loading: "Loading image…",
       restrictedTitle: "In copyright", restrictedBody: "This work is not reproduced here.", restrictedLink: "See it at the source ↗",
       failedTitle: "Image unavailable", failedBody: "It could not be loaded (offline, or blocked by this viewer).", failedLink: "Open the source ↗",
-      licUnknown: "licence on file page", viaWiki: "via Wikipedia",
       whyTitle: "Why do styles change?", whyLede: "Three forces show up again and again across the timeline. Select a style to jump to it.",
       caveatTag: "But", caveat: "These are recurring patterns, not laws. Patrons, religion, politics, money and a few stubborn individuals shape styles just as much, and many changes have more than one cause.",
       namesTitle: "Named by their critics",
       studyTitle: "How to look at any style", studyLede: "Five steps that work in a museum, a book or this page.",
       footImgTitle: "About the images",
-      footImg1: "Images are loaded from Wikimedia Commons and Wikipedia, and each card links to its source page with the creator and licence. Works still under copyright are not reproduced; their cards link to the museum or article instead.",
+      footImg1: "Images are freely licensed files from Wikimedia Commons, resized and hosted with this site. Each card credits the author and licence and links to the file page. Works still under copyright are not reproduced; their cards link to the museum or article instead.",
       footImg2: "Check the source page before reusing any image.",
       footDataTitle: "About the dates",
       footData: "Dates are conventional ranges. Styles overlap, and historians draw the boundaries in different places. Hatched bars mark living traditions that are still practised.",
@@ -67,13 +67,12 @@
       loading: "图片加载中…",
       restrictedTitle: "版权保护中", restrictedBody: "本站不复制此作品图片。", restrictedLink: "前往来源查看 ↗",
       failedTitle: "图片无法显示", failedBody: "图片未能加载（可能离线，或被当前浏览环境拦截）。", failedLink: "打开来源 ↗",
-      licUnknown: "许可见文件页", viaWiki: "来自维基百科",
       whyTitle: "风格为何改变？", whyLede: "在整条时间线上，有三种力量反复出现。点击流派名称即可跳转。",
       caveatTag: "但是", caveat: "这些是反复出现的规律，而不是定律。赞助人、宗教、政治、金钱和少数固执的个人同样塑造着风格，很多变化也不止一个原因。",
       namesTitle: "被批评者命名",
       studyTitle: "如何观看任何一种风格", studyLede: "五个步骤，在博物馆、书本或本页都适用。",
       footImgTitle: "关于图片",
-      footImg1: "图片来自维基共享资源与维基百科，每张卡片都链接到注明作者与许可的来源页。仍受版权保护的作品不在本站复制，卡片改为链接至博物馆或条目页面。",
+      footImg1: "图片均为维基共享资源上的自由许可文件，经缩放后由本站托管。每张卡片注明作者与许可，并链接到文件页。仍受版权保护的作品不在本站复制，卡片改为链接至博物馆或条目页面。",
       footImg2: "转载任何图片前，请先查看来源页的许可信息。",
       footDataTitle: "关于年代",
       footData: "年代均为约定俗成的范围。流派之间相互重叠，学者划定的边界也各不相同。斜纹色条表示至今仍在延续的活传统。",
@@ -103,22 +102,8 @@
   const num = (i) => String(i + 1).padStart(2, "0");
 
   /* ── Image sources ─────────────────────────── */
-  const isFree = (url) => /\/wikipedia\/commons\//.test(url);
-  function commons(path) {
-    const file = path.split("/").pop();
-    const ext = file.split(".").pop().toLowerCase();
-    const thumbName = `${THUMB_WIDTH}px-${file}${ext === "svg" ? ".png" : ext === "tif" || ext === "tiff" ? ".jpg" : ""}`;
-    return {
-      thumb: `https://upload.wikimedia.org/wikipedia/commons/thumb/${path}/${thumbName}`,
-      orig: `https://upload.wikimedia.org/wikipedia/commons/${path}`,
-      page: `https://commons.wikimedia.org/wiki/File:${file}`
-    };
-  }
-  function filePageFrom(url) {
-    const m = url.match(/\/wikipedia\/(commons|en)\/(?:thumb\/)?[0-9a-f]\/[0-9a-f]{2}\/([^/?#]+)/);
-    if (!m) return url;
-    return m[1] === "commons" ? `https://commons.wikimedia.org/wiki/File:${m[2]}` : `https://en.wikipedia.org/wiki/File:${m[2]}`;
-  }
+  /* Freely licensed works are hosted with the site (scripts/fetch-images.mjs):
+     images/<movement>/<n>.webp, long edge ≤ 1200px, plus <n>-480.webp. */
   const wikiUrl = (title) => `https://en.wikipedia.org/wiki/${encodeURIComponent(title.replace(/ /g, "_"))}`;
   function readMoreUrl(w) {
     if (lang === "zh") {
@@ -127,49 +112,25 @@
     }
     return w.wiki ? wikiUrl(w.wiki) : `https://en.wikipedia.org/wiki/Special:Search?search=${encodeURIComponent(w.t.en)}&go=Go`;
   }
+  const host = (url) => new URL(url).hostname.replace(/^www\./, "");
 
-  const summaryCache = new Map();
-  function lookup(title) {
-    if (summaryCache.has(title)) return summaryCache.get(title);
-    const key = "art-isms-wiki:" + title;
-    let cached = null;
-    try { cached = JSON.parse(sessionStorage.getItem(key) || "null"); } catch (e) { /* ignore */ }
-    const job = cached ? Promise.resolve(cached) : fetch(`https://en.wikipedia.org/api/rest_v1/page/summary/${encodeURIComponent(title.replace(/ /g, "_"))}`)
-      .then((r) => (r.ok ? r.json() : Promise.reject(new Error("HTTP " + r.status))))
-      .then((j) => {
-        const o = j.originalimage, th = j.thumbnail;
-        let src = null;
-        if (o && o.width <= 1400) src = o.source;
-        else if (th) src = th.source.replace(/\/\d+px-/, `/${THUMB_WIDTH}px-`);
-        const res = { src, orig: o ? o.source : null, page: j.content_urls?.desktop?.page || wikiUrl(title) };
-        try { sessionStorage.setItem(key, JSON.stringify(res)); } catch (e) { /* ignore */ }
-        return res;
-      });
-    summaryCache.set(title, job);
-    return job;
-  }
-
-  /* Resolve a work to { src, fallback, page, credit, restricted } — may be async. */
-  function resolveImage(w) {
-    if (w.c) {
-      const u = commons(w.c);
-      return Promise.resolve({ src: u.thumb, fallback: u.orig, page: u.page, credit: `Wikimedia Commons · ${w.lic || t("licUnknown")}` });
-    }
-    if (w.img) {
-      return Promise.resolve({ src: w.img, page: w.src || w.img, credit: new URL(w.src || w.img).hostname.replace(/^www\./, ""), restricted: true });
-    }
-    if (w.restricted) {
-      const page = w.src || wikiUrl(w.wiki);
-      return Promise.resolve({ page, restricted: true, credit: new URL(page).hostname.replace(/^www\./, "") });
-    }
-    return lookup(w.wiki).then((r) => {
-      if (!r.src) return { page: r.page, restricted: true, credit: t("viaWiki") };
-      const free = isFree(r.src);
+  /* Resolve a work to { src, srcset, w, h, page, credit, restricted }. */
+  function resolveImage(mid, wi) {
+    const w = BY[mid].works[wi];
+    if (w.image) {
+      const base = `images/${mid}/${wi + 1}`, im = w.image;
       return {
-        src: r.src, fallback: r.orig && r.orig !== r.src ? r.orig : null, page: filePageFrom(r.orig || r.src),
-        credit: free ? `Wikimedia Commons · ${t("licUnknown")}` : `${t("viaWiki")} · ©`, restricted: !free
+        src: `${base}.webp`, srcset: `${base}-480.webp ${Math.round(480 * im.w / Math.max(im.w, im.h))}w, ${base}.webp ${im.w}w`,
+        w: im.w, h: im.h, page: im.page, credit: `${im.author} · ${im.license}`
       };
-    });
+    }
+    if (w.img) return { src: w.img, page: w.src || w.img, credit: host(w.src || w.img), restricted: true };
+    const page = w.src || wikiUrl(w.wiki);
+    return { page, credit: host(page), restricted: true };
+  }
+  function setImg(img, r, sizes) {
+    if (r.srcset) { img.srcset = r.srcset; img.sizes = sizes; img.width = r.w; img.height = r.h; }
+    img.src = r.src;
   }
 
   /* Mondrian placeholder, seeded by the work's title so it stays stable */
@@ -194,21 +155,16 @@
     frame.classList.add("plate", "ready");
     frame.innerHTML = `${plateSvg(w.t.en)}<div class="why"><b>${esc(t(kind + "Title"))}</b><span>${esc(t(kind + "Body"))}</span><a href="${esc(page)}" target="_blank" rel="noopener">${esc(t(kind + "Link"))}</a></div>`;
   }
-  function loadInto(frame, w, onLoad) {
-    resolveImage(w).then((r) => {
-      const credit = frame.closest(".card")?.querySelector(".credit .src");
-      if (credit) { credit.textContent = r.credit; credit.href = r.page; }
-      if (!r.src || (r.restricted && !SHOW_RESTRICTED_IMAGES)) { showPlate(frame, w, "restricted", r.page || readMoreUrl(w)); return; }
-      const img = frame.querySelector("img");
-      let triedFallback = false;
-      img.onload = () => { img.classList.add("ok"); frame.classList.add("ready"); if (onLoad) onLoad(r); };
-      img.onerror = () => {
-        if (r.fallback && !triedFallback) { triedFallback = true; img.src = r.fallback; return; }
-        showPlate(frame, w, "failed", r.page || readMoreUrl(w));
-      };
-      img.src = r.src;
-      frame.dataset.page = r.page;
-    }).catch(() => showPlate(frame, w, "failed", readMoreUrl(w)));
+  function loadInto(frame, mid, wi, sizes) {
+    const w = BY[mid].works[wi], r = resolveImage(mid, wi);
+    const credit = frame.closest(".card")?.querySelector(".credit .src");
+    if (credit) { credit.textContent = r.credit; credit.href = r.page; }
+    if (!r.src || (r.restricted && !SHOW_RESTRICTED_IMAGES)) { showPlate(frame, w, "restricted", r.page || readMoreUrl(w)); return; }
+    const img = frame.querySelector("img");
+    img.onload = () => { img.classList.add("ok"); frame.classList.add("ready"); };
+    img.onerror = () => showPlate(frame, w, "failed", r.page || readMoreUrl(w));
+    /* Rendered width ≈ the narrower of the column and the frame height × aspect ratio. */
+    setImg(img, r, sizes || (r.w ? `min(${Math.round(FRAME_H * r.w / r.h)}px, calc(100vw - 60px))` : ""));
   }
 
   const io = "IntersectionObserver" in window ? new IntersectionObserver((entries) => {
@@ -216,7 +172,7 @@
       if (!e.isIntersecting) return;
       io.unobserve(e.target);
       const [mid, wi] = e.target.dataset.work.split(":");
-      loadInto(e.target, BY[mid].works[+wi]);
+      loadInto(e.target, mid, +wi);
     });
   }, { rootMargin: "800px 0px" }) : null;
 
@@ -236,13 +192,13 @@
     $("#mast-art").innerHTML = MAST.map(([id, i, cls]) => {
       if (!id) return `<div class="cell ${cls}"></div>`;
       const w = BY[id].works[i];
-      return `<div class="cell ${cls}"><img alt="" data-c="${esc(w.c)}"><button type="button" data-view="${id}:${i}" aria-label="${esc(p(w.t))}"></button><span class="tag">${esc(p(w.t))}</span></div>`;
+      return `<div class="cell ${cls}"><img alt="" data-work="${id}:${i}"><button type="button" data-view="${id}:${i}" aria-label="${esc(p(w.t))}"></button><span class="tag">${esc(p(w.t))}</span></div>`;
     }).join("");
     $$("#mast-art img").forEach((img) => {
-      const u = commons(img.dataset.c);
+      const [mid, wi] = img.dataset.work.split(":");
       img.onload = () => img.classList.add("ok");
-      img.onerror = () => { if (img.src !== u.orig) img.src = u.orig; else img.remove(); };
-      img.src = u.thumb;
+      img.onerror = () => img.remove();
+      setImg(img, resolveImage(mid, +wi), "(max-width: 900px) 60vw, 25vw");
     });
   }
 
@@ -348,7 +304,7 @@
             </div>
           </article>`).join("")}</div>
       </section>`).join("");
-    $$(".frame[data-work]").forEach((f) => (io ? io.observe(f) : loadInto(f, BY[f.dataset.work.split(":")[0]].works[+f.dataset.work.split(":")[1]])));
+    $$(".frame[data-work]").forEach((f) => { if (io) io.observe(f); else { const [mid, wi] = f.dataset.work.split(":"); loadInto(f, mid, +wi); } });
   }
 
   /* ── Why + study ───────────────────────────── */
@@ -373,8 +329,8 @@
     const box = $("#v-img");
     box.className = "v-img";
     box.innerHTML = `<div class="frame" style="height:min(70dvh,720px);width:100%;border:0"><span class="spin">${esc(t("loading"))}</span><img alt="${esc(p(w.t))}"></div>`;
-    loadInto($(".frame", box), w, (r) => { $("#v-src").href = r.page; });
-    resolveImage(w).then((r) => { $("#v-src").href = r.page || readMoreUrl(w); }).catch(() => {});
+    loadInto($(".frame", box), mid, +wi, "min(1200px, 100vw)");
+    $("#v-src").href = resolveImage(mid, +wi).page || readMoreUrl(w);
     if (typeof viewer.showModal === "function") viewer.showModal(); else viewer.setAttribute("open", "");
     document.documentElement.classList.add("modal-open");
   }
