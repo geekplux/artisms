@@ -7,6 +7,7 @@ import { join } from "node:path";
 import { loadData, SITE, ROOT, imagePath, contentHash } from "./lib/data.mjs";
 import { creditsMarkdown } from "./lib/credits.mjs";
 import { staleStamps } from "./stamp-assets.mjs";
+import { staleSeo } from "./seo.mjs";
 
 const D = loadData();
 
@@ -73,6 +74,7 @@ for (const n of D.nicknames) if (!ids.has(n.id)) fail("nicknames", `unknown move
 const creditsFile = join(ROOT, "CREDITS.md");
 if (!existsSync(creditsFile) || readFileSync(creditsFile, "utf8") !== creditsMarkdown(D)) fail("CREDITS.md", "out of date: run node scripts/fetch-images.mjs");
 
+for (const s of staleSeo(D)) fail("public/index.html", `generated ${s} block is out of date: run node scripts/seo.mjs`);
 for (const s of staleStamps()) fail("public/index.html", `${s} has a stale ?v= stamp: run node scripts/stamp-assets.mjs`);
 
 const works = D.movements.reduce((n, m) => n + m.works.length, 0);
