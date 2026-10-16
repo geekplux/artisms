@@ -6,7 +6,7 @@ A bilingual (English / 中文) visual atlas of art styles: a 45,000-year timelin
 
 - **40 styles, 120 works**, from the Chauvet cave paintings to contemporary installation, including Chinese landscape painting, ukiyo-e, Islamic art, Indian miniatures, African sculpture, Indigenous arts and Latin American modernisms.
 - **One timeline** for 45,000 years. The scale is compressed for older periods, and thick rules mark where it changes. Hover over a style to light up what it grew from and what it led to.
-- **Real images** from Wikimedia Commons and Wikipedia, each linked to its source page and licence.
+- **Real images**: 92 freely licensed files from Wikimedia Commons, hosted with the site and credited with author and licence ([CREDITS.md](CREDITS.md)). Works still in copyright are linked, not reproduced.
 - **English and Chinese** throughout, switchable on the page. The choice is remembered, and Chinese is the default for Chinese-language browsers.
 - **No build step.** Plain HTML, CSS and JavaScript. All content lives in one data file.
 
@@ -19,7 +19,7 @@ python3 -m http.server 8000
 # then visit http://localhost:8000
 ```
 
-Images load from Wikimedia, so you need to be online to see them.
+Everything, images included, is served from this repository, so it works offline.
 
 ## Project structure
 
@@ -28,8 +28,11 @@ index.html           page skeleton and static copy
 assets/styles.css    all styles (paper, ink and a little De Stijl)
 assets/app.js        rendering, language switch, timeline, image loading
 data/movements.js    all content: 40 styles × 3 works, English + Chinese
-scripts/check-data.mjs      validates the data file (no dependencies)
-scripts/verify-images.mjs   checks every image against Wikimedia (network)
+images/<style>/      hosted images: <n>.webp (long edge ≤ 1200px) and <n>-480.webp
+CREDITS.md           image credits, generated from the data
+scripts/check-data.mjs      validates data, image files and CREDITS.md (no network)
+scripts/fetch-images.mjs    downloads, resizes and credits Commons images (network, cwebp)
+scripts/verify-images.mjs   checks hosted files, Commons sources and links (network)
 ```
 
 ## Content model
@@ -55,30 +58,32 @@ A movement looks like this:
 }
 ```
 
-Each work names **one image source**:
+Each work is either **hosted** or a **placeholder**:
 
 | Field | Meaning |
 | --- | --- |
-| `c` | Wikimedia Commons path, e.g. `"e/ea/Van_Gogh_-_Starry_Night_-_Google_Art_Project.jpg"` (the part after `/wikipedia/commons/`). Preferred. Add `lic` with the licence shown on the file page. |
-| `wiki` | English Wikipedia article title. The page uses that article's lead image, fetched in the browser from the Wikipedia REST API. |
-| `img` + `src` | Any other image URL plus its source page. Must be marked `"restricted": true`. |
-| `restricted: true` + `wiki` or `src` | A work still in copyright with no image at all. The card shows a placeholder linking to the article or museum page. Nothing is fetched. |
+| `c` | Wikimedia Commons path of a freely licensed file, e.g. `"e/ea/Van_Gogh_-_Starry_Night_-_Google_Art_Project.jpg"` (the part after `/wikipedia/commons/`). `scripts/fetch-images.mjs` downloads it to `images/<style>/<n>.webp` and fills in `image`. |
+| `image` | Written by the script, never by hand: `w`, `h` of the hosted file, and `author`, `license`, `licenseUrl`, `page` read from the Commons API. |
+| `restricted: true` | A work still in copyright. The card shows a placeholder linking to `src` or the `wiki` article. With `img` (an image URL elsewhere), the image is shown only if `SHOW_RESTRICTED_IMAGES` is turned on. |
+| `wiki` | English Wikipedia article title, used for links. |
 
 Other work fields: `t` title, `a` artist, `y` year, `loc` where it is (optional), `look` what to look for, and `n` a one-sentence note (optional).
 
 ## Adding or correcting a style
 
 1. Edit `data/movements.js`. Keep movements sorted by `start`.
-2. Run `node scripts/check-data.mjs`. It checks ids, cross-links, the three works per style, both languages and the image fields.
-3. Run `node scripts/verify-images.mjs` (needs network). It loads every image URL the page would use, checks `wiki` titles and lead images, and flags file names that may not show the work. Add `--only <movement-id>` to check one style.
-4. Open the page and check that both languages render.
+2. If you added or changed a `c` path, run `node scripts/fetch-images.mjs` (needs network and `cwebp`: `brew install webp`). It downloads only missing files (`--force` to redo all, `--only <style-id>` for one style), refreshes licences and authors, and rewrites `CREDITS.md`. Look at the new image before committing.
+3. Run `node scripts/check-data.mjs`. It checks ids, cross-links, the three works per style, both languages, the image files and that `CREDITS.md` is current.
+4. Run `node scripts/verify-images.mjs` (needs network). It checks the hosted files, that each Commons source still exists with the same licence, every link, and flags file names that may not show the work.
+5. Open the page and check that both languages render.
 
 CI runs the same check on every push and pull request.
 
 ## Images and copyright
 
-- Most images are public-domain or Creative Commons files on Wikimedia Commons, loaded directly from `upload.wikimedia.org`. Each card links to its file page, where the creator and licence are recorded. Check that page before reusing an image.
-- Works still under copyright (many 20th-century pieces) are **not shown by default**. Their cards show a placeholder that links to the museum or article instead. This is controlled by `SHOW_RESTRICTED_IMAGES` at the top of `assets/app.js`. Only turn it on if you have the right to display those images.
+- Hosted images are public-domain or Creative Commons files from Wikimedia Commons, resized to WebP. Each card shows the author and licence and links to the Commons file page; [CREDITS.md](CREDITS.md) lists them all. Check the file page before reusing an image.
+- **Never host a copyrighted work.** A CC licence on a *photo* does not cover the artwork in it: a photo of a living artist's installation stays a placeholder even if Commons hosts it. Host only when the work itself is public domain (or Commons records why it is free, e.g. `PD-ineligible`, freedom of panorama for buildings).
+- Works still under copyright (many 20th-century pieces) are **not shown**. Their cards show a placeholder that links to the museum or article instead. `SHOW_RESTRICTED_IMAGES` in `assets/app.js` stays `false`.
 - Dates are conventional ranges. Styles overlap, and historians draw the boundaries in different places.
 
 ## Credits
@@ -89,4 +94,4 @@ The content merges two earlier prototypes: a Mondrian-style timeline atlas, and 
 
 - Code (`index.html`, `assets/`, `scripts/`): [MIT](LICENSE)
 - Written content in `data/movements.js` (summaries, notes, translations): [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/)
-- Images: not part of this repository. Each one is loaded from its source under its own licence.
+- Images in `images/`: each under its own licence, listed in [CREDITS.md](CREDITS.md). They are not covered by the MIT or CC BY-SA licences above.

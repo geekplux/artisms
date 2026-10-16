@@ -170,7 +170,16 @@ window.ARTISMS = {
       "en": "Lions, rhinos and horses, discovered in 1994. Among the oldest known cave paintings in Europe.",
       "zh": "狮子、犀牛与马群，1994年被发现，是欧洲已知最古老的洞穴壁画之一。"
      },
-     "wiki": "Chauvet Cave"
+     "wiki": "Chauvet Cave",
+     "c": "c/c0/Paintings_from_the_Chauvet_cave_%28museum_replica%29.jpg",
+     "image": {
+      "w": 1190,
+      "h": 1200,
+      "author": "HTO",
+      "license": "Public domain",
+      "licenseUrl": null,
+      "page": "https://commons.wikimedia.org/wiki/File:Paintings_from_the_Chauvet_cave_(museum_replica).jpg"
+     }
     },
     {
      "t": {
@@ -194,7 +203,16 @@ window.ARTISMS = {
       "en": "An 11 cm limestone figure with traces of red ochre, found in Austria in 1908.",
       "zh": "一件高约11厘米的石灰岩小像，残留红赭石痕迹，1908年出土于奥地利。"
      },
-     "wiki": "Venus of Willendorf"
+     "wiki": "Venus of Willendorf",
+     "c": "5/50/Venus_von_Willendorf_01.jpg",
+     "image": {
+      "w": 639,
+      "h": 1200,
+      "author": "MatthiasKabel",
+      "license": "CC BY 2.5",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.5",
+      "page": "https://commons.wikimedia.org/wiki/File:Venus_von_Willendorf_01.jpg"
+     }
     },
     {
      "t": {
@@ -218,7 +236,16 @@ window.ARTISMS = {
       "en": "Hundreds of aurochs, horses and deer. Closed to the public since 1963 to protect them; visitors see replicas.",
       "zh": "数百头原牛、马与鹿。为保护壁画，自1963年起不再对公众开放，游客参观的是复制洞窟。"
      },
-     "wiki": "Lascaux"
+     "wiki": "Lascaux",
+     "c": "1/1e/Lascaux_painting.jpg",
+     "image": {
+      "w": 720,
+      "h": 472,
+      "author": "EU",
+      "license": "Public domain",
+      "licenseUrl": null,
+      "page": "https://commons.wikimedia.org/wiki/File:Lascaux_painting.jpg"
+     }
     }
    ],
    "from": []
@@ -290,7 +317,14 @@ window.ARTISMS = {
       "zh": "一块礼仪用石板调色板，常被解读为上下埃及统一的纪念。国王的身形远大于敌人。"
      },
      "c": "e/e3/Narmer_Palette_smiting_side.jpg",
-     "lic": "Public domain"
+     "image": {
+      "w": 813,
+      "h": 1200,
+      "author": "Unknown author",
+      "license": "Public domain",
+      "licenseUrl": null,
+      "page": "https://commons.wikimedia.org/wiki/File:Narmer_Palette_smiting_side.jpg"
+     }
     },
     {
      "t": {
@@ -315,7 +349,14 @@ window.ARTISMS = {
       "zh": "1912年发现于阿马尔奈雕刻家图特摩斯的工坊。一只眼睛从未镶嵌。"
      },
      "c": "1/1f/Nofretete_Neues_Museum.jpg",
-     "lic": "CC BY-SA 3.0"
+     "image": {
+      "w": 820,
+      "h": 1200,
+      "author": "Philip Pikart",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "page": "https://commons.wikimedia.org/wiki/File:Nofretete_Neues_Museum.jpg"
+     }
     },
     {
      "t": {
@@ -339,7 +380,15 @@ window.ARTISMS = {
       "en": "A tomb painting from Thebes: birds, fish and a cat are observed closely, while the hunter keeps his formal pose.",
       "zh": "出自底比斯的墓室壁画：鸟、鱼和猫被细致观察，猎人却保持着程式化的姿势。"
      },
-     "c": "3/37/Nebamun-Detail.JPG"
+     "c": "3/37/Nebamun-Detail.JPG",
+     "image": {
+      "w": 768,
+      "h": 782,
+      "author": "Old Egyptian Painter",
+      "license": "Public domain",
+      "licenseUrl": null,
+      "page": "https://commons.wikimedia.org/wiki/File:Nebamun-Detail.JPG"
+     }
     }
    ],
    "from": [
@@ -410,7 +459,14 @@ window.ARTISMS = {
       "zh": "拉动绳索，外层鸟喙张开，露出里面的人脸：人与灵合于一物。"
      },
      "c": "e/e1/Edenshaw%27s_Raven_Transformation_Mask.jpg",
-     "lic": "CC BY-SA 4.0"
+     "image": {
+      "w": 1200,
+      "h": 637,
+      "author": "Ethan Doyle White",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "page": "https://commons.wikimedia.org/wiki/File:Edenshaw%27s_Raven_Transformation_Mask.jpg"
+     }
     },
     {
      "t": {
@@ -431,10 +487,17 @@ window.ARTISMS = {
       "zh": "以杨木根雕成，送给孩子们，用来认识霍皮仪式中的卡奇纳神灵。"
      },
      "c": "8/81/Hopi_Pueblo_%28Native_American%29._Kachina_Doll_%28Pahlikmana%29%2C_late_19th_century.jpg",
-     "lic": "No restrictions",
      "loc": {
       "en": "Brooklyn Museum, New York",
       "zh": "纽约布鲁克林博物馆"
+     },
+     "image": {
+      "w": 846,
+      "h": 1200,
+      "author": "Hopi Artist",
+      "license": "No restrictions",
+      "licenseUrl": null,
+      "page": "https://commons.wikimedia.org/wiki/File:Hopi_Pueblo_(Native_American)._Kachina_Doll_(Pahlikmana),_late_19th_century.jpg"
      }
     },
     {
@@ -535,7 +598,14 @@ window.ARTISMS = {
       "zh": "定格运动员出手前一瞬，身体如弹簧般蓄力。"
      },
      "c": "9/93/Discobolus_in_National_Roman_Museum_Palazzo_Massimo_alle_Terme.JPG",
-     "lic": "CC BY-SA 4.0"
+     "image": {
+      "w": 718,
+      "h": 1200,
+      "author": "Livioandronico2013",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "page": "https://commons.wikimedia.org/wiki/File:Discobolus_in_National_Roman_Museum_Palazzo_Massimo_alle_Terme.JPG"
+     }
     },
     {
      "t": {
@@ -559,7 +629,15 @@ window.ARTISMS = {
       "en": "Part of a 160 m relief of a festival procession. Where the marbles belong is still argued between Greece and Britain.",
       "zh": "一条约160米长、描绘节庆游行的浮雕的一部分。这些大理石的归属至今仍是希腊与英国之间的争议。"
      },
-     "c": "c/cf/Cavalcade_west_frieze_Parthenon_BM.jpg"
+     "c": "c/cf/Cavalcade_west_frieze_Parthenon_BM.jpg",
+     "image": {
+      "w": 1200,
+      "h": 700,
+      "author": "Unknown artist",
+      "license": "Public domain",
+      "licenseUrl": null,
+      "page": "https://commons.wikimedia.org/wiki/File:Cavalcade_west_frieze_Parthenon_BM.jpg"
+     }
     },
     {
      "t": {
@@ -584,7 +662,14 @@ window.ARTISMS = {
       "zh": "皇帝被塑造成希腊比例的不老将军，胸甲上刻着政治宣传。"
      },
      "c": "e/eb/Statue-Augustus.jpg",
-     "lic": "Public domain"
+     "image": {
+      "w": 800,
+      "h": 1200,
+      "author": "Till Niermann",
+      "license": "Public domain",
+      "licenseUrl": null,
+      "page": "https://commons.wikimedia.org/wiki/File:Statue-Augustus.jpg"
+     }
     }
    ],
    "from": [
@@ -658,7 +743,16 @@ window.ARTISMS = {
       "en": "Cast in brass with remarkable naturalism. Europeans first refused to believe West Africans had made it.",
       "zh": "以黄铜铸成，写实程度惊人。欧洲人起初甚至不相信这出自西非工匠之手。"
      },
-     "wiki": "Bronze Head from Ife"
+     "wiki": "Bronze Head from Ife",
+     "c": "9/9a/Arte_yoruba%2C_nigeria%2C_testa_da_ife%2C_12-15mo_secolo.JPG",
+     "image": {
+      "w": 551,
+      "h": 1200,
+      "author": "I, Sailko",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "page": "https://commons.wikimedia.org/wiki/File:Arte_yoruba,_nigeria,_testa_da_ife,_12-15mo_secolo.JPG"
+     }
     },
     {
      "t": {
@@ -683,7 +777,14 @@ window.ARTISMS = {
       "zh": "这类饰板曾覆盖贝宁城宫殿的柱子。1897年英军掠走数千件，归还工作仍在进行。"
      },
      "c": "6/61/WLA_metmuseum_Plaque_Warrior_and_Attendants_Edo_Court_of_Benin.jpg",
-     "lic": "CC BY 2.5"
+     "image": {
+      "w": 798,
+      "h": 1200,
+      "author": "Wikipedia Loves Art participant \"futons_of_rock\"",
+      "license": "CC BY 2.5",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.5",
+      "page": "https://commons.wikimedia.org/wiki/File:WLA_metmuseum_Plaque_Warrior_and_Attendants_Edo_Court_of_Benin.jpg"
+     }
     },
     {
      "t": {
@@ -708,7 +809,14 @@ window.ARTISMS = {
       "zh": "每一颗钉子或刀片都记录着一次誓言、协议或祈求，由仪式专家钉入。"
      },
      "c": "6/6d/WLA_metmuseum_Kongo_Power_Figure_Nkisi_NKondi_2.jpg",
-     "lic": "CC BY 2.5"
+     "image": {
+      "w": 418,
+      "h": 800,
+      "author": "Wikipedia Loves Art participant \"trish\"",
+      "license": "CC BY 2.5",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.5",
+      "page": "https://commons.wikimedia.org/wiki/File:WLA_metmuseum_Kongo_Power_Figure_Nkisi_NKondi_2.jpg"
+     }
     }
    ],
    "from": []
@@ -781,7 +889,14 @@ window.ARTISMS = {
       "zh": "现存最古老的圣像之一，以蜡画法绘成。面部左右不同，或许象征基督既是审判者也是救赎者。"
      },
      "c": "1/16/CHRIST_PANTOCRATOR-SINAI%286th_Century%29.jpg",
-     "lic": "Public domain"
+     "image": {
+      "w": 665,
+      "h": 1200,
+      "author": "Unknown author",
+      "license": "Public domain",
+      "licenseUrl": null,
+      "page": "https://commons.wikimedia.org/wiki/File:CHRIST_PANTOCRATOR-SINAI(6th_Century).jpg"
+     }
     },
     {
      "t": {
@@ -805,7 +920,15 @@ window.ARTISMS = {
       "en": "Its apse holds the famous mosaics of Emperor Justinian and Empress Theodora, floating on gold.",
       "zh": "后殿中有著名的查士丁尼皇帝与狄奥多拉皇后马赛克，人物漂浮在金色之中。"
      },
-     "c": "5/51/Basilica_of_San_Vitale.jpg"
+     "c": "5/51/Basilica_of_San_Vitale.jpg",
+     "image": {
+      "w": 1200,
+      "h": 1099,
+      "author": "Commonists",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "page": "https://commons.wikimedia.org/wiki/File:Basilica_of_San_Vitale.jpg"
+     }
     },
     {
      "t": {
@@ -830,7 +953,14 @@ window.ARTISMS = {
       "zh": "晚期拜占庭的柔和：有明暗的面孔与温和的哀伤，比意大利文艺复兴早了数个世纪。"
      },
      "c": "3/37/Hagia_Sophia_Deesis_mosaic_%281%29.JPG",
-     "lic": "Public domain"
+     "image": {
+      "w": 900,
+      "h": 1200,
+      "author": "Gryffindor",
+      "license": "Public domain",
+      "licenseUrl": null,
+      "page": "https://commons.wikimedia.org/wiki/File:Hagia_Sophia_Deesis_mosaic_(1).JPG"
+     }
     }
    ],
    "from": [
@@ -904,7 +1034,15 @@ window.ARTISMS = {
       "en": "Gold Kufic letters on parchment dyed deep blue, a rare luxury. Its leaves are now scattered across many collections.",
       "zh": "深蓝色羊皮纸上的金色库法体文字，极为罕见奢华。书页如今分散于多家收藏机构。"
      },
-     "c": "6/6b/Folio_Blue_Quran_Met_2004.88.jpg"
+     "c": "6/6b/Folio_Blue_Quran_Met_2004.88.jpg",
+     "image": {
+      "w": 1200,
+      "h": 817,
+      "author": "Unknown author",
+      "license": "CC BY 2.5",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.5",
+      "page": "https://commons.wikimedia.org/wiki/File:Folio_Blue_Quran_Met_2004.88.jpg"
+     }
     },
     {
      "t": {
@@ -928,7 +1066,15 @@ window.ARTISMS = {
       "en": "One of the oldest dated carpets, woven for a Safavid shrine in Iran. It has millions of hand-tied knots.",
       "zh": "现存最古老的有纪年地毯之一，为伊朗萨法维王朝的圣陵编织，含数以百万计的手工绳结。"
      },
-     "c": "e/ec/The_Ardabil_Carpet_-_Google_Art_Project.jpg"
+     "c": "e/ec/The_Ardabil_Carpet_-_Google_Art_Project.jpg",
+     "image": {
+      "w": 1200,
+      "h": 627,
+      "author": "Unknown",
+      "license": "Public domain",
+      "licenseUrl": null,
+      "page": "https://commons.wikimedia.org/wiki/File:The_Ardabil_Carpet_-_Google_Art_Project.jpg"
+     }
     },
     {
      "t": {
@@ -952,7 +1098,15 @@ window.ARTISMS = {
       "en": "Slender columns, carved plaster and a fountain of twelve lions. M. C. Escher sketched the Alhambra’s tilings in 1922 and 1936.",
       "zh": "纤细的柱廊、雕花灰泥与十二狮喷泉。埃舍尔曾于1922年和1936年到此临摹镶嵌图案。"
      },
-     "c": "c/ca/Fountain_in_Patio_de_los_Leones%2C_Alhambra%2C_16.08.14.jpg"
+     "c": "c/ca/Fountain_in_Patio_de_los_Leones%2C_Alhambra%2C_16.08.14.jpg",
+     "image": {
+      "w": 800,
+      "h": 1200,
+      "author": "Liberaler Humanist",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "page": "https://commons.wikimedia.org/wiki/File:Fountain_in_Patio_de_los_Leones,_Alhambra,_16.08.14.jpg"
+     }
     }
    ],
    "from": [
@@ -1027,7 +1181,14 @@ window.ARTISMS = {
       "zh": "巨峰占据画面三分之二，驮队在底部缓缓前行。画家的签名藏在树叶间，直到1958年才被发现。"
      },
      "c": "c/c2/Fan_Kuan_-_Travelers_Among_Mountains_and_Streams_-_Google_Art_Project.jpg",
-     "lic": "Public domain"
+     "image": {
+      "w": 599,
+      "h": 1200,
+      "author": "Fan Kuan",
+      "license": "Public domain",
+      "licenseUrl": null,
+      "page": "https://commons.wikimedia.org/wiki/File:Fan_Kuan_-_Travelers_Among_Mountains_and_Streams_-_Google_Art_Project.jpg"
+     }
     },
     {
      "t": {
@@ -1051,7 +1212,15 @@ window.ARTISMS = {
       "en": "Six trees on a riverbank stand for upright scholars. Ni Zan’s dry, empty style became a model for later literati.",
       "zh": "江岸六棵树象征正直的君子。倪瓒枯淡空灵的画风成为后世文人的典范。"
      },
-     "c": "4/46/Ni_Zan_-_Six_Gentlemen.jpg"
+     "c": "4/46/Ni_Zan_-_Six_Gentlemen.jpg",
+     "image": {
+      "w": 649,
+      "h": 1200,
+      "author": "Ni Zan",
+      "license": "Public domain",
+      "licenseUrl": null,
+      "page": "https://commons.wikimedia.org/wiki/File:Ni_Zan_-_Six_Gentlemen.jpg"
+     }
     },
     {
      "t": {
@@ -1071,7 +1240,15 @@ window.ARTISMS = {
       "en": "A Ming prince turned monk after the dynasty fell; his birds glare with white, defiant eyes.",
       "zh": "明朝宗室，亡国后出家为僧；他笔下的鸟常以白眼示人，倔强不屈。"
      },
-     "c": "6/69/Bada_Shanren_-_Lotus_and_Ducks_-_Google_Art_Project.jpg"
+     "c": "6/69/Bada_Shanren_-_Lotus_and_Ducks_-_Google_Art_Project.jpg",
+     "image": {
+      "w": 655,
+      "h": 1200,
+      "author": "Bada Shanren",
+      "license": "Public domain",
+      "licenseUrl": null,
+      "page": "https://commons.wikimedia.org/wiki/File:Bada_Shanren_-_Lotus_and_Ducks_-_Google_Art_Project.jpg"
+     }
     }
    ],
    "from": []
@@ -1143,7 +1320,14 @@ window.ARTISMS = {
       "zh": "约70米长的刺绣亚麻布，讲述1066年诺曼征服英格兰。严格说来它是刺绣而非挂毯。"
      },
      "c": "8/8a/Bayeux_Tapestry_Horses_in_Battle_of_Hastings.jpg",
-     "lic": "Public domain"
+     "image": {
+      "w": 1192,
+      "h": 662,
+      "author": "Bayeux Tapestry designer and seamstresses",
+      "license": "Public domain",
+      "licenseUrl": null,
+      "page": "https://commons.wikimedia.org/wiki/File:Bayeux_Tapestry_Horses_in_Battle_of_Hastings.jpg"
+     }
     },
     {
      "t": {
@@ -1168,7 +1352,14 @@ window.ARTISMS = {
       "zh": "刻有“吉斯勒贝尔图斯作此”的签名，这在中世纪雕刻家中十分罕见。"
      },
      "c": "5/5b/Autun_St_Lazare_Tympanon.jpg",
-     "lic": "CC BY-SA 3.0"
+     "image": {
+      "w": 1158,
+      "h": 802,
+      "author": "Lamettrie",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+      "page": "https://commons.wikimedia.org/wiki/File:Autun_St_Lazare_Tympanon.jpg"
+     }
     },
     {
      "t": {
@@ -1192,7 +1383,15 @@ window.ARTISMS = {
       "en": "Christ sends rays of the Spirit to his apostles, surrounded by the peoples of the known world.",
       "zh": "基督向使徒们降下圣灵之光，周围环绕着当时已知世界的各民族。"
      },
-     "c": "b/b7/V%C3%A9zelay_Narthex_Tympan_central_220608_01.jpg"
+     "c": "b/b7/V%C3%A9zelay_Narthex_Tympan_central_220608_01.jpg",
+     "image": {
+      "w": 1200,
+      "h": 828,
+      "author": "Vassil",
+      "license": "Public domain",
+      "licenseUrl": null,
+      "page": "https://commons.wikimedia.org/wiki/File:V%C3%A9zelay_Narthex_Tympan_central_220608_01.jpg"
+     }
     }
    ],
    "from": [
@@ -1268,7 +1467,14 @@ window.ARTISMS = {
       "zh": "中央部分在1194年大火中幸存，后被嵌入重建的教堂，以“沙特尔蓝”闻名。"
      },
      "c": "5/57/Blue_Virgin_of_Chartres.jpg",
-     "lic": "CC BY-SA 3.0"
+     "image": {
+      "w": 798,
+      "h": 1200,
+      "author": "Hans Bernhard (Schnobby)",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "page": "https://commons.wikimedia.org/wiki/File:Blue_Virgin_of_Chartres.jpg"
+     }
     },
     {
      "t": {
@@ -1293,7 +1499,14 @@ window.ARTISMS = {
       "zh": "玛利亚与伊丽莎白身着罗马式长袍相互转身致意，显示出对古代雕塑的重新关注。"
      },
      "c": "5/5e/Reims%3B_Visitation%2C_Virgin_Mary%2C_Elizabeth%3B_right_jamb_figures_of_the_central_portal%2C_west_facade_-_Vanderbilt_ACT_-_00000247.jpg",
-     "lic": "Public domain"
+     "image": {
+      "w": 573,
+      "h": 900,
+      "author": "Anne C. Richardson, Jim Womack",
+      "license": "Public domain",
+      "licenseUrl": null,
+      "page": "https://commons.wikimedia.org/wiki/File:Reims;_Visitation,_Virgin_Mary,_Elizabeth;_right_jamb_figures_of_the_central_portal,_west_facade_-_Vanderbilt_ACT_-_00000247.jpg"
+     }
     },
     {
      "t": {
@@ -1318,7 +1531,14 @@ window.ARTISMS = {
       "zh": "英王理查二世跪拜于圣母和身着昂贵群青蓝的天使们面前。"
      },
      "c": "a/a2/The_Wilton_Diptych_%28left%29.jpg",
-     "lic": "Public domain"
+     "image": {
+      "w": 634,
+      "h": 957,
+      "author": "Unknown Master, French (second half of 14th century)",
+      "license": "Public domain",
+      "licenseUrl": null,
+      "page": "https://commons.wikimedia.org/wiki/File:The_Wilton_Diptych_(left).jpg"
+     }
     }
    ],
    "from": [
@@ -1392,7 +1612,14 @@ window.ARTISMS = {
       "zh": "以真人大小描绘异教女神，在一座基督教城市里是大胆之举。"
      },
      "c": "1/14/Birth_of_Venus_Botticelli.jpg",
-     "lic": "Public domain"
+     "image": {
+      "w": 1200,
+      "h": 769,
+      "author": "Sandro Botticelli",
+      "license": "Public domain",
+      "licenseUrl": null,
+      "page": "https://commons.wikimedia.org/wiki/File:Birth_of_Venus_Botticelli.jpg"
+     }
     },
     {
      "t": {
@@ -1417,7 +1644,14 @@ window.ARTISMS = {
       "zh": "房间所有透视线汇聚于基督头部。达·芬奇实验性的技法使画面在数十年内便开始剥落。"
      },
      "c": "0/08/Leonardo_da_Vinci_%281452-1519%29_-_The_Last_Supper_%281495-1498%29.jpg",
-     "lic": "Public domain"
+     "image": {
+      "w": 1200,
+      "h": 626,
+      "author": "Leonardo da Vinci",
+      "license": "Public domain",
+      "licenseUrl": null,
+      "page": "https://commons.wikimedia.org/wiki/File:Leonardo_da_Vinci_(1452-1519)_-_The_Last_Supper_(1495-1498).jpg"
+     }
     },
     {
      "t": {
@@ -1442,7 +1676,14 @@ window.ARTISMS = {
       "zh": "柏拉图与亚里士多德站在宏伟大厅的灭点处，周围是众多哲学家。"
      },
      "c": "c/c3/Raphael_School_of_Athens.jpg",
-     "lic": "Public domain"
+     "image": {
+      "w": 1200,
+      "h": 784,
+      "author": "Raphael",
+      "license": "Public domain",
+      "licenseUrl": null,
+      "page": "https://commons.wikimedia.org/wiki/File:Raphael_School_of_Athens.jpg"
+     }
     }
    ],
    "from": [
@@ -1516,7 +1757,16 @@ window.ARTISMS = {
       "en": "A convex mirror reflects two extra figures; above it the painter wrote “Jan van Eyck was here”.",
       "zh": "凸面镜中映出另外两个人影，镜上题字“扬·凡·艾克在此”。"
      },
-     "wiki": "Arnolfini Portrait"
+     "wiki": "Arnolfini Portrait",
+     "c": "5/53/The_Arnolfini_portrait_%281434%29.jpg",
+     "image": {
+      "w": 878,
+      "h": 1200,
+      "author": "Jan van Eyck",
+      "license": "Public domain",
+      "licenseUrl": null,
+      "page": "https://commons.wikimedia.org/wiki/File:The_Arnolfini_portrait_(1434).jpg"
+     }
     },
     {
      "t": {
@@ -1540,7 +1790,16 @@ window.ARTISMS = {
       "en": "A triptych running from Eden through a strange paradise of pleasure to a musical hell.",
       "zh": "三联画：从伊甸园，到奇异的欢愉乐园，再到充满乐器的地狱。"
      },
-     "wiki": "The Garden of Earthly Delights"
+     "wiki": "The Garden of Earthly Delights",
+     "c": "9/96/The_Garden_of_earthly_delights.jpg",
+     "image": {
+      "w": 1200,
+      "h": 684,
+      "author": "Hieronymus Bosch",
+      "license": "Public domain",
+      "licenseUrl": null,
+      "page": "https://commons.wikimedia.org/wiki/File:The_Garden_of_earthly_delights.jpg"
+     }
     },
     {
      "t": {
@@ -1564,7 +1823,16 @@ window.ARTISMS = {
       "en": "Part of a series on the months. Tired hunters return as skaters play on frozen ponds below.",
       "zh": "月令组画之一。疲惫的猎人归来，山下的冰塘上人们正在滑冰。"
      },
-     "wiki": "The Hunters in the Snow"
+     "wiki": "The Hunters in the Snow",
+     "c": "d/d8/Pieter_Bruegel_the_Elder_-_Hunters_in_the_Snow_%28Winter%29_-_Google_Art_Project.jpg",
+     "image": {
+      "w": 1200,
+      "h": 855,
+      "author": "Pieter Brueghel the Elder",
+      "license": "Public domain",
+      "licenseUrl": null,
+      "page": "https://commons.wikimedia.org/wiki/File:Pieter_Bruegel_the_Elder_-_Hunters_in_the_Snow_(Winter)_-_Google_Art_Project.jpg"
+     }
     }
    ],
    "from": [
@@ -1632,7 +1900,14 @@ window.ARTISMS = {
       "zh": "出自记录阿克巴皇帝统治的插图史书，描绘16世纪60年代的事件。"
      },
      "c": "0/03/1565-Battle_Scene_with_Boats_on_the_Ganges-Akbarnama.jpg",
-     "lic": "Public domain"
+     "image": {
+      "w": 800,
+      "h": 1200,
+      "author": "Tulsi (the elder) (artist), Jagjivan (artist)",
+      "license": "Public domain",
+      "licenseUrl": null,
+      "page": "https://commons.wikimedia.org/wiki/File:1565-Battle_Scene_with_Boats_on_the_Ganges-Akbarnama.jpg"
+     }
     },
     {
      "t": {
@@ -1657,7 +1932,14 @@ window.ARTISMS = {
       "zh": "为一部七百首爱情诗集所绘的插页，神圣的恋人在亭中避雨。"
      },
      "c": "8/8c/Anonymous_-_Krishna_and_Radha_in_a_Pavilion%2C_page_from_a_copy_of_the_Sat_Sai_Seven_Hundred_Verses%29_-_1977.150_-_Art_Institute_of_Chicago.jpg",
-     "lic": "Public domain"
+     "image": {
+      "w": 1033,
+      "h": 1200,
+      "author": "anonymous",
+      "license": "Public domain",
+      "licenseUrl": null,
+      "page": "https://commons.wikimedia.org/wiki/File:Anonymous_-_Krishna_and_Radha_in_a_Pavilion,_page_from_a_copy_of_the_Sat_Sai_Seven_Hundred_Verses)_-_1977.150_-_Art_Institute_of_Chicago.jpg"
+     }
     },
     {
      "t": {
@@ -1682,7 +1964,14 @@ window.ARTISMS = {
       "zh": "基申格尔画派赋予人物修长上挑的眼睛与锐利的侧脸，这种造型至今仍被模仿。"
      },
      "c": "0/04/2_Attributed_to_Nihal_Chand._Savant_Singh_and_Bani_Thani_as_Krishna_and_Radha_%28detail%29%2C_Kishangarh%2C_ca._1760._Madison_Avenue_gallery.jpg",
-     "lic": "Public domain"
+     "image": {
+      "w": 1024,
+      "h": 655,
+      "author": "Nihal Chand",
+      "license": "Public domain",
+      "licenseUrl": null,
+      "page": "https://commons.wikimedia.org/wiki/File:2_Attributed_to_Nihal_Chand._Savant_Singh_and_Bani_Thani_as_Krishna_and_Radha_(detail),_Kishangarh,_ca._1760._Madison_Avenue_gallery.jpg"
+     }
     }
    ],
    "from": [
@@ -1755,7 +2044,15 @@ window.ARTISMS = {
       "en": "Left unfinished. The Virgin’s swan-like neck and oversized Christ child break Renaissance proportion on purpose.",
       "zh": "未完成之作。圣母天鹅般的长颈和过大的圣婴有意打破了文艺复兴的比例。"
      },
-     "c": "7/70/Parmigianino_-_Madonna_and_Child_with_Angels%2C_known_as_the_Madonna_with_the_Long_Neck.jpg"
+     "c": "7/70/Parmigianino_-_Madonna_and_Child_with_Angels%2C_known_as_the_Madonna_with_the_Long_Neck.jpg",
+     "image": {
+      "w": 766,
+      "h": 1200,
+      "author": "Parmigianino",
+      "license": "Public domain",
+      "licenseUrl": null,
+      "page": "https://commons.wikimedia.org/wiki/File:Parmigianino_-_Madonna_and_Child_with_Angels,_known_as_the_Madonna_with_the_Long_Neck.jpg"
+     }
     },
     {
      "t": {
@@ -1779,7 +2076,15 @@ window.ARTISMS = {
       "en": "An icy, enamel-smooth allegory packed with riddling figures.",
       "zh": "冷艳、如珐琅般光滑的寓意画，挤满了谜一样的人物。"
      },
-     "c": "8/83/Angelo_Bronzino_-_Venus%2C_Cupid%2C_Folly_and_Time_-_National_Gallery%2C_London.jpg"
+     "c": "8/83/Angelo_Bronzino_-_Venus%2C_Cupid%2C_Folly_and_Time_-_National_Gallery%2C_London.jpg",
+     "image": {
+      "w": 952,
+      "h": 1200,
+      "author": "Bronzino",
+      "license": "Public domain",
+      "licenseUrl": null,
+      "page": "https://commons.wikimedia.org/wiki/File:Angelo_Bronzino_-_Venus,_Cupid,_Folly_and_Time_-_National_Gallery,_London.jpg"
+     }
     },
     {
      "t": {
@@ -1803,7 +2108,15 @@ window.ARTISMS = {
       "en": "Earth below is solid and sober; heaven above swirls with stretched, flame-like figures.",
       "zh": "下方人间沉稳写实，上方天国旋转着拉长如火焰的人物。"
      },
-     "c": "f/ff/El_Greco_-_The_Burial_of_the_Count_of_Orgaz.JPG"
+     "c": "f/ff/El_Greco_-_The_Burial_of_the_Count_of_Orgaz.JPG",
+     "image": {
+      "w": 980,
+      "h": 1200,
+      "author": "El Greco",
+      "license": "Public domain",
+      "licenseUrl": null,
+      "page": "https://commons.wikimedia.org/wiki/File:El_Greco_-_The_Burial_of_the_Count_of_Orgaz.JPG"
+     }
     }
    ],
    "from": [
@@ -1876,7 +2189,15 @@ window.ARTISMS = {
       "en": "A shaft of light follows Christ’s pointing hand into a dim tax office.",
       "zh": "一束光随着基督伸出的手指射入昏暗的税务所。"
      },
-     "c": "5/59/Caravaggio_%E2%80%94_The_Calling_of_Saint_Matthew.jpg"
+     "c": "5/59/Caravaggio_%E2%80%94_The_Calling_of_Saint_Matthew.jpg",
+     "image": {
+      "w": 1200,
+      "h": 1134,
+      "author": "Caravaggio",
+      "license": "CC0",
+      "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+      "page": "https://commons.wikimedia.org/wiki/File:Caravaggio_%E2%80%94_The_Calling_of_Saint_Matthew.jpg"
+     }
     },
     {
      "t": {
@@ -1901,7 +2222,14 @@ window.ARTISMS = {
       "zh": "隐藏的窗户从上方照亮大理石，两侧包厢里雕刻的观众如同在看歌剧。"
      },
      "c": "f/fe/Ecstasy_of_Saint_Teresa.JPG",
-     "lic": "CC BY-SA 3.0"
+     "image": {
+      "w": 900,
+      "h": 1200,
+      "author": "Sumselkawumsel",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "page": "https://commons.wikimedia.org/wiki/File:Ecstasy_of_Saint_Teresa.JPG"
+     }
     },
     {
      "t": {
@@ -1925,7 +2253,15 @@ window.ARTISMS = {
       "en": "The painter looks out at us; the king and queen appear only in a mirror. Who is looking at whom?",
       "zh": "画家望向观者，国王与王后只出现在镜中。究竟谁在看谁？"
      },
-     "c": "3/31/Las_Meninas%2C_by_Diego_Vel%C3%A1zquez%2C_from_Prado_in_Google_Earth.jpg"
+     "c": "3/31/Las_Meninas%2C_by_Diego_Vel%C3%A1zquez%2C_from_Prado_in_Google_Earth.jpg",
+     "image": {
+      "w": 1043,
+      "h": 1200,
+      "author": "Diego Velázquez",
+      "license": "Public domain",
+      "licenseUrl": null,
+      "page": "https://commons.wikimedia.org/wiki/File:Las_Meninas,_by_Diego_Vel%C3%A1zquez,_from_Prado_in_Google_Earth.jpg"
+     }
     }
    ],
    "from": [
@@ -2001,7 +2337,15 @@ window.ARTISMS = {
       "en": "From Thirty-six Views of Mount Fuji. A clawed wave towers over boats while tiny Fuji sits still in the distance.",
       "zh": "出自《富岳三十六景》。利爪般的巨浪压向小船，远方的富士山渺小而安静。"
      },
-     "c": "a/a5/Tsunami_by_hokusai_19th_century.jpg"
+     "c": "a/a5/Tsunami_by_hokusai_19th_century.jpg",
+     "image": {
+      "w": 1200,
+      "h": 807,
+      "author": "Katsushika Hokusai",
+      "license": "Public domain",
+      "licenseUrl": null,
+      "page": "https://commons.wikimedia.org/wiki/File:Tsunami_by_hokusai_19th_century.jpg"
+     }
     },
     {
      "t": {
@@ -2025,7 +2369,15 @@ window.ARTISMS = {
       "en": "From One Hundred Famous Views of Edo. Van Gogh painted a copy of it in 1887.",
       "zh": "出自《名所江户百景》。梵高曾在1887年临摹此画。"
      },
-     "c": "2/26/Utagawa_Hiroshige_-_Evening_Shower_at_Atake_and_the_Great_Bridge.jpg"
+     "c": "2/26/Utagawa_Hiroshige_-_Evening_Shower_at_Atake_and_the_Great_Bridge.jpg",
+     "image": {
+      "w": 822,
+      "h": 1200,
+      "author": "Utagawa Hiroshige",
+      "license": "Public domain",
+      "licenseUrl": null,
+      "page": "https://commons.wikimedia.org/wiki/File:Utagawa_Hiroshige_-_Evening_Shower_at_Atake_and_the_Great_Bridge.jpg"
+     }
     },
     {
      "t": {
@@ -2049,7 +2401,15 @@ window.ARTISMS = {
       "en": "Three celebrated women of Edo, told apart by tiny differences in their faces.",
       "zh": "江户三位名媛，仅凭面部细微差别区分彼此。"
      },
-     "c": "a/a8/Utamaro_%281793%29_Three_Beauties_of_the_Present_Time%2C_MFAB_21.6382.jpg"
+     "c": "a/a8/Utamaro_%281793%29_Three_Beauties_of_the_Present_Time%2C_MFAB_21.6382.jpg",
+     "image": {
+      "w": 818,
+      "h": 1200,
+      "author": "Kitagawa Utamaro",
+      "license": "Public domain",
+      "licenseUrl": null,
+      "page": "https://commons.wikimedia.org/wiki/File:Utamaro_(1793)_Three_Beauties_of_the_Present_Time,_MFAB_21.6382.jpg"
+     }
     }
    ],
    "from": [
@@ -2123,7 +2483,14 @@ window.ARTISMS = {
       "zh": "粉色裙摆飞扬，一只鞋飞出，藏身的情人抬头仰望。"
      },
      "c": "e/eb/Fragonard%2C_The_Swing.jpg",
-     "lic": "Public domain"
+     "image": {
+      "w": 957,
+      "h": 1200,
+      "author": "Jean-Honoré Fragonard",
+      "license": "Public domain",
+      "licenseUrl": null,
+      "page": "https://commons.wikimedia.org/wiki/File:Fragonard,_The_Swing.jpg"
+     }
     },
     {
      "t": {
@@ -2148,7 +2515,14 @@ window.ARTISMS = {
       "zh": "风格之新，让法兰西学院专门为它设立了一个画种：“游乐画”。"
      },
      "c": "1/1e/Antoine_Watteau_-_Pilgrimage_to_Cythera_-_WGA25454.jpg",
-     "lic": "Public domain"
+     "image": {
+      "w": 829,
+      "h": 563,
+      "author": "Jean-Antoine Watteau",
+      "license": "Public domain",
+      "licenseUrl": null,
+      "page": "https://commons.wikimedia.org/wiki/File:Antoine_Watteau_-_Pilgrimage_to_Cythera_-_WGA25454.jpg"
+     }
     },
     {
      "t": {
@@ -2173,7 +2547,14 @@ window.ARTISMS = {
       "zh": "国王的宠姬身着丝绸、点缀玫瑰，在花园中被塑造为有品味、有学识的女性。"
      },
      "c": "9/97/Fran%C3%A7ois_Boucher_-_Madame_de_Pompadour%2C_1759.jpg",
-     "lic": "Public domain"
+     "image": {
+      "w": 905,
+      "h": 1200,
+      "author": "François Boucher",
+      "license": "Public domain",
+      "licenseUrl": null,
+      "page": "https://commons.wikimedia.org/wiki/File:Fran%C3%A7ois_Boucher_-_Madame_de_Pompadour,_1759.jpg"
+     }
     }
    ],
    "from": [
@@ -2247,7 +2628,14 @@ window.ARTISMS = {
       "zh": "三兄弟宣誓为罗马而死。左侧男子刚毅，右侧女子悲伤。"
      },
      "c": "c/ce/Jacques-Louis_David_-_Oath_of_the_Horatii.jpg",
-     "lic": "Public domain"
+     "image": {
+      "w": 640,
+      "h": 500,
+      "author": "Jacques-Louis David",
+      "license": "Public domain",
+      "licenseUrl": null,
+      "page": "https://commons.wikimedia.org/wiki/File:Jacques-Louis_David_-_Oath_of_the_Horatii.jpg"
+     }
     },
     {
      "t": {
@@ -2272,7 +2660,14 @@ window.ARTISMS = {
       "zh": "遇刺的革命者被画得如同基督教殉道者，背景是一面空荡的墙。"
      },
      "c": "a/aa/Death_of_Marat_by_David.jpg",
-     "lic": "Public domain"
+     "image": {
+      "w": 933,
+      "h": 1200,
+      "author": "Jacques-Louis David",
+      "license": "Public domain",
+      "licenseUrl": null,
+      "page": "https://commons.wikimedia.org/wiki/File:Death_of_Marat_by_David.jpg"
+     }
     },
     {
      "t": {
@@ -2297,7 +2692,14 @@ window.ARTISMS = {
       "zh": "评论家抱怨她的背部多了几节脊椎；安格尔为了线条之美舍弃了解剖准确。"
      },
      "c": "4/4a/Jean_Auguste_Dominique_Ingres%2C_La_Grande_Odalisque%2C_1814.jpg",
-     "lic": "Public domain"
+     "image": {
+      "w": 1200,
+      "h": 669,
+      "author": "Jean-Auguste-Dominique Ingres",
+      "license": "Public domain",
+      "licenseUrl": null,
+      "page": "https://commons.wikimedia.org/wiki/File:Jean_Auguste_Dominique_Ingres,_La_Grande_Odalisque,_1814.jpg"
+     }
     }
    ],
    "from": [
@@ -2372,7 +2774,14 @@ window.ARTISMS = {
       "zh": "纪念1830年七月革命。自由女神既是寓意形象，也是街头的普通女子。"
      },
      "c": "2/21/Eug%C3%A8ne_Delacroix_-_Liberty_Leading_the_People_%2828th_July_1830%29_-_WGA6177.jpg",
-     "lic": "Public domain"
+     "image": {
+      "w": 1200,
+      "h": 989,
+      "author": "Eugène Delacroix",
+      "license": "Public domain",
+      "licenseUrl": null,
+      "page": "https://commons.wikimedia.org/wiki/File:Eug%C3%A8ne_Delacroix_-_Liberty_Leading_the_People_(28th_July_1830)_-_WGA6177.jpg"
+     }
     },
     {
      "t": {
@@ -2397,7 +2806,14 @@ window.ARTISMS = {
       "zh": "取材于“宗”号真实事件：船员为骗取保险金把被奴役者抛入大海。"
      },
      "c": "e/e2/J.M.W._Turner_Slave_Ship_%28_Slavers_Throwing_Overboard_the_Dead_and_Dying%2C_Typhoon_Coming_On%29._1840.png",
-     "lic": "CC0"
+     "image": {
+      "w": 1200,
+      "h": 892,
+      "author": "J M W Turner",
+      "license": "CC0",
+      "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+      "page": "https://commons.wikimedia.org/wiki/File:J.M.W._Turner_Slave_Ship_(_Slavers_Throwing_Overboard_the_Dead_and_Dying,_Typhoon_Coming_On)._1840.png"
+     }
     },
     {
      "t": {
@@ -2422,7 +2838,14 @@ window.ARTISMS = {
       "zh": "我们只看到他的背影，于是仿佛与他站在同一处。"
      },
      "c": "b/b9/Caspar_David_Friedrich_-_Wanderer_above_the_sea_of_fog.jpg",
-     "lic": "Public domain"
+     "image": {
+      "w": 938,
+      "h": 1200,
+      "author": "Caspar David Friedrich",
+      "license": "Public domain",
+      "licenseUrl": null,
+      "page": "https://commons.wikimedia.org/wiki/File:Caspar_David_Friedrich_-_Wanderer_above_the_sea_of_fog.jpg"
+     }
     }
    ],
    "from": [
@@ -2496,7 +2919,14 @@ window.ARTISMS = {
       "zh": "两名修路工看不见面孔，一个太老，一个太小。此画在德累斯顿轰炸中被毁。"
      },
      "c": "4/46/Gustave_Courbet_-_The_Stonebreakers_-_WGA05457.jpg",
-     "lic": "Public domain"
+     "image": {
+      "w": 1200,
+      "h": 731,
+      "author": "Gustave Courbet",
+      "license": "Public domain",
+      "licenseUrl": null,
+      "page": "https://commons.wikimedia.org/wiki/File:Gustave_Courbet_-_The_Stonebreakers_-_WGA05457.jpg"
+     }
     },
     {
      "t": {
@@ -2520,7 +2950,16 @@ window.ARTISMS = {
       "en": "Three women pick up what the harvest left behind; the rich harvest glows far behind them.",
       "zh": "三位妇女捡拾收割后遗落的麦穗，远处是丰收的金色麦堆。"
      },
-     "wiki": "The Gleaners"
+     "wiki": "The Gleaners",
+     "c": "1/1f/Jean-Fran%C3%A7ois_Millet_-_Gleaners_-_Google_Art_Project_2.jpg",
+     "image": {
+      "w": 1200,
+      "h": 899,
+      "author": "Jean-François Millet",
+      "license": "Public domain",
+      "licenseUrl": null,
+      "page": "https://commons.wikimedia.org/wiki/File:Jean-Fran%C3%A7ois_Millet_-_Gleaners_-_Google_Art_Project_2.jpg"
+     }
     },
     {
      "t": {
@@ -2544,7 +2983,15 @@ window.ARTISMS = {
       "en": "Poor travellers packed onto a train bench, tired, silent and dignified.",
       "zh": "贫穷的旅客挤在火车长椅上，疲惫、沉默而有尊严。"
      },
-     "c": "4/43/Honor%C3%A9_Daumier%2C_The_Third-Class_Carriage_-_The_Metropolitan_Museum_of_Art.jpg"
+     "c": "4/43/Honor%C3%A9_Daumier%2C_The_Third-Class_Carriage_-_The_Metropolitan_Museum_of_Art.jpg",
+     "image": {
+      "w": 1200,
+      "h": 869,
+      "author": "Honoré Daumier",
+      "license": "Public domain",
+      "licenseUrl": null,
+      "page": "https://commons.wikimedia.org/wiki/File:Honor%C3%A9_Daumier,_The_Third-Class_Carriage_-_The_Metropolitan_Museum_of_Art.jpg"
+     }
     }
    ],
    "from": [
@@ -2617,7 +3064,15 @@ window.ARTISMS = {
       "en": "The port of Le Havre in morning haze. The orange sun is almost the same brightness as the grey sky around it.",
       "zh": "晨雾中的勒阿弗尔港。橙色太阳与周围灰蓝天空的明度几乎相同。"
      },
-     "c": "5/59/Monet_-_Impression%2C_Sunrise.jpg"
+     "c": "5/59/Monet_-_Impression%2C_Sunrise.jpg",
+     "image": {
+      "w": 1200,
+      "h": 931,
+      "author": "Claude Monet",
+      "license": "Public domain",
+      "licenseUrl": null,
+      "page": "https://commons.wikimedia.org/wiki/File:Monet_-_Impression,_Sunrise.jpg"
+     }
     },
     {
      "t": {
@@ -2641,7 +3096,16 @@ window.ARTISMS = {
       "en": "Sunday dancing in Montmartre, dappled with sunlight through the trees.",
       "zh": "蒙马特的周日舞会，阳光透过树叶洒下斑驳光点。"
      },
-     "wiki": "Bal du moulin de la Galette"
+     "wiki": "Bal du moulin de la Galette",
+     "c": "6/6f/Renoir%2C_Pierre-Auguste_-_Dance_at_Le_Moulin_de_la_Galette%2C_1876.jpg",
+     "image": {
+      "w": 1200,
+      "h": 892,
+      "author": "Pierre-Auguste Renoir",
+      "license": "Public domain",
+      "licenseUrl": null,
+      "page": "https://commons.wikimedia.org/wiki/File:Renoir,_Pierre-Auguste_-_Dance_at_Le_Moulin_de_la_Galette,_1876.jpg"
+     }
     },
     {
      "t": {
@@ -2665,7 +3129,15 @@ window.ARTISMS = {
       "en": "Not the performance but the waiting, stretching and scratching of rehearsal, seen as if by chance.",
       "zh": "画的不是演出，而是排练中的等待、拉伸与挠痒，仿佛偶然瞥见。"
      },
-     "c": "3/3a/Edgar_Degas_-_La_Classe_de_danse.jpg"
+     "c": "3/3a/Edgar_Degas_-_La_Classe_de_danse.jpg",
+     "image": {
+      "w": 1046,
+      "h": 1200,
+      "author": "Edgar Degas",
+      "license": "Public domain",
+      "licenseUrl": null,
+      "page": "https://commons.wikimedia.org/wiki/File:Edgar_Degas_-_La_Classe_de_danse.jpg"
+     }
     }
    ],
    "from": [
@@ -2742,7 +3214,15 @@ window.ARTISMS = {
       "en": "Painted from memory and imagination while Van Gogh stayed at the asylum in Saint-Rémy.",
       "zh": "梵高在圣雷米精神病院期间，凭记忆与想象画成。"
      },
-     "c": "e/ea/Van_Gogh_-_Starry_Night_-_Google_Art_Project.jpg"
+     "c": "e/ea/Van_Gogh_-_Starry_Night_-_Google_Art_Project.jpg",
+     "image": {
+      "w": 1200,
+      "h": 951,
+      "author": "Vincent van Gogh",
+      "license": "Public domain",
+      "licenseUrl": null,
+      "page": "https://commons.wikimedia.org/wiki/File:Van_Gogh_-_Starry_Night_-_Google_Art_Project.jpg"
+     }
     },
     {
      "t": {
@@ -2767,7 +3247,14 @@ window.ARTISMS = {
       "zh": "塞尚画了这座山数十次，把树与岩石化作相互咬合的色块。"
      },
      "c": "2/26/Paul_Cezanne_-_Mont_Sainte-Victoire_and_Ch%C3%A2teau_Noir_-_Google_Art_Project.jpg",
-     "lic": "Public domain"
+     "image": {
+      "w": 1200,
+      "h": 956,
+      "author": "Paul Cézanne",
+      "license": "Public domain",
+      "licenseUrl": null,
+      "page": "https://commons.wikimedia.org/wiki/File:Paul_Cezanne_-_Mont_Sainte-Victoire_and_Ch%C3%A2teau_Noir_-_Google_Art_Project.jpg"
+     }
     },
     {
      "t": {
@@ -2792,7 +3279,14 @@ window.ARTISMS = {
       "zh": "布列塔尼妇女在纯红色的田野上想象雅各与天使摔跤。此处图片取自一枚邮票上的复制图。"
      },
      "c": "5/56/La_vision_apr%C3%A8s_le_sermon_%28Paul_Gauguin%29.jpg",
-     "lic": "Public domain"
+     "image": {
+      "w": 1200,
+      "h": 941,
+      "author": "Paul Gauguin",
+      "license": "Public domain",
+      "licenseUrl": null,
+      "page": "https://commons.wikimedia.org/wiki/File:La_vision_apr%C3%A8s_le_sermon_(Paul_Gauguin).jpg"
+     }
     }
    ],
    "from": [
@@ -2868,7 +3362,14 @@ window.ARTISMS = {
       "zh": "烟雾与发丝卷成同一条装饰线，品牌名称化作光环的一部分。"
      },
      "c": "d/dc/Alphonse_Mucha_-_Job_Cigarettes_1.jpg",
-     "lic": "Public domain"
+     "image": {
+      "w": 858,
+      "h": 1200,
+      "author": "Alphonse Mucha",
+      "license": "Public domain",
+      "licenseUrl": null,
+      "page": "https://commons.wikimedia.org/wiki/File:Alphonse_Mucha_-_Job_Cigarettes_1.jpg"
+     }
     },
     {
      "t": {
@@ -2893,7 +3394,14 @@ window.ARTISMS = {
       "zh": "一对恋人融于金箔织就的长袍之中，属克里姆特“黄金时期”作品。"
      },
      "c": "6/60/Gustav_Klimt_-_Der_Kuss_%28Liebespaar%29_-_912_-_%C3%96sterreichische_Galerie_Belvedere.jpg",
-     "lic": "Public domain"
+     "image": {
+      "w": 1183,
+      "h": 1200,
+      "author": "Gustav Klimt",
+      "license": "Public domain",
+      "licenseUrl": null,
+      "page": "https://commons.wikimedia.org/wiki/File:Gustav_Klimt_-_Der_Kuss_(Liebespaar)_-_912_-_%C3%96sterreichische_Galerie_Belvedere.jpg"
+     }
     },
     {
      "t": {
@@ -2918,7 +3426,14 @@ window.ARTISMS = {
       "zh": "铸铁花茎与玻璃花瓣；数十年间这种风格干脆被称为“地铁风格”。"
      },
      "c": "9/9c/Hector_Guimard_Entrance_Pasteur_Paris_Metro.jpg",
-     "lic": "CC BY-SA 2.0"
+     "image": {
+      "w": 1200,
+      "h": 900,
+      "author": "Eugenia & Julian (Flickr)",
+      "license": "CC BY-SA 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+      "page": "https://commons.wikimedia.org/wiki/File:Hector_Guimard_Entrance_Pasteur_Paris_Metro.jpg"
+     }
     }
    ],
    "from": [
@@ -2993,7 +3508,14 @@ window.ARTISMS = {
       "zh": "马蒂斯的妻子，脸上有绿色与紫色笔触。1905年沙龙上的丑闻之作。"
      },
      "c": "f/fb/Matisse-Woman-with-a-Hat.jpg",
-     "lic": "Public domain"
+     "image": {
+      "w": 882,
+      "h": 1200,
+      "author": "Henri Matisse",
+      "license": "Public domain",
+      "licenseUrl": null,
+      "page": "https://commons.wikimedia.org/wiki/File:Matisse-Woman-with-a-Hat.jpg"
+     }
     },
     {
      "t": {
@@ -3018,7 +3540,14 @@ window.ARTISMS = {
       "zh": "德兰被派往伦敦像莫奈那样描绘泰晤士河，却把河面画成绿、蓝、黄的色块。"
      },
      "c": "9/9b/Charing_Cross_Bridge_by_Andre_Derain_%2852259664204%29.jpg",
-     "lic": "Public domain"
+     "image": {
+      "w": 1200,
+      "h": 800,
+      "author": "Adrian Scottow from London, England",
+      "license": "Public domain",
+      "licenseUrl": null,
+      "page": "https://commons.wikimedia.org/wiki/File:Charing_Cross_Bridge_by_Andre_Derain_(52259664204).jpg"
+     }
     },
     {
      "t": {
@@ -3042,7 +3571,16 @@ window.ARTISMS = {
       "en": "A pastoral dream that prompted Picasso to answer with Les Demoiselles d’Avignon.",
       "zh": "一幅田园梦境，促使毕加索以《亚威农少女》回应。"
      },
-     "wiki": "Le bonheur de vivre"
+     "wiki": "Le bonheur de vivre",
+     "c": "b/b9/Bonheur_Matisse.jpg",
+     "image": {
+      "w": 1088,
+      "h": 784,
+      "author": "Henri Matisse",
+      "license": "Public domain",
+      "licenseUrl": null,
+      "page": "https://commons.wikimedia.org/wiki/File:Bonheur_Matisse.jpg"
+     }
     }
    ],
    "from": [
@@ -3116,7 +3654,14 @@ window.ARTISMS = {
       "zh": "该运动的先驱之作。蒙克用油彩、色粉与版画创作了多个版本。"
      },
      "c": "8/86/Edvard_Munch_-_The_Scream_-_Google_Art_Project.jpg",
-     "lic": "Public domain"
+     "image": {
+      "w": 949,
+      "h": 1200,
+      "author": "Edvard Munch",
+      "license": "Public domain",
+      "licenseUrl": null,
+      "page": "https://commons.wikimedia.org/wiki/File:Edvard_Munch_-_The_Scream_-_Google_Art_Project.jpg"
+     }
     },
     {
      "t": {
@@ -3140,7 +3685,15 @@ window.ARTISMS = {
       "en": "Sharp-edged figures on a tilting pavement: the big city as glamour and threat at once.",
       "zh": "倾斜的人行道上，人物轮廓尖锐：大城市既迷人又危险。"
      },
-     "c": "7/7b/Kirchner_1913_Street%2C_Berlin.jpg"
+     "c": "7/7b/Kirchner_1913_Street%2C_Berlin.jpg",
+     "image": {
+      "w": 908,
+      "h": 1200,
+      "author": "Ernst Ludwig Kirchner",
+      "license": "Public domain",
+      "licenseUrl": null,
+      "page": "https://commons.wikimedia.org/wiki/File:Kirchner_1913_Street,_Berlin.jpg"
+     }
     },
     {
      "t": {
@@ -3164,7 +3717,15 @@ window.ARTISMS = {
       "en": "A twisted neck, a hard stare and nervous outline: the self as a raw nerve.",
       "zh": "扭转的脖颈、凝视的目光与神经质的轮廓：自我如同一根裸露的神经。"
      },
-     "c": "b/b8/Egon_Schiele_-_Self-Portrait_with_Physalis_-_Google_Art_Project.jpg"
+     "c": "b/b8/Egon_Schiele_-_Self-Portrait_with_Physalis_-_Google_Art_Project.jpg",
+     "image": {
+      "w": 1200,
+      "h": 973,
+      "author": "Egon Schiele",
+      "license": "Public domain",
+      "licenseUrl": null,
+      "page": "https://commons.wikimedia.org/wiki/File:Egon_Schiele_-_Self-Portrait_with_Physalis_-_Google_Art_Project.jpg"
+     }
     }
    ],
    "from": [
@@ -3242,7 +3803,15 @@ window.ARTISMS = {
       "en": "Inside and outside overlap: the table is cut by the window, the street by the table.",
       "zh": "室内与室外相互重叠：桌子被窗户切开，街道又被桌子切开。"
      },
-     "c": "b/b5/Juan_Gris_%28Jos%C3%A9_Victoriano_Gonz%C3%A1lez_P%C3%A9rez%29%2C_Spanish_-_Still_Life_before_an_Open_Window%2C_Place_Ravignan_-_Google_Art_Project.jpg"
+     "c": "b/b5/Juan_Gris_%28Jos%C3%A9_Victoriano_Gonz%C3%A1lez_P%C3%A9rez%29%2C_Spanish_-_Still_Life_before_an_Open_Window%2C_Place_Ravignan_-_Google_Art_Project.jpg",
+     "image": {
+      "w": 910,
+      "h": 1200,
+      "author": "Juan Gris",
+      "license": "Public domain",
+      "licenseUrl": null,
+      "page": "https://commons.wikimedia.org/wiki/File:Juan_Gris_(Jos%C3%A9_Victoriano_Gonz%C3%A1lez_P%C3%A9rez),_Spanish_-_Still_Life_before_an_Open_Window,_Place_Ravignan_-_Google_Art_Project.jpg"
+     }
     },
     {
      "t": {
@@ -3266,7 +3835,15 @@ window.ARTISMS = {
       "en": "Gleizes co-wrote the first book on Cubism the same year.",
       "zh": "同年，格莱兹参与撰写了第一本论述立体主义的书。"
      },
-     "c": "6/69/Albert_Gleizes%2C_1912%2C_Les_Baigneuses%2C_oil_on_canvas%2C_105_x_171_cm%2C_Paris%2C_Mus%C3%A9e_d%27Art_Moderne_de_la_Ville_de_Paris.jpg"
+     "c": "6/69/Albert_Gleizes%2C_1912%2C_Les_Baigneuses%2C_oil_on_canvas%2C_105_x_171_cm%2C_Paris%2C_Mus%C3%A9e_d%27Art_Moderne_de_la_Ville_de_Paris.jpg",
+     "image": {
+      "w": 1200,
+      "h": 746,
+      "author": "Albert Gleizes",
+      "license": "Public domain",
+      "licenseUrl": null,
+      "page": "https://commons.wikimedia.org/wiki/File:Albert_Gleizes,_1912,_Les_Baigneuses,_oil_on_canvas,_105_x_171_cm,_Paris,_Mus%C3%A9e_d%27Art_Moderne_de_la_Ville_de_Paris.jpg"
+     }
     },
     {
      "t": {
@@ -3290,7 +3867,8 @@ window.ARTISMS = {
       "en": "Shown in the “Degenerate Art” exhibition and never seen again; we know it from photographs.",
       "zh": "曾在“堕落艺术展”中展出，此后下落不明；今人只能通过照片了解它。"
      },
-     "c": "e/e5/En_Canot%2C_Metzinger.png"
+     "wiki": "En Canot",
+     "restricted": true
     }
    ],
    "from": [
@@ -3366,7 +3944,15 @@ window.ARTISMS = {
       "en": "A striding figure shaped by the air it pushes through. It appears on Italy’s 20-cent euro coin.",
       "zh": "一个阔步前行的人，身体被他冲破的空气所塑造。它出现在意大利20欧分硬币上。"
      },
-     "c": "f/fd/%27Unique_Forms_of_Continuity_in_Space%27%2C_1913_bronze_by_Umberto_Boccioni.jpg"
+     "c": "f/fd/%27Unique_Forms_of_Continuity_in_Space%27%2C_1913_bronze_by_Umberto_Boccioni.jpg",
+     "image": {
+      "w": 964,
+      "h": 1200,
+      "author": "Wmpearl",
+      "license": "Public domain",
+      "licenseUrl": null,
+      "page": "https://commons.wikimedia.org/wiki/File:%27Unique_Forms_of_Continuity_in_Space%27,_1913_bronze_by_Umberto_Boccioni.jpg"
+     }
     },
     {
      "t": {
@@ -3492,7 +4078,16 @@ window.ARTISMS = {
       "en": "Hung high in a corner at the 0,10 exhibition, the place where Russian homes kept an icon.",
       "zh": "在“0,10”展览上被挂在墙角高处，那是俄罗斯家庭摆放圣像的位置。"
      },
-     "wiki": "Black Square"
+     "wiki": "Black Square",
+     "c": "d/dc/Kazimir_Malevich%2C_1915%2C_Black_Suprematic_Square%2C_oil_on_linen_canvas%2C_79.5_x_79.5_cm%2C_Tretyakov_Gallery%2C_Moscow.jpg",
+     "image": {
+      "w": 1200,
+      "h": 1200,
+      "author": "Kazimir Malevich",
+      "license": "Public domain",
+      "licenseUrl": null,
+      "page": "https://commons.wikimedia.org/wiki/File:Kazimir_Malevich,_1915,_Black_Suprematic_Square,_oil_on_linen_canvas,_79.5_x_79.5_cm,_Tretyakov_Gallery,_Moscow.jpg"
+     }
     },
     {
      "t": {
@@ -3516,7 +4111,16 @@ window.ARTISMS = {
       "en": "A planned 400 m spiral of iron and glass with rotating halls. It was never built.",
       "zh": "计划高约400米、由钢铁与玻璃构成的螺旋塔，内部大厅可旋转。从未建成。"
      },
-     "wiki": "Tatlin's Tower"
+     "wiki": "Tatlin's Tower",
+     "c": "f/ff/Tatlin%27s_Tower_maket_1919_year.jpg",
+     "image": {
+      "w": 898,
+      "h": 1200,
+      "author": "Unknown author",
+      "license": "Public domain",
+      "licenseUrl": null,
+      "page": "https://commons.wikimedia.org/wiki/File:Tatlin%27s_Tower_maket_1919_year.jpg"
+     }
     },
     {
      "t": {
@@ -3540,7 +4144,16 @@ window.ARTISMS = {
       "en": "A red triangle pierces a white circle: abstraction pressed into propaganda.",
       "zh": "红色三角刺入白色圆形：抽象被用于宣传。"
      },
-     "wiki": "Beat the Whites with the Red Wedge"
+     "wiki": "Beat the Whites with the Red Wedge",
+     "c": "f/fd/Klinom_Krasnym_Bej_Belych.JPG",
+     "image": {
+      "w": 1200,
+      "h": 960,
+      "author": "El Lissitzky",
+      "license": "Public domain",
+      "licenseUrl": null,
+      "page": "https://commons.wikimedia.org/wiki/File:Klinom_Krasnym_Bej_Belych.JPG"
+     }
     }
    ],
    "from": [
@@ -3617,7 +4230,14 @@ window.ARTISMS = {
       "zh": "一个签名为“R. Mutt”的小便池，被一个号称来者不拒的展览拒收。原作仅见于这张照片。"
      },
      "c": "d/dd/Marcel_Duchamp%2C_1917%2C_Fountain%2C_photograph_by_Alfred_Stieglitz.jpg",
-     "lic": "Public domain"
+     "image": {
+      "w": 919,
+      "h": 1200,
+      "author": "Marcel Duchamp / Alfred Stieglitz",
+      "license": "Public domain",
+      "licenseUrl": null,
+      "page": "https://commons.wikimedia.org/wiki/File:Marcel_Duchamp,_1917,_Fountain,_photograph_by_Alfred_Stieglitz.jpg"
+     }
     },
     {
      "t": {
@@ -3745,7 +4365,14 @@ window.ARTISMS = {
       "zh": "大块红色占据主导，一小块蓝与一窄条黄让画面保持平衡。"
      },
      "c": "a/a4/Piet_Mondriaan%2C_1930_-_Mondrian_Composition_II_in_Red%2C_Blue%2C_and_Yellow.jpg",
-     "lic": "Public domain"
+     "image": {
+      "w": 1184,
+      "h": 1200,
+      "author": "Piet Mondrian",
+      "license": "Public domain",
+      "licenseUrl": null,
+      "page": "https://commons.wikimedia.org/wiki/File:Piet_Mondriaan,_1930_-_Mondrian_Composition_II_in_Red,_Blue,_and_Yellow.jpg"
+     }
     },
     {
      "t": {
@@ -3770,7 +4397,14 @@ window.ARTISMS = {
       "zh": "由标准木条构成，后漆上风格派色彩：一把立体的蒙德里安。"
      },
      "c": "7/75/Ngv_design%2C_gerrit_rietveld%2C_red-blue_chair_1917_01.JPG",
-     "lic": "CC BY 2.5"
+     "image": {
+      "w": 862,
+      "h": 1200,
+      "author": "I, Sailko",
+      "license": "CC BY 2.5",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.5",
+      "page": "https://commons.wikimedia.org/wiki/File:Ngv_design,_gerrit_rietveld,_red-blue_chair_1917_01.JPG"
+     }
     },
     {
      "t": {
@@ -3795,7 +4429,14 @@ window.ARTISMS = {
       "zh": "这一倾斜终结了一段友谊：蒙德里安正因这样的斜线退出了风格派。"
      },
      "c": "d/d5/Counter-Composition_XIII_by_Theo_van_Doesburg.jpg",
-     "lic": "Public domain"
+     "image": {
+      "w": 980,
+      "h": 1006,
+      "author": "Theo van Doesburg",
+      "license": "Public domain",
+      "licenseUrl": null,
+      "page": "https://commons.wikimedia.org/wiki/File:Counter-Composition_XIII_by_Theo_van_Doesburg.jpg"
+     }
     }
    ],
    "from": [
@@ -3869,7 +4510,14 @@ window.ARTISMS = {
       "zh": "玻璃幕墙包裹着工坊翼楼，建筑直接展示了自身的运作方式。"
      },
      "c": "f/f9/Bauhaus-Dessau_main_building.jpg",
-     "lic": "Public domain"
+     "image": {
+      "w": 1200,
+      "h": 900,
+      "author": "Walter Gropius",
+      "license": "Public domain",
+      "licenseUrl": null,
+      "page": "https://commons.wikimedia.org/wiki/File:Bauhaus-Dessau_main_building.jpg"
+     }
     },
     {
      "t": {
@@ -3894,7 +4542,14 @@ window.ARTISMS = {
       "zh": "弯曲钢管加紧绷的帆布，据说灵感来自自行车车把。"
      },
      "c": "d/de/Marcel_Breuer_-_Wassily_Chair.jpg",
-     "lic": "CC BY-SA 4.0"
+     "image": {
+      "w": 1200,
+      "h": 1127,
+      "author": "© 1971markus@wikipedia.de",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "page": "https://commons.wikimedia.org/wiki/File:Marcel_Breuer_-_Wassily_Chair.jpg"
+     }
     },
     {
      "t": {
@@ -3919,7 +4574,14 @@ window.ARTISMS = {
       "zh": "舞者身着填充的几何服装，把芭蕾变成移动的雕塑。"
      },
      "c": "3/31/Triadisches_Ballett_by_Oskar_Schlemmer_-_Staatsgalerie_-_Stuttgart_-_Germany_2017_%28cropped%29.jpg",
-     "lic": "CC BY-SA 4.0"
+     "image": {
+      "w": 1200,
+      "h": 696,
+      "author": "© José Luiz Bernardes Ribeiro",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "page": "https://commons.wikimedia.org/wiki/File:Triadisches_Ballett_by_Oskar_Schlemmer_-_Staatsgalerie_-_Stuttgart_-_Germany_2017_(cropped).jpg"
+     }
     }
    ],
    "from": [
@@ -3993,7 +4655,14 @@ window.ARTISMS = {
       "zh": "它的塔冠一度使其成为世界最高建筑，直到1931年帝国大厦落成。"
      },
      "c": "7/76/Chrysler_Building_by_David_Shankbone_Retouched.jpg",
-     "lic": "Public domain"
+     "image": {
+      "w": 408,
+      "h": 1200,
+      "author": "Overand derivative work: Overand (talk)",
+      "license": "Public domain",
+      "licenseUrl": null,
+      "page": "https://commons.wikimedia.org/wiki/File:Chrysler_Building_by_David_Shankbone_Retouched.jpg"
+     }
     },
     {
      "t": {
@@ -4017,7 +4686,16 @@ window.ARTISMS = {
       "en": "A 30 m reinforced-concrete figure clad in soapstone tiles, the largest Art Deco sculpture.",
       "zh": "一座30米高、外覆皂石马赛克的钢筋混凝土雕像，是最大的装饰艺术风格雕塑。"
      },
-     "wiki": "Christ the Redeemer (statue)"
+     "wiki": "Christ the Redeemer (statue)",
+     "c": "4/4f/Christ_the_Redeemer_-_Cristo_Redentor.jpg",
+     "image": {
+      "w": 801,
+      "h": 1200,
+      "author": "Arne Müseler / www.arne-mueseler.com",
+      "license": "CC BY-SA 3.0 de",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/de/deed.en",
+      "page": "https://commons.wikimedia.org/wiki/File:Christ_the_Redeemer_-_Cristo_Redentor.jpg"
+     }
     },
     {
      "t": {
@@ -4143,7 +4821,14 @@ window.ARTISMS = {
       "zh": "二十七幅湿壁画描绘福特胭脂河工厂，工人与机器紧紧相连。"
      },
      "c": "c/c1/Rivera_detroit_industry_north.jpg",
-     "lic": "Public domain"
+     "image": {
+      "w": 1060,
+      "h": 754,
+      "author": "Cactus.man",
+      "license": "Public domain",
+      "licenseUrl": null,
+      "page": "https://commons.wikimedia.org/wiki/File:Rivera_detroit_industry_north.jpg"
+     }
     },
     {
      "t": {
@@ -4678,7 +5363,14 @@ window.ARTISMS = {
       "zh": "商店买来的灯管排成阶梯状高塔，向塔特林未建成的纪念塔致意。"
      },
      "c": "b/bb/%22monument%22_for_V._Tatlin%2C_CR_203.jpg",
-     "lic": "Public domain"
+     "image": {
+      "w": 900,
+      "h": 1200,
+      "author": "Dan Flavin",
+      "license": "Public domain",
+      "licenseUrl": null,
+      "page": "https://commons.wikimedia.org/wiki/File:%22monument%22_for_V._Tatlin,_CR_203.jpg"
+     }
     }
    ],
    "from": [
@@ -4755,8 +5447,8 @@ window.ARTISMS = {
       "en": "A real chair, a photo of that chair and a dictionary definition of “chair”. Which one is the chair?",
       "zh": "一把真椅子、这把椅子的照片，以及“椅子”的词典释义。哪一个才是椅子？"
      },
-     "c": "0/08/One_and_Three_Chair.jpg",
-     "lic": "CC BY 2.0"
+     "wiki": "One and Three Chairs",
+     "restricted": true
     },
     {
      "t": {
@@ -4806,7 +5498,14 @@ window.ARTISMS = {
       "zh": "每幅画布只写下作画当天的日期，使用他所在国家的语言。若午夜前未完成，便予以销毁。"
      },
      "c": "5/53/On_Kawara%2C_June_19%2C_1967_from_Today_Series%2C_No._108%2C_1966_-_Black_Power_in_the_United_States_%2C_1967_%283785168562%29.jpg",
-     "lic": "Public domain"
+     "image": {
+      "w": 1200,
+      "h": 935,
+      "author": "On Kawara",
+      "license": "Public domain",
+      "licenseUrl": null,
+      "page": "https://commons.wikimedia.org/wiki/File:On_Kawara,_June_19,_1967_from_Today_Series,_No._108,_1966_-_Black_Power_in_the_United_States_,_1967_(3785168562).jpg"
+     }
     }
    ],
    "from": [
@@ -5029,7 +5728,8 @@ window.ARTISMS = {
       "en": "About 100 million porcelain seeds, each hand-painted by craftspeople in Jingdezhen.",
       "zh": "约一亿颗瓷制葵花籽，每一颗都由景德镇工匠手工绘制。"
      },
-     "c": "d/d9/Ai_Weiwei%27s_Sunflower_Seeds%2C_Tate_Modern.jpg"
+     "wiki": "Sunflower Seeds (artwork)",
+     "restricted": true
     },
     {
      "t": {
@@ -5053,7 +5753,8 @@ window.ARTISMS = {
       "en": "A 10 m sphinx coated in white sugar, built in a refinery about to be demolished.",
       "zh": "一座10米高、覆满白糖的斯芬克斯，建在即将拆除的炼糖厂里。"
      },
-     "wiki": "A Subtlety"
+     "wiki": "A Subtlety",
+     "restricted": true
     }
    ],
    "from": [
