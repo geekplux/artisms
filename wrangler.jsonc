@@ -3,7 +3,8 @@
 // Local preview: `npx wrangler dev` (or `python3 -m http.server 8000 --directory public`).
 {
   "name": "artisms",
-  "compatibility_date": "2026-10-01",
+  "compatibility_date": "2026-10-12",
+  "observability": { "enabled": true },
   "assets": {
     "directory": "./public",
     // /index.html is served at /, and unknown paths return a plain 404.
