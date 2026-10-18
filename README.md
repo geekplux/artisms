@@ -2,9 +2,11 @@
 
 A bilingual (English / 中文) visual atlas of art styles: a 45,000-year timeline, how each style grew out of the last, and three real works for every style.
 
-**Live site: [artisms.geekplux.org](https://artisms.geekplux.org/)** · 中文版：[artisms.geekplux.org/?lang=zh](https://artisms.geekplux.org/?lang=zh)
+![Art-isms wordmark beside The Great Wave, The Birth of Venus, The Starry Night and The Scream](public/og.jpg)
 
-A sibling of [Worldlines](https://worldlines.geekplux.org/), a Mondrian-style atlas of world history.
+**Live site:** https://artisms.geekplux.org/ ([中文](https://artisms.geekplux.org/?lang=zh))
+
+A sibling of [Worldlines](https://worldlines.geekplux.org/), an atlas of world history, and [Dialectica](https://dialectica.geekplux.org/), an atlas of philosophy, drawn on the same Mondrian grid.
 
 - **40 styles, 120 works**, from the Chauvet cave paintings to contemporary installation, including Chinese landscape painting, ukiyo-e, Islamic art, Indian miniatures, African sculpture, Indigenous arts and Latin American modernisms.
 - **One timeline** for 45,000 years. The scale is compressed for older periods, and thick rules mark where it changes. Hover over a style to light up what it grew from and what it led to.
@@ -12,6 +14,16 @@ A sibling of [Worldlines](https://worldlines.geekplux.org/), a Mondrian-style at
 - **Real images**: 92 freely licensed files from Wikimedia Commons, hosted with the site and credited with author and licence ([CREDITS.md](CREDITS.md)). Works still in copyright are linked, not reproduced.
 - **English and Chinese** throughout, switchable on the page. The English view shows no Chinese, and the Chinese view keeps each style's English name beside it. English is the default; the choice is remembered, and `?lang=en` or `?lang=zh` in a link opens that language. The address always matches the language on screen: Chinese is `/?lang=zh`, English is plain `/`.
 - **No build step.** Plain HTML, CSS and JavaScript. All content lives in one data file.
+
+## Sister atlases
+
+Three bilingual atlases on one Mondrian grid, built the same way: static files with no build step, content in `{ en, zh }` data files, Cloudflare Workers, Google Analytics behind a consent bar. Each site's footer opens with a strip that links to the other two.
+
+| | Atlas | What it maps |
+| --- | --- | --- |
+| <img src="https://artisms.geekplux.org/favicon.svg" width="22" alt=""> | [Art-isms · 艺术流派志](https://artisms.geekplux.org/) · [code](https://github.com/geekplux/artisms) | 40 art styles across 45,000 years, how each grew from the last, and three real works for each |
+| <img src="https://worldlines.geekplux.org/favicon.svg" width="22" alt=""> | [Worldlines · 世界线](https://worldlines.geekplux.org/) · [code](https://github.com/geekplux/worldlines) | 26 countries and 8 regions across 15,000 years, chapter by chapter or one year at a time |
+| <img src="https://dialectica.geekplux.org/favicon.svg" width="22" alt=""> | [Dialectica · 思辨谱](https://dialectica.geekplux.org/) · [code](https://github.com/geekplux/dialectica) | 72 schools and 204 thinkers across 8 traditions: who taught, read and argued with whom |
 
 ## Run it locally
 
@@ -36,6 +48,7 @@ public/                     everything that is deployed, and nothing else
   data/movements.js         all content: 40 styles × 3 works, English + Chinese
   images/<style>/           hosted images: <n>.webp (long edge ≤ 1200px) and <n>-480.webp
   _headers                  cache headers (Cloudflare reads it; it is not served)
+  robots.txt, sitemap.xml, og.jpg, favicon.svg, favicon-48.png, apple-touch-icon.png
 wrangler.jsonc              Cloudflare Workers Static Assets config
 CREDITS.md                  image credits, generated from the data
 docs/                       fact-check records
@@ -100,13 +113,13 @@ The site is served at **https://artisms.geekplux.org/** (a custom domain on the 
 
 ## SEO
 
-`public/index.html` carries the canonical URL, hreflang links for English and Chinese (`?lang=zh`), Open Graph and Twitter cards (`public/og.jpg`, 1200×630) and JSON-LD. `scripts/seo.mjs` writes a static copy of the contents and every style's text into the page, so crawlers and link previews that don't run JavaScript still see the content; `app.js` replaces it on load. `public/robots.txt` and `public/sitemap.xml` point search engines at both language versions.
+`public/index.html` carries the canonical URL, hreflang links for English and Chinese (`?lang=zh`), Open Graph and Twitter cards (`public/og.jpg`, 1200×630) and WebSite JSON-LD, like its sister sites. `scripts/seo.mjs` writes a static copy of the contents and every style's text into the page, so crawlers and link previews that don't run JavaScript still see the content; `app.js` replaces it on load. `public/robots.txt` and `public/sitemap.xml` point search engines at both language versions.
 
 ## Analytics
 
 Google Analytics 4 (`G-V8MD23KS3G`) runs on **artisms.geekplux.org only**, never locally or on preview URLs. It uses Consent Mode v2: until a visitor accepts in the consent bar, `analytics_storage` is denied, so GA receives cookieless pings and sets no cookies. Accepting allows analytics cookies; "Cookie settings" in the footer reopens the choice, and declining deletes any `_ga` cookies. Ads features stay denied. The setup is the inline script in `public/index.html`; the bar is in `public/assets/app.js`.
 
-GA's cookies are host-only (`cookie_domain: "none"`, so they carry no `Domain` attribute; `location.hostname` would still give a domain cookie on `.artisms.geekplux.org`), so Art-isms and its sibling sites on `geekplux.org` do not share a client id or delete each other's cookies; declining still removes old `_ga` cookies from the parent domain, where earlier versions set them. The automatic page view is off (`send_page_view: false`): `app.js` sends `page_view` itself after rendering, with the final title and the address without its `#style` hash, and again after a language switch. It also sends `select_content` when a visitor switches language (`content_type: "language"`) or turns on an era or region filter (`"era"`, `"region"`, with the id as `item_id`). Events go through `track()`, a no-op wherever `gtag` is not defined, and never carry free text or personal data.
+GA's cookies are host-only (`cookie_domain: "none"`, so they carry no `Domain` attribute; `location.hostname` would still give a domain cookie on `.artisms.geekplux.org`), so Art-isms and its sibling sites on `geekplux.org` do not share a client id or delete each other's cookies; declining still removes old `_ga` cookies from the parent domain, where earlier versions set them. The automatic page view is off (`send_page_view: false`): `app.js` sends `page_view` itself after rendering, with the final title and the address without its `#style` hash, and again after a language switch. It also sends `select_content` when a visitor switches language (`content_type: "language"`), turns on an era or region filter (`"era"`, `"region"`, with the id as `item_id`) or leaves for a sister atlas (`"sister"`). Events go through `track()`, a no-op wherever `gtag` is not defined, and never carry free text or personal data.
 
 In the GA4 property, **Admin → Data streams → (web stream) → Enhanced measurement → Page views → Show advanced settings → "Page changes based on browser history events" must be off.** The page uses `history.replaceState` to change the query (`?lang`, `?era`, `?region`), and with that setting on GA logs an extra page view for each change; `send_page_view: false` does not stop those. Hash-only changes (`#style`) do not create page views.
 

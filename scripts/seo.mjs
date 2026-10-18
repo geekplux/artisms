@@ -23,7 +23,11 @@ function blocks(D) {
       {
         "@type": "WebSite", "@id": ORIGIN + "#website", url: ORIGIN, name: "Art-isms", alternateName: "艺术流派志",
         description: "A visual atlas of 40 art styles: a 45,000-year timeline, how each style grew from the last, and three real works for every style. In English and Chinese.",
-        inLanguage: ["en", "zh-Hans"]
+        inLanguage: ["en", "zh-Hans"], isAccessibleForFree: true,
+        about: [{ "@type": "Thing", name: "Art history" }, { "@type": "Thing", name: "Art movements" }, { "@type": "Thing", name: "Timeline" }],
+        license: "https://creativecommons.org/licenses/by-sa/4.0/",
+        creator: { "@type": "Person", name: "geekplux", url: "https://github.com/geekplux" },
+        codeRepository: "https://github.com/geekplux/artisms"
       },
       {
         "@type": "ItemList", "@id": ORIGIN + "#styles", name: "Art styles", numberOfItems: D.movements.length,
