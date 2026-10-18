@@ -1,6 +1,7 @@
 # Art-isms: working conventions
 
 A static, bilingual (EN/中文) atlas of 40 art styles with 3 works each. Repository: github.com/geekplux/artisms.
+Live: https://artisms.geekplux.org/. Sister projects: Worldlines, Dialectica.
 Read README.md for the data model and file layout. These are the rules that are easy to break.
 
 ## No build step
@@ -22,6 +23,7 @@ Read README.md for the data model and file layout. These are the rules that are 
 - Facts (titles, dates, locations, numbers in notes) need a reliable source, ideally the holding museum.
   If a claim can't be verified, list it for the owner; don't silently "fix" it. Record fact-check passes in `docs/` (see
   `docs/fact-check-2026-10.md`): what changed, the source, and what remains unverified.
+- The footer opens with the sister-atlas strip: Art-isms, Worldlines, Dialectica, in that order, with the site you are on in solid ink. The same markup, styles and words live in all three repos; change them together.
 - Every style shows at least one image. When a work is in copyright, prefer swapping in a free work that fits
   the text over leaving all three cards as placeholders.
 
