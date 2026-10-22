@@ -51,7 +51,7 @@
       footDataTitle: "About the dates",
       footData: "Dates are conventional ranges. Styles overlap, and historians draw the boundaries in different places. Hatched bars mark living traditions that are still practised.",
       footProjTitle: "The project",
-      footProj: "A static site with no build step: HTML, CSS and plain JavaScript, with all content in one bilingual data file. A sibling of <a href=\"https://worldlines.geekplux.org/\">Worldlines</a> and <a href=\"https://dialectica.geekplux.org/\">Dialectica</a>. Corrections are welcome on <a href=\"https://github.com/geekplux/artisms\">GitHub</a>.",
+      footProj: "A static site with no build step: HTML, CSS and plain JavaScript, with all content in one bilingual data file. A sibling of <a href=\"https://worldlines.geekplux.com/\">Worldlines</a> and <a href=\"https://dialectica.geekplux.com/\">Dialectica</a>. Corrections are welcome on <a href=\"https://github.com/geekplux/artisms\">GitHub</a>.",
       consentText: "This site uses Google Analytics to count visits. Allow it to set analytics cookies?", consentYes: "Accept", consentNo: "Decline", cookieSettings: "Cookie settings",
       close: "Close", bce: "BCE", now: "now"
     },
@@ -90,7 +90,7 @@
       footDataTitle: "关于年代",
       footData: "年代均为约定俗成的范围。流派之间相互重叠，学者划定的边界也各不相同。斜纹色条表示至今仍在延续的活传统。",
       footProjTitle: "关于项目",
-      footProj: "一个无需构建的静态网站：HTML、CSS 与原生 JavaScript，全部内容集中在一个中英双语数据文件中。它是 <a href=\"https://worldlines.geekplux.org/\">世界线</a> 与 <a href=\"https://dialectica.geekplux.org/\">思辨谱</a> 的姊妹项目。欢迎在 <a href=\"https://github.com/geekplux/artisms\">GitHub</a> 上提出修订。",
+      footProj: "一个无需构建的静态网站：HTML、CSS 与原生 JavaScript，全部内容集中在一个中英双语数据文件中。它是 <a href=\"https://worldlines.geekplux.com/\">世界线</a> 与 <a href=\"https://dialectica.geekplux.com/\">思辨谱</a> 的姊妹项目。欢迎在 <a href=\"https://github.com/geekplux/artisms\">GitHub</a> 上提出修订。",
       consentText: "本站使用 Google Analytics 统计访问量。是否允许设置统计 Cookie？", consentYes: "接受", consentNo: "拒绝", cookieSettings: "Cookie 设置",
       close: "关闭", bce: "前", now: "今"
     }
@@ -223,7 +223,7 @@
   function applyStatic() {
     document.documentElement.lang = lang === "zh" ? "zh-CN" : "en";
     document.title = t("docTitle");
-    $('link[rel="canonical"]').href = lang === "zh" ? "https://artisms.geekplux.org/?lang=zh" : "https://artisms.geekplux.org/";
+    $('link[rel="canonical"]').href = lang === "zh" ? "https://artisms.geekplux.com/?lang=zh" : "https://artisms.geekplux.com/";
     $('meta[name="description"]').setAttribute("content", t("meta"));
     $(".brand small").hidden = !t("brandSub");
     $$("[data-i18n]").forEach((el) => { el.textContent = t(el.dataset.i18n); });
@@ -231,7 +231,7 @@
     $$("[data-i18n-aria]").forEach((el) => { el.setAttribute("aria-label", t(el.dataset.i18nAria)); });
     $$(".lang button").forEach((b) => b.setAttribute("aria-pressed", String(b.dataset.lang === lang)));
     const star = $("#gh-star"); star.title = t("starTitle"); star.setAttribute("aria-label", t("starTitle"));
-    $$("a[data-sister]").forEach((a) => { a.href = `https://${a.dataset.sister}.geekplux.org/${lang === "zh" ? "?lang=zh" : ""}`; });
+    $$("a[data-sister]").forEach((a) => { a.href = `https://${a.dataset.sister}.geekplux.com/${lang === "zh" ? "?lang=zh" : ""}`; });
     $("#stats").textContent = UI[lang].stats(MV.length, WORKS);
   }
 

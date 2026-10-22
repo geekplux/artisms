@@ -11,7 +11,7 @@ import { join } from "node:path";
 import { fileURLToPath } from "node:url";
 import { loadData, SITE } from "./lib/data.mjs";
 
-export const ORIGIN = "https://artisms.geekplux.org/";
+export const ORIGIN = "https://artisms.geekplux.com/";
 const INDEX = join(SITE, "index.html");
 const esc = (s) => String(s).replace(/[&<>"']/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c]));
 const num = (i) => String(i + 1).padStart(2, "0");
