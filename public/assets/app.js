@@ -20,7 +20,7 @@
       docTitle: "Art-isms: a visual atlas of 40 art styles",
       brand: "Art-isms", brandSub: "", navTimeline: "Timeline", navStyles: "Styles", navWhy: "Why styles change", navStudy: "How to look",
       star: "Star", starTitle: "Star Art-isms on GitHub",
-      ariaSisters: "Sister atlases", sistersT: "Three atlases, one grid", sArtisms: "Art-isms", sArtismsD: "40 art styles across 45,000 years", sWorldlines: "Worldlines", sWorldlinesD: "26 countries and 8 regions across 15,000 years", sDialectica: "Dialectica", sDialecticaD: "72 schools and 204 thinkers across 8 traditions",
+      ariaSisters: "Sister atlases", sistersT: "Three atlases, one grid", sArtisms: "Art-isms", sArtismsD: "40 art styles across 45,000 years", sWorldlines: "Worldlines", sWorldlinesD: "26 countries and 8 regions across 15,000 years", sDialectica: "Dialectica", sDialecticaD: "72 schools and 204 thinkers across 8 traditions", sistersBy: "Made by <a href=\"https://geekplux.com/\">GeekPlux</a>. I built these atlases out of my own curiosity, mainly to learn from them myself.",
       navLabel: "Sections", langLabel: "Language", mastLabel: "Five works from the atlas", jumpLabel: "Jump to a style",
       meta: "A visual atlas of 40 art styles: a 45,000-year timeline, how each style grew from the last, and three real works for every style. In English and Chinese.",
       kicker: "A visual atlas of art styles", h1a: "ART-", h1b: "ISMS",
@@ -51,7 +51,7 @@
       footDataTitle: "About the dates",
       footData: "Dates are conventional ranges. Styles overlap, and historians draw the boundaries in different places. Hatched bars mark living traditions that are still practised.",
       footProjTitle: "The project",
-      footProj: "A static site with no build step: HTML, CSS and plain JavaScript, with all content in one bilingual data file. A sibling of <a href=\"https://worldlines.geekplux.org/\">Worldlines</a> and <a href=\"https://dialectica.geekplux.org/\">Dialectica</a>. Corrections are welcome on <a href=\"https://github.com/geekplux/artisms\">GitHub</a>.",
+      footProj: "A static site with no build step: HTML, CSS and plain JavaScript, with all content in one bilingual data file. A sibling of <a href=\"https://worldlines.geekplux.com/\">Worldlines</a> and <a href=\"https://dialectica.geekplux.com/\">Dialectica</a>. Corrections are welcome on <a href=\"https://github.com/geekplux/artisms\">GitHub</a>.",
       consentText: "This site uses Google Analytics to count visits. Allow it to set analytics cookies?", consentYes: "Accept", consentNo: "Decline", cookieSettings: "Cookie settings",
       close: "Close", bce: "BCE", now: "now"
     },
@@ -59,7 +59,7 @@
       docTitle: "艺术流派志：40个艺术流派的视觉图谱",
       brand: "艺术流派志", brandSub: "Art-isms", navTimeline: "时间线", navStyles: "流派", navWhy: "风格为何改变", navStudy: "如何观看",
       star: "星标", starTitle: "在 GitHub 上给艺术流派志加星标",
-      ariaSisters: "姊妹图谱", sistersT: "三部图谱，一张网格", sArtisms: "艺术流派志", sArtismsD: "四万五千年里的40个艺术流派", sWorldlines: "世界线", sWorldlinesD: "一万五千年里的26个国家与8个地区", sDialectica: "思辨谱", sDialecticaD: "8个传统中的72个学派与204位思想家",
+      ariaSisters: "姊妹图谱", sistersT: "三部图谱，一张网格", sArtisms: "艺术流派志", sArtismsD: "四万五千年里的40个艺术流派", sWorldlines: "世界线", sWorldlinesD: "一万五千年里的26个国家与8个地区", sDialectica: "思辨谱", sDialecticaD: "8个传统中的72个学派与204位思想家", sistersBy: "由 <a href=\"https://geekplux.com/\">GeekPlux</a> 制作。出于个人兴趣，我做了这几部图谱，主要是为了自己学习。",
       navLabel: "栏目", langLabel: "语言", mastLabel: "图谱中的五件作品", jumpLabel: "跳转到流派",
       meta: "收录40个艺术流派的图谱：一条四万五千年的时间线，每个流派如何从前一个流派中生长出来，并为每个流派配上三件真实作品。中英双语。",
       kicker: "艺术风格图谱", h1a: "艺术", h1b: "流派志",
@@ -90,7 +90,7 @@
       footDataTitle: "关于年代",
       footData: "年代均为约定俗成的范围。流派之间相互重叠，学者划定的边界也各不相同。斜纹色条表示至今仍在延续的活传统。",
       footProjTitle: "关于项目",
-      footProj: "一个无需构建的静态网站：HTML、CSS 与原生 JavaScript，全部内容集中在一个中英双语数据文件中。它是 <a href=\"https://worldlines.geekplux.org/\">世界线</a> 与 <a href=\"https://dialectica.geekplux.org/\">思辨谱</a> 的姊妹项目。欢迎在 <a href=\"https://github.com/geekplux/artisms\">GitHub</a> 上提出修订。",
+      footProj: "一个无需构建的静态网站：HTML、CSS 与原生 JavaScript，全部内容集中在一个中英双语数据文件中。它是 <a href=\"https://worldlines.geekplux.com/\">世界线</a> 与 <a href=\"https://dialectica.geekplux.com/\">思辨谱</a> 的姊妹项目。欢迎在 <a href=\"https://github.com/geekplux/artisms\">GitHub</a> 上提出修订。",
       consentText: "本站使用 Google Analytics 统计访问量。是否允许设置统计 Cookie？", consentYes: "接受", consentNo: "拒绝", cookieSettings: "Cookie 设置",
       close: "关闭", bce: "前", now: "今"
     }
@@ -223,7 +223,7 @@
   function applyStatic() {
     document.documentElement.lang = lang === "zh" ? "zh-CN" : "en";
     document.title = t("docTitle");
-    $('link[rel="canonical"]').href = lang === "zh" ? "https://artisms.geekplux.org/?lang=zh" : "https://artisms.geekplux.org/";
+    $('link[rel="canonical"]').href = lang === "zh" ? "https://artisms.geekplux.com/?lang=zh" : "https://artisms.geekplux.com/";
     $('meta[name="description"]').setAttribute("content", t("meta"));
     $(".brand small").hidden = !t("brandSub");
     $$("[data-i18n]").forEach((el) => { el.textContent = t(el.dataset.i18n); });
@@ -231,7 +231,7 @@
     $$("[data-i18n-aria]").forEach((el) => { el.setAttribute("aria-label", t(el.dataset.i18nAria)); });
     $$(".lang button").forEach((b) => b.setAttribute("aria-pressed", String(b.dataset.lang === lang)));
     const star = $("#gh-star"); star.title = t("starTitle"); star.setAttribute("aria-label", t("starTitle"));
-    $$("a[data-sister]").forEach((a) => { a.href = `https://${a.dataset.sister}.geekplux.org/${lang === "zh" ? "?lang=zh" : ""}`; });
+    $$("a[data-sister]").forEach((a) => { a.href = `https://${a.dataset.sister}.geekplux.com/${lang === "zh" ? "?lang=zh" : ""}`; });
     $("#stats").textContent = UI[lang].stats(MV.length, WORKS);
   }
 
