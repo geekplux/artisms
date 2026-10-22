@@ -1,7 +1,8 @@
 # Art-isms: working conventions
 
 A static, bilingual (EN/中文) atlas of 40 art styles with 3 works each. Repository: github.com/geekplux/artisms.
-Live: https://artisms.geekplux.org/. Sister projects: Worldlines, Dialectica.
+Live: https://artisms.geekplux.com/ (primary; `artisms.geekplux.org` is a secondary domain, so canonical,
+sitemap and links always use `.com`). Sister projects: Worldlines, Dialectica.
 Read README.md for the data model and file layout. These are the rules that are easy to break.
 
 ## No build step
@@ -51,7 +52,7 @@ Read README.md for the data model and file layout. These are the rules that are 
 
 ## Analytics and privacy
 
-- Google Analytics loads only on `artisms.geekplux.org`, in Consent Mode v2 with everything denied until the
+- Google Analytics loads only on `artisms.geekplux.com` and `.org`, in Consent Mode v2 with everything denied until the
   visitor accepts. Don't add other trackers, third-party scripts or cookies without the owner's agreement,
   and never load GA before the consent defaults are set.
 - GA cookies are host-only (`cookie_domain: "none"`; `location.hostname` would give a domain cookie) and the automatic page view is off: `app.js` sends

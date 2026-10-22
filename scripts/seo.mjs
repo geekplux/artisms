@@ -11,7 +11,7 @@ import { join } from "node:path";
 import { fileURLToPath } from "node:url";
 import { loadData, SITE } from "./lib/data.mjs";
 
-export const ORIGIN = "https://artisms.geekplux.org/";
+export const ORIGIN = "https://artisms.geekplux.com/";
 const INDEX = join(SITE, "index.html");
 const esc = (s) => String(s).replace(/[&<>"']/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c]));
 const num = (i) => String(i + 1).padStart(2, "0");
@@ -26,7 +26,7 @@ function blocks(D) {
         inLanguage: ["en", "zh-Hans"], isAccessibleForFree: true,
         about: [{ "@type": "Thing", name: "Art history" }, { "@type": "Thing", name: "Art movements" }, { "@type": "Thing", name: "Timeline" }],
         license: "https://creativecommons.org/licenses/by-sa/4.0/",
-        creator: { "@type": "Person", name: "geekplux", url: "https://github.com/geekplux" },
+        creator: { "@type": "Person", name: "GeekPlux", url: "https://geekplux.com/", sameAs: ["https://github.com/geekplux"] },
         codeRepository: "https://github.com/geekplux/artisms"
       },
       {
