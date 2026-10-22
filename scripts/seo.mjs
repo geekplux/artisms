@@ -26,7 +26,7 @@ function blocks(D) {
         inLanguage: ["en", "zh-Hans"], isAccessibleForFree: true,
         about: [{ "@type": "Thing", name: "Art history" }, { "@type": "Thing", name: "Art movements" }, { "@type": "Thing", name: "Timeline" }],
         license: "https://creativecommons.org/licenses/by-sa/4.0/",
-        creator: { "@type": "Person", name: "geekplux", url: "https://github.com/geekplux" },
+        creator: { "@type": "Person", name: "GeekPlux", url: "https://geekplux.com/", sameAs: ["https://github.com/geekplux"] },
         codeRepository: "https://github.com/geekplux/artisms"
       },
       {
