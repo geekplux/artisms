@@ -4,9 +4,9 @@ A bilingual (English / 中文) visual atlas of art styles: a 45,000-year timelin
 
 ![Art-isms wordmark beside The Great Wave, The Birth of Venus, The Starry Night and The Scream](public/og.jpg)
 
-**Live site:** https://artisms.geekplux.org/ ([中文](https://artisms.geekplux.org/?lang=zh))
+**Live site:** https://artisms.geekplux.com/ ([中文](https://artisms.geekplux.com/?lang=zh))
 
-A sibling of [Worldlines](https://worldlines.geekplux.org/), an atlas of world history, and [Dialectica](https://dialectica.geekplux.org/), an atlas of philosophy, drawn on the same Mondrian grid.
+A sibling of [Worldlines](https://worldlines.geekplux.com/), an atlas of world history, and [Dialectica](https://dialectica.geekplux.com/), an atlas of philosophy, drawn on the same Mondrian grid.
 
 - **40 styles, 120 works**, from the Chauvet cave paintings to contemporary installation, including Chinese landscape painting, ukiyo-e, Islamic art, Indian miniatures, African sculpture, Indigenous arts and Latin American modernisms.
 - **One timeline** for 45,000 years. The scale is compressed for older periods, and thick rules mark where it changes. Hover over a style to light up what it grew from and what it led to.
@@ -21,9 +21,9 @@ Three bilingual atlases on one Mondrian grid, built the same way: static files w
 
 | | Atlas | What it maps |
 | --- | --- | --- |
-| <img src="https://artisms.geekplux.org/favicon.svg" width="22" alt=""> | [Art-isms · 艺术流派志](https://artisms.geekplux.org/) · [code](https://github.com/geekplux/artisms) | 40 art styles across 45,000 years, how each grew from the last, and three real works for each |
-| <img src="https://worldlines.geekplux.org/favicon.svg" width="22" alt=""> | [Worldlines · 世界线](https://worldlines.geekplux.org/) · [code](https://github.com/geekplux/worldlines) | 26 countries and 8 regions across 15,000 years, chapter by chapter or one year at a time |
-| <img src="https://dialectica.geekplux.org/favicon.svg" width="22" alt=""> | [Dialectica · 思辨谱](https://dialectica.geekplux.org/) · [code](https://github.com/geekplux/dialectica) | 72 schools and 204 thinkers across 8 traditions: who taught, read and argued with whom |
+| <img src="https://artisms.geekplux.com/favicon.svg" width="22" alt=""> | [Art-isms · 艺术流派志](https://artisms.geekplux.com/) · [code](https://github.com/geekplux/artisms) | 40 art styles across 45,000 years, how each grew from the last, and three real works for each |
+| <img src="https://worldlines.geekplux.com/favicon.svg" width="22" alt=""> | [Worldlines · 世界线](https://worldlines.geekplux.com/) · [code](https://github.com/geekplux/worldlines) | 26 countries and 8 regions across 15,000 years, chapter by chapter or one year at a time |
+| <img src="https://dialectica.geekplux.com/favicon.svg" width="22" alt=""> | [Dialectica · 思辨谱](https://dialectica.geekplux.com/) · [code](https://github.com/geekplux/dialectica) | 72 schools and 204 thinkers across 8 traditions: who taught, read and argued with whom |
 
 ## Run it locally
 
@@ -107,7 +107,7 @@ CI runs the same check on every push and pull request.
 
 ## Deployment
 
-The site is served at **https://artisms.geekplux.org/** (a custom domain on the `artisms` Worker) by **Cloudflare Workers Static Assets** with Workers Builds (Git integration). Every push to `main` runs `npx wrangler deploy`, which uploads `public/` as configured in `wrangler.jsonc`. There is no build command. Pull requests get preview builds if they are enabled in the dashboard. Nothing outside `public/` (README, scripts, `.git`) is ever uploaded.
+The site is served at **https://artisms.geekplux.com/** (a custom domain on the `artisms` Worker) by **Cloudflare Workers Static Assets** with Workers Builds (Git integration). Every push to `main` runs `npx wrangler deploy`, which uploads `public/` as configured in `wrangler.jsonc`. There is no build command. Pull requests get preview builds if they are enabled in the dashboard. Nothing outside `public/` (README, scripts, `.git`) is ever uploaded. The old `artisms.geekplux.org` still serves the same Worker as a secondary domain; canonical tags, the sitemap and every link use `.com`.
 
 `public/_headers` caches `assets/` and `images/` for a year. That is safe because every reference to them carries a content hash (`?v=…`): `image.v` in the data for images, and `scripts/stamp-assets.mjs` for `index.html`. `index.html` and `data/` are revalidated on every visit.
 
@@ -117,9 +117,9 @@ The site is served at **https://artisms.geekplux.org/** (a custom domain on the 
 
 ## Analytics
 
-Google Analytics 4 (`G-V8MD23KS3G`) runs on **artisms.geekplux.org only**, never locally or on preview URLs. It uses Consent Mode v2: until a visitor accepts in the consent bar, `analytics_storage` is denied, so GA receives cookieless pings and sets no cookies. Accepting allows analytics cookies; "Cookie settings" in the footer reopens the choice, and declining deletes any `_ga` cookies. Ads features stay denied. The setup is the inline script in `public/index.html`; the bar is in `public/assets/app.js`.
+Google Analytics 4 (`G-V8MD23KS3G`) runs on **artisms.geekplux.com** (and the secondary `.org`) **only**, never locally or on preview URLs. It uses Consent Mode v2: until a visitor accepts in the consent bar, `analytics_storage` is denied, so GA receives cookieless pings and sets no cookies. Accepting allows analytics cookies; "Cookie settings" in the footer reopens the choice, and declining deletes any `_ga` cookies. Ads features stay denied. The setup is the inline script in `public/index.html`; the bar is in `public/assets/app.js`.
 
-GA's cookies are host-only (`cookie_domain: "none"`, so they carry no `Domain` attribute; `location.hostname` would still give a domain cookie on `.artisms.geekplux.org`), so Art-isms and its sibling sites on `geekplux.org` do not share a client id or delete each other's cookies; declining still removes old `_ga` cookies from the parent domain, where earlier versions set them. The automatic page view is off (`send_page_view: false`): `app.js` sends `page_view` itself after rendering, with the final title and the address without its `#style` hash, and again after a language switch. It also sends `select_content` when a visitor switches language (`content_type: "language"`), turns on an era or region filter (`"era"`, `"region"`, with the id as `item_id`) or leaves for a sister atlas (`"sister"`). Events go through `track()`, a no-op wherever `gtag` is not defined, and never carry free text or personal data.
+GA's cookies are host-only (`cookie_domain: "none"`, so they carry no `Domain` attribute; `location.hostname` would still give a domain cookie on `.artisms.geekplux.com`), so Art-isms and its sibling sites on `geekplux.com` do not share a client id or delete each other's cookies; declining still removes old `_ga` cookies from the parent domain, where earlier versions set them. The automatic page view is off (`send_page_view: false`): `app.js` sends `page_view` itself after rendering, with the final title and the address without its `#style` hash, and again after a language switch. It also sends `select_content` when a visitor switches language (`content_type: "language"`), turns on an era or region filter (`"era"`, `"region"`, with the id as `item_id`) or leaves for a sister atlas (`"sister"`). Events go through `track()`, a no-op wherever `gtag` is not defined, and never carry free text or personal data.
 
 In the GA4 property, **Admin → Data streams → (web stream) → Enhanced measurement → Page views → Show advanced settings → "Page changes based on browser history events" must be off.** The page uses `history.replaceState` to change the query (`?lang`, `?era`, `?region`), and with that setting on GA logs an extra page view for each change; `send_page_view: false` does not stop those. Hash-only changes (`#style`) do not create page views.
 
