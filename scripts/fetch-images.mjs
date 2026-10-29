@@ -46,7 +46,9 @@ function cleanText(html) {
 /* Where Commons has no Artist field and the uploader is not the photographer (from the file page). */
 const AUTHOR_OVERRIDES = {
   "Hector_Guimard_Entrance_Pasteur_Paris_Metro.jpg": "Eugenia & Julian (Flickr)",
-  "Autun_St_Lazare_Tympanon.jpg": "Lamettrie"
+  "Autun_St_Lazare_Tympanon.jpg": "Lamettrie",
+  // PD-self photo (2005) with no Artist field; the fallback would credit the architect, not the photographer.
+  "Bauhaus-Dessau_main_building.jpg": "Cethegus"
 };
 
 async function commonsInfo(c, longEdge, workArtist) {
