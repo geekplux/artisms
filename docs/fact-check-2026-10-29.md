@@ -29,3 +29,22 @@ Four lineage edits the first pass proposed were checked again and kept as they a
 - Shan shui → Ukiyo-e (both directions): Hokusai and Hiroshige drew on Chinese landscape models (the *Mustard Seed Garden Manual*, the Eight Views theme). Sources: NGV; British Museum; MFA Boston.
 - Pop Art from Dada: Duchamp's readymades are a documented source for Pop. Neo-Dada is the bridge, but it has no entry here. Source: Britannica.
 - Pop Art from Abstract Expressionism: Pop defined itself against it, and that still counts as growing out of it. Source: Tate.
+
+## Contested claims, second review
+
+Twenty-three claims the first pass left as contested, a language mismatch, or a gap were checked again from scratch by two independent reviewers, each with a wider search. Six were changed:
+
+| Item | Was | Now | Source |
+| --- | --- | --- | --- |
+| Gauguin, Vision of the Sermon, Chinese title | 布道的幻象 | 布道后的幻象 (the established Chinese title; follows the French *après le sermon*) | National Galleries Scotland NG 1643 via Art UK; Chinese reference works |
+| Parthenon frieze, date | c. 443–437 BCE | c. 442–432 BCE (Acropolis Museum dates the frieze blocks 442–438; the British Museum dates the West frieze it holds 438–432) | Acropolis Museum; British Museum 1816,0610.47 |
+| African sculpture, trait | Expressive, non-naturalistic proportions | *Often* expressive, non-naturalistic proportions (Ife heads, shown here, are naturalistic) | Smarthistory; British Museum |
+| Munch, The Scream, Chinese note | 油彩 (oil paint) | 绘画, matching the English "paint" (the 1893 version is tempera and crayon) | National Museum, Oslo, NG.M.00939; Munch Museum |
+| Van Doesburg, Counter-Composition XIII, note | Mondrian left the group over diagonals | The tilt *often blamed* for ending the friendship; Mondrian left soon after Van Doesburg took up diagonals (Blotkamp and later scholars point to other causes as well) | Tate, De Stijl; Britannica; Peggy Guggenheim Collection |
+| Kusama, Infinity Mirror Rooms, note | Visitors often get under a minute | A minute or less (The Broad and the AGO allow up to 60 seconds; other venues 20–45 seconds) | The Broad; AGO; Tate; Smithsonian |
+
+The other 17 were kept as they are. In each case the current text matches one mainstream convention that authoritative sources support: the Gothic, Expressionism, Cubism and Contemporary spans; the Willendorf, Lissitzky and Rietveld chair dates; the combined Suprematism & Constructivism entry and its traits; the Utamaro and Gris titles; the Hamilton "often called the first" note; Sherman's 70 stills (MoMA's current record); and the empty "Grew out of" list for African sculpture, which no source ties to an earlier style in this atlas. None needed an on-page caveat.
+
+## Open, for the owner
+
+- Yayoi Kusama died on 14 August 2026 (Yayoi Kusama Studio and the Yayoi Kusama Museum). The Infinity Mirror Rooms card still says "1965–present". It has not been changed here: decide whether the series should end in 2026.

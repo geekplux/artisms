@@ -672,8 +672,8 @@ window.ARTISMS = {
       "zh": "菲狄亚斯工坊"
      },
      "y": {
-      "en": "c. 443–437 BCE",
-      "zh": "约公元前443–前437年"
+      "en": "c. 442–432 BCE",
+      "zh": "约公元前442–前432年"
      },
      "loc": {
       "en": "British Museum, London",
@@ -773,13 +773,13 @@ window.ARTISMS = {
     "en": [
      "Made for use: rule, ritual, healing, memory",
      "Lost-wax casting at Ife and Benin",
-     "Expressive, non-naturalistic proportions",
+     "Often expressive, non-naturalistic proportions",
      "Power added through materials and performance"
     ],
     "zh": [
      "为使用而作：统治、仪式、疗愈、纪念",
      "伊费与贝宁的失蜡铸造",
-     "富有表现力的非写实比例",
+     "多为富有表现力的非写实比例",
      "通过材料与表演赋予力量"
     ]
    },
@@ -3636,7 +3636,7 @@ window.ARTISMS = {
     {
      "t": {
       "en": "Vision of the Sermon (Jacob Wrestling with the Angel)",
-      "zh": "布道的幻象（雅各与天使摔跤）"
+      "zh": "布道后的幻象（雅各与天使摔跤）"
      },
      "a": {
       "en": "Paul Gauguin",
@@ -4070,7 +4070,7 @@ window.ARTISMS = {
      },
      "n": {
       "en": "A forerunner of the movement. Munch made several versions in paint, pastel and print.",
-      "zh": "该运动的先驱之作。蒙克用油彩、色粉与版画创作了多个版本。"
+      "zh": "该运动的先驱之作。蒙克以绘画、色粉画与版画创作了多个版本。"
      },
      "c": "b/b5/Edvard_Munch_-_The_Scream_-_NG.M.00939_-_National_Museum_of_Art%2C_Architecture_and_Design.jpg",
      "image": {
@@ -4943,8 +4943,8 @@ window.ARTISMS = {
       "zh": "斜线为风格派几何注入动感"
      },
      "n": {
-      "en": "The tilt that ended a friendship: Mondrian left the group over diagonals like these.",
-      "zh": "这一倾斜终结了一段友谊：蒙德里安正因这样的斜线退出了风格派。"
+      "en": "The tilt often blamed for ending a friendship: Mondrian left the group soon after Van Doesburg took up diagonals like these.",
+      "zh": "这一倾斜常被认为终结了一段友谊：杜斯伯格采用这样的斜线后不久，蒙德里安便退出了风格派。"
      },
      "c": "d/d5/Counter-Composition_XIII_by_Theo_van_Doesburg.jpg",
      "image": {
@@ -6374,8 +6374,8 @@ window.ARTISMS = {
       "zh": "镜像让重复成为身体可感的沉浸"
      },
      "n": {
-      "en": "Mirrors and lights multiply a small room into endless space; visitors often get under a minute inside.",
-      "zh": "镜子与灯光把小房间变成无尽空间；每位观众往往只能停留不到一分钟。"
+      "en": "Mirrors and lights multiply a small room into endless space; visitors often get a minute or less inside.",
+      "zh": "镜子与灯光把小房间变成无尽空间；每位观众往往只能停留一分钟或更短。"
      },
      "src": "https://en.wikipedia.org/wiki/Yayoi_Kusama",
      "restricted": true,
