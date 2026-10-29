@@ -6362,8 +6362,8 @@ window.ARTISMS = {
       "zh": "草间弥生"
      },
      "y": {
-      "en": "1965–present",
-      "zh": "1965年至今"
+      "en": "1965–2025",
+      "zh": "1965–2025年"
      },
      "loc": {
       "en": "Many versions worldwide",

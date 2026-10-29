@@ -45,6 +45,6 @@ Twenty-three claims the first pass left as contested, a language mismatch, or a 
 
 The other 17 were kept as they are. In each case the current text matches one mainstream convention that authoritative sources support: the Gothic, Expressionism, Cubism and Contemporary spans; the Willendorf, Lissitzky and Rietveld chair dates; the combined Suprematism & Constructivism entry and its traits; the Utamaro and Gris titles; the Hamilton "often called the first" note; Sherman's 70 stills (MoMA's current record); and the empty "Grew out of" list for African sculpture, which no source ties to an earlier style in this atlas. None needed an on-page caveat.
 
-## Open, for the owner
+## Resolved after review
 
-- Yayoi Kusama died on 14 August 2026 (Yayoi Kusama Studio and the Yayoi Kusama Museum). The Infinity Mirror Rooms card still says "1965–present". It has not been changed here: decide whether the series should end in 2026.
+- Yayoi Kusama died on 14 August 2026 (Yayoi Kusama Studio and the Yayoi Kusama Museum announcements, 27 August 2026; AP; NPR). The Infinity Mirror Rooms card said "1965–present". It now says **1965–2025**: the first room, *Infinity Mirror Room – Phalli's Field*, dates from 1965, and the latest dated rooms are from 2025 (*Infinity Mirrored Room – Illusion Inside the Heart* and *The Hope of the Polka Dots Buried in Infinity Will Eternally Cover the Universe*, both made for the 2025–26 Fondation Beyeler / Museum Ludwig retrospective). If a room dated 2026 is published, the end year should move to 2026. Sources: Fondation Beyeler press kit and room guide; Museum Ludwig. The Contemporary Art style itself stays "c. 1990–present": it describes the field, not one artist.
