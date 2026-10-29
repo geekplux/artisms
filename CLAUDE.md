@@ -1,7 +1,7 @@
 # Art-isms: working conventions
 
 A static, bilingual (EN/中文) atlas of 40 art styles with 3 works each. Repository: github.com/geekplux/artisms.
-Live: https://artisms.geekplux.com/ (primary; `artisms.geekplux.org` is a secondary domain, so canonical,
+Live: https://artisms.geekplux.com/ (primary; `artisms.geekplux.org` redirects to it, and canonical,
 sitemap and links always use `.com`). Sister projects: Worldlines, Dialectica.
 Read README.md for the data model and file layout. These are the rules that are easy to break.
 
@@ -45,7 +45,8 @@ Read README.md for the data model and file layout. These are the rules that are 
 1. `node scripts/fetch-images.mjs` if any `c` path changed (needs network and `cwebp`). It also regenerates
    CREDITS.md.
 2. `node scripts/stamp-assets.mjs` if `public/assets/app.js` or `styles.css` changed, and `node scripts/seo.mjs` if the
-   data changed (it regenerates the static, crawlable HTML in index.html).
+   data changed (it regenerates the static, crawlable HTML in index.html), and set `<lastmod>` in
+   `public/sitemap.xml` to the date of the content change.
 3. `node scripts/check-data.mjs` (CI runs it too; it fails on stale CREDITS.md, image hashes or stamps).
 4. `node scripts/verify-images.mjs` (network): hosted files, Commons sources and every link.
 5. Open the page at desktop width and at 390px, in both languages: no horizontal scroll, no console errors.
