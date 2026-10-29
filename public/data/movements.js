@@ -246,8 +246,8 @@ window.ARTISMS = {
       "zh": "侧面的动物在岩壁上层层叠叠"
      },
      "n": {
-      "en": "Hundreds of aurochs, horses and deer. Closed to the public since 1963 to protect them; visitors see replicas.",
-      "zh": "数百头原牛、马与鹿。为保护壁画，自1963年起不再对公众开放，游客参观的是复制洞窟。"
+      "en": "Some 600 painted animals; horses are most numerous, followed by deer and aurochs. Closed to the public since 1963 to protect them; visitors see replicas.",
+      "zh": "约600幅动物图像，以马为主，其次是鹿和原牛。为保护壁画，自1963年起不再对公众开放，游客参观的是复制洞窟。"
      },
      "wiki": "Lascaux",
      "c": "1/1e/Lascaux_painting.jpg",
@@ -527,8 +527,8 @@ window.ARTISMS = {
       "zh": "与仪式神灵相连的教学器物"
      },
      "n": {
-      "en": "Carved from cottonwood root and given to children to learn about the katsinam, the spirit beings of Hopi ceremony.",
-      "zh": "以杨木根雕成，送给孩子们，用来认识霍皮仪式中的卡奇纳神灵。"
+      "en": "Carved from wood and given to children to learn about the katsinam, the spirit beings of Hopi ceremony.",
+      "zh": "以木材雕成，送给孩子们，用来认识霍皮仪式中的卡奇纳神灵。"
      },
      "c": "8/81/Hopi_Pueblo_%28Native_American%29._Kachina_Doll_%28Pahlikmana%29%2C_late_19th_century.jpg",
      "loc": {
@@ -672,8 +672,8 @@ window.ARTISMS = {
       "zh": "菲狄亚斯工坊"
      },
      "y": {
-      "en": "c. 443–437 BCE",
-      "zh": "约公元前443–前437年"
+      "en": "c. 442–432 BCE",
+      "zh": "约公元前442–前432年"
      },
      "loc": {
       "en": "British Museum, London",
@@ -773,13 +773,13 @@ window.ARTISMS = {
     "en": [
      "Made for use: rule, ritual, healing, memory",
      "Lost-wax casting at Ife and Benin",
-     "Expressive, non-naturalistic proportions",
+     "Often expressive, non-naturalistic proportions",
      "Power added through materials and performance"
     ],
     "zh": [
      "为使用而作：统治、仪式、疗愈、纪念",
      "伊费与贝宁的失蜡铸造",
-     "富有表现力的非写实比例",
+     "多为富有表现力的非写实比例",
      "通过材料与表演赋予力量"
     ]
    },
@@ -921,8 +921,8 @@ window.ARTISMS = {
     "zh": "东罗马帝国"
    },
    "idea": {
-    "en": "Images as spiritual presences, not windows.",
-    "zh": "图像是神圣的临在，而非窗口。"
+    "en": "Images as spiritual presences and windows to the divine.",
+    "zh": "图像既是神圣的临在，也是通往神圣的窗口。"
    },
    "summary": {
     "en": "When the Roman capital moved to Constantinople, art turned from describing the body to revealing the divine. Figures became flat, frontal and weightless, set against shimmering gold. Mosaics and icons were meant as windows to heaven, which is why arguments over images (Iconoclasm, 726–843) could become state crises.",
@@ -1948,8 +1948,8 @@ window.ARTISMS = {
       "zh": "一面映出整个房间的镜子"
      },
      "n": {
-      "en": "A convex mirror reflects two extra figures; above it the painter wrote “Jan van Eyck was here”.",
-      "zh": "凸面镜中映出另外两个人影，镜上题字“扬·凡·艾克在此”。"
+      "en": "A convex mirror reflects two figures in the doorway; above it the painter wrote “Jan van Eyck was here 1434”.",
+      "zh": "凸面镜中映出门口的两个人影，镜上题字“扬·凡·艾克在此，1434”。"
      },
      "wiki": "Arnolfini Portrait",
      "c": "5/53/The_Arnolfini_portrait_%281434%29.jpg",
@@ -2134,8 +2134,8 @@ window.ARTISMS = {
       "zh": "梅瓦尔画家"
      },
      "y": {
-      "en": "1719",
-      "zh": "1719年"
+      "en": "c. 1719",
+      "zh": "约1719年"
      },
      "loc": {
       "en": "Art Institute of Chicago",
@@ -2749,8 +2749,8 @@ window.ARTISMS = {
       "zh": "让-奥诺雷·弗拉戈纳尔"
      },
      "y": {
-      "en": "c. 1767",
-      "zh": "约1767年"
+      "en": "c. 1767–1768",
+      "zh": "约1767–1768年"
      },
      "loc": {
       "en": "Wallace Collection, London",
@@ -3151,8 +3151,8 @@ window.ARTISMS = {
       "zh": "卡斯帕·大卫·弗里德里希"
      },
      "y": {
-      "en": "c. 1818",
-      "zh": "约1818年"
+      "en": "c. 1817",
+      "zh": "约1817年"
      },
      "loc": {
       "en": "Hamburger Kunsthalle",
@@ -3636,7 +3636,7 @@ window.ARTISMS = {
     {
      "t": {
       "en": "Vision of the Sermon (Jacob Wrestling with the Angel)",
-      "zh": "布道的幻象（雅各与天使摔跤）"
+      "zh": "布道后的幻象（雅各与天使摔跤）"
      },
      "a": {
       "en": "Paul Gauguin",
@@ -3700,8 +3700,8 @@ window.ARTISMS = {
     "zh": "有机线条，无处不在。"
    },
    "summary": {
-    "en": "Art Nouveau tried to erase the line between fine art and design. Flowing plant-like curves appeared on posters, jewellery, metro entrances and whole buildings. Inspired by nature and Japanese prints, it was the first international style aimed at modern mass production, and it faded quickly after 1910.",
-    "zh": "新艺术运动试图抹去纯艺术与设计之间的界线。流动的植物曲线出现在海报、珠宝、地铁入口乃至整座建筑上。它受自然与日本版画启发，是第一种面向现代批量生产的国际风格，1910年后迅速衰落。"
+    "en": "Art Nouveau tried to erase the line between fine art and design. Flowing plant-like curves appeared on posters, jewellery, metro entrances and whole buildings. Inspired by nature and Japanese prints, it was the first international style; posters used modern printing, but most work remained expensive and handcrafted, and it faded quickly after 1910.",
+    "zh": "新艺术运动试图抹去纯艺术与设计之间的界线。流动的植物曲线出现在海报、珠宝、地铁入口乃至整座建筑上。它受自然与日本版画启发，是第一种国际风格；海报采用现代印刷，但大多数作品仍是昂贵的手工制作，1910年后迅速衰落。"
    },
    "traits": {
     "en": [
@@ -3846,10 +3846,10 @@ window.ARTISMS = {
    "era": "avant",
    "group": "west",
    "start": 1905,
-   "end": 1910,
+   "end": 1908,
    "years": {
-    "en": "c. 1905–1910",
-    "zh": "约1905–1910年"
+    "en": "c. 1905–1908",
+    "zh": "约1905–1908年"
    },
    "name": {
     "en": "Fauvism",
@@ -4018,8 +4018,8 @@ window.ARTISMS = {
     "zh": "表现主义"
    },
    "region": {
-    "en": "Germany, Austria, Norway",
-    "zh": "德国、奥地利、挪威"
+    "en": "Germany, Austria",
+    "zh": "德国、奥地利"
    },
    "idea": {
     "en": "Inner feeling over outer reality.",
@@ -4070,7 +4070,7 @@ window.ARTISMS = {
      },
      "n": {
       "en": "A forerunner of the movement. Munch made several versions in paint, pastel and print.",
-      "zh": "该运动的先驱之作。蒙克用油彩、色粉与版画创作了多个版本。"
+      "zh": "该运动的先驱之作。蒙克以绘画、色粉画与版画创作了多个版本。"
      },
      "c": "b/b5/Edvard_Munch_-_The_Scream_-_NG.M.00939_-_National_Museum_of_Art%2C_Architecture_and_Design.jpg",
      "image": {
@@ -4703,8 +4703,8 @@ window.ARTISMS = {
       "zh": "1917年"
      },
      "loc": {
-      "en": "Original lost; 1964 replicas in several museums",
-      "zh": "原作遗失；1964年复制品藏于多家博物馆"
+      "en": "Original lost; authorized replicas from 1950–1964 in several museums",
+      "zh": "原作遗失；1950–1964年授权复制品藏于多家博物馆"
      },
      "look": {
       "en": "a readymade shifts art from craft to choice",
@@ -4943,8 +4943,8 @@ window.ARTISMS = {
       "zh": "斜线为风格派几何注入动感"
      },
      "n": {
-      "en": "The tilt that ended a friendship: Mondrian left the group over diagonals like these.",
-      "zh": "这一倾斜终结了一段友谊：蒙德里安正因这样的斜线退出了风格派。"
+      "en": "The tilt often blamed for ending a friendship: Mondrian left the group soon after Van Doesburg took up diagonals like these.",
+      "zh": "这一倾斜常被认为终结了一段友谊：杜斯伯格采用这样的斜线后不久，蒙德里安便退出了风格派。"
      },
      "c": "d/d5/Counter-Composition_XIII_by_Theo_van_Doesburg.jpg",
      "image": {
@@ -5038,7 +5038,7 @@ window.ARTISMS = {
       "w": 1200,
       "h": 900,
       "v": "3bb4de5d74",
-      "author": "Walter Gropius",
+      "author": "Cethegus",
       "license": "Public domain",
       "licenseUrl": null,
       "page": "https://commons.wikimedia.org/wiki/File:Bauhaus-Dessau_main_building.jpg"
@@ -5551,8 +5551,8 @@ window.ARTISMS = {
       "zh": "奇异的形体漂浮在一条淡淡的低地平线之上"
      },
      "n": {
-      "en": "Tanguy, a former merchant sailor, decided to paint after seeing a de Chirico in a gallery window. He joined the Surrealists in 1925.",
-      "zh": "唐吉曾是商船水手，在画廊橱窗里看到一幅德·基里科的画后决定学画，1925年加入超现实主义团体。"
+      "en": "Tanguy served in the merchant marine and decided to paint in 1923 after seeing a de Chirico in a gallery window. He joined the Surrealists in 1925.",
+      "zh": "唐吉曾在商船队服役，1923年在画廊橱窗里看到一幅德·基里科的画后决定学画，1925年加入超现实主义团体。"
      },
      "c": "8/87/Yves_tanguy%2C_la_tempesta_%28paesaggio_nero%29%2C_1926.jpg",
      "wiki": "Yves Tanguy",
@@ -5727,10 +5727,10 @@ window.ARTISMS = {
    "era": "post",
    "group": "west",
    "start": 1955,
-   "end": 1972,
+   "end": 1978,
    "years": {
-    "en": "c. 1955–1972",
-    "zh": "约1955–1972年"
+    "en": "c. 1955–late 1970s",
+    "zh": "约1955年至20世纪70年代末"
    },
    "name": {
     "en": "Pop Art",
@@ -6023,10 +6023,10 @@ window.ARTISMS = {
    "era": "post",
    "group": "west",
    "start": 1965,
-   "end": 1980,
+   "end": 1975,
    "years": {
-    "en": "c. 1965–1980",
-    "zh": "约1965–1980年"
+    "en": "c. 1965–1975",
+    "zh": "约1965–1975年"
    },
    "name": {
     "en": "Conceptual Art",
@@ -6374,8 +6374,8 @@ window.ARTISMS = {
       "zh": "镜像让重复成为身体可感的沉浸"
      },
      "n": {
-      "en": "Mirrors and lights multiply a small room into endless space; visitors often get under a minute inside.",
-      "zh": "镜子与灯光把小房间变成无尽空间；每位观众往往只能停留不到一分钟。"
+      "en": "Mirrors and lights multiply a small room into endless space; visitors often get a minute or less inside.",
+      "zh": "镜子与灯光把小房间变成无尽空间；每位观众往往只能停留一分钟或更短。"
      },
      "src": "https://en.wikipedia.org/wiki/Yayoi_Kusama",
      "restricted": true,
