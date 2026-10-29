@@ -30,8 +30,13 @@ function blocks(D) {
         codeRepository: "https://github.com/geekplux/artisms"
       },
       {
+        "@type": "WebPage", "@id": ORIGIN + "#webpage", url: ORIGIN, name: "Art-isms: a visual atlas of 40 art styles",
+        isPartOf: { "@id": ORIGIN + "#website" }, inLanguage: "en", mainEntity: { "@id": ORIGIN + "#styles" },
+        primaryImageOfPage: { "@type": "ImageObject", url: ORIGIN + "og.jpg", width: 1200, height: 630 }
+      },
+      {
         "@type": "ItemList", "@id": ORIGIN + "#styles", name: "Art styles", numberOfItems: D.movements.length,
-        itemListElement: D.movements.map((m, i) => ({ "@type": "ListItem", position: i + 1, name: m.name.en, url: ORIGIN + "#" + m.id }))
+        itemListElement: D.movements.map((m, i) => ({ "@type": "ListItem", position: i + 1, name: m.name.en, description: `${m.years.en}. ${m.idea.en}`, url: ORIGIN + "#" + m.id }))
       }
     ]
   };

@@ -11,7 +11,7 @@ A sibling of [Worldlines](https://worldlines.geekplux.com/), an atlas of world h
 - **40 styles, 120 works**, from the Chauvet cave paintings to contemporary installation, including Chinese landscape painting, ukiyo-e, Islamic art, Indian miniatures, African sculpture, Indigenous arts and Latin American modernisms.
 - **One timeline** for 45,000 years. The scale is compressed for older periods, and thick rules mark where it changes. Hover over a style to light up what it grew from and what it led to.
 - **Filters** by era and region in a bar that stays on screen while you browse the styles. They also dim the timeline, and a filtered view can be shared as a link, e.g. `?era=avant,post&region=west`.
-- **Real images**: 92 freely licensed files from Wikimedia Commons, hosted with the site and credited with author and licence ([CREDITS.md](CREDITS.md)). Works still in copyright are linked, not reproduced.
+- **Real images**: 99 freely licensed files from Wikimedia Commons, hosted with the site and credited with author and licence ([CREDITS.md](CREDITS.md)). Works still in copyright are linked, not reproduced.
 - **English and Chinese** throughout, switchable on the page. The English view shows no Chinese, and the Chinese view keeps each style's English name beside it. English is the default; the choice is remembered, and `?lang=en` or `?lang=zh` in a link opens that language. The address always matches the language on screen: Chinese is `/?lang=zh`, English is plain `/`.
 - **No build step.** Plain HTML, CSS and JavaScript. All content lives in one data file.
 
@@ -109,7 +109,7 @@ CI runs the same check on every push and pull request.
 
 ## Deployment
 
-The site is served at **https://artisms.geekplux.com/** (a custom domain on the `artisms` Worker) by **Cloudflare Workers Static Assets** with Workers Builds (Git integration). Every push to `main` runs `npx wrangler deploy`, which uploads `public/` as configured in `wrangler.jsonc`. There is no build command. Pull requests get preview builds if they are enabled in the dashboard. Nothing outside `public/` (README, scripts, `.git`) is ever uploaded. The old `artisms.geekplux.org` still serves the same Worker as a secondary domain; canonical tags, the sitemap and every link use `.com`.
+The site is served at **https://artisms.geekplux.com/** (a custom domain on the `artisms` Worker) by **Cloudflare Workers Static Assets** with Workers Builds (Git integration). Every push to `main` runs `npx wrangler deploy`, which uploads `public/` as configured in `wrangler.jsonc`. There is no build command. Pull requests get preview builds if they are enabled in the dashboard. Nothing outside `public/` (README, scripts, `.git`) is ever uploaded. The old `artisms.geekplux.org` now redirects (301) to `.com`; canonical tags, the sitemap and every link use `.com`.
 
 `public/_headers` caches `assets/` and `images/` for a year. That is safe because every reference to them carries a content hash (`?v=…`): `image.v` in the data for images, and `scripts/stamp-assets.mjs` for `index.html`. `index.html` and `data/` are revalidated on every visit.
 
