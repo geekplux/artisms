@@ -54,9 +54,10 @@
   document.head.appendChild(s);
 })();
 </script>
-<link rel="stylesheet" href="assets/styles.css?v=cb32c87fec">
+<link rel="stylesheet" href="assets/styles.css?v=b459628a3f">
 </head>
 <body>
+<a class="skip" href="#top" data-i18n="skip">Skip to content</a>
 <header class="topbar">
   <div class="wrap pad">
     <a class="brand" href="#top">
@@ -77,12 +78,12 @@
   </div>
 </header>
 
-<main id="top">
+<main id="top" tabindex="-1">
   <section class="masthead">
     <div class="mast-copy">
       <p class="kicker" data-i18n="kicker">A visual atlas of art styles</p>
       <div>
-        <h1><span data-i18n="h1a">ART-</span><span class="red" data-i18n="h1b">ISMS</span></h1>
+        <h1 aria-label="Art-isms" data-i18n-aria="h1Label"><span aria-hidden="true" data-i18n="h1a">ART-</span><span class="red" aria-hidden="true" data-i18n="h1b">ISMS</span></h1>
         <p class="dek" data-i18n-html="dek">How art styles <strong>began</strong>, what they <strong>look like</strong>, and how each one grew out of the last, with three real works for every style.</p>
       </div>
       <div class="hero-meta">
@@ -90,7 +91,7 @@
         <a class="scroll-cue" href="#timeline" data-i18n="ctaTimeline">See the timeline</a>
       </div>
     </div>
-    <div class="mast-art" id="mast-art" aria-label="Five works from the atlas" data-i18n-aria="mastLabel"></div>
+    <div class="mast-art" id="mast-art" role="group" aria-label="Four works from the atlas" data-i18n-aria="mastLabel"></div>
   </section>
 
   <aside class="answer">
@@ -446,6 +447,6 @@
 </dialog>
 
 <script src="data/movements.js"></script>
-<script src="assets/app.js?v=db4992faa4"></script>
+<script src="assets/app.js?v=a97721386a"></script>
 </body>
 </html>
